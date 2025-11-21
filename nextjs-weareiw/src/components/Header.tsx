@@ -3,7 +3,7 @@ import Link from "next/link";
 //this is base for the header, not final
 export default function Header() {
     return (
-        <header>
+        <header className="bg-brand-navy text-white">
             <Link href="/"></Link>
             <Link href="#">Products</Link>
             <Link href="#">Services</Link>
