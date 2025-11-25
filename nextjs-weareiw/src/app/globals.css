@@ -16,8 +16,6 @@
   --color-brand-navy: var(--brand-navy);
   --color-brand-blue: var(--brand-blue);
   --color-brand-aqua: var(--brand-aqua);
-
-  --spacing: 1px;
 }
 
 body {
