@@ -8,7 +8,9 @@ export default function Header() {
             <div className="h-full w-[95%] mx-auto flex justify-between items-center">
                 <div className="h-full flex items-center">
                     <Link href="/">
-                        <Image className="max-h-[70px] w-auto object-contain" priority width={1047} height={205} src="/iw-logo.png" alt="IW Technologies Logo" />
+                        <Image className="max-h-[70px] w-auto object-contain" 
+                        priority width={1047} height={205} 
+                        src="/iw-logo.png" alt="IW Technologies Logo" />
                     </Link>
                 </div>
                 <nav className="flex items-center justify-end space-x-8">

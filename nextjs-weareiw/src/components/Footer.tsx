@@ -9,10 +9,12 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <footer>
-            <div className="w-[80%] flex justify-between mx-auto my-40">
+            <div className="w-[80%] flex justify-between mx-auto my-8">
                 <div className="w-1/2 flex flex-col justify-center items-start">
-                    <Image className="mb-25" src="/iw-logo-simple.png" alt="Simple IW Technologies Logo" width={150} height={150} />
-                    <Link href="#" className="p-10 bg-brand-aqua text-brand-navy">Get In Touch</Link>
+                    <Image className="max-h-[100px] h-auto w-auto object-contain mb-8" 
+                    src="/iw-logo-simple.png" alt="Simple IW Technologies Logo" 
+                    width={1122} height={776} />
+                    <Link href="#" className="p-4 bg-brand-aqua text-brand-navy">Get In Touch</Link>
                 </div>
                 <div className="w-1/2 flex flex-col justify-center items-end">
                     <div>
