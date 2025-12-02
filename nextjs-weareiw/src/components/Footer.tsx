@@ -16,12 +16,20 @@ export default function Footer() {
                     width={1122} height={776} />
                     <Link href="#" className="p-4 bg-brand-aqua text-brand-navy">Get In Touch</Link>
                 </div>
-                <div className="w-1/2 flex flex-col justify-center items-end">
+                <div className="w-1/2 flex flex-col justify-evenly items-end text-right">
                     <div>
-                        this is test text
+                        <p className="font-bold">IW Technologies</p>
+                        <p>2790 Pinnacle Drive</p>
+                        <p>Elgin, IL 60124-7943</p>
                     </div>
                     <div>
-                        this is test text
+                        <p>Phone: (847) 310-4200</p>
+                        <p>Toll Free: (800) 544-5493</p>
+                        <div className="flex justify-end space-x-2">
+                            <a href="#" className=""><Image className="max-h-[25px] h-auto w-auto object-contain" src="/LinkedIn.jpg" alt="IW Linkedin" width={50} height={50} /></a>
+                            <a href="#" className=""><Image className="max-h-[25px] h-auto w-auto object-contain" src="/Facebook.jpg" alt="IW Facebook" width={50} height={50} /></a>
+                            <a href="#" className=""><Image className="max-h-[25px] h-auto w-auto object-contain" src="/Youtube.jpg" alt="IW Youtube" width={50} height={50} /></a>
+                        </div>
                     </div>
                 </div>
             </div>
