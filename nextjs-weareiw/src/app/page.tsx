@@ -16,7 +16,7 @@ export default async function IndexPage() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
 
   return (
-    <main className="container mx-auto min-h-screen max-w-3xl p-8">
+    <main className="container mx-auto min-h-screen max-w-9/10 p-8">
       <h1 className="text-4xl font-bold mb-8">These are test posts</h1>
       <ul className="flex flex-col gap-y-4">
         {posts.map((post) => (
@@ -28,7 +28,7 @@ export default async function IndexPage() {
           </li>
         ))}
       </ul>
-      <section className="w-full flex">
+      <section className="w-full flex space-x-4">
         <Card 
           imageSrc="/View-our-products-Moody-blue.png"
           imageAlt="Blue tinted view our products card image"
