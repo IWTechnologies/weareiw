@@ -14,7 +14,7 @@ type CardProps = {
 
 export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, title, text, linkHref, linkLabel }: CardProps) {
     return (
-        <div className="w-1/2 flex flex-col">
+        <div className="w-1/2 flex flex-col border-2 border-solid shadow-lg">
             <Image className="max-h-[250px] h-auto w-auto object-contain" 
             src={imageSrc} alt={imageAlt} priority width={imageWidth} height={imageHeight} />
             <h2>{title}</h2>

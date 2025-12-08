@@ -9,7 +9,7 @@ export default function IndexPage() {
   return (
     <main className="container mx-auto min-h-screen max-w-9/10 p-8">
       <h1 className="text-4xl font-bold mb-8">Hero section will go here</h1>
-      <section className="w-full flex space-x-4">
+      <section className="w-[80%] mx-auto flex space-x-4">
         <Card 
           imageSrc="/View-our-products-Moody-blue.png"
           imageAlt="Blue tinted view our products card image"
