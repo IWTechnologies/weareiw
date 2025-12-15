@@ -14,12 +14,18 @@ export default function Header() {
                     </Link>
                 </div>
                 <nav className="flex items-center justify-end space-x-8">
-                    <Link href="#" className="hover:text-brand-aqua">Products</Link>
-                    <Link href="#" className="hover:text-brand-aqua">Services</Link>
-                    <Link href="#" className="hover:text-brand-aqua">About</Link>
-                    <Link href="#" className="hover:text-brand-aqua">Blog</Link>
-                    <Link href="#" className="hover:text-brand-aqua">Careers</Link>
-                    <Link href="#" className="bg-brand-aqua text-brand-navy">Get In Touch</Link>
+                    <Link href="#" className="transition duration-300 ease-in-out
+                    hover:text-brand-aqua">Products</Link>
+                    <Link href="#" className="transition duration-300 ease-in-out
+                    hover:text-brand-aqua">Services</Link>
+                    <Link href="#" className="transition duration-300 ease-in-out
+                    hover:text-brand-aqua">About</Link>
+                    <Link href="#" className="transition duration-300 ease-in-out
+                    hover:text-brand-aqua">Blog</Link>
+                    <Link href="#" className="transition duration-300 ease-in-out
+                    hover:text-brand-aqua">Careers</Link>
+                    <Link href="#" className="transition duration-300 ease-in-out
+                    bg-brand-aqua text-brand-navy">Get In Touch</Link>
                 </nav>
             </div>
         </header>
