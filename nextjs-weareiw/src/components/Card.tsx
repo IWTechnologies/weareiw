@@ -14,13 +14,16 @@ type CardProps = {
 
 export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, title, text, linkHref, linkLabel }: CardProps) {
     return (
-        <div className="w-lg flex flex-col border-2 border-solid shadow-lg">
+        <div className="w-lg flex flex-col rounded-md bg-white shadow-lg overflow-hidden">
             <Image className="max-h-[250px] h-auto w-auto object-cover" 
             src={imageSrc} alt={imageAlt} priority width={imageWidth} height={imageHeight} />
             <div className="flex flex-col items-start p-8 text-brand-navy">
                 <h2 className="pb-2 text-3xl font-bold">{title}</h2>
                 <p className="pb-5 font-light text-2xl">{text}</p>
-                <Link href={linkHref} className="px-[1em] py-[.33em] border-brand-aqua text-[22px] bg-brand-aqua">{linkLabel}</Link>
+                <Link href={linkHref} 
+                className="transition duration-300 ease-in-out px-[1em] py-[.33em]
+                border-3 border-brand-aqua rounded-md text-[22px] bg-brand-aqua
+                hover:bg-transparent hover:text-brand-aqua">{linkLabel}</Link>
             </div>
         </div>
     )
