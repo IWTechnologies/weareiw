@@ -10,13 +10,15 @@ type BlurbProps = {
     text: string;
     linkHref: string;
     linkLabel: string;
+    reverse?: boolean;
 };
 
-export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, title, text, linkHref, linkLabel }: BlurbProps) {
+export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, title, text, linkHref, linkLabel, reverse=false }: BlurbProps) {
     return (
         <div 
-        className="w-full flex items-center
-        sm:max-lg:flex-col">
+        className={`w-full flex items-center
+        ${reverse ? "flex-row-reverse" : "flex-row"}
+        sm:max-lg:flex-col`}>
             <Image
             className="h-auto w-1/2 object-contain
             sm:max-lg:w-full" 
