@@ -24,7 +24,7 @@ export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, titl
             <div
             className="w-1/2 flex flex-col items-start p-8 text-white
             sm:max-lg:w-full">
-                <h2 className="pb-2 text-3xl font-bold">{title}</h2>
+                <h2 className="pb-4 text-3xl font-bold">{title}</h2>
                 <p className="pb-5 font-light text-2xl">{text}</p>
                 <Link href={linkHref} 
                 className="transition duration-300 ease-in-out px-[1em] py-[.33em]

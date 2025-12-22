@@ -36,7 +36,7 @@ export default function IndexPage() {
         />
       </section>
       <section
-      className="w-[80%] mx-auto my-5 flex justify-center bg-brand-navy">
+      className="w-[80%] mx-auto my-5 flex bg-brand-navy">
         <Blurb 
           imageSrc="/Team-Moody-Blue-1.webp"
           imageAlt="Blue tinted image of IW team in meeting"
