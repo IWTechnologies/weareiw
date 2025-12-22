@@ -42,7 +42,7 @@ export default function IndexPage() {
           imageAlt="Blue tinted image of IW team in meeting"
           imageWidth={512}
           imageHeight={342}
-          title="Let's Work Together"
+          title=""
           text="With a massive inventory of IT assets and the most skilled — and
           dedicated — technicians in the industry, we are here to help you succeed."
           linkHref="#" 
