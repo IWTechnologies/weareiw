@@ -15,11 +15,15 @@ type BlurbProps = {
 export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, title, text, linkHref, linkLabel }: BlurbProps) {
     return (
         <div 
-        className="w-full flex items-center my-5
-        ">
-            <Image className="h-auto w-auto object-cover" 
+        className="w-full flex items-center
+        sm:max-lg:flex-col">
+            <Image
+            className="h-auto w-1/2 object-contain
+            sm:max-lg:w-full" 
             src={imageSrc} alt={imageAlt} priority width={imageWidth} height={imageHeight} />
-            <div className="flex flex-col items-start p-8 text-white">
+            <div
+            className="w-1/2 flex flex-col items-start p-8 text-white
+            sm:max-lg:w-full">
                 <h2 className="pb-2 text-3xl font-bold">{title}</h2>
                 <p className="pb-5 font-light text-2xl">{text}</p>
                 <Link href={linkHref} 
