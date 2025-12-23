@@ -1,11 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
 
-type BlurbProps = {
-    imageSrc: string;
-    imageAlt: string;
-    imageWidth: number;
-    imageHeight: number;
+type ImageMedia = {
+    type: "image";
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+}
+
+type VideoMedia = {
+    type: "video";
+    youtubeId: string;
+}
+
+type Media = ImageMedia | VideoMedia;
+
+interface BlurbProps {
+    media: Media;
     title?: string;
     text: string;
     linkHref: string;
@@ -13,16 +25,29 @@ type BlurbProps = {
     reverse?: boolean;
 };
 
-export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, title, text, linkHref, linkLabel, reverse=false }: BlurbProps) {
+export default function Blurb({ media, title, text, linkHref, linkLabel, reverse=false }: BlurbProps) {
     return (
         <div 
         className={`w-full flex items-center
         ${reverse ? "flex-row-reverse" : "flex-row"}
         sm:max-lg:flex-col`}>
-            <Image
-            className="h-auto w-1/2 object-contain
-            sm:max-lg:w-full" 
-            src={imageSrc} alt={imageAlt} priority width={imageWidth} height={imageHeight} />
+            {media.type === "image" && (
+                <Image
+                className="h-auto w-1/2 object-contain
+                sm:max-lg:w-full" 
+                src={media.src} alt={media.alt} priority width={media.width} height={media.height} />
+            )}
+            {media.type === "video" && (
+                <iframe
+                className="h-auto w-1/2 object-contain
+                sm:max-lg:w-full" 
+                src={`https://www.youtube.com/embed/${media.youtubeId}`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                 />
+            )}
+    
             <div
             className="w-1/2 flex flex-col items-start p-8 text-white
             sm:max-lg:w-full">

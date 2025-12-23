@@ -38,25 +38,28 @@ export default function IndexPage() {
       <section
       className="w-[80%] mx-auto my-5 bg-brand-navy">
         <Blurb 
-          imageSrc="/Team-Moody-Blue-1.webp"
-          imageAlt="Blue tinted image of IW team in meeting"
-          imageWidth={512}
-          imageHeight={342}
+          media={{
+            type: "video",
+            youtubeId: "L4O1ejWfDAc",
+          }}
           title=""
           text="With a massive inventory of IT assets and the most skilled — and
           dedicated — technicians in the industry, we are here to help you succeed."
           linkHref="#" 
-          linkLabel="Get In Touch"
+          linkLabel="Let's Build Your Next Rollout"
           reverse
         />
       </section>
       <section
       className="w-[80%] mx-auto my-5 bg-brand-navy">
         <Blurb 
-          imageSrc="/Team-Moody-Blue-1.webp"
-          imageAlt="Blue tinted image of IW team in meeting"
-          imageWidth={512}
-          imageHeight={342}
+          media={{
+            type: "image",
+            src: "/Team-Moody-Blue-1.webp",
+            alt: "Blue tinted image of IW team in meeting",
+            width: 512,
+            height: 342,
+          }}
           title="Let's Work Together"
           text="With a massive inventory of IT assets and the most skilled — and
           dedicated — technicians in the industry, we are here to help you succeed."
