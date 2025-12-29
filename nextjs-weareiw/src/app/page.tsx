@@ -7,8 +7,11 @@ import Blurb  from "@/components/Blurb";
 
 export default function IndexPage() {
   return (
-    <main className="container mx-auto min-h-screen max-w-9/10 p-8">
-      <h1 className="text-4xl font-bold mb-8">Hero section will go here</h1>
+    <main className="min-h-screen">
+      <section className="container mx-auto ">
+        <h1 className="text-4xl font-bold mb-8">Hero section will go here</h1>
+      </section>
+      
       <section 
       className="w-[80%] mx-auto flex justify-center space-x-8
       sm:max-lg:flex-col sm:max-lg:items-center sm:max-lg:space-x-0 sm:max-lg:space-y-8">
@@ -35,8 +38,10 @@ export default function IndexPage() {
           linkLabel="Explore Our Services"
         />
       </section>
+
       <section
-      className="w-[80%] mx-auto my-5 bg-brand-navy">
+      className="w-full py-14 my-5 bg-brand-navy">
+      <div className="w-[80%] mx-auto flex flex-col items-center">
         <Blurb 
           media={{
             type: "video",
@@ -49,9 +54,6 @@ export default function IndexPage() {
           linkLabel="Let's Build Your Next Rollout"
           reverse
         />
-      </section>
-      <section
-      className="w-[80%] mx-auto my-5 bg-brand-navy">
         <Blurb 
           media={{
             type: "image",
@@ -66,6 +68,7 @@ export default function IndexPage() {
           linkHref="#" 
           linkLabel="Get In Touch"
         />
+      </div>
       </section>
       
     </main>

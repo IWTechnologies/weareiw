@@ -28,7 +28,7 @@ interface BlurbProps {
 export default function Blurb({ media, title, text, linkHref, linkLabel, reverse=false }: BlurbProps) {
     return (
         <div 
-        className={`w-full flex items-center
+        className={`w-[80%] flex items-center
         ${reverse ? "flex-row-reverse" : "flex-row"}
         sm:max-lg:flex-col`}>
             {media.type === "image" && (
@@ -39,11 +39,10 @@ export default function Blurb({ media, title, text, linkHref, linkLabel, reverse
             )}
             {media.type === "video" && (
                 <iframe
-                className="h-auto w-1/2 object-contain
+                className="h-full w-1/2 object-contain
                 sm:max-lg:w-full" 
                 src={`https://www.youtube.com/embed/${media.youtubeId}`}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                title="Embedded youtube video"
                 allowFullScreen
                  />
             )}
