@@ -36,7 +36,7 @@ body {
   background: var(--brand-navy);
   clip-path: polygon(
     0% 100%,   /* bottom-left */
-    100% 0%,   /* top-right */
+    100% 50%,   /* top-right */
     100% 100%  /* bottom-right */
   );
   z-index: -1;

@@ -40,18 +40,28 @@ export default function IndexPage() {
       </section>
 
       <section className="section-bg-diagonal relative w-full py-14 mty-5">
-        <div className="relative z-10 text-brand-navy container mx-auto flex flex-col items-center">
+        <div className="relative container mx-auto flex flex-col items-center">
+          <div className="text-4xl text-brand-navy">
+            <h2>Your POS Technology Partner. Trusted by the Best</h2>
+          </div>
           <Blurb 
             media={{
               type: "video",
               youtubeId: "L4O1ejWfDAc",
             }}
             title=""
-            text="With a massive inventory of IT assets and the most skilled — and
-            dedicated — technicians in the industry, we are here to help you succeed."
+            text={[
+              `IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality,
+            Convenience, Distribution. We go beyond hardware — designing, deploying, and supporting
+            your tech stack.`,
+            `With 45+ years of experience and a 240,000 sq ft warehouse of new / 
+            refurbished inventory, we deliver fast, scalable solutions — mobile POS,
+            self-checkout, networking and more.`
+            ]}
             linkHref="#" 
             linkLabel="Let's Build Your Next Rollout"
             reverse
+            textColor="text-brand-navy"
           />
         </div>
       </section>
@@ -71,6 +81,7 @@ export default function IndexPage() {
             dedicated — technicians in the industry, we are here to help you succeed."
             linkHref="#" 
             linkLabel="Get In Touch"
+            textColor="text-white"
           />
         </div>
       </section>
