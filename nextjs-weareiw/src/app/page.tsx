@@ -39,9 +39,8 @@ export default function IndexPage() {
         />
       </section>
 
-      <section
-      className="w-full py-14 my-5 bg-brand-navy">
-        <div className="container mx-auto flex flex-col items-center">
+      <section className="section-bg-diagonal relative w-full py-14 mty-5">
+        <div className="relative z-10 text-brand-navy container mx-auto flex flex-col items-center">
           <Blurb 
             media={{
               type: "video",
@@ -54,6 +53,11 @@ export default function IndexPage() {
             linkLabel="Let's Build Your Next Rollout"
             reverse
           />
+        </div>
+      </section>
+      <section
+      className="w-full py-14 mby-5 bg-brand-navy">
+        <div className="container mx-auto flex flex-col items-center">
           <Blurb 
             media={{
               type: "image",

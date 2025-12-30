@@ -24,3 +24,20 @@ body {
   font-family: sans-serif;
 }
 
+.section-bg-diagonal {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-bg-diagonal:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--brand-navy);
+  clip-path: polygon(
+    0% 100%,   /* bottom-left */
+    100% 0%,   /* top-right */
+    100% 100%  /* bottom-right */
+  );
+  z-index: -1;
+}
