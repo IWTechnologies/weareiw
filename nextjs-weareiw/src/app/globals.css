@@ -24,6 +24,7 @@ body {
   font-family: sans-serif;
 }
 
+/* diagonal background shape for section */
 .section-bg-diagonal {
   position: relative;
   overflow: hidden;
@@ -40,4 +41,18 @@ body {
     100% 100%  /* bottom-right */
   );
   z-index: -1;
+}
+
+/* logo slider styles */
+@keyframes logo-scroll {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}
+
+.animate-logo-scroll {
+  animation: logo-scroll var(--duration) linear infinite;
 }

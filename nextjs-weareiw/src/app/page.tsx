@@ -4,12 +4,53 @@ import Link from "next/link";
 
 import Card from "@/components/Card";
 import Blurb  from "@/components/Blurb";
+import LogoSlider from "@/components/LogoSlider";
+
+const customerLogos = [
+    { src: "/customerLogos/Ace.png", alt: "Ace Hardware logo" },
+    { src: "/customerLogos/Aldi.png", alt: "Aldi logo" },
+    { src: "/customerLogos/Amazon.png", alt: "Amazon logo" },
+    { src: "/customerLogos/AppleBees.png", alt: "AppleBee's logo" },
+    { src: "/customerLogos/BathBodyWorks.png", alt: "Bath and Body Works logo" },
+    { src: "/customerLogos/Boscovs.png", alt: "Boscov logo" },
+    { src: "/customerLogos/Chilis.png", alt: "Chili's logo" },
+    { src: "/customerLogos/Cvs.png", alt: "Cvs logo" },
+    { src: "/customerLogos/Giant.png", alt: "Giant logo" },
+    { src: "/customerLogos/HomeDepot.png", alt: "Home Depot logo" },
+    { src: "/customerLogos/InNOut.png", alt: "In-N-Out logo" },
+    { src: "/customerLogos/JCPenny.png", alt: "JC Penny logo" },
+    { src: "/customerLogos/KnitWell.png", alt: "KnitWell logo" },
+    { src: "/customerLogos/Kroger.png", alt: "Kroger logo" },
+    { src: "/customerLogos/Macys.png", alt: "Macy's logo" },
+    { src: "/customerLogos/McAlistersDeli.png", alt: "McAlister's Deli logo" },
+    { src: "/customerLogos/Nordstrom.png", alt: "Nordstrom logo" },
+    { src: "/customerLogos/Ollies.jpg", alt: "Ollie's logo" },
+    { src: "/customerLogos/Speedway.png", alt: "Speedway logo" },
+    { src: "/customerLogos/StopShop.png", alt: "Stop and Shop logo" },
+    { src: "/customerLogos/Target.png", alt: "Target logo" },
+    { src: "/customerLogos/TraderJoes.png", alt: "Trader Joe's logo" },
+    { src: "/customerLogos/VictoriasSecret.png", alt: "Victoria's Secret logo" },
+    { src: "/customerLogos/Wegmans.png", alt: "Wegmans logo" },
+    { src: "/customerLogos/Wendys.png", alt: "Wendy's logo" },
+    { src: "/customerLogos/WholeFoods.png", alt: "Whole Foods logo" },
+];
+
+const partnerLogos = [
+    { src: "/partnerLogos/Cisco.png", alt: "Cisco logo" },
+    { src: "/partnerLogos/Datalogic.png", alt: "Datalogic logo" },
+    { src: "/partnerLogos/Dell.png", alt: "Dell logo" },
+    { src: "/partnerLogos/Elo.png", alt: "Elo logo" },
+    { src: "/partnerLogos/HP.png", alt: "HP logo" },
+    { src: "/partnerLogos/Microtouch.png", alt: "Microtouch logo" },
+    { src: "/partnerLogos/QSR.png", alt: "QSR Automations logo" },
+    { src: "/partnerLogos/Zebra.png", alt: "Zebra logo" },
+]
 
 export default function IndexPage() {
   return (
     <main className="min-h-screen">
       <section className="container mx-auto ">
-        <h1 className="text-4xl font-bold mb-8">Hero section will go here</h1>
+        <h1 className="text-4xl font-bold mb-8">Your End-to-End Point of Sale Partner</h1>
       </section>
       
       <section 
@@ -39,9 +80,22 @@ export default function IndexPage() {
         />
       </section>
 
-      <section className="section-bg-diagonal relative w-full py-14 mty-5">
+      <section className="w-[80%] my-15 mx-auto">
+        <div className="flex flex-col items-center">
+          <div className="font-extrabold text-3xl text-brand-navy text-center">
+            <h2>
+              Trusted by The Biggest Names in Retail, Hospitality, QSR, Convenience, Distribution & Pharmarcy.
+            </h2>
+          </div>
+          <div className="w-[80%] my-5 mt-10">
+            <LogoSlider logos={customerLogos} speed={75} />
+          </div>
+        </div>
+      </section>
+
+      <section className="section-bg-diagonal relative w-full py-14">
         <div className="relative container mx-auto flex flex-col items-center">
-          <div className="text-4xl text-brand-navy">
+          <div className="font-bold text-4xl text-brand-navy text-center">
             <h2>Your POS Technology Partner. Trusted by the Best</h2>
           </div>
           <Blurb 
@@ -66,7 +120,7 @@ export default function IndexPage() {
         </div>
       </section>
       <section
-      className="w-full py-14 mby-5 bg-brand-navy">
+      className="w-full py-14 mb-5 bg-brand-navy">
         <div className="container mx-auto flex flex-col items-center">
           <Blurb 
             media={{
@@ -83,6 +137,19 @@ export default function IndexPage() {
             linkLabel="Get In Touch"
             textColor="text-white"
           />
+        </div>
+      </section>
+
+      <section className="w-full my-15 mx-auto">
+        <div className="flex flex-col items-center">
+          <div className="font-extrabold text-3xl text-brand-navy text-center">
+            <h2>
+              Our Partners
+            </h2>
+          </div>
+          <div className="w-[80%] my-5 mt-10">
+            <LogoSlider logos={partnerLogos} speed={20} />
+          </div>
         </div>
       </section>
       
