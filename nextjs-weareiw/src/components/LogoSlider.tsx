@@ -9,7 +9,7 @@ type LogoSliderProps = {
     logos: Logo[];
     speed?: number;
 };
-
+/* */
 export default function LogoSlider({ logos, speed = 30 }: LogoSliderProps) {
     return (
         <div className="w-full overflow-hidden">
@@ -18,13 +18,13 @@ export default function LogoSlider({ logos, speed = 30 }: LogoSliderProps) {
             style={{ "--duration": `${speed}s` } as React.CSSProperties}
             >
                 {[...logos, ...logos].map((logo, index) => (
-                    <div key={index} className="flex-shrink-0 mx-10">
+                    <div key={index} className="w-[200px] px-8 py-4 flex items-center justify-center shrink-0">
                         <Image
                             src={logo.src}
                             alt={logo.alt}
                             width={160}
                             height={80}
-                            className="h-12 w-auto object-contain" 
+                            className="max-w-full h-auto object-contain" 
                         />
                     </div>
                 ))}

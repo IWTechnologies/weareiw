@@ -27,7 +27,7 @@ const customerLogos = [
     { src: "/customerLogos/Ollies.jpg", alt: "Ollie's logo" },
     { src: "/customerLogos/Speedway.png", alt: "Speedway logo" },
     { src: "/customerLogos/StopShop.png", alt: "Stop and Shop logo" },
-    { src: "/customerLogos/Target.png", alt: "Target logo" },
+    { src: "/customerLogos/Target2.png", alt: "Target logo" },
     { src: "/customerLogos/TraderJoes.png", alt: "Trader Joe's logo" },
     { src: "/customerLogos/VictoriasSecret.png", alt: "Victoria's Secret logo" },
     { src: "/customerLogos/Wegmans.png", alt: "Wegmans logo" },
