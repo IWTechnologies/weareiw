@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: ##F2F2F2;
   --foreground: #171717;
   --brand-navy: #0A1258;
   --brand-blue: #4280FC;
@@ -41,6 +41,11 @@ body {
     100% 100%  /* bottom-right */
   );
   z-index: -1;
+}
+@media screen and (max-width: 1023px) {
+  .section-bg-diagonal:before {
+    display: none;
+  }
 }
 
 /* logo slider styles */

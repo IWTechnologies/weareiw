@@ -29,17 +29,17 @@ interface BlurbProps {
 export default function Blurb({ media, title, text, linkHref, linkLabel, reverse=false, textColor="text-white" }: BlurbProps) {
     return (
         <div 
-        className={`w-[80%] flex items-center
-        ${reverse ? "flex-row-reverse" : "flex-row"}
-        sm:max-lg:flex-col`}>
+        className={`w-[90%] mx-auto flex flex-col items-center
+        lg:flex-row
+        ${reverse ? "lg:flex-row-reverse" : ""}
+        `}>
             {media.type === "image" && (
                 <Image
-                className="h-auto w-1/2 object-contain
-                sm:max-lg:w-full" 
+                className="w-full lg:w-1/2 h-auto object-contain" 
                 src={media.src} alt={media.alt} priority width={media.width} height={media.height} />
             )}
             {media.type === "video" && (
-                <div className="w-1/2 sm:max-lg:w-full aspect-video">
+                <div className="w-full lg:w-1/2 aspect-video">
                     <iframe
                     className="h-full w-full object-contain
                     sm:max-lg:w-full" 
@@ -52,20 +52,19 @@ export default function Blurb({ media, title, text, linkHref, linkLabel, reverse
             )}
     
             <div
-            className={`w-1/2 flex flex-col items-start p-8 ${textColor}
-            sm:max-lg:w-full`}>
+            className={`w-full lg:w-1/2 flex flex-col items-start p-8 ${textColor}`}>
                 {title && (<h2 className="pb-4 text-3xl font-bold">{title}</h2>)}
                 {Array.isArray(text) ? (
                 text.map((paragraph, index) => (
                     <p
                     key={index}
-                    className="pb-5 font-light text-2xl"
+                    className="pb-5 font-light lg:text-2xl"
                     >
                     {paragraph}
                     </p>
                 ))
                 ) : (
-                <p className="pb-5 font-light text-2xl">{text}</p>
+                <p className="pb-5 font-light lg:text-2xl">{text}</p>
                 )}
 
                 <Link href={linkHref} 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Card from "@/components/Card";
 import Blurb  from "@/components/Blurb";
 import LogoSlider from "@/components/LogoSlider";
+import HeroSection from "@/components/HeroSection";
 
 const customerLogos = [
     { src: "/customerLogos/Ace.png", alt: "Ace Hardware logo" },
@@ -48,14 +49,14 @@ const partnerLogos = [
 
 export default function IndexPage() {
   return (
-    <main className="min-h-screen">
-      <section className="container mx-auto ">
-        <h1 className="text-4xl font-bold mb-8">Your End-to-End Point of Sale Partner</h1>
+    <main className="">
+      <section className="">
+        <HeroSection />
       </section>
       
       <section 
-      className="w-[80%] mx-auto flex justify-center space-x-8
-      sm:max-lg:flex-col sm:max-lg:items-center sm:max-lg:space-x-0 sm:max-lg:space-y-8">
+      className="w-[80%] mx-auto flex flex-col items-center gap-8
+      lg:flex-row lg:justify-center lg:items-start">
         <Card 
           imageSrc="/View-our-products-Moody-blue.png"
           imageAlt="Blue tinted view our products card image"
@@ -82,7 +83,7 @@ export default function IndexPage() {
 
       <section className="w-[80%] my-15 mx-auto">
         <div className="flex flex-col items-center">
-          <div className="font-extrabold text-3xl text-brand-navy text-center">
+          <div className="w-[70%] font-extrabold text-3xl text-brand-navy text-center">
             <h2>
               Trusted by The Biggest Names in Retail, Hospitality, QSR, Convenience, Distribution & Pharmarcy.
             </h2>
@@ -95,7 +96,7 @@ export default function IndexPage() {
 
       <section className="section-bg-diagonal relative w-full py-14">
         <div className="relative container mx-auto flex flex-col items-center">
-          <div className="font-bold text-4xl text-brand-navy text-center">
+          <div className="pb-4 font-bold text-3xl lg:text-4xl text-brand-navy text-center">
             <h2>Your POS Technology Partner. Trusted by the Best</h2>
           </div>
           <Blurb 
@@ -121,7 +122,7 @@ export default function IndexPage() {
       </section>
       <section
       className="w-full py-14 mb-5 bg-brand-navy">
-        <div className="container mx-auto flex flex-col items-center">
+        <div className="container mx-auto flex justify-center">
           <Blurb 
             media={{
               type: "image",
