@@ -29,9 +29,9 @@ export default function Footer() {
                         <p>Phone: (847) 310-4200</p>
                         <p>Toll Free: (800) 544-5493</p>
                         <div className="flex justify-end space-x-2">
-                            <Link href="#" className=""><Image className="max-h-[25px] h-auto w-auto object-contain" src="/LinkedIn.jpg" alt="IW Linkedin" width={50} height={50} /></Link>
-                            <Link href="#" className=""><Image className="max-h-[25px] h-auto w-auto object-contain" src="/Facebook.jpg" alt="IW Facebook" width={50} height={50} /></Link>
-                            <Link href="#" className=""><Image className="max-h-[25px] h-auto w-auto object-contain" src="/Youtube.jpg" alt="IW Youtube" width={50} height={50} /></Link>
+                            <Link href="https://www.linkedin.com/company/iw-technologies" className="" target="_blank"><Image className="max-h-[25px] h-auto w-auto object-contain" src="/LinkedIn.jpg" alt="IW Linkedin" width={50} height={50} /></Link>
+                            <Link href="https://www.facebook.com/IWTechnologies/" className="" target="_blank"><Image className="max-h-[25px] h-auto w-auto object-contain" src="/Facebook.jpg" alt="IW Facebook" width={50} height={50} /></Link>
+                            <Link href="https://www.youtube.com/user/illinoiswholesale/videos" className="" target="_blank"><Image className="max-h-[25px] h-auto w-auto object-contain" src="/Youtube.jpg" alt="IW Youtube" width={50} height={50} /></Link>
                         </div>
                     </div>
                 </div>
