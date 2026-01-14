@@ -15,6 +15,9 @@ export default function Footer() {
                     src="/iw-logo-simple.png" alt="Simple IW Technologies Logo" 
                     width={1122} height={776} />
                     <Link href="#" className="p-4 bg-brand-aqua text-brand-navy">Get In Touch</Link>
+                    <Link href="https://www.termsfeed.com/live/5300ce41-8ea3-4e06-a1dc-198dd34fd3f2"
+                    className="text-brand-blue underline" target="_blank">Privacy Policy</Link>
+                    <Link href="https://www.weareiw.com/faq/" className="text-brand-blue underline" target="_blank">FAQ</Link>
                 </div>
                 <div className="w-1/2 flex flex-col justify-evenly items-end text-right">
                     <div>
