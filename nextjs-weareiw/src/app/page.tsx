@@ -88,7 +88,7 @@ export default function IndexPage() {
               Trusted by The Biggest Names in Retail, Hospitality, QSR, Convenience, Distribution & Pharmarcy.
             </h2>
           </div>
-          <div className="w-[80%] my-5 mt-10">
+          <div className="w-full lg:w-[80%] my-5 mt-10">
             <LogoSlider logos={customerLogos} speed={75} />
           </div>
         </div>
@@ -141,14 +141,14 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="w-full my-15 mx-auto">
+      <section className="w-[80%] my-15 mx-auto">
         <div className="flex flex-col items-center">
           <div className="font-extrabold text-3xl text-brand-navy text-center">
             <h2>
               Our Partners
             </h2>
           </div>
-          <div className="w-[80%] my-5 mt-10">
+          <div className="w-full my-5 mt-10">
             <LogoSlider logos={partnerLogos} speed={20} />
           </div>
         </div>
