@@ -17,19 +17,19 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
             {submenu ? (
                 <button
                 type="button"
-                className="text-brand-white hover:text-brand-aqua">
+                className="text-brand-white hover:text-brand-aqua hover:cursor-pointer">
                 {label}
                 </button>
             ) : (
                 <Link
                 href={href}
-                className="text-brand-white hover:text-brand-aqua">
+                className="text-brand-white hover:text-brand-aqua hover:cursor-pointer">
                 {label}
                 </Link>
             )}
 
             {submenu && open && (
-                <div className="absolute left-0 top-full bg-red-500">
+                <div className="absolute left-0 top-full bg-white">
                     <ul className="flex flex-col">
                         {submenu.map((item) => (
                         <li key={item.href}>
