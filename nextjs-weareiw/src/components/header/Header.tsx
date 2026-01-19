@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { navItems } from "@/data/navItems";
+import NavItem from "./NavItem";
 
 //this is base for the header, not final
 export default function Header() {
@@ -13,17 +15,10 @@ export default function Header() {
                         src="/iw-logo.png" alt="IW Technologies Logo" />
                     </Link>
                 </div>
-                <nav className="flex items-center justify-end space-x-8">
-                    <Link href="#" className="transition duration-300 ease-in-out
-                    hover:text-brand-aqua">Products</Link>
-                    <Link href="#" className="transition duration-300 ease-in-out
-                    hover:text-brand-aqua">Services</Link>
-                    <Link href="#" className="transition duration-300 ease-in-out
-                    hover:text-brand-aqua">About</Link>
-                    <Link href="#" className="transition duration-300 ease-in-out
-                    hover:text-brand-aqua">Blog</Link>
-                    <Link href="#" className="transition duration-300 ease-in-out
-                    hover:text-brand-aqua">Careers</Link>
+                <nav className="flex items-center justify-end space-x-6">
+                    {navItems.map((item) => (
+                        <NavItem key={item.label} {...item} />
+                    ))}
                     <Link href="#" className="transition duration-300 ease-in-out
                     bg-brand-aqua text-brand-navy">Get In Touch</Link>
                 </nav>
