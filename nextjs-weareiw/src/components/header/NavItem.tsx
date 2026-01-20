@@ -21,14 +21,14 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
             </Link>
 
             {submenu && (
-                <div className={`absolute left-0 top-full p-5 bg-white rounded-md shadow-lg
+                <div className={`absolute left-0 top-full w-max p-5 bg-white rounded-md shadow-lg
                     ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}>
-                    <ul className="w-max flex flex-col">
+                    <ul className="flex flex-col">
                         {submenu.map((item) => (
-                        <li key={item.href}>
+                        <li key={item.href} className="pt-[0.5em] px-[1em]">
                             <Link
                             href={item.href}
-                            className="pt-[0.15em] px-[1em] text-brand-navy hover:text-brand-aqua">
+                            className="text-brand-navy hover:text-brand-aqua">
                             {item.label}
                             </Link>
                         </li>
