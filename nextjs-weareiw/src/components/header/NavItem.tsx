@@ -14,19 +14,11 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
         >
-            {submenu ? (
-                <button
-                type="button"
-                className="text-brand-white hover:text-brand-aqua hover:cursor-pointer">
-                {label}
-                </button>
-            ) : (
-                <Link
-                href={href}
-                className="text-brand-white hover:text-brand-aqua hover:cursor-pointer">
-                {label}
-                </Link>
-            )}
+            <Link
+            href={href}
+            className="text-brand-white hover:text-brand-aqua hover:cursor-pointer">
+            {label}
+            </Link>
 
             {submenu && open && (
                 <div className="absolute left-0 top-full p-5 bg-white">
