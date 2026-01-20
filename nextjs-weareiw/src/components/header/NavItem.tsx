@@ -21,11 +21,11 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
             </Link>
 
             {submenu && (
-                <div className={`absolute left-0 top-full w-max p-5 bg-white rounded-md shadow-lg
+                <div className={`absolute left-0 top-full w-max p-5 pt-4 bg-white rounded-md shadow-lg
                     ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}>
                     <ul className="flex flex-col">
                         {submenu.map((item) => (
-                        <li key={item.href} className="pt-[0.5em] px-[1em]">
+                        <li key={item.href} className="py-[0.5em] px-[1em]">
                             <Link
                             href={item.href}
                             className="text-brand-navy hover:text-brand-aqua">
