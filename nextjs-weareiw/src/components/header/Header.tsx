@@ -15,7 +15,7 @@ export default function Header() {
                         src="/iw-logo.png" alt="IW Technologies Logo" />
                     </Link>
                 </div>
-                <nav className="flex items-center justify-end space-x-6">
+                <nav className="flex items-center space-x-6">
                     {navItems.map((item) => (
                         <NavItem key={item.label} {...item} />
                     ))}

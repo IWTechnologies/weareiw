@@ -10,7 +10,7 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="relative"
+        <div className="relative h-full flex items-center"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
         >
@@ -29,13 +29,13 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
             )}
 
             {submenu && open && (
-                <div className="absolute left-0 top-full bg-white">
-                    <ul className="flex flex-col">
+                <div className="absolute left-0 top-full p-5 bg-white">
+                    <ul className="w-[240px] flex flex-col">
                         {submenu.map((item) => (
                         <li key={item.href}>
                             <Link
                             href={item.href}
-                            className="block text-brand-navy hover:text-brand-aqua">
+                            className="text-brand-navy hover:text-brand-aqua">
                             {item.label}
                             </Link>
                         </li>
