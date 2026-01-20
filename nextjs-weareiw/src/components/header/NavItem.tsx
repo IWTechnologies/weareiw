@@ -21,7 +21,7 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
             </Link>
 
             {submenu && open && (
-                <div className="absolute left-0 top-full p-5 bg-white">
+                <div className="absolute left-0 top-full p-5 bg-white rounded-md shadow-lg">
                     <ul className="w-[240px] flex flex-col">
                         {submenu.map((item) => (
                         <li key={item.href}>
