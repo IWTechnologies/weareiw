@@ -24,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} ${openSans.className} antialiased`}>
+        className={`${montserrat.className} ${openSans.className} antialiased flex flex-col min-h-screen`}>
         <Header />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

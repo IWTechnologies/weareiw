@@ -49,7 +49,7 @@ const partnerLogos = [
 
 export default function IndexPage() {
   return (
-    <main className="">
+    <div className="">
       <section className="">
         <HeroSection />
       </section>
@@ -154,6 +154,6 @@ export default function IndexPage() {
         </div>
       </section>
       
-    </main>
+    </div>
   );
 }
