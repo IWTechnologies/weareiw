@@ -6,7 +6,7 @@ import type { NavItem as NavItemType } from "@/data/navItems";
 
 type NavItemProps = NavItemType;
 
-export default function NavItem({ label, href, submenu }: NavItemProps) {
+export default function NavItem({ label, href, isExternal, submenu }: NavItemProps) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -16,6 +16,8 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
         >
             <Link
             href={href}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined}
             className="py-5 text-brand-white hover:text-brand-aqua hover:cursor-pointer">
             {label}
             </Link>
@@ -28,6 +30,8 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
                         <li key={item.href} className="py-[0.5em] px-[1em]">
                             <Link
                             href={item.href}
+                            target={item.isExternal ? "_blank" : undefined}
+                            rel={item.isExternal ? "noopener noreferrer" : undefined}
                             className="text-brand-navy hover:text-brand-aqua">
                             {item.label}
                             </Link>
