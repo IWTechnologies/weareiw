@@ -16,7 +16,7 @@ export default function NavItem({ label, href, submenu }: NavItemProps) {
         >
             <Link
             href={href}
-            className="text-brand-white hover:text-brand-aqua hover:cursor-pointer">
+            className="py-5 text-brand-white hover:text-brand-aqua hover:cursor-pointer">
             {label}
             </Link>
 

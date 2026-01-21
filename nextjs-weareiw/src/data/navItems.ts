@@ -44,6 +44,10 @@ export const navItems: NavItem[] = [
         href: "/blog",
     },
     {
+        label: "Shop",
+        href: "/shop",
+    },
+    {
         label: "Careers",
         href: "/careers",
     },
