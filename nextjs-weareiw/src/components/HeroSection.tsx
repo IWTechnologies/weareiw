@@ -11,17 +11,17 @@ export default function HeroSection() {
             <div className="absolute inset-0 z-10 bg-gradient-to-t from-background to-transparent"></div>
 
             <div className="relative z-11 min-h-dvh w-1/2 mx-auto flex flex-col items-start justify-center">
-                <h1 className="pb-5 text-4xl font-bold text-white">
+                <h1 className="pb-5 text-5xl font-bold text-brand-navy">
                 Your End-to-End Point of Sale Partner
                 </h1>
-                <p className="pb-5 text-2xl font-medium text-white">
+                <p className="pb-5 text-2xl font-medium text-brand-navy">
                     IW Technologies pairs cutting-edge technology with
                     unmatched customer service to be your complete
                     enterprise solution partner.
                 </p>
                 <Link href="#" 
                 className="transition duration-300 ease-in-out px-[1em] py-[.33em]
-                border-3 border-brand-aqua rounded-md text-[22px] bg-brand-aqua
+                border-3 border-brand-aqua rounded-md text-[22px] text-brand-navy bg-brand-aqua
                 hover:bg-transparent hover:text-brand-aqua">
                     Partner With Us
                 </Link>
