@@ -10,11 +10,11 @@ export default function HeroSection() {
             </video>
             <div className="absolute inset-0 z-10 bg-gradient-to-t from-background to-transparent"></div>
 
-            <div className="relative z-11 min-h-dvh w-[80%] mx-auto flex flex-col items-start justify-center">
-                <h1 className="text-4xl font-bold text-white">
+            <div className="relative z-11 min-h-dvh w-1/2 mx-auto flex flex-col items-start justify-center">
+                <h1 className="pb-5 text-4xl font-bold text-white">
                 Your End-to-End Point of Sale Partner
                 </h1>
-                <p className="text-2xl font-bold text-white">
+                <p className="pb-5 text-2xl font-medium text-white">
                     IW Technologies pairs cutting-edge technology with
                     unmatched customer service to be your complete
                     enterprise solution partner.
