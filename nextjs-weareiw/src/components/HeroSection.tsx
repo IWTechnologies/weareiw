@@ -8,8 +8,9 @@ export default function HeroSection() {
             <source src="/video/Hero-Video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
             </video>
+            <div className="absolute inset-0 z-10 bg-gradient-to-t from-background to-transparent"></div>
 
-            <div className="relative z-10 min-h-dvh w-[80%] mx-auto flex flex-col items-start justify-center">
+            <div className="relative z-11 min-h-dvh w-[80%] mx-auto flex flex-col items-start justify-center">
                 <h1 className="text-4xl font-bold text-white">
                 Your End-to-End Point of Sale Partner
                 </h1>
