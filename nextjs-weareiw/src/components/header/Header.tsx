@@ -54,7 +54,10 @@ export default function Header() {
 
                 <Link
                     href="#"
-                    className="mt-6 bg-brand-aqua text-brand-navy px-4 py-3 rounded-md text-center"
+                    className="mt-6 px-[1em] py-[.33em] rounded-md text-center
+                    transition duration-300 ease-in-out
+                    border-3 border-brand-aqua bg-brand-aqua text-brand-navy
+                    hover:bg-transparent hover:text-brand-aqua"
                     onClick={() => setMobileOpen(false)}
                 >
                     Get In Touch
