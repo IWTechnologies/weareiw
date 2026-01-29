@@ -26,8 +26,10 @@ export default function Header() {
                     {navItems.map((item) => (
                         <NavItem key={item.label} {...item} />
                     ))}
-                    <Link href="#" className="transition duration-300 ease-in-out
-                    bg-brand-aqua text-brand-navy">Get In Touch</Link>
+                    <Link href="#" className="px-4 py-3 rounded-md text-center
+                    transition duration-300 ease-in-out
+                    bg-brand-aqua text-brand-navy
+                    hover:bg-transparent hover:text-brand-aqua">Get In Touch</Link>
                 </nav>
 
                 {/* Mobile Nav */}
