@@ -26,9 +26,9 @@ export default function Header() {
                     {navItems.map((item) => (
                         <NavItem key={item.label} {...item} />
                     ))}
-                    <Link href="#" className="px-4 py-3 rounded-md text-center
+                    <Link href="#" className="px-[1em] py-[.33em] rounded-md text-center
                     transition duration-300 ease-in-out
-                    bg-brand-aqua text-brand-navy
+                    border-3 border-brand-aqua bg-brand-aqua text-brand-navy
                     hover:bg-transparent hover:text-brand-aqua">Get In Touch</Link>
                 </nav>
 
