@@ -31,10 +31,10 @@ export default function Header() {
                 </nav>
 
                 {/* Mobile Nav */}
-                {/* Burger Button mobile only */}
+                {/* Burger Button */}
                 <button
                 onClick={() => setMobileOpen((prev) => !prev)}
-                className="lg:hidden flex flex-col gap-1"
+                className="lg:hidden flex flex-col gap-1 hover:cursor-pointer"
                 aria-label="Toggle menu"
                 >
                 <span className="w-6 h-[2px] bg-white" />
@@ -42,6 +42,24 @@ export default function Header() {
                 <span className="w-6 h-[2px] bg-white" />
                 </button>
             </div>
+
+            {mobileOpen && (
+            <div className="fixed inset-0 top-[123px] w-full h-[calc(100dvh-123px)] bg-brand-navy z-40 overflow-y-auto">
+                <nav className="flex flex-col px-6 pt-6 space-y-4">
+                {navItems.map((item) => (
+                    <NavItem key={item.label} {...item} />
+                ))}
+
+                <Link
+                    href="#"
+                    className="mt-6 bg-brand-aqua text-brand-navy px-4 py-3 rounded-md text-center"
+                    onClick={() => setMobileOpen(false)}
+                >
+                    Get In Touch
+                </Link>
+                </nav>
+            </div>
+            )}
         </header>
     )
 }
