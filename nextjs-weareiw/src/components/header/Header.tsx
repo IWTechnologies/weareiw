@@ -3,12 +3,33 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { useEffect } from "react";
 import { navItems } from "@/data/navItems";
 import NavItem from "./NavItem";
+
+
 
 //this is base for the header, not final
 export default function Header() {
     const [mobileOpen, setMobileOpen] = useState(false);
+
+    {/* listen for screen size change and closes mobile nav when screen width
+        becomes desktop nav size */}
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+        const handleChange = () => {
+            if(mediaQuery.matches) {
+                setMobileOpen(false);
+            }
+        };
+
+        mediaQuery.addEventListener("change", handleChange);
+
+        return () => {
+            mediaQuery.removeEventListener("change", handleChange);
+        };
+    }, []);
 
     return (
         <header className="sticky top-0 z-50 h-[123px] flex items-center bg-brand-navy font-semibold text-xl text-white">
@@ -21,7 +42,7 @@ export default function Header() {
                     </Link>
                 </div>
 
-                {/* Desktop Nav hidden until lg breakpoint*/}
+                {/* Desktop Nav hidden until lg breakpoint */}
                 <nav className="hidden lg:flex items-center space-x-6">
                     {navItems.map((item) => (
                         <NavItem key={item.label} {...item} />
