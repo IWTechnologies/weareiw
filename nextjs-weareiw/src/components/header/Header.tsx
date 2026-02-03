@@ -8,7 +8,6 @@ import { navItems } from "@/data/navItems";
 import NavItem from "./NavItem";
 
 
-
 //this is base for the header, not final
 export default function Header() {
     const [mobileOpen, setMobileOpen] = useState(false);
