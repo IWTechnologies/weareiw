@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { navItems } from "@/data/navItems";
 import NavItem from "./NavItem";
+import MobileNav from "./MobileNav";
 
 
 //this is base for the header, not final
@@ -65,26 +66,7 @@ export default function Header() {
                 </button>
             </div>
 
-            {mobileOpen && (
-            <div className="fixed inset-0 top-[123px] w-full h-[calc(100dvh-123px)] bg-brand-navy z-40 overflow-y-auto">
-                <nav className="flex flex-col px-6 pt-6 space-y-4">
-                {navItems.map((item) => (
-                    <NavItem key={item.label} {...item} />
-                ))}
-
-                <Link
-                    href="#"
-                    className="mt-6 px-[1em] py-[.33em] rounded-md text-center
-                    transition duration-300 ease-in-out
-                    border-3 border-brand-aqua bg-brand-aqua text-brand-navy
-                    hover:bg-transparent hover:text-brand-aqua"
-                    onClick={() => setMobileOpen(false)}
-                >
-                    Get In Touch
-                </Link>
-                </nav>
-            </div>
-            )}
+            <MobileNav open={mobileOpen} onClose={() => setMobileOpen(false)} />
         </header>
     )
 }

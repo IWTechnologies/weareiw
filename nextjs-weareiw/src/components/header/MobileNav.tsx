@@ -1,7 +1,36 @@
 "use client"
 
 import Link from "next/link";
-import { useState } from "react";
-import type { NavItem as NavItemType } from "@/data/navItems";
+import { navItems } from "@/data/navItems";
+import MobileNavItem from "./MobileNavItem";
 
+type MobileNavProps = {
+    open: boolean;
+    onClose: () => void;
+};
 
+export default function MobileNav({ open, onClose }: MobileNavProps ) {
+    return (
+        <div className={`absolute left-0 top-full w-full h-[calc(100dvh-123px)] flex flex-col bg-brand-navy text-white
+            transition-all duration-300 ease-in-out
+            ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}`}
+            role="dialog" aria-modal="true" aria-label="mobile navigation"
+        >
+            <nav className="flex flex-col">
+                {navItems.map((item) => (
+                    <MobileNavItem key={item.label} {...item} />
+                ))}
+            </nav>
+            <Link 
+            href="#"
+            className="m-6 px-[1em] py-[.33em] rounded-md text-center
+            transition duration-300 ease-in-out
+            border-3 border-brand-aqua bg-brand-aqua text-brand-navy
+            hover:bg-transparent hover:text-brand-aqua"
+            onClick={onClose}
+            >
+                Get In Touch
+            </Link>
+        </div>
+    )
+}
