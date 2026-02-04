@@ -18,6 +18,10 @@
   --color-brand-aqua: var(--brand-aqua);
 }
 
+@theme {
+  --inset-shadow-md: inset 0 0 10px rgba(0, 0, 0, 0.50);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

@@ -29,7 +29,7 @@ export default function MobileNavItem({ label, href, submenu }: NavItemType) {
             {hasSubmenu && (
                 <ul
                 id={`${label}-submenu`}
-                className={`pl-10 pb-2 transition-all ${
+                className={`pl-10 pb-2 inset-shadow-md transition-all ${
                     open ? "block" : "hidden"
                 }`}
                 >
