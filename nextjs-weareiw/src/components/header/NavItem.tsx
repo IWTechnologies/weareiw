@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import type { NavItem as NavItemType } from "@/data/navItems";
 
@@ -8,6 +9,8 @@ type NavItemProps = NavItemType;
 
 export default function NavItem({ label, href, isExternal, submenu }: NavItemProps) {
     const [open, setOpen] = useState(false);
+    const pathname = usePathname();
+    const isActive = pathname !== "/" && pathname.startsWith(href);
 
     return (
         <div className="relative h-full flex items-center"
@@ -18,7 +21,8 @@ export default function NavItem({ label, href, isExternal, submenu }: NavItemPro
             href={href}
             target={isExternal ? "_blank" : undefined}
             rel={isExternal ? "noopener noreferrer" : undefined}
-            className="py-5 text-brand-white hover:text-brand-aqua hover:cursor-pointer">
+            className={`py-5 hover:cursor-pointer 
+            ${isActive ? "text-brand-aqua" : "text-brand-white hover:text-brand-aqua"}`}>
             {label}
             </Link>
 
