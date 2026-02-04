@@ -12,7 +12,7 @@ export default function MobileNavItem({ label, href, submenu }: NavItemType) {
     const isActive = pathname !== "/" && pathname.startsWith(href);
     
     return (
-        <div className="">
+        <div>
             <div className="flex items-center justify-between px-6 py-4">
                 <Link href={href} className={`${isActive ? "text-brand-aqua" : "text-white"}`}>
                     {label}
