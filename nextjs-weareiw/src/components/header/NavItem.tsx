@@ -22,7 +22,7 @@ export default function NavItem({ label, href, isExternal, submenu }: NavItemPro
             target={isExternal ? "_blank" : undefined}
             rel={isExternal ? "noopener noreferrer" : undefined}
             className={`py-5 hover:cursor-pointer 
-            ${isActive ? "text-brand-aqua" : "text-brand-white hover:text-brand-aqua"}`}>
+            ${isActive ? "text-brand-aqua" : "text-white hover:text-brand-aqua"}`}>
             {label}
             </Link>
 

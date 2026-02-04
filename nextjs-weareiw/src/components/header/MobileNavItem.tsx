@@ -1,15 +1,20 @@
+"use client"
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import type { NavItem as NavItemType } from "@/data/navItems";
 
 export default function MobileNavItem({ label, href, submenu }: NavItemType) {
     const [open, setOpen] = useState(false);
-    const hasSubmenu = Boolean(submenu)
+    const hasSubmenu = Boolean(submenu);
+    const pathname = usePathname();
+    const isActive = pathname !== "/" && pathname.startsWith(href);
     
     return (
         <div className="">
             <div className="flex items-center justify-between px-6 py-4">
-                <Link href={href} className="text-white hover:text-brand-aqua">
+                <Link href={href} className={`${isActive ? "text-brand-aqua" : "text-white"}`}>
                     {label}
                 </Link>
 
