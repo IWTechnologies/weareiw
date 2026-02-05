@@ -18,7 +18,7 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
         >
             <nav className="flex flex-col">
                 {navItems.map((item) => (
-                    <MobileNavItem key={item.label} {...item} />
+                    <MobileNavItem key={item.label} {...item} onNavigate={onClose}/>
                 ))}
             </nav>
             <Link 

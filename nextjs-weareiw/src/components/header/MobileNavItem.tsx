@@ -5,7 +5,11 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import type { NavItem as NavItemType } from "@/data/navItems";
 
-export default function MobileNavItem({ label, href, submenu }: NavItemType) {
+type MobileNavItemProps = NavItemType & {
+    onNavigate: () => void;
+};
+
+export default function MobileNavItem({ label, href, submenu, onNavigate }: MobileNavItemProps) {
     const [open, setOpen] = useState(false);
     const hasSubmenu = Boolean(submenu);
     const pathname = usePathname();
@@ -14,7 +18,7 @@ export default function MobileNavItem({ label, href, submenu }: NavItemType) {
     return (
         <div>
             <div className="flex items-center justify-between px-6 py-4">
-                <Link href={href} className={`${isActive ? "text-brand-aqua" : "text-white"}`}>
+                <Link href={href} onClick={onNavigate} className={`${isActive ? "text-brand-aqua" : "text-white"}`}>
                     {label}
                 </Link>
 
@@ -41,7 +45,7 @@ export default function MobileNavItem({ label, href, submenu }: NavItemType) {
                 {submenu!.map((item) => (
                     <li key={item.href}>
                     <Link
-                        href={item.href}
+                        href={item.href} onClick={onNavigate}
                         className="block py-2 text-white hover:text-brand-aqua"
                     >
                         {item.label}
