@@ -18,7 +18,7 @@ export default function MobileNavItem({ label, href, submenu, onNavigate }: Mobi
     return (
         <div>
             <div className="flex items-center justify-between px-6 py-4">
-                <Link href={href} onClick={onNavigate} className={`${isActive ? "text-brand-aqua" : "text-white"}`}>
+                <Link href={href} onClick={onNavigate} className={`${isActive ? "text-brand-aqua" : "text-white hover:text-brand-aqua"}`}>
                     {label}
                 </Link>
 
