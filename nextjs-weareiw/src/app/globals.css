@@ -52,6 +52,10 @@ body {
   }
 }
 
+#partners {
+  scroll-margin-top: 123px;
+}
+
 /* logo slider styles */
 @keyframes logo-scroll {
   from {
