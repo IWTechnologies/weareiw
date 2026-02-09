@@ -14,7 +14,12 @@ export default function Footer() {
                     <Image className="max-h-[100px] h-auto w-auto object-contain mb-8" 
                     src="/iw-logo-simple.png" alt="Simple IW Technologies Logo" 
                     width={1122} height={776} />
-                    <Link href="#" className="p-4 bg-brand-aqua text-brand-navy">Get In Touch</Link>
+                    <Link href="#"
+                    className="p-4 rounded-md text-center
+                    transition duration-300 ease-in-out
+                    border-3 border-brand-aqua bg-brand-aqua text-brand-navy
+                    hover:bg-transparent hover:text-brand-aqua">
+                        Get In Touch</Link>
                     <Link href="https://www.termsfeed.com/live/5300ce41-8ea3-4e06-a1dc-198dd34fd3f2"
                     className="text-brand-blue underline" target="_blank">Privacy Policy</Link>
                     <Link href="https://www.weareiw.com/faq/" className="text-brand-blue underline" target="_blank">FAQ</Link>
