@@ -11,7 +11,7 @@ type MobileNavProps = {
 
 export default function MobileNav({ open, onClose }: MobileNavProps ) {
     return (
-        <div className={`absolute left-0 top-full w-full h-[calc(100dvh-123px)] flex flex-col bg-brand-navy text-white
+        <div className={`absolute left-0 top-full w-full h-[calc(100dvh-123px)] flex flex-col bg-brand-black text-white
             transition-all duration-300 ease-in-out
             ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}`}
             role="dialog" aria-modal="true" aria-label="mobile navigation"
@@ -25,8 +25,8 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
             href="#"
             className="m-6 px-[1em] py-[.33em] rounded-md text-center
             transition duration-300 ease-in-out
-            border-3 border-brand-aqua bg-brand-aqua text-brand-navy
-            hover:bg-transparent hover:text-brand-aqua"
+            border-3 border-background bg-background text-brand-navy
+            hover:bg-transparent hover:text-background"
             onClick={onClose}
             >
                 Get In Touch
