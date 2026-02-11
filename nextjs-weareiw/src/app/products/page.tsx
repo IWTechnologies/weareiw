@@ -1,9 +1,12 @@
+import ProductsHero from "@/components/ProductsHero";
 import Blurb  from "@/components/Blurb";
 
 export default function ProductsPage() {
     return (
         <div>
-            <div>hello this is a test</div>
+            <section className="">
+            <ProductsHero />
+            </section>
             <section className="section-bg-diagonal relative w-full py-14">
                 <div className="relative container mx-auto flex flex-col items-center">
                     <div className="pb-4 font-bold text-3xl lg:text-4xl text-brand-navy text-center">
@@ -26,7 +29,7 @@ export default function ProductsPage() {
                     linkHref="#" 
                     linkLabel="Let's Build Your Next Rollout"
                     reverse
-                    textColor="text-brand-navy"
+                    textColor="text-brand-black"
                     />
                 </div>
             </section>
@@ -52,7 +55,7 @@ export default function ProductsPage() {
                     linkHref="#" 
                     linkLabel="Let's Build Your Next Rollout"
                     reverse
-                    textColor="text-brand-navy"
+                    textColor="text-brand-black"
                     />
                 </div>
             </section>
@@ -78,7 +81,7 @@ export default function ProductsPage() {
                     linkHref="#" 
                     linkLabel="Let's Build Your Next Rollout"
                     reverse
-                    textColor="text-brand-navy"
+                    textColor="text-brand-black"
                     />
                 </div>
             </section>

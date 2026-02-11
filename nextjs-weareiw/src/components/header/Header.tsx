@@ -32,7 +32,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className="sticky top-0 z-50 h-[123px] flex items-center bg-brand-navy font-semibold text-xl text-white">
+        <header className="sticky top-0 z-50 h-[123px] flex items-center bg-brand-black font-semibold text-xl text-white">
             <div className="h-full w-[95%] mx-auto flex justify-between items-center">
                 <div className="h-full flex items-center">
                     <Link href="/">
@@ -49,8 +49,8 @@ export default function Header() {
                     ))}
                     <Link href="#" className="px-[1em] py-[.33em] rounded-md text-center
                     transition duration-300 ease-in-out
-                    border-3 border-brand-aqua bg-brand-aqua text-brand-navy
-                    hover:bg-transparent hover:text-brand-aqua">Get In Touch</Link>
+                    border-3 border-background bg-background text-brand-navy
+                    hover:bg-transparent hover:text-background">Get In Touch</Link>
                 </nav>
 
                 {/* Mobile Nav */}

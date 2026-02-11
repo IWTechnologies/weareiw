@@ -6,6 +6,7 @@
   --brand-navy: #0A1258;
   --brand-blue: #4280FC;
   --brand-aqua: #40e0d0;
+  --brand-ink-black: #020216;
 }
 
 /* might remove the spacing, default is 0.25rem */
@@ -16,6 +17,7 @@
   --color-brand-navy: var(--brand-navy);
   --color-brand-blue: var(--brand-blue);
   --color-brand-aqua: var(--brand-aqua);
+  --color-brand-black: var(--brand-ink-black);
 }
 
 @theme {

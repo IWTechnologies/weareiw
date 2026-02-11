@@ -23,7 +23,7 @@ interface BlurbProps {
     linkHref: string;
     linkLabel: string;
     reverse?: boolean;
-    textColor?: "text-white" | "text-brand-navy";
+    textColor?: "text-white" | "text-brand-black";
 };
 
 export default function Blurb({ media, title, text, linkHref, linkLabel, reverse=false, textColor="text-white" }: BlurbProps) {

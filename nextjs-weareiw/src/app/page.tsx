@@ -83,7 +83,7 @@ export default function IndexPage() {
 
       <section className="w-[80%] my-15 mx-auto">
         <div className="flex flex-col items-center">
-          <div className="w-[70%] font-extrabold text-3xl text-brand-navy text-center">
+          <div className="w-[70%] font-extrabold text-3xl text-brand-black text-center">
             <h2>
               Trusted by The Biggest Names in Retail, Hospitality, QSR, Convenience, Distribution & Pharmarcy.
             </h2>
@@ -94,9 +94,32 @@ export default function IndexPage() {
         </div>
       </section>
 
+    <section
+      className="w-full py-14 mb-5">
+        <div className="container mx-auto flex justify-center">
+          <Blurb 
+            media={{
+              type: "image",
+              src: "/Team-Moody-Blue-1.webp",
+              alt: "Blue tinted image of IW team in meeting",
+              width: 512,
+              height: 342,
+            }}
+            title="Someone has to own POS. We do"
+            text={[
+              `POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.`,
+              `From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.`,
+              `We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.`
+            ]}
+            linkHref="#" 
+            linkLabel="Get In Touch"
+            textColor="text-brand-black"
+          />
+        </div>
+      </section>
       <section className="section-bg-diagonal relative w-full py-14">
         <div className="relative container mx-auto flex flex-col items-center">
-          <div className="pb-4 font-bold text-3xl lg:text-4xl text-brand-navy text-center">
+          <div className="pb-4 font-bold text-3xl lg:text-4xl text-brand-black text-center">
             <h2>Your POS Technology Partner. Trusted by the Best</h2>
           </div>
           <Blurb 
@@ -116,7 +139,7 @@ export default function IndexPage() {
             linkHref="#" 
             linkLabel="Let's Build Your Next Rollout"
             reverse
-            textColor="text-brand-navy"
+            textColor="text-brand-black"
           />
         </div>
       </section>
@@ -143,7 +166,7 @@ export default function IndexPage() {
 
       <section className="w-[80%] my-15 mx-auto">
         <div className="flex flex-col items-center">
-          <div className="font-extrabold text-3xl text-brand-navy text-center">
+          <div className="font-extrabold text-3xl text-brand-black text-center">
             <h2>
               Our Partners
             </h2>
