@@ -94,8 +94,7 @@ export default function IndexPage() {
         </div>
       </section>
 
-    <section
-      className="w-full py-14 mb-5">
+    <section className="w-full py-14 mb-5">
         <div className="container mx-auto flex justify-center">
           <Blurb 
             media={{
@@ -117,8 +116,8 @@ export default function IndexPage() {
           />
         </div>
       </section>
-      <section className="section-bg-diagonal relative w-full py-14">
-        <div className="relative container mx-auto flex flex-col items-center">
+      <section className="w-full py-14">
+        <div className="container mx-auto flex flex-col items-center">
           <div className="pb-4 font-bold text-3xl lg:text-4xl text-brand-black text-center">
             <h2>Your POS Technology Partner. Trusted by the Best</h2>
           </div>
