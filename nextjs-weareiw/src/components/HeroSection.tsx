@@ -12,18 +12,19 @@ export default function HeroSection() {
 
             <div className="relative z-11 min-h-dvh w-1/2 mx-auto flex flex-col items-start justify-center">
                 <h1 className="pb-5 text-5xl font-bold text-brand-black">
-                Your End-to-End Point of Sale Partner
+                Your end-to-end point of sale partner.
                 </h1>
+                <p className="text-2xl font-medium text-brand-black">
+                    One partner accountable for POS from install to retirement.
+                </p>
                 <p className="pb-5 text-2xl font-medium text-brand-black">
-                    IW Technologies pairs cutting-edge technology with
-                    unmatched customer service to be your complete
-                    enterprise solution partner.
+                    No handoffs. Clear ownership.
                 </p>
                 <Link href="#" 
                 className="transition duration-300 ease-in-out px-[1em] py-[.33em]
                 border-3 border-brand-black rounded-md text-[22px] text-white bg-brand-black
                 hover:bg-transparent hover:text-brand-black">
-                    Partner With Us
+                    See How We Work
                 </Link>
             </div>
         </div>
