@@ -62,22 +62,23 @@ export default function IndexPage() {
           imageAlt="Blue tinted view our products card image"
           imageWidth={663}
           imageHeight={432}
-          title="Products We Stand Behind"
-          text="From displays to scanners to printers, we offer a wide range
-          of new and expertly refurbished IT assets from a variety of manufacturers."
+          title="Hardware that fits into a bigger picture"
+          subTitle="Hardware decisions shouldn't create downstream problems."
+          text="We source new and refurbished POS hardware that’s designed to deploy cleanly, 
+          operate reliably, and integrate into a long-term lifecycle."
           linkHref="#"
-          linkLabel="View Our Products"
+          linkLabel="Explore hardware"
         />
         <Card 
           imageSrc="/Services-Moody-Blue.png"
           imageAlt="Blue tinted Services card image"
           imageWidth={669}
           imageHeight={375}
-          title="Services for Every Stage"
-          text="From installation to on-site repair to e-cycling, our service
-          offerings can cover the full lifecycle of your technology or be chosen a la carte."
+          title="Services built for life after install"
+          subTitle="Installing POS is straightforward. Keeping it running at scale is where complexity shows up."
+          text="Our services exist to take that weight off your teams whether you need support in one area or end-to-end."
           linkHref="#"
-          linkLabel="Explore Our Services"
+          linkLabel="See how we support the lifecycle"
         />
       </section>
 
