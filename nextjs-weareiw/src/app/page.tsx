@@ -55,31 +55,33 @@ export default function IndexPage() {
       </section>
       
       <section 
-      className="w-[80%] mx-auto flex flex-col items-center gap-8
-      lg:flex-row lg:justify-center lg:items-start">
-        <Card 
-          imageSrc="/View-our-products-Moody-blue.png"
-          imageAlt="Blue tinted view our products card image"
-          imageWidth={663}
-          imageHeight={432}
-          title="Hardware that fits into a bigger picture"
-          subTitle="Hardware decisions shouldn't create downstream problems."
-          text="We source new and refurbished POS hardware that’s designed to deploy cleanly, 
-          operate reliably, and integrate into a long-term lifecycle."
-          linkHref="#"
-          linkLabel="Explore hardware"
-        />
-        <Card 
-          imageSrc="/Services-Moody-Blue.png"
-          imageAlt="Blue tinted Services card image"
-          imageWidth={669}
-          imageHeight={375}
-          title="Services built for life after install"
-          subTitle="Installing POS is straightforward. Keeping it running at scale is where complexity shows up."
-          text="Our services exist to take that weight off your teams whether you need support in one area or end-to-end."
-          linkHref="#"
-          linkLabel="See how we support the lifecycle"
-        />
+      className="w-[80%] mx-auto flex flex-col items-center">
+        <div className="w-full flex flex-col items-center gap-8
+        lg:flex-row lg:justify-center lg:items-start">
+          <Card 
+            imageSrc="/View-our-products-Moody-blue.png"
+            imageAlt="Blue tinted view our products card image"
+            imageWidth={663}
+            imageHeight={432}
+            title="Hardware that fits into a bigger picture"
+            subTitle="Hardware decisions shouldn't create downstream problems."
+            text="We source new and refurbished POS hardware that’s designed to deploy cleanly, 
+            operate reliably, and integrate into a long-term lifecycle."
+            linkHref="#"
+            linkLabel="Explore hardware"
+          />
+          <Card 
+            imageSrc="/Services-Moody-Blue.png"
+            imageAlt="Blue tinted Services card image"
+            imageWidth={669}
+            imageHeight={375}
+            title="Services built for life after install"
+            subTitle="Installing POS is straightforward. Keeping it running at scale is where complexity shows up."
+            text="Our services exist to take that weight off your teams whether you need support in one area or end-to-end."
+            linkHref="#"
+            linkLabel="See how we support the lifecycle"
+          />
+        </div>
       </section>
 
       <section className="w-[80%] my-15 mx-auto">
