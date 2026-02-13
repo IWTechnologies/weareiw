@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import LinkButton, { LinkVariant } from "./LinkButton";
 
 type ImageMedia = {
     type: "image";
@@ -20,13 +20,16 @@ interface BlurbProps {
     media: Media;
     title?: string;
     text: string | string[];
-    linkHref: string;
-    linkLabel: string;
+    link?: {
+        href: string;
+        label: string;
+        variant?: LinkVariant;
+    };
     reverse?: boolean;
     textColor?: "text-white" | "text-brand-black";
 };
 
-export default function Blurb({ media, title, text, linkHref, linkLabel, reverse=false, textColor="text-white" }: BlurbProps) {
+export default function Blurb({ media, title, text, link, reverse=false, textColor="text-white" }: BlurbProps) {
     return (
         <div 
         className={`w-[90%] mx-auto flex flex-col items-center
@@ -58,19 +61,16 @@ export default function Blurb({ media, title, text, linkHref, linkLabel, reverse
                 text.map((paragraph, index) => (
                     <p
                     key={index}
-                    className="pb-5 font-light lg:text-2xl"
+                    className="pb-5 font-light lg:text-xl"
                     >
                     {paragraph}
                     </p>
                 ))
                 ) : (
-                <p className="pb-5 font-light lg:text-2xl">{text}</p>
+                <p className="pb-5 font-light lg:text-xl">{text}</p>
                 )}
 
-                <Link href={linkHref} 
-                className="transition duration-300 ease-in-out px-[1em] py-[.33em]
-                border-3 border-brand-aqua rounded-md text-[22px] text-brand-navy bg-brand-aqua
-                hover:bg-transparent hover:text-brand-aqua">{linkLabel}</Link>
+                {link && <LinkButton {...link} />}
             </div>
         </div>
     )

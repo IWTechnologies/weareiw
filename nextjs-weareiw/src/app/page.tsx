@@ -91,10 +91,13 @@ export default function IndexPage() {
 
       <section className="w-[80%] my-15 mx-auto">
         <div className="flex flex-col items-center">
-          <div className="w-[70%] font-extrabold text-3xl text-brand-black text-center">
-            <h2>
-              Trusted by The Biggest Names in Retail, Hospitality, QSR, Convenience, Distribution & Pharmarcy.
+          <div className="w-[70%] text-brand-black text-center">
+            <h2 className="font-extrabold text-3xl">
+              Built for enterprise environments. Proven at scale.
             </h2>
+            <h3 className="font-bold text-2xl">
+              Trusted by operators across retail, grocery, QSR, hospitality, convenience, and distribution.
+            </h3>
           </div>
           <div className="w-full lg:w-[80%] my-5 mt-10">
             <LogoSlider logos={customerLogos} speed={75} />
@@ -102,7 +105,7 @@ export default function IndexPage() {
         </div>
       </section>
 
-    <section className="w-full py-14 mb-5">
+      <section className="w-full py-14 mb-5">
         <div className="container mx-auto flex justify-center">
           <Blurb 
             media={{
@@ -118,8 +121,6 @@ export default function IndexPage() {
               `From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.`,
               `We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.`
             ]}
-            linkHref="#" 
-            linkLabel="Get In Touch"
             textColor="text-brand-black"
           />
         </div>
@@ -143,8 +144,11 @@ export default function IndexPage() {
             refurbished inventory, we deliver fast, scalable solutions — mobile POS,
             self-checkout, networking and more.`
             ]}
-            linkHref="#" 
-            linkLabel="Let's Build Your Next Rollout"
+            link={{
+              href: "#",
+              label: "Get In Touch",
+              variant: "dark",
+            }}
             reverse
             textColor="text-brand-black"
           />
@@ -164,8 +168,11 @@ export default function IndexPage() {
             title="Let's Work Together"
             text="With a massive inventory of IT assets and the most skilled — and
             dedicated — technicians in the industry, we are here to help you succeed."
-            linkHref="#" 
-            linkLabel="Get In Touch"
+            link={{
+              href: "#",
+              label: "Get In Touch",
+              variant: "light",
+            }}
             textColor="text-white"
           />
         </div>
