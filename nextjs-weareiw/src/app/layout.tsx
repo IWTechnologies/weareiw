@@ -26,10 +26,16 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${openSans.className} antialiased flex flex-col min-h-screen`}>
         <Header />
-        <main className="flex-grow">
+        <main className="grow">
           {children}
         </main>
-        <Footer />
+        <Footer 
+          link={{
+            href: "#",
+            label: "Get In Touch",
+            variant: "dark",
+          }}
+          />
       </body>
     </html>
   );
