@@ -161,7 +161,7 @@ export default function IndexPage() {
         </div>
       </section>
       <section
-      className="w-full py-14 mb-5 bg-brand-navy">
+      className="w-full py-14 mb-5 bg-brand-black">
         <div className="container mx-auto flex justify-center">
           <Blurb 
             media={{
