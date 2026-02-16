@@ -72,8 +72,11 @@ export default function IndexPage() {
             subTitle="Hardware decisions shouldn't create downstream problems."
             text="We source new and refurbished POS hardware that’s designed to deploy cleanly, 
             operate reliably, and integrate into a long-term lifecycle."
-            linkHref="#"
-            linkLabel="Explore hardware"
+            link={{
+              href: "#",
+              label: "Explore hardware",
+              variant: "dark",
+            }}
           />
           <Card 
             imageSrc="/Services-Moody-Blue.png"
@@ -83,8 +86,11 @@ export default function IndexPage() {
             title="Services built for life after install"
             subTitle="Installing POS is straightforward. Keeping it running at scale is where complexity shows up."
             text="Our services exist to take that weight off your teams whether you need support in one area or end-to-end."
-            linkHref="#"
-            linkLabel="See how we support the lifecycle"
+            link={{
+              href: "#",
+              label: "See how we support the lifecycle",
+              variant: "dark",
+            }}
           />
         </div>
       </section>

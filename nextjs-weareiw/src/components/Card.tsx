@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import LinkButton, { LinkVariant } from "./LinkButton";
 
 type CardProps = {
     imageSrc: string;
@@ -9,11 +9,14 @@ type CardProps = {
     title: string;
     subTitle: string;
     text: string;
-    linkHref: string;
-    linkLabel: string;
+    link?: {
+            href: string;
+            label: string;
+            variant?: LinkVariant;
+        };
 };
 
-export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, title, subTitle, text, linkHref, linkLabel }: CardProps) {
+export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, title, subTitle, text, link }: CardProps) {
     return (
         <div 
         className="w-full lg:w-lg flex flex-col rounded-md bg-white shadow-lg overflow-hidden">
@@ -23,10 +26,8 @@ export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, titl
                 <h3 className="pb-2 text-3xl font-bold">{title}</h3>
                 <p className="text-xl">{subTitle}</p>
                 <p className="pb-5 text-xl font-light">{text}</p>
-                <Link href={linkHref} 
-                className="transition duration-300 ease-in-out px-[1em] py-[.33em]
-                border-3 border-brand-black rounded-md text-[22px] bg-brand-black
-                text-white hover:bg-transparent hover:text-brand-black">{linkLabel}</Link>
+                
+                {link && <LinkButton {...link} />}
             </div>
         </div>
     )
