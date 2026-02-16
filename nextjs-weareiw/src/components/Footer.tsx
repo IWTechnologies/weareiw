@@ -17,7 +17,7 @@ type FooterProps = {
 export default function Footer({ link }: FooterProps) {
     return (
         <footer>
-            <div className="w-[80%] flex justify-between mx-auto my-8">
+            <div className="w-full sm:w-[80%] flex flex-col sm:flex-row justify-between items-center mx-auto my-8">
                 <div className="w-1/2 flex flex-col justify-center items-start">
                     <Image className="max-h-25 h-auto w-auto object-contain mb-5" 
                     src="/iw-logo-simple.png" alt="Simple IW Technologies Logo" 
