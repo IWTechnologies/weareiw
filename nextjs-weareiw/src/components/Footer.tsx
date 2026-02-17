@@ -18,7 +18,7 @@ export default function Footer({ link }: FooterProps) {
     return (
         <footer>
             <div className="w-full sm:w-[80%] flex flex-col sm:flex-row justify-between items-center mx-auto my-8">
-                <div className="w-1/2 flex flex-col justify-center items-start">
+                <div className="w-1/2 flex flex-col justify-center items-center sm:items-start text-center">
                     <Image className="max-h-25 h-auto w-auto object-contain mb-5" 
                     src="/iw-logo-simple.png" alt="Simple IW Technologies Logo" 
                     width={1122} height={776} />
@@ -28,7 +28,7 @@ export default function Footer({ link }: FooterProps) {
                     <Link href="https://www.weareiw.com/faq/" 
                     className="text-brand-navy underline hover:text-brand-aqua" target="_blank">FAQ</Link>
                 </div>
-                <div className="w-1/2 flex flex-col justify-evenly items-end text-right text-brand-black">
+                <div className="w-1/2 flex flex-col justify-evenly items-center sm:items-end text-center sm:text-right text-brand-black">
                     <div>
                         <p className="font-bold">IW Technologies</p>
                         <p>2790 Pinnacle Drive</p>
@@ -37,7 +37,7 @@ export default function Footer({ link }: FooterProps) {
                     <div>
                         <p>Phone: (847) 310-4200</p>
                         <p>Toll Free: (800) 544-5493</p>
-                        <div className="flex justify-end space-x-2">
+                        <div className="flex justify-evenly sm:justify-end space-x-2">
                             <Link href="https://www.linkedin.com/company/iw-technologies" className="" target="_blank"><Image className="max-h-6.25 h-auto w-auto object-contain" src="/LinkedIn.jpg" alt="IW Linkedin" width={50} height={50} /></Link>
                             <Link href="https://www.facebook.com/IWTechnologies/" className="" target="_blank"><Image className="max-h-6.25 h-auto w-auto object-contain" src="/Facebook.jpg" alt="IW Facebook" width={50} height={50} /></Link>
                             <Link href="https://www.youtube.com/user/illinoiswholesale/videos" className="" target="_blank"><Image className="max-h-6.25 h-auto w-auto object-contain" src="/Youtube.jpg" alt="IW Youtube" width={50} height={50} /></Link>
