@@ -25,7 +25,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${montserrat.className} ${openSans.className} antialiased flex flex-col min-h-screen`}>
-        <Header />
+        <Header 
+          link={{
+            href: "#",
+            label: "Get In Touch",
+            variant: "light",
+          }}
+        />
         <main className="grow">
           {children}
         </main>

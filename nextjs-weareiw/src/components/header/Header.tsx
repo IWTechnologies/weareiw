@@ -7,10 +7,19 @@ import { useEffect } from "react";
 import { navItems } from "@/data/navItems";
 import NavItem from "./NavItem";
 import MobileNav from "./MobileNav";
+import LinkButton, { LinkVariant } from "../LinkButton";
+
+type HeaderProps = {
+    link?: {
+            href: string;
+            label: string;
+            variant?: LinkVariant;
+        };
+};
 
 
 //this is base for the header, not final
-export default function Header() {
+export default function Header({ link }: HeaderProps) {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     {/* listen for screen size change and closes mobile nav when screen width
@@ -32,11 +41,11 @@ export default function Header() {
     }, []);
 
     return (
-        <header className="sticky top-0 z-50 h-[123px] flex items-center bg-brand-black font-semibold text-xl text-white">
+        <header className="sticky top-0 z-50 h-30.75 flex items-center bg-brand-black font-semibold text-xl text-white">
             <div className="h-full w-[95%] mx-auto flex justify-between items-center">
                 <div className="h-full flex items-center">
                     <Link href="/">
-                        <Image className="max-h-[70px] w-auto object-contain" 
+                        <Image className="max-h-17.5 w-auto object-contain" 
                         priority width={1047} height={205} 
                         src="/iw-logo.png" alt="IW Technologies Logo" />
                     </Link>
@@ -47,10 +56,7 @@ export default function Header() {
                     {navItems.map((item) => (
                         <NavItem key={item.label} {...item} />
                     ))}
-                    <Link href="#" className="px-[1em] py-[.33em] rounded-md text-center
-                    transition duration-300 ease-in-out
-                    border-3 border-background bg-background text-brand-navy
-                    hover:bg-transparent hover:text-background">Get In Touch</Link>
+                    {link && <LinkButton {...link} />}
                 </nav>
 
                 {/* Mobile Nav */}
@@ -60,9 +66,9 @@ export default function Header() {
                 className="lg:hidden flex flex-col gap-1 hover:cursor-pointer"
                 aria-label="Toggle menu"
                 >
-                <span className="w-6 h-[2px] bg-white" />
-                <span className="w-6 h-[2px] bg-white" />
-                <span className="w-6 h-[2px] bg-white" />
+                <span className="w-6 h-0.5 bg-white" />
+                <span className="w-6 h-0.5 bg-white" />
+                <span className="w-6 h-0.5 bg-white" />
                 </button>
             </div>
 
