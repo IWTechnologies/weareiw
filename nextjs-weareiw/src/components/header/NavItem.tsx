@@ -36,7 +36,7 @@ export default function NavItem({ label, href, isExternal, submenu }: NavItemPro
                             href={item.href}
                             target={item.isExternal ? "_blank" : undefined}
                             rel={item.isExternal ? "noopener noreferrer" : undefined}
-                            className="text-brand-navy hover:text-brand-aqua">
+                            className="text-brand-black hover:text-brand-aqua">
                             {item.label}
                             </Link>
                         </li>
