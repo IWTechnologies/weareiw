@@ -134,7 +134,7 @@ export default function IndexPage() {
       <section className="w-full py-14">
         <div className="container mx-auto flex flex-col items-center">
           <div className="pb-4 font-bold text-3xl lg:text-4xl text-brand-black text-center">
-            <h2>Your POS Technology Partner. Trusted by the Best</h2>
+            <h2>Long-term ownership changes decisions</h2>
           </div>
           <Blurb 
             media={{
@@ -143,16 +143,14 @@ export default function IndexPage() {
             }}
             title=""
             text={[
-              `IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality,
-            Convenience, Distribution. We go beyond hardware — designing, deploying, and supporting
-            your tech stack.`,
-            `With 45+ years of experience and a 240,000 sq ft warehouse of new / 
-            refurbished inventory, we deliver fast, scalable solutions — mobile POS,
-            self-checkout, networking and more.`
+              `When you’re accountable for the full lifecycle, you plan differently. You deploy differently. 
+               You service differently. You think beyond the install and optimize for what happens years later.`,
+              `That shows up in how assets are deployed, serviced, and retired.`,
+              `That mindset is why customers bring us in…not just to roll out POS, but to own it.`
             ]}
             link={{
               href: "#",
-              label: "Get In Touch",
+              label: "Let's Build Your Next Roll Out",
               variant: "dark",
             }}
             reverse
@@ -171,12 +169,12 @@ export default function IndexPage() {
               width: 512,
               height: 342,
             }}
-            title="Let's Work Together"
+            title="One partner. Full accountability. POS managed for the long term."
             text="With a massive inventory of IT assets and the most skilled — and
             dedicated — technicians in the industry, we are here to help you succeed."
             link={{
               href: "#",
-              label: "Get In Touch",
+              label: "Let's Work Together",
               variant: "light",
             }}
             textColor="text-white"

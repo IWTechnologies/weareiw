@@ -32,7 +32,7 @@ interface BlurbProps {
 export default function Blurb({ media, title, text, link, reverse=false, textColor="text-white" }: BlurbProps) {
     return (
         <div 
-        className={`w-[90%] mx-auto flex flex-col items-center
+        className={`w-[90%] mx-auto flex flex-col items-start
         lg:flex-row
         ${reverse ? "lg:flex-row-reverse" : ""}
         `}>
@@ -55,19 +55,19 @@ export default function Blurb({ media, title, text, link, reverse=false, textCol
             )}
     
             <div
-            className={`w-full lg:w-1/2 flex flex-col items-start p-8 ${textColor}`}>
+            className={`w-full lg:w-1/2 flex grow flex-col items-start p-8 pt-0 ${textColor}`}>
                 {title && (<h2 className="pb-4 text-3xl font-bold">{title}</h2>)}
                 {Array.isArray(text) ? (
                 text.map((paragraph, index) => (
                     <p
                     key={index}
-                    className="pb-5 font-light lg:text-xl"
+                    className="pb-5 font-light text-lg lg:text-xl"
                     >
                     {paragraph}
                     </p>
                 ))
                 ) : (
-                <p className="pb-5 font-light lg:text-xl">{text}</p>
+                <p className="pb-5 font-light text-lg lg:text-xl">{text}</p>
                 )}
 
                 {link && <LinkButton {...link} />}
