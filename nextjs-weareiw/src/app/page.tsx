@@ -51,12 +51,18 @@ export default function IndexPage() {
   return (
     <div className="">
       <section className="">
-        <HeroSection />
+        <HeroSection
+          link={{
+              href: "#",
+              label: "See How We Work",
+              variant: "dark",
+            }}
+        />
       </section>
       
       <section 
       className="w-full flex flex-col items-center">
-        <div className="w-full pb-10 font-bold text-3xl lg:text-4xl text-brand-black text-center">
+        <div className="w-full pb-15 font-bold text-3xl lg:text-4xl text-brand-black text-center">
           <h2>
             Start with hardware. Or start with services. We’re built to scale with you.
           </h2>

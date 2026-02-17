@@ -16,7 +16,7 @@ const VARIANT_STYLES: Record<LinkVariant, string> = {
 export default function LinkButton({ href, label, variant = "dark" }: LinkProps) {
     return (
             <Link href={href} 
-            className={`transition duration-300 ease-in-out px-[1em] py-[.33em]
+            className={`w-full sm:w-fit transition duration-300 ease-in-out px-[1em] py-[.33em]
             rounded-md text-[22px] ${VARIANT_STYLES[variant]}`}>
                 {label}
             </Link>
