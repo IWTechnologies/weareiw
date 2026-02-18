@@ -55,7 +55,7 @@ export default function Blurb({ media, title, text, link, reverse=false, textCol
             )}
     
             <div
-            className={`w-full lg:w-1/2 flex grow flex-col items-start p-8 pt-0 ${textColor}`}>
+            className={`w-full lg:w-1/2 flex grow flex-col items-start p-8 ${textColor}`}>
                 {title && (<h2 className="pb-4 text-3xl font-bold">{title}</h2>)}
                 {Array.isArray(text) ? (
                 text.map((paragraph, index) => (

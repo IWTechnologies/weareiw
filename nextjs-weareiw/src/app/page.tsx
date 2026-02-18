@@ -139,7 +139,7 @@ export default function IndexPage() {
       </section>
       <section className="w-full py-14">
         <div className="container mx-auto flex flex-col items-center">
-          <div className="pb-4 font-bold text-3xl lg:text-4xl text-brand-black text-center">
+          <div className="pb-15 font-bold text-3xl lg:text-4xl text-brand-black text-center">
             <h2>Long-term ownership changes decisions</h2>
           </div>
           <Blurb 
