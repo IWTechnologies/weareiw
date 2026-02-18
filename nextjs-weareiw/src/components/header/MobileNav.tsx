@@ -25,7 +25,7 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
             href="#"
             className="m-6 px-[1em] py-[.33em] rounded-md text-center
             transition duration-300 ease-in-out
-            border-3 border-background bg-background text-brand-navy
+            border-3 border-background bg-background text-brand-black
             hover:bg-transparent hover:text-background"
             onClick={onClose}
             >
