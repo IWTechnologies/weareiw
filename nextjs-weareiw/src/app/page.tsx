@@ -62,7 +62,7 @@ export default function IndexPage() {
       
       <section 
       className="w-full flex flex-col items-center">
-        <div className="w-full lg:w-[80%] mx-auto pb-15 text-brand-black text-center">
+        <div className="w-full lg:w-[80%] mx-auto mb-15 text-brand-black text-center">
           <h2>
             Start with hardware. Or start with services. We’re built to scale with you.
           </h2>
@@ -139,7 +139,7 @@ export default function IndexPage() {
       </section>
       <section className="w-full py-14">
         <div className="container mx-auto flex flex-col items-center">
-          <div className="w-full lg:w-[80%] mx-auto pb-15 text-brand-black text-center">
+          <div className="w-full lg:w-[80%] mx-auto mb-15 text-brand-black text-center">
             <h2>Long-term ownership changes decisions</h2>
           </div>
           <Blurb 
