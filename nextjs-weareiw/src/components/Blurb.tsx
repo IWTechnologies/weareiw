@@ -56,7 +56,7 @@ export default function Blurb({ media, title, text, link, reverse=false, textCol
             )}
     
             <div
-            className={`w-full lg:w-1/2 flex grow flex-col gap-2 items-start p-8 ${textColor}`}>
+            className={`w-full lg:w-1/2 flex flex-col gap-2 items-start p-8 ${textColor}`}>
                 {title && (<h3 className="">{title}</h3>)}
                 {Array.isArray(text) ? (
                 text.map((paragraph, index) => (
@@ -65,7 +65,9 @@ export default function Blurb({ media, title, text, link, reverse=false, textCol
                     </p>
                 ))
                 ) : (
-                <p className="">{text}</p>
+                <p className="">
+                    {text}
+                </p>
                 )}
 
                 {link && <LinkButton {...link} />}
