@@ -139,15 +139,12 @@ export default function IndexPage() {
       </section>
       <section className="w-full py-14">
         <div className="container mx-auto flex flex-col items-center">
-          <div className="w-full lg:w-[80%] mx-auto mb-15 text-brand-black text-center">
-            <h2>Long-term ownership changes decisions</h2>
-          </div>
           <Blurb 
             media={{
               type: "video",
               youtubeId: "L4O1ejWfDAc",
             }}
-            title=""
+            title="Long-term ownership changes decisions"
             text={[
               `When you’re accountable for the full lifecycle, you plan differently. You deploy differently. 
                You service differently. You think beyond the install and optimize for what happens years later.`,
