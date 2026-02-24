@@ -63,6 +63,14 @@ export default function IndexPage() {
       <section 
       className="w-full flex flex-col items-center">
         <div className="w-full lg:w-[80%] mx-auto mb-15 text-brand-black text-center">
+          <h2 className="">
+            We don't just sell hardware. We're structured to own the entire lifecycle.
+          </h2>
+          <h3 className="">
+            One owner. One budget conversation. One accountable team when locations are live...or not.
+          </h3>
+        </div>
+        <div className="w-full lg:w-[80%] mx-auto mb-15 text-brand-black text-center">
           <h2>
             Start with hardware. Or start with services. We’re built to scale with you.
           </h2>
