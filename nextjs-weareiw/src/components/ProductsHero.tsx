@@ -8,14 +8,14 @@ export default function ProductsHero() {
             <div className="absolute inset-0 z-10 bg-linear-to-t from-brand-navy to-transparent"></div>
 
             <div className="relative z-11 min-h-dvh w-1/2 mx-auto flex flex-col items-start justify-center">
-                <h1 className="pb-5 text-5xl font-bold text-white">
+                <h1 className="pb-5 text-white">
                 Placeholder
                 </h1>
-                <p className="pb-5 text-2xl font-medium text-white">
+                <h3 className="pb-5 text-white">
                     IW Technologies pairs cutting-edge technology with
                     unmatched customer service to be your complete
                     enterprise solution partner.
-                </p>
+                </h3>
             </div>
         </div>
     )

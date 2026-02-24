@@ -62,13 +62,13 @@ export default function IndexPage() {
       
       <section 
       className="w-full flex flex-col items-center">
-        <div className="w-full pb-15 font-bold text-3xl lg:text-4xl text-brand-black text-center">
+        <div className="w-full lg:w-[80%] mx-auto pb-15 text-brand-black text-center">
           <h2>
             Start with hardware. Or start with services. We’re built to scale with you.
           </h2>
         </div>
         <div className="w-[80%] mx-auto flex flex-col items-center gap-8
-        lg:flex-row lg:justify-center lg:items-start">
+        lg:flex-row lg:justify-center lg:items-stretch">
           <Card 
             imageSrc="/View-our-products-Moody-blue.png"
             imageAlt="Blue tinted view our products card image"
@@ -104,10 +104,10 @@ export default function IndexPage() {
       <section className="w-[80%] my-15 mx-auto">
         <div className="flex flex-col items-center">
           <div className="w-[70%] text-brand-black text-center">
-            <h2 className="font-extrabold text-3xl">
+            <h2 className="">
               Built for enterprise environments. Proven at scale.
             </h2>
-            <h3 className="font-bold text-2xl">
+            <h3 className="">
               Trusted by operators across retail, grocery, QSR, hospitality, convenience, and distribution.
             </h3>
           </div>
@@ -139,7 +139,7 @@ export default function IndexPage() {
       </section>
       <section className="w-full py-14">
         <div className="container mx-auto flex flex-col items-center">
-          <div className="pb-15 font-bold text-3xl lg:text-4xl text-brand-black text-center">
+          <div className="w-full lg:w-[80%] mx-auto pb-15 text-brand-black text-center">
             <h2>Long-term ownership changes decisions</h2>
           </div>
           <Blurb 
@@ -190,7 +190,7 @@ export default function IndexPage() {
 
       <section className="w-[80%] my-15 mx-auto">
         <div className="flex flex-col items-center">
-          <div className="font-extrabold text-3xl text-brand-black text-center">
+          <div className="text-brand-black text-center">
             <h2>
               Our Partners
             </h2>

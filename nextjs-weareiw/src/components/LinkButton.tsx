@@ -17,7 +17,7 @@ export default function LinkButton({ href, label, variant = "dark" }: LinkProps)
     return (
             <Link href={href} 
             className={`w-full sm:w-fit transition duration-300 ease-in-out px-[1em] py-[.33em]
-            rounded-md text-[22px] ${VARIANT_STYLES[variant]}`}>
+            rounded-md ${VARIANT_STYLES[variant]}`}>
                 {label}
             </Link>
     )

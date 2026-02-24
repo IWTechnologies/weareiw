@@ -22,15 +22,35 @@
 
 @theme {
   --inset-shadow-md: inset 0 0 10px rgba(0, 0, 0, 0.50);
+
+  /* Headings */
+  --font-heading: var(--font-sansDM);
+
+  /* body and UI like buttons,cta */
+  --font-body: var(--font-inter);
+
+  /* accent, used rarely */
+  --font-accent: var(--font-ibm);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: sans-serif;
+  @apply text-sm lg:text-base leading-normal
 }
 
-/* diagonal background shape for section */
+h1 {
+  @apply font-heading text-4xl lg:text-5xl font-bold leading-[1.15]
+}
+h2 {
+  @apply font-heading text-3xl lg:text-4xl font-semibold leading-tight
+}
+h3 {
+  @apply font-heading text-xl lg:text-2xl font-medium leading-[1.3]
+}
+
+/* not being used but keep just in case 
+diagonal background shape for section */
 .section-bg-diagonal {
   position: relative;
   overflow: hidden;

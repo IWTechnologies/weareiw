@@ -18,16 +18,17 @@ export default function HeroSection({ link }: HeroProps) {
             </video>
             <div className="absolute inset-0 z-10 bg-linear-to-t from-background to-transparent"></div>
 
-            <div className="relative z-11 min-h-dvh w-[80%] sm:w-1/2 mx-auto flex flex-col items-start justify-center">
-                <h1 className="pb-5 text-5xl font-bold text-brand-black">
+            <div className="relative z-11 min-h-dvh w-[80%]
+            sm:w-1/2 mx-auto flex flex-col items-start justify-center
+            text-brand-black">
+                <h1 className="pb-5">
                 Your end-to-end point of sale partner.
                 </h1>
-                <p className="text-2xl font-medium text-brand-black">
+                <h3 className="pb-5">
                     One partner accountable for POS from install to retirement.
-                </p>
-                <p className="pb-5 text-2xl font-medium text-brand-black">
+                    <br />
                     No handoffs. Clear ownership.
-                </p>
+                </h3>
                 {link && <LinkButton {...link} />}
             </div>
         </div>

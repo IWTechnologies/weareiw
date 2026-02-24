@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 import LinkButton, { LinkVariant } from "./LinkButton";
 
 type ImageMedia = {
@@ -19,8 +20,8 @@ type Media = ImageMedia | VideoMedia;
 interface BlurbProps {
     media: Media;
     title?: string;
-    text: string | string[];
-    link?: {
+    text: ReactNode | ReactNode[];
+    link?: { 
         href: string;
         label: string;
         variant?: LinkVariant;
@@ -56,18 +57,18 @@ export default function Blurb({ media, title, text, link, reverse=false, textCol
     
             <div
             className={`w-full lg:w-1/2 flex grow flex-col items-start p-8 ${textColor}`}>
-                {title && (<h2 className="pb-4 text-3xl font-bold">{title}</h2>)}
+                {title && (<h3 className="pb-4">{title}</h3>)}
                 {Array.isArray(text) ? (
                 text.map((paragraph, index) => (
                     <p
                     key={index}
-                    className="pb-5 font-light text-lg lg:text-xl"
+                    className="pb-5"
                     >
                     {paragraph}
                     </p>
                 ))
                 ) : (
-                <p className="pb-5 font-light text-lg lg:text-xl">{text}</p>
+                <p className="pb-5">{text}</p>
                 )}
 
                 {link && <LinkButton {...link} />}
