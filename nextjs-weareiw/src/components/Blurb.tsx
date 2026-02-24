@@ -20,7 +20,7 @@ type Media = ImageMedia | VideoMedia;
 interface BlurbProps {
     media: Media;
     title?: string;
-    text: ReactNode | ReactNode[];
+    text: ReactNode;
     link?: { 
         href: string;
         label: string;
@@ -56,20 +56,9 @@ export default function Blurb({ media, title, text, link, reverse=false, textCol
             )}
     
             <div
-            className={`w-full lg:w-1/2 flex flex-col gap-2 items-start p-8 ${textColor}`}>
+            className={`w-full lg:w-1/2 flex flex-col gap-2 items-start p-8 lg:pt-0 ${textColor}`}>
                 {title && (<h3 className="">{title}</h3>)}
-                {Array.isArray(text) ? (
-                text.map((paragraph, index) => (
-                    <p key={index} className="">
-                    {paragraph}
-                    </p>
-                ))
-                ) : (
-                <p className="">
-                    {text}
-                </p>
-                )}
-
+                {text}
                 {link && <LinkButton {...link} />}
             </div>
         </div>

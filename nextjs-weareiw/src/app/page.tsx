@@ -136,11 +136,13 @@ export default function IndexPage() {
               height: 342,
             }}
             title="Someone has to own POS. We do"
-            text={[
-              `POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.`,
-              `From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.`,
-              `We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.`
-            ]}
+            text={
+              <>
+                <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
+                <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
+                <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
+              </>
+            }
             textColor="text-brand-black"
           />
         </div>
@@ -153,12 +155,13 @@ export default function IndexPage() {
               youtubeId: "L4O1ejWfDAc",
             }}
             title="Long-term ownership changes decisions"
-            text={[
-              `When you’re accountable for the full lifecycle, you plan differently. You deploy differently. 
-               You service differently. You think beyond the install and optimize for what happens years later.`,
-              `That shows up in how assets are deployed, serviced, and retired.`,
-              `That mindset is why customers bring us in…not just to roll out POS, but to own it.`
-            ]}
+            text={
+              <>
+                <p>When you’re accountable for the full lifecycle, you plan differently. You deploy differently. You service differently. You think beyond the install and optimize for what happens years later.</p>
+                <p className="font-medium">That shows up in how assets are deployed, serviced, and retired.</p>
+                <p>That mindset is why customers bring us in…not just to roll out POS, but to own it.</p>
+              </>
+            }
             link={{
               href: "#",
               label: "Let's Build Your Next Roll Out",
@@ -181,8 +184,14 @@ export default function IndexPage() {
               height: 342,
             }}
             title="One partner. Full accountability. POS managed for the long term."
-            text="With a massive inventory of IT assets and the most skilled — and
-            dedicated — technicians in the industry, we are here to help you succeed."
+            text={
+              <>
+                <p>
+                  With a massive inventory of IT assets and the most skilled — and
+                  dedicated — technicians in the industry, we are here to help you succeed.
+                </p>
+              </>
+            }
             link={{
               href: "#",
               label: "Let's Work Together",
