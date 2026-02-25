@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Inter, IBM_Plex_Serif } from "next/font/google";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
+import PromoBar from "@/components/PromoBar";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -32,6 +33,7 @@ export default function RootLayout({
     <html lang="en" className={`${dmSans.variable} ${inter.variable} ${ibmPlexSerif.variable}`}>
       <body
         className="flex flex-col min-h-screen font-body text-base lg:text-lg antialiased">
+        <PromoBar />
         <Header 
           link={{
             href: "#",
