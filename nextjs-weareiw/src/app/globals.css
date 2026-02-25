@@ -7,6 +7,7 @@
   --brand-blue: #4280FC;
   --brand-aqua: #40e0d0;
   --brand-ink-black: #020216;
+  --brand-gold: #EFC11A;
 }
 
 /* might remove the spacing, default is 0.25rem */
@@ -18,6 +19,7 @@
   --color-brand-blue: var(--brand-blue);
   --color-brand-aqua: var(--brand-aqua);
   --color-brand-black: var(--brand-ink-black);
+  --color-brand-gold: var(--brand-gold);
 }
 
 @theme {
