@@ -18,7 +18,7 @@ export default function LogoSlider({ logos, speed = 30 }: LogoSliderProps) {
             style={{ "--duration": `${speed}s` } as React.CSSProperties}
             >
                 {[...logos, ...logos].map((logo, index) => (
-                    <div key={index} className="w-[200px] px-8 py-4 flex items-center justify-center shrink-0">
+                    <div key={index} className="w-50 px-8 py-4 flex items-center justify-center shrink-0">
                         <Image
                             src={logo.src}
                             alt={logo.alt}
