@@ -74,10 +74,14 @@ export default function IndexPage() {
             imageAlt="Blue tinted view our products card image"
             imageWidth={663}
             imageHeight={432}
-            title="Hardware that fits into a bigger picture"
-            subTitle="Hardware decisions shouldn't create downstream problems."
-            text="We source new and refurbished POS hardware that’s designed to deploy cleanly, 
-            operate reliably, and integrate into a long-term lifecycle."
+            text={
+              <>
+                <h3>Hardware that fits into a bigger picture</h3>
+                <p className="font-medium">Hardware decisions shouldn't create downstream problems.</p>
+                <p>We source new and refurbished POS hardware that’s designed to deploy cleanly, 
+                operate reliably, and integrate into a long-term lifecycle.</p>
+              </>
+            }
             link={{
               href: "#",
               label: "Explore hardware",
@@ -89,9 +93,13 @@ export default function IndexPage() {
             imageAlt="Blue tinted Services card image"
             imageWidth={669}
             imageHeight={375}
-            title="Services built for life after install"
-            subTitle="Installing POS is straightforward. Keeping it running at scale is where complexity shows up."
-            text="Our services exist to take that weight off your teams whether you need support in one area or end-to-end."
+            text={
+              <>
+                <h3>Services built for life after install</h3>
+                <p className="font-medium">Installing POS is straightforward. Keeping it running at scale is where complexity shows up.</p>
+                <p>Our services exist to take that weight off your teams whether you need support in one area or end-to-end.</p>
+              </>
+            }
             link={{
               href: "#",
               label: "See how we support the lifecycle",
