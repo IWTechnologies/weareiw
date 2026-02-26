@@ -19,9 +19,9 @@ export default function Footer({ link }: FooterProps) {
         <footer>
             <div className="w-full sm:w-[80%] flex flex-col sm:flex-row justify-between items-center mx-auto my-8">
                 <div className="w-1/2 flex flex-col justify-center items-center sm:items-start text-center">
-                    <Image className="max-h-25 h-auto w-auto object-contain mb-5" 
-                    src="/iw-logo-simple.png" alt="Simple IW Technologies Logo" 
-                    width={1122} height={776} />
+                    <Image className="max-h-25 h-auto w-auto object-contain" 
+                    src="/fiftyYear/iw-50-favicon.png" alt="Simple 50th IW Technologies Logo" 
+                    width={1783} height={949} />
                     {link && <LinkButton {...link} />}
                     <Link href="https://www.termsfeed.com/live/5300ce41-8ea3-4e06-a1dc-198dd34fd3f2"
                     className="text-brand-navy underline hover:text-brand-aqua" target="_blank">Privacy Policy</Link>

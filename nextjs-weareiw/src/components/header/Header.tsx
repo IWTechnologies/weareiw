@@ -44,10 +44,10 @@ export default function Header({ link }: HeaderProps) {
         <header className="sticky top-0 z-50 h-30.75 flex items-center bg-brand-black font-semibold text-xl text-white">
             <div className="h-full w-[95%] mx-auto flex justify-between items-center">
                 <div className="h-full flex items-center">
-                    <Link href="/">
+                    <Link href="/" className="">
                         <Image className="max-h-17.5 w-auto object-contain" 
-                        priority width={1047} height={205} 
-                        src="/iw-logo.png" alt="IW Technologies Logo" />
+                        priority width={1920} height={359} 
+                        src="/fiftyYear/iw-50-whiteGold.png" alt="50 yearIW Technologies Logo" />
                     </Link>
                 </div>
 
@@ -61,14 +61,23 @@ export default function Header({ link }: HeaderProps) {
 
                 {/* Mobile Nav */}
                 {/* Burger Button */}
-                <button
+                <button id="burger"
                 onClick={() => setMobileOpen((prev) => !prev)}
-                className="lg:hidden flex flex-col gap-1 hover:cursor-pointer"
-                aria-label="Toggle menu"
+                className="lg:hidden relative w-8 h-6 hover:cursor-pointer"
+                aria-label="Toggle mobile menu"
                 >
-                <span className="w-6 h-0.5 bg-white" />
-                <span className="w-6 h-0.5 bg-white" />
-                <span className="w-6 h-0.5 bg-white" />
+                    <span
+                        className={`absolute left-0 w-8 h-1 bg-white rounded-md transition-all duration-300 ease-in-out
+                        ${mobileOpen ? "top-3 rotate-45" : "top-0 rotate-0"}`}
+                    />
+                    <span
+                        className={`absolute left-0 w-8 h-1 bg-white rounded-md transition-all duration-300 ease-in-out
+                        ${mobileOpen ? "opacity-0" : "top-3 opacity-100"}`}
+                    />
+                    <span
+                        className={`absolute left-0 w-8 h-1 bg-white rounded-md transition-all duration-300 ease-in-out
+                        ${mobileOpen ? "top-3 -rotate-45" : "top-6 rotate-0"}`}
+                    />
                 </button>
             </div>
 
