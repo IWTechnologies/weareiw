@@ -39,7 +39,7 @@ export default function Blurb({ media, text, link, reverse=false, textColor="tex
             {media.type === "image" && (
                 <Image
                 className="w-full lg:w-1/2 h-auto object-contain" 
-                src={media.src} alt={media.alt} priority width={media.width} height={media.height} />
+                src={media.src} alt={media.alt} width={media.width} height={media.height} />
             )}
             {media.type === "video" && (
                 <div className="w-full lg:w-1/2 aspect-video">

@@ -20,7 +20,7 @@ export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, text
         <div 
         className="w-full lg:w-lg flex flex-col rounded-md bg-white shadow-lg overflow-hidden">
             <Image className="min-h-62.5 max-h-62.5 h-auto w-auto object-cover" 
-            src={imageSrc} alt={imageAlt} priority width={imageWidth} height={imageHeight} />
+            src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight} />
             <div className="h-full flex flex-col gap-2 p-8 text-brand-black">
                 {text}
                 {link && (
