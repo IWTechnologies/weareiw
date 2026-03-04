@@ -19,7 +19,6 @@ type Media = ImageMedia | VideoMedia;
 
 interface BlurbProps {
     media: Media;
-    title?: string;
     text: ReactNode;
     link?: { 
         href: string;
@@ -30,7 +29,7 @@ interface BlurbProps {
     textColor?: "text-white" | "text-brand-black";
 };
 
-export default function Blurb({ media, title, text, link, reverse=false, textColor="text-white" }: BlurbProps) {
+export default function Blurb({ media, text, link, reverse=false, textColor="text-white" }: BlurbProps) {
     return (
         <div 
         className={`w-[90%] mx-auto flex flex-col items-start
@@ -57,7 +56,6 @@ export default function Blurb({ media, title, text, link, reverse=false, textCol
     
             <div
             className={`w-full lg:w-1/2 flex flex-col gap-2 items-start p-8 lg:pt-0 ${textColor}`}>
-                {title && (<h3 className="">{title}</h3>)}
                 {text}
                 {link && <LinkButton {...link} />}
             </div>
