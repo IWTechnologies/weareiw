@@ -6,6 +6,7 @@ type LinkProps = {
     href: string;
     label: string;
     variant?: LinkVariant;
+    className?: string;
 };
 
 const VARIANT_STYLES: Record<LinkVariant, string> = {
@@ -13,11 +14,11 @@ const VARIANT_STYLES: Record<LinkVariant, string> = {
   dark: "bg-brand-black text-white border-3 border-brand-black hover:bg-transparent hover:text-brand-black",
 };
 
-export default function LinkButton({ href, label, variant = "dark" }: LinkProps) {
+export default function LinkButton({ href, label, variant = "dark", className }: LinkProps) {
     return (
             <Link href={href} 
             className={`w-full sm:w-fit transition duration-300 ease-in-out px-[1em] py-[.33em]
-            rounded-md ${VARIANT_STYLES[variant]}`}>
+            rounded-md ${VARIANT_STYLES[variant]} ${className}`}>
                 {label}
             </Link>
     )
