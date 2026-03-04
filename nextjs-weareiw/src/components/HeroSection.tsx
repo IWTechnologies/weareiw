@@ -11,14 +11,14 @@ type HeroProps = {
 export default function HeroSection({ link }: HeroProps) {
     return (
         <div className="relative min-h-dvh w-full overflow-hidden bg-brand-blue">
-            <video width="" height="" autoPlay loop muted playsInline preload="auto"
+            <video autoPlay loop muted playsInline preload="none"
             className="absolute inset-0 h-full w-full object-cover">
-            <source src="/video/Hero-Video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
+                <source src="/video/newHero-Video.webm" type="video/webm" />
+                <source src="/video/newHero-Video.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 z-10 bg-linear-to-t from-background to-transparent"></div>
 
-            <div className="relative z-11 min-h-dvh w-[80%]
+            <div className="relative z-20 min-h-dvh w-[80%]
             sm:w-1/2 mx-auto flex flex-col items-start justify-center
             text-brand-black">
                 <h1 className="pb-5">

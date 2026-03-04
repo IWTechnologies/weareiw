@@ -39,7 +39,8 @@ export default function Blurb({ media, text, link, reverse=false, textColor="tex
             {media.type === "image" && (
                 <Image
                 className="w-full lg:w-1/2 h-auto object-contain" 
-                src={media.src} alt={media.alt} width={media.width} height={media.height} />
+                src={media.src} alt={media.alt} width={media.width} height={media.height}
+                sizes="(max-width: 1024px) 100vw, 50vw" />
             )}
             {media.type === "video" && (
                 <div className="w-full lg:w-1/2 aspect-video">
@@ -48,6 +49,7 @@ export default function Blurb({ media, text, link, reverse=false, textColor="tex
                     sm:max-lg:w-full" 
                     src={`https://www.youtube.com/embed/${media.youtubeId}`}
                     title="Embedded youtube video"
+                    loading="lazy"
                     allowFullScreen
                     />
                 </div>
