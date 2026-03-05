@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 
-export default function ProductsHero() {
+export default function Hero() {
     return (
         <div className="relative min-h-dvh w-full overflow-hidden bg-brand-blue">
             <Image src="/productsHero/shutterstock_422662612-scaled.jpg" alt="placeholder" priority width={2048} height={1357}

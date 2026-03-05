@@ -1,10 +1,10 @@
-import ProductsHero from "@/components/ProductsHero";
+import Hero from "@/components/Hero";
 
 export default function ProductsPage() {
     return (
         <div>
             <section className="">
-                <ProductsHero />
+                <Hero />
             </section> 
         </div>
     )

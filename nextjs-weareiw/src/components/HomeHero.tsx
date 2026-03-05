@@ -8,7 +8,7 @@ type HeroProps = {
         };
 };
 
-export default function HeroSection({ link }: HeroProps) {
+export default function HomeHero({ link }: HeroProps) {
     return (
         <div className="relative min-h-dvh w-full overflow-hidden bg-brand-blue">
             <video autoPlay loop muted playsInline preload="none"

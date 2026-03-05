@@ -5,7 +5,7 @@ import Link from "next/link";
 import Card from "@/components/Card";
 import Blurb  from "@/components/Blurb";
 import LogoSlider from "@/components/LogoSlider";
-import HeroSection from "@/components/HeroSection";
+import HomeHero from "@/components/HomeHero";
 
 const customerLogos = [
     { src: "/customerLogos/Ace.png", alt: "Ace Hardware logo" },
@@ -51,7 +51,7 @@ export default function IndexPage() {
   return (
     <div className="">
       <section className="">
-        <HeroSection
+        <HomeHero
           link={{
               href: "/#hardware",
               label: "See How We Work",
