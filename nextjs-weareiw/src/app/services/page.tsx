@@ -11,7 +11,7 @@ const services = [
 
 export default function ServicesPage() {
     return (
-        <div>
+        <div className="bg-brand-black">
             <section className="text-white">
                 <Hero 
                     imageSrc="/heroImages/shutterstock2.jpg"
@@ -55,7 +55,7 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 mb-5">
+            <section className="w-full py-14 mb-5 rounded-t-3xl bg-background">
                 <div className="container mx-auto flex justify-center">
                     <Blurb 
                     media={{
