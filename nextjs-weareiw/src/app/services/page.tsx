@@ -46,9 +46,11 @@ export default function ServicesPage() {
                             absolute inset-0 z-10 bg-linear-to-t from-background/50 to-transparent"></div>
                         <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out 
                             absolute inset-0 z-10 bg-linear-to-t from-brand-black to-transparent"></div>
-                        <div className="relative mx-auto z-30 flex justify-center
-                            text-xl sm:text-3xl font-bold text-brand-black group-hover:text-white">
+                        <div className="relative w-full mx-auto z-30 flex justify-center items-center
+                            text-xl sm:text-3xl font-bold text-brand-black group-hover:text-white
+                            group-hover:animate-bounce transition-all duration-300 ease-in-out">
                             {service.label}
+                            <span className="ml-2 text-base opacity-0 group-hover:opacity-100 transition duration-300">→</span>
                         </div>
                     </Link>
                     ) )}
