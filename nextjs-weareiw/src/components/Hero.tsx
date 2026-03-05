@@ -1,22 +1,33 @@
 import Image from "next/image";
 import { ReactNode } from "react";
+import LinkButton, { LinkVariant } from "./LinkButton";
 
-export default function Hero() {
+type HeroProps = {
+    imageSrc: string;
+    imageAlt: string;
+    imageWidth: number;
+    imageHeight: number;
+    text: ReactNode;
+    link?: {
+            href: string;
+            label: string;
+            variant?: LinkVariant;
+        };
+};
+
+export default function Hero({ imageSrc, imageAlt, imageWidth, imageHeight, text, link }: HeroProps) {
     return (
-        <div className="relative min-h-dvh w-full overflow-hidden bg-brand-blue">
-            <Image src="/productsHero/shutterstock_422662612-scaled.jpg" alt="placeholder" priority width={2048} height={1357}
-            className="absolute inset-0 h-full w-full object-cover" />
+        <div className="relative h-80 w-full overflow-hidden bg-brand-blue">
+            <Image 
+                src={imageSrc} alt={imageAlt} priority 
+                width={imageWidth} height={imageHeight} sizes="100vw"
+                className="absolute inset-0 h-full w-full object-cover"
+             />
             <div className="absolute inset-0 z-10 bg-linear-to-t from-brand-black to-transparent"></div>
 
-            <div className="relative z-11 min-h-dvh w-1/2 mx-auto flex flex-col items-start justify-center">
-                <h1 className="pb-5 text-white">
-                Placeholder
-                </h1>
-                <h3 className="pb-5 text-white">
-                    IW Technologies pairs cutting-edge technology with
-                    unmatched customer service to be your complete
-                    enterprise solution partner.
-                </h3>
+            <div className="relative z-20 min-h-dvh w-1/2 mx-auto flex flex-col items-start justify-center">
+                {text}
+                {link && <LinkButton {...link} />}
             </div>
         </div>
     )
