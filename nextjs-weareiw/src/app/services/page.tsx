@@ -35,7 +35,7 @@ export default function ServicesPage() {
             </section>
 
             <section className="w-full py-14 mb-5 bg-brand-black">
-                <div className="container w-[90%] h-60 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div className="container w-[80%] sm:w-[90%] h-80 sm:h-60 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                     {services.map((service) => (
                     <Link key={service.label} href={service.href} prefetch={false}
                         className="group relative w-full h-full flex items-center rounded-3xl overflow-hidden bg-brand-black"
