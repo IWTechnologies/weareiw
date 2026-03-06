@@ -12,7 +12,7 @@ const services = [
 export default function ServicesPage() {
     return (
         <div className="bg-brand-black">
-            <section className="text-white">
+            <section className="h-80 text-white">
                 <Hero 
                     imageSrc="/heroImages/shutterstock2.jpg"
                     imageAlt="Blue tinted Services card image"
