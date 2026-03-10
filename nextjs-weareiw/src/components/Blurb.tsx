@@ -38,7 +38,7 @@ export default function Blurb({ media, text, link, reverse=false, textColor="tex
         `}>
             {media.type === "image" && (
                 <Image
-                className="w-full lg:w-1/2 h-auto object-contain" 
+                className="w-full lg:w-1/2 h-auto object-contain rounded-3xl" 
                 src={media.src} alt={media.alt} width={media.width} height={media.height}
                 sizes="(max-width: 1024px) 100vw, 50vw" />
             )}
