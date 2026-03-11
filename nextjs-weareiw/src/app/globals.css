@@ -55,6 +55,12 @@ p {
   @apply max-w-[70ch]
 }
 
+@property --num {
+  syntax: '<integer>';
+  intial-value: 0;
+  inherits: false;
+}
+
 /* not being used but keep just in case 
 diagonal background shape for section */
 .section-bg-diagonal {

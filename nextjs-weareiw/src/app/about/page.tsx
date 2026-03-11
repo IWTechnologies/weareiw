@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import Card from "@/components/Card";
+import NumCounter from "@/components/NumCounter";
 
 export default function AboutPage() {
     return (
@@ -35,8 +36,8 @@ export default function AboutPage() {
                 />
             </section>
 
-            <section className="w-[80%] flex justify-center p-5 pb-14 mx-auto bg-brand-black text-white">
-                <div className="flex flex-col gap-5">
+            <section className="w-full flex justify-center p-5 pb-14 rounded-t-3xl bg-background text-brand-black">
+                <div className="w-[80%] mx-auto flex flex-col gap-5">
                     <h2 className="text-center">What We Do</h2>
                     <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
                     <div>
@@ -58,10 +59,8 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 rounded-t-3xl bg-background">
-                <div className="">
-                    
-                </div>
+            <section className="w-full bg-background">
+                <NumCounter />
             </section>
 
             <section id="hardware"

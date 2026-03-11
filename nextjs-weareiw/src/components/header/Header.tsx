@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { navItems } from "@/data/navItems";
 import NavItem from "./NavItem";
 import MobileNav from "./MobileNav";
@@ -22,8 +21,8 @@ type HeaderProps = {
 export default function Header({ link }: HeaderProps) {
     const [mobileOpen, setMobileOpen] = useState(false);
 
-    {/* listen for screen size change and closes mobile nav when screen width
-        becomes desktop nav size */}
+    /* listen for screen size change and closes mobile nav when screen width
+        becomes desktop nav size */
     useEffect(() => {
         const mediaQuery = window.matchMedia("(min-width: 1024px)");
 
@@ -46,7 +45,7 @@ export default function Header({ link }: HeaderProps) {
                 <div className="h-full flex items-center">
                     <Link href="/" className="">
                         <Image className="max-h-17.5 w-auto object-contain" 
-                        priority width={1920} height={359} 
+                        priority width={400} height={75} 
                         src="/fiftyYear/iw-50-whiteGold.png" alt="50 yearIW Technologies Logo" />
                     </Link>
                 </div>
