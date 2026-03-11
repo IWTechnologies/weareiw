@@ -36,9 +36,9 @@ export default function AboutPage() {
                 />
             </section>
 
-            <section className="w-full flex justify-center p-5 pb-14 rounded-t-3xl bg-background text-brand-black">
+            <section className="w-full flex justify-center py-14 mt-4 rounded-t-3xl bg-background text-brand-black">
                 <div className="w-[80%] mx-auto flex flex-col gap-5">
-                    <h2 className="text-center">What We Do</h2>
+                    <h2>What We Do</h2>
                     <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
                     <div>
                         We intergrate cutting-edge hardware, agile deployment, and white-glove
@@ -59,7 +59,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 bg-background">
+            <section className="w-full pb-14 bg-background">
                 <NumCounter />
             </section>
 
