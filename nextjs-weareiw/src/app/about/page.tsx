@@ -59,7 +59,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full bg-background">
+            <section className="w-full py-14 bg-background">
                 <NumCounter />
             </section>
 
