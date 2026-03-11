@@ -61,12 +61,12 @@ function StatItem({ value, label, suffix = "" }: Stat) {
     return (
         <div
             ref={ref}
-            className={`relative flex flex-col items-center rounded-2xl p-5 text-center overflow-hidden
-            transition-all duration-700 ease-out
+            className={`relative flex flex-col items-center rounded-2xl p-5 text-center 
+            text-brand-black overflow-hidden transition-all duration-700 ease-out
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
             <div className="absolute inset-0 z-10 bg-radial-[at_5%_10%] from-brand-navy/10 to-transparent" />
-            <div className="relative z-20 flex text-brand-black text-2xl tabular-nums font-bold">
+            <div className="relative z-20 flex text-2xl tabular-nums font-bold">
                 {display.toLocaleString()}{suffix}
             </div>
             <span className="relative z-20">{label}</span>
