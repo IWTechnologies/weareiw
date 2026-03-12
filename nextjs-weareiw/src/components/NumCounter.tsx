@@ -77,15 +77,15 @@ function StatItem({ value, label, suffix = "" }: Stat) {
 export default function StatSection() {
     return (
         <div className="w-[80%] flex flex-col mx-auto py-14 gap-5">
-            <div className="w-[90%] mx-auto mb-8 text-brand-black">
+            <div className="w-full mb-8 text-brand-black">
                 <h2>By the Numbers</h2>
             </div>
-            <div className="w-[90%] mx-auto mb-8 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+            <div className="w-full mb-8 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8">
                 {rowOne.map((stat) => (
                     <StatItem key={stat.label} {...stat} />
                 ))}
             </div>
-            <div className="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 {rowTwo.map((stat) => (
                     <StatItem key={stat.label} {...stat} />
                 ))}

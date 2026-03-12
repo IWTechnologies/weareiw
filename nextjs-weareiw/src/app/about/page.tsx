@@ -64,15 +64,15 @@ export default function AboutPage() {
             </section>
 
             <section id="hardware"
-                  className="w-full flex flex-col items-center bg-background">
-                    <div className="w-full lg:w-[80%] mx-auto mb-15 text-brand-black text-center">
+                  className="w-full flex flex-col items-center gap-5 bg-background">
+                    <div className="w-[80%] flex flex-col mx-auto gap-1 text-brand-black">
                       <h2>
                         Guided By Our Values
                       </h2>
-                      <h3>
+                      <div>
                         We believe in going above and beyond for our customers, providing them with the 
                         most comprehensive enterprise solutions in the industry.
-                      </h3>
+                      </div>
                     </div>
                     <div className="w-[80%] mx-auto mb-15 flex flex-col items-center gap-8
                     lg:flex-row lg:justify-center lg:items-stretch">
