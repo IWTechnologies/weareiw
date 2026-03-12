@@ -62,35 +62,22 @@ p {
   @apply max-w-[70ch]
 }
 
-@property --num {
-  syntax: '<integer>';
-  intial-value: 0;
-  inherits: false;
-}
-
 /* not being used but keep just in case 
-diagonal background shape for section */
-.section-bg-diagonal {
-  position: relative;
-  overflow: hidden;
+background shapes for sections */
+.section-diagonal {
+  --skew-angle: -5deg;
+  --skew-color: white;
+
+  position: relative
 }
 
-.section-bg-diagonal:before {
+.section-diagonal::after {
   content: "";
   position: absolute;
+  z-index: -2;
   inset: 0;
-  background: var(--brand-navy);
-  clip-path: polygon(
-    0% 100%,   /* bottom-left */
-    100% 50%,   /* top-right */
-    100% 100%  /* bottom-right */
-  );
-  z-index: -1;
-}
-@media screen and (max-width: 1023px) {
-  .section-bg-diagonal:before {
-    display: none;
-  }
+  background: var(--skew-color);
+  transform: skewY(var(--skew-angle));
 }
 
 #partners,

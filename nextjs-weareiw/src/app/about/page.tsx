@@ -5,7 +5,7 @@ import NumCounter from "@/components/NumCounter";
 
 export default function AboutPage() {
     return (
-        <div className="bg-brand-black">
+        <div className="">
             <section className="h-fit flex flex-col items-center text-white">
                 <Hero 
                     imageSrc="/heroImages/aboutUsHero.png"
@@ -36,27 +36,30 @@ export default function AboutPage() {
                 />
             </section>
 
-            <section className="w-full flex justify-center py-14 mt-4 rounded-t-3xl bg-background text-brand-black">
-                <div className="w-[80%] mx-auto flex flex-col gap-5">
-                    <h2>What We Do</h2>
-                    <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
-                    <div>
-                        We intergrate cutting-edge hardware, agile deployment, and white-glove
-                        support to deliver end-to-end IT lifecycle solutions. Whether it's
-                        nationwide rollouts, on-site break/fix, or secure tech disposition,
-                        IW scales to meet the demands of modern enterprise.
-                    </div>
-                    <div>
-                        We design, deploy, and support the critical infrastructure behind every
-                        transaction, every interaction, and every rollout.
-                    </div>
-                    <div className="font-bold">
-                        Procurement | Configuration & Deployment | Field Maintenance | Secure Disposition
-                    </div>
-                    <div>
-                        Modular or full-stack - your tech, your pace.
+            <section className="w-full flex justify-center bg-brand-black text-brand-black">
+                <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
+                    <div className="w-[80%] mx-auto flex flex-col gap-5">
+                        <h2>What We Do</h2>
+                        <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
+                        <div>
+                            We intergrate cutting-edge hardware, agile deployment, and white-glove
+                            support to deliver end-to-end IT lifecycle solutions. Whether it's
+                            nationwide rollouts, on-site break/fix, or secure tech disposition,
+                            IW scales to meet the demands of modern enterprise.
+                        </div>
+                        <div>
+                            We design, deploy, and support the critical infrastructure behind every
+                            transaction, every interaction, and every rollout.
+                        </div>
+                        <div className="font-bold">
+                            Procurement | Configuration & Deployment | Field Maintenance | Secure Disposition
+                        </div>
+                        <div>
+                            Modular or full-stack - your tech, your pace.
+                        </div>
                     </div>
                 </div>
+                
             </section>
 
             <section className="w-full pb-14 bg-background">
@@ -64,7 +67,7 @@ export default function AboutPage() {
             </section>
 
             <section id="hardware"
-                  className="w-full flex flex-col items-center gap-5 bg-background">
+                  className="w-full flex flex-col items-center gap-5">
                     <div className="w-[80%] flex flex-col mx-auto gap-1 text-brand-black">
                       <h2>
                         Guided By Our Values
@@ -128,7 +131,7 @@ export default function AboutPage() {
                         imageHeight={375}
                         text={
                           <>
-                            <h3>Exellence</h3>
+                            <h3>Excellence</h3>
                             <p>
                                 We hold ourselves to the highest standard, offering top quality technology,
                                 the most skilled technicians, and unparalleled customer service.
@@ -139,8 +142,8 @@ export default function AboutPage() {
                     </div>
                   </section>
 
-            <section className="w-full py-14 bg-background">
-                <div className="container mx-auto flex justify-center">
+            <section className="w-full section-diagonal">
+                <div className="container py-14 mx-auto flex justify-center">
                     <Blurb 
                     media={{
                         type: "image",
@@ -188,7 +191,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 bg-background">
+            <section className="w-full py-14">
                 <div className="container mx-auto flex justify-center">
                     <Blurb 
                     media={{
@@ -216,7 +219,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14">
+            <section className="w-full py-14 bg-brand-black">
                 <div className="container mx-auto flex justify-center">
                     <Blurb 
                     media={{
