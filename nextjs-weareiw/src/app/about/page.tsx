@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import Card from "@/components/Card";
@@ -64,6 +65,21 @@ export default function AboutPage() {
 
             <section className="w-full pb-14 bg-background">
                 <NumCounter />
+            </section>
+
+            <section className="w-[80%] flex justify-center mx-auto mb-14 text-brand-black">
+                <div className="w-full sm:w-[80%] flex flex-col items-center gap-4">
+                    <div className="w-[90%] flex">
+                        <h2>
+                            What's In It For You
+                        </h2>
+                    </div>
+                    <Image
+                    className="w-[90%] h-auto object-contain rounded-3xl" 
+                    src="/aboutImages/Whats-In-It-For-You.webp" alt="What's in it for you image graphic" 
+                    width="1920" height="1080"
+                    sizes="(max-width: 1920px) 100vw, 50vw" />
+                </div>
             </section>
 
             <section id="hardware"
@@ -154,7 +170,12 @@ export default function AboutPage() {
                     }}
                     text={
                         <>
-                        <h3>People at IW</h3>
+                        <div className="w-full flex items-center">
+                            <img src="/aboutImages/icons/person-burst-solid-full.svg" 
+                            alt="people icon" height="50" width="50"
+                            className="mr-2" />  
+                            <h3>People at IW</h3>
+                        </div>
                         <p className="font-medium">Experts Who Know Your Frontlines</p>
                         <p>At IW Technologies, people are our platform.</p>
                         <p>
@@ -203,7 +224,13 @@ export default function AboutPage() {
                     }}
                     text={
                         <>
-                        <h3>Our Partners</h3>
+                        <div className="w-full flex items-center">
+                            <img src="/aboutImages/icons/handshake-solid-full.svg" 
+                            alt="handshake icon" height="50" width="50"
+                            className="mr-2" />  
+                            <h3>Our Partners</h3>
+                        </div>
+                        
                         <p>
                             IW Technologies is proud to be an official partner of some of 
                             the most reputable and sought-after manufacturers in the business.
@@ -231,7 +258,12 @@ export default function AboutPage() {
                     }}
                     text={
                         <>
+                        <div className="w-full flex items-center">
+                        <img src="/aboutImages/icons/briefcase-solid-full.svg" 
+                        alt="briefcase icon" height="50" width="50"
+                        className="mr-2" />    
                         <h3>Careers at IW</h3>
+                        </div>
                         <p className="font-medium">Help Us Build What Moves Business</p>
                         <p>
                             At IW, you'll team up with tech-savvy pros and hands-on field experts who
