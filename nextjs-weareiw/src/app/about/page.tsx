@@ -67,8 +67,8 @@ export default function AboutPage() {
             </section>
 
             <section id="hardware"
-                  className="w-full flex flex-col items-center gap-5">
-                    <div className="w-[80%] flex flex-col mx-auto gap-1 text-brand-black">
+                  className="w-[80%] mx-auto flex flex-col items-center gap-5">
+                    <div className="w-full flex flex-col gap-1 text-brand-black">
                       <h2>
                         Guided By Our Values
                       </h2>
@@ -77,8 +77,8 @@ export default function AboutPage() {
                         most comprehensive enterprise solutions in the industry.
                       </div>
                     </div>
-                    <div className="w-[80%] mx-auto mb-15 flex flex-col items-center gap-8
-                    lg:flex-row lg:justify-center lg:items-stretch">
+                    <div className="w-full mb-15 flex flex-col items-center gap-8
+                    lg:flex-row lg:justify-between lg:items-stretch">
                       <Card 
                         imageSrc="/View-our-products-Moody-blue.png"
                         imageAlt="Blue tinted view our products card image"
