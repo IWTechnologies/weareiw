@@ -86,7 +86,7 @@ export default function AboutPage() {
                         imageHeight={432}
                         text={
                           <>
-                            <h3>Service</h3>
+                            <h3 className="w-fit border-b-4 border-brand-aqua">Service</h3>
                             <p>
                                 Our dedication to our customers is second to none. When they have a need,
                                 issue, or last-minute request, we always deliver.
@@ -101,7 +101,7 @@ export default function AboutPage() {
                         imageHeight={375}
                         text={
                           <>
-                            <h3>Integrity</h3>
+                            <h3 className="w-fit border-b-4 border-brand-aqua">Integrity</h3>
                             <p>
                                 We have the best interests of our people and our customers in mind always,
                                 and we act accordingly, following through on our commitments and fostering respect.
@@ -116,7 +116,7 @@ export default function AboutPage() {
                         imageHeight={375}
                         text={
                           <>
-                            <h3>Partnership</h3>
+                            <h3 className="w-fit border-b-4 border-brand-aqua">Partnership</h3>
                             <p>
                                 We are committed to being a true partner to our customers every step
                                 of the way, offering fully customized solutions and consistent support.
@@ -131,7 +131,7 @@ export default function AboutPage() {
                         imageHeight={375}
                         text={
                           <>
-                            <h3>Excellence</h3>
+                            <h3 className="w-fit border-b-4 border-brand-aqua">Excellence</h3>
                             <p>
                                 We hold ourselves to the highest standard, offering top quality technology,
                                 the most skilled technicians, and unparalleled customer service.
@@ -147,8 +147,8 @@ export default function AboutPage() {
                     <Blurb 
                     media={{
                         type: "image",
-                        src: "/copylifeCycle.png",
-                        alt: "Blue tinted image of IW team in meeting",
+                        src: "/aboutImages/People-at-IW.webp",
+                        alt: "Blue tinted image of IW team in front of building",
                         width: 512,
                         height: 342,
                     }}
@@ -196,7 +196,7 @@ export default function AboutPage() {
                     <Blurb 
                     media={{
                         type: "image",
-                        src: "/copylifeCycle.png",
+                        src: "/aboutImages/flatNewPartners.webp",
                         alt: "Blue tinted image of IW team in meeting",
                         width: 512,
                         height: 342,
@@ -224,7 +224,7 @@ export default function AboutPage() {
                     <Blurb 
                     media={{
                         type: "image",
-                        src: "/copylifeCycle.png",
+                        src: "/aboutImages/Careers-at-IW.webp",
                         alt: "Blue tinted image of IW team in meeting",
                         width: 512,
                         height: 342,
