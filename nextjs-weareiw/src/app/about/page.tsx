@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import Card from "@/components/Card";
 import NumCounter from "@/components/NumCounter";
+
+export const metadata: Metadata = {
+  title: "About - IW Technologies",
+  description: "IW Technologies architects and optimizes POS and tech ecosystems for leading brands across Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
+};
 
 export default function AboutPage() {
     return (
