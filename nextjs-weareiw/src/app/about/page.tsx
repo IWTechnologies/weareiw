@@ -46,7 +46,7 @@ export default function AboutPage() {
             <section className="w-full flex justify-center bg-brand-black text-brand-black">
                 <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
                     <div className="w-[80%] mx-auto flex flex-col gap-5">
-                        <h2>What We Do</h2>
+                        <h2 className="w-fit border-b-4 border-brand-aqua p-2">What We Do</h2>
                         <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
                         <div>
                             We intergrate cutting-edge hardware, agile deployment, and white-glove

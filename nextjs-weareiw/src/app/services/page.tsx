@@ -34,7 +34,7 @@ export default function ServicesPage() {
 
             <section className="flex justify-center p-5 bg-brand-black text-white">
                 <div>
-                    <h2>
+                    <h2 className="border-b-4 border-brand-aqua p-2">
                         End-to-End Lifecycle Services
                     </h2>
                 </div>
