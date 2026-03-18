@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
@@ -8,6 +9,11 @@ const services = [
     { label: "Maintenance", src: "heroImages/shutterstock2.jpg", alt: "Maintenance image", href: "/services/maintenance" },
     { label: "Disposition", src: "heroImages/shutterstock2.jpg", alt: "Disposition image", href: "/services/disposition" }
 ]
+
+export const metadata: Metadata = {
+  title: "Services - IW Technologies",
+  description: "From installation to on-site repair to e-cycling, our offerings can cover the full lifecycle of your technology or be chosen a la carte.",
+};
 
 export default function ServicesPage() {
     return (
