@@ -16,6 +16,13 @@ export default function NavItem({ label, href, isExternal, submenu }: NavItemPro
         <div className="relative h-full flex items-center"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
+        onFocusCapture={() => setOpen(true)}
+        onBlurCapture={(e) => {
+            //only close if focus leaves div
+            if(!e.currentTarget.contains(e.relatedTarget)) {
+                setOpen(false);
+            }
+        }}
         >
             <Link
             href={href}
