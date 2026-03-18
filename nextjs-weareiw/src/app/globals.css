@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: var(--background);
@@ -81,6 +85,8 @@ background shapes for sections */
 }
 
 #partners,
+#our-people,
+#open-positions,
 #hardware {
   scroll-margin-top: 123px;
 }

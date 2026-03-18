@@ -21,7 +21,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   title: "IW Technologies - Your Enterprise Solution Partner",
-  description: "IW Technologies",
+  description: "IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${inter.variable} ${ibmPlexSerif.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth"
+    className={`${dmSans.variable} ${inter.variable} ${ibmPlexSerif.variable}`}>
       <body
         className="flex flex-col min-h-screen font-body text-base lg:text-lg antialiased">
         <PromoBar />

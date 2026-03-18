@@ -158,7 +158,7 @@ export default function AboutPage() {
                     </div>
                   </section>
 
-            <section className="w-full section-diagonal">
+            <section id="our-people" className="w-full section-diagonal">
                 <div className="container py-14 mx-auto flex justify-center">
                     <Blurb 
                     media={{
@@ -173,7 +173,7 @@ export default function AboutPage() {
                         <div className="w-full flex items-center">
                             <img src="/aboutImages/icons/person-burst-solid-full.svg" 
                             alt="people icon" height="50" width="50"
-                            className="mr-2" />  
+                            className="mr-2" />
                             <h3>People at IW</h3>
                         </div>
                         <p className="font-medium">Experts Who Know Your Frontlines</p>
@@ -191,9 +191,19 @@ export default function AboutPage() {
                             From seasoned industry experts to passionate tech geeks, our team brings
                             both practical know-how and technical depth to every project.
                         </p>
-                        <ul className="list-disc pl-10">
-                            <li>Leadership with 20+ years in POS and tech ecosystems.</li>
-                            <li>A hybrid workforce delivering consistent, high quality on-site service nationwide.</li>
+                        <ul className="text-sm pl-2.5">
+                            <li className="flex items-center gap-2">
+                                <img src="/aboutImages/icons/circle-check-solid-full.svg"
+                                alt="" width={20} height={20}
+                                className="shrink-0" />
+                                Leadership with 20+ years in POS and tech ecosystems.
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <img src="/aboutImages/icons/circle-check-solid-full.svg"
+                                alt="" width={20} height={20}
+                                className="shrink-0" />
+                                A hybrid workforce delivering consistent, high quality on-site service nationwide.
+                            </li>
                         </ul>
                         <p>
                             When you partner with IW, you get frontline tested experts 
@@ -234,6 +244,8 @@ export default function AboutPage() {
                         <p>
                             IW Technologies is proud to be an official partner of some of 
                             the most reputable and sought-after manufacturers in the business.
+                        </p>
+                        <p>
                             Together, we are empowering the front line to work better, faster and smarter
                             and redefining point-of-sale hardware and software through our steadfast commitment
                             to quality.
@@ -246,7 +258,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 bg-brand-black">
+            <section id="open-positions" className="w-full py-14 bg-brand-black">
                 <div className="container mx-auto flex justify-center">
                     <Blurb 
                     media={{
