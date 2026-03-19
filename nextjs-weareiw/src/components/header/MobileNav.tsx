@@ -11,10 +11,14 @@ type MobileNavProps = {
 
 export default function MobileNav({ open, onClose }: MobileNavProps ) {
     return (
-        <div className={`absolute left-0 top-full w-full h-[calc(100dvh-123px)] flex flex-col bg-brand-black text-white
+        <div id="mobile-nav" className={`absolute left-0 top-full w-full h-[calc(100dvh-123px)] flex flex-col bg-brand-black text-white
             transition-all duration-300 ease-in-out
             ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"}`}
-            role="dialog" aria-modal="true" aria-label="mobile navigation"
+            role="dialog" 
+            aria-modal="true" 
+            aria-label="mobile navigation"
+            aria-hidden={!open}
+            inert={!open ? true : undefined}
         >
             <nav className="flex flex-col">
                 {navItems.map((item) => (
@@ -27,7 +31,8 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
                 className="w-[80%] sm:w-fit m-6 px-[1em] py-[.33em] rounded-md text-center
                 transition duration-300 ease-in-out
                 border-3 border-background bg-background text-brand-black
-                hover:bg-transparent hover:text-background"
+                hover:bg-transparent hover:text-background
+                focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua"
                 onClick={onClose}
                 >
                     Get In Touch

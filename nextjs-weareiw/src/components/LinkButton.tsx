@@ -24,7 +24,7 @@ export default function LinkButton({ href, label, variant = "dark", className ="
             prefetch={isAnchor ? false : prefetch} 
             className={`w-full sm:w-fit transition duration-300 ease-in-out px-[1em] py-[.33em]
             rounded-md ${VARIANT_STYLES[variant]} ${className}
-            focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua           `}>
+            focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua`}>
                 {label}
             </Link>
     )

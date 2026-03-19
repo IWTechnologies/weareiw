@@ -43,7 +43,7 @@ export default function Header({ link }: HeaderProps) {
         <header className="sticky top-0 z-50 h-30.75 flex items-center bg-brand-black font-semibold text-xl text-white">
             <div className="h-full w-[95%] mx-auto flex justify-between items-center">
                 <div className="h-full flex items-center">
-                    <Link href="/" className="">
+                    <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-brand-aqua">
                         <Image className="max-h-17.5 w-auto object-contain" 
                         priority width={400} height={75} 
                         src="/fiftyYear/iw-50-whiteGold.png" alt="50 yearIW Technologies Logo" />
@@ -62,8 +62,11 @@ export default function Header({ link }: HeaderProps) {
                 {/* Burger Button */}
                 <button id="burger"
                 onClick={() => setMobileOpen((prev) => !prev)}
-                className="lg:hidden relative w-8 h-6 hover:cursor-pointer"
+                className="lg:hidden relative w-8 h-6 hover:cursor-pointer
+                focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-brand-aqua"
                 aria-label="Toggle mobile menu"
+                aria-expanded={mobileOpen}
+                aria-controls="mobile-nav"
                 >
                     <span
                         className={`absolute left-0 w-8 h-1 bg-white rounded-md transition-all duration-300 ease-in-out

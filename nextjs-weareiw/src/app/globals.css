@@ -40,7 +40,7 @@ body {
 }
 
 @theme {
-  --inset-shadow-md: inset 0 0 10px rgba(0, 0, 0, 0.50);
+  --inset-shadow-md: inset 0 0 20px rgba(0, 0, 0, 0.50);
 
   /* Headings */
   --font-heading: var(--font-sansDM);

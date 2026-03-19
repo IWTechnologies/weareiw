@@ -17,8 +17,10 @@ export default function MobileNavItem({ label, href, submenu, onNavigate }: Mobi
     
     return (
         <div>
-            <div className="flex items-center justify-between px-6 py-4">
-                <Link href={href} onClick={onNavigate} className={`${isActive ? "text-brand-aqua" : "text-white hover:text-brand-aqua"}`}>
+            <div className="flex items-center justify-between px-6 py-2">
+                <Link href={href} onClick={onNavigate} 
+                className={`${isActive ? "text-brand-aqua" : "text-white hover:text-brand-aqua"}
+                p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua`}>
                     {label}
                 </Link>
 
@@ -28,7 +30,8 @@ export default function MobileNavItem({ label, href, submenu, onNavigate }: Mobi
                         aria-expanded={open}
                         aria-controls={`${label}-submenu`}
                         aria-label={`Toggle ${label} submenu`}
-                        className="ml-4 text-white hover:text-brand-aqua"
+                        className="text-white hover:text-brand-aqua
+                        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua"
                     >
                         ▾
                     </button>
@@ -38,15 +41,23 @@ export default function MobileNavItem({ label, href, submenu, onNavigate }: Mobi
             {hasSubmenu && (
                 <ul
                 id={`${label}-submenu`}
-                className={`pl-10 pb-2 inset-shadow-md transition-all ${
+                className={`bg-brand-navy/20 pl-10 pb-2 inset-shadow-md transition-all ${
                     open ? "block" : "hidden"
                 }`}
+                onFocusCapture={() => setOpen(true)}
+                onBlurCapture={(e) => {
+                    //only close if focus leaves ul
+                    if(!e.currentTarget.contains(e.relatedTarget)) {
+                        setOpen(false);
+                    }
+                }}
                 >
                 {submenu!.map((item) => (
                     <li key={item.href}>
                     <Link
                         href={item.href} onClick={onNavigate}
-                        className="block py-2 text-white hover:text-brand-aqua"
+                        className="w-[99%] block pl-2 py-2 text-white hover:text-brand-aqua
+                        focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua"
                     >
                         {item.label}
                     </Link>
