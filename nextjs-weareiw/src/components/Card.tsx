@@ -22,7 +22,7 @@ export default function Card({ imageSrc, imageAlt, imageWidth, imageHeight, text
             <Image className="min-h-62.5 max-h-62.5 h-auto w-auto object-cover" 
             src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight}
             sizes="(max-width: 1024px) 100vw, 512px" />
-            <div className="h-full flex flex-col gap-2 p-8 text-brand-black">
+            <div className="h-full flex flex-col gap-2 p-6 text-brand-black">
                 {text}
                 {link && (
                     <div className="flex grow items-end">
