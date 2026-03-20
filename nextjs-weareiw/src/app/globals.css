@@ -104,3 +104,8 @@ background shapes for sections */
 .animate-logo-scroll {
   animation: logo-scroll var(--duration) linear infinite;
 }
+
+.logo-slider:hover .animate-logo-scroll,
+.logo-slider:focus-within .animate-logo-scroll {
+  animation-play-state: paused;
+}

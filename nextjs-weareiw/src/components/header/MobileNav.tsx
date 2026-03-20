@@ -32,6 +32,7 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
                 transition duration-300 ease-in-out
                 border-3 border-background bg-background text-brand-black
                 hover:bg-transparent hover:text-background
+                active:bg-transparent active:text-background
                 focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua"
                 onClick={onClose}
                 >

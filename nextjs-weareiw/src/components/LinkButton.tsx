@@ -11,8 +11,8 @@ type LinkProps = {
 };
 
 const VARIANT_STYLES: Record<LinkVariant, string> = {
-  light: "bg-background text-brand-black border-3 border-background hover:bg-transparent hover:text-white",
-  dark: "bg-brand-black text-white border-3 border-brand-black hover:bg-transparent hover:text-brand-black",
+  light: "bg-background text-brand-black border-3 border-background hover:bg-transparent hover:text-white active:bg-transparent active:text-white",
+  dark: "bg-brand-black text-white border-3 border-brand-black hover:bg-transparent hover:text-brand-black active:bg-transparent active:text-brand-black",
 };
 
 export default function LinkButton({ href, label, variant = "dark", className ="", prefetch }: LinkProps) {

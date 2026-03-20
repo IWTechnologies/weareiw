@@ -10,7 +10,10 @@ type LogoSliderProps = {
 
 export default function LogoSlider({ logos, speed = 30 }: LogoSliderProps) {
     return (
-        <div className="w-full overflow-hidden">
+        <div className="logo-slider w-full rounded-2xl overflow-hidden
+        hover:inset-shadow-md/10 hover:inset-shadow-brand-black
+        active:inset-shadow-md/10 active:inset-shadow-brand-black
+        focus-within:inset-shadow-md/10 focus-within:inset-shadow-brand-black">
             <div
                 className="flex w-max animate-logo-scroll"
                 style={{ "--duration": `${speed}s` } as React.CSSProperties}
