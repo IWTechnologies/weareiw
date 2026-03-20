@@ -10,6 +10,15 @@ export const metadata: Metadata = {
   description: "IW Technologies architects and optimizes POS and tech ecosystems for leading brands across Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
 };
 
+const industries = [
+    { label: "Grocery and Pharmacy", src: "/heroImages/shutterstock1.jpg", alt: "Grocery and Pharmacy image with title" },
+    { label: "Retail", src: "/heroImages/shutterstock2.jpg", alt: "Retail image with title" },
+    { label: "Hospitality", src: "/heroImages/shutterstock3.jpg", alt: "Hospitality image with title" },
+    { label: "QSR", src: "/heroImages/shutterstock4.jpg", alt: "QSR image with title" },
+    { label: "Convenience and Pretroleum", src: "/heroImages/shutterstock5.jpg", alt: "Convenience and Pretroleum image with title" },
+    { label: "Distribution", src: "/heroImages/shutterstock6.jpg", alt: "Distribution image with title" },
+]
+
 export default function AboutPage() {
     return (
         <div className="">
@@ -67,6 +76,31 @@ export default function AboutPage() {
                     </div>
                 </div>
                 
+            </section>
+
+            <section className="w-[80%] mx-auto mb-14 text-brand-black">
+                <div className="relative w-full h-full flex flex-col items-center gap-4">
+                    <div className="w-full flex">
+                        <h2>
+                            Industries We Serve
+                        </h2>
+                    </div>
+                    <div className="relative w-full h-96 lg:h-80 flex flex-col sm:flex rounded-2xl overflow-hidden">
+                        {industries.map((industry) => (
+                            <div key={industry.label}
+                                className="group relative flex-1 hover:flex-3 active:flex-3 transition-all duration-500 ease-in-out
+                                flex items-center justify-center text-center">
+                                <div className="absolute inset-0 z-10 bg-linear-to-t from-brand-navy/50 to-transparent" />
+                                <img
+                                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0"
+                                    src={industry.src} alt={industry.alt} />
+                                <h3 className="relative z-20 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 w-full text-white">
+                                    {industry.label}
+                                </h3>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </section>
 
             <section className="w-full pb-14 bg-background">
