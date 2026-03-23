@@ -43,6 +43,7 @@ export const navItems: NavItem[] = [
         submenu: [
             { label: "Our Story", href: "/about/" },
             { label: "Our People", href: "/about#our-people" },
+            { label: "Our Partners", href: "/about#our-partners" },
             { label: "Our Commitment", href: "/about#our-commitment" },
             { label: "Open Positions", href: "/about#open-positions" },
         ],

@@ -130,7 +130,7 @@ export default function AboutPage() {
             </section>
 
             <section id="hardware"
-            className="w-[80%] mx-auto flex flex-col items-center gap-5">
+            className="w-[80%] mx-auto mb-15 flex flex-col items-center gap-5">
                 <div className="w-full flex flex-col gap-1 text-brand-black">
                     <h2>
                     Guided By Our Values
@@ -140,7 +140,7 @@ export default function AboutPage() {
                     most comprehensive enterprise solutions in the industry.
                     </div>
                 </div>
-                <div className="w-full mb-15 flex flex-col items-center gap-8
+                <div className="w-full flex flex-col items-center gap-8
                 lg:flex-row lg:justify-between lg:items-stretch">
                     <Card 
                     imageSrc="/View-our-products-Moody-blue.png"
@@ -269,7 +269,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14">
+            <section id="our-partners" className="w-full py-14">
                 <div className="container mx-auto flex justify-center">
                     <Blurb 
                     media={{
