@@ -85,7 +85,8 @@ export default function AboutPage() {
                             Industries We Serve
                         </h2>
                     </div>
-                    <div className="relative w-full h-96 lg:h-80 flex flex-col sm:flex rounded-2xl overflow-hidden">
+                    <div className="relative w-full h-96 lg:h-80 
+                    grid grid-cols-2 md:grid-cols-none md:flex md:flex-row rounded-2xl overflow-hidden">
                         {industries.map((industry) => (
                             <div key={industry.label}
                                 className="group relative flex-1 hover:flex-3 active:flex-3 transition-all duration-500 ease-in-out
@@ -94,9 +95,15 @@ export default function AboutPage() {
                                 <img
                                     className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0"
                                     src={industry.src} alt={industry.alt} />
-                                <h3 className="relative z-20 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 w-full text-white">
-                                    {industry.label}
-                                </h3>
+                                <div className="w-full h-full flex justify-center items-center">
+                                    <h3 
+                                    className="relative z-20 w-fit h-fit p-2 rounded-2xl border border-white/20
+                                    opacity-100 md:opacity-0 md:group-hover:opacity-100 
+                                    group-active:opacity-100 transition-opacity duration-300 
+                                    text-white text-shadow-lg backdrop-blur-xs">
+                                        {industry.label}
+                                    </h3>
+                                </div>
                             </div>
                         ))}
                     </div>
