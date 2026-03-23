@@ -130,80 +130,80 @@ export default function AboutPage() {
             </section>
 
             <section id="hardware"
-                  className="w-[80%] mx-auto flex flex-col items-center gap-5">
-                    <div className="w-full flex flex-col gap-1 text-brand-black">
-                      <h2>
-                        Guided By Our Values
-                      </h2>
-                      <div>
-                        We believe in going above and beyond for our customers, providing them with the 
-                        most comprehensive enterprise solutions in the industry.
-                      </div>
+            className="w-[80%] mx-auto flex flex-col items-center gap-5">
+                <div className="w-full flex flex-col gap-1 text-brand-black">
+                    <h2>
+                    Guided By Our Values
+                    </h2>
+                    <div>
+                    We believe in going above and beyond for our customers, providing them with the 
+                    most comprehensive enterprise solutions in the industry.
                     </div>
-                    <div className="w-full mb-15 flex flex-col items-center gap-8
-                    lg:flex-row lg:justify-between lg:items-stretch">
-                      <Card 
-                        imageSrc="/View-our-products-Moody-blue.png"
-                        imageAlt="Blue tinted view our products card image"
-                        imageWidth={663}
-                        imageHeight={432}
-                        text={
-                          <>
-                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Service</h3>
-                            <p>
-                                Our dedication to our customers is second to none. When they have a need,
-                                issue, or last-minute request, we always deliver.
-                            </p>
-                          </>
-                        }
-                      />
-                      <Card 
-                        imageSrc="/Services-Moody-Blue.png"
-                        imageAlt="Blue tinted Services card image"
-                        imageWidth={669}
-                        imageHeight={375}
-                        text={
-                          <>
-                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Integrity</h3>
-                            <p>
-                                We have the best interests of our people and our customers in mind always,
-                                and we act accordingly, following through on our commitments and fostering respect.
-                            </p>
-                          </>
-                        }
-                      />
-                      <Card 
-                        imageSrc="/Services-Moody-Blue.png"
-                        imageAlt="Blue tinted Services card image"
-                        imageWidth={669}
-                        imageHeight={375}
-                        text={
-                          <>
-                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Partnership</h3>
-                            <p>
-                                We are committed to being a true partner to our customers every step
-                                of the way, offering fully customized solutions and consistent support.
-                            </p>
-                          </>
-                        }
-                      />
-                      <Card 
-                        imageSrc="/Services-Moody-Blue.png"
-                        imageAlt="Blue tinted Services card image"
-                        imageWidth={669}
-                        imageHeight={375}
-                        text={
-                          <>
-                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Excellence</h3>
-                            <p>
-                                We hold ourselves to the highest standard, offering top quality technology,
-                                the most skilled technicians, and unparalleled customer service.
-                            </p>
-                          </>
-                        }
-                      />
-                    </div>
-                  </section>
+                </div>
+                <div className="w-full mb-15 flex flex-col items-center gap-8
+                lg:flex-row lg:justify-between lg:items-stretch">
+                    <Card 
+                    imageSrc="/View-our-products-Moody-blue.png"
+                    imageAlt="Blue tinted view our products card image"
+                    imageWidth={663}
+                    imageHeight={432}
+                    text={
+                        <>
+                        <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Service</h3>
+                        <p>
+                            Our dedication to our customers is second to none. When they have a need,
+                            issue, or last-minute request, we always deliver.
+                        </p>
+                        </>
+                    }
+                    />
+                    <Card 
+                    imageSrc="/Services-Moody-Blue.png"
+                    imageAlt="Blue tinted Services card image"
+                    imageWidth={669}
+                    imageHeight={375}
+                    text={
+                        <>
+                        <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Integrity</h3>
+                        <p>
+                            We have the best interests of our people and our customers in mind always,
+                            and we act accordingly, following through on our commitments and fostering respect.
+                        </p>
+                        </>
+                    }
+                    />
+                    <Card 
+                    imageSrc="/Services-Moody-Blue.png"
+                    imageAlt="Blue tinted Services card image"
+                    imageWidth={669}
+                    imageHeight={375}
+                    text={
+                        <>
+                        <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Partnership</h3>
+                        <p>
+                            We are committed to being a true partner to our customers every step
+                            of the way, offering fully customized solutions and consistent support.
+                        </p>
+                        </>
+                    }
+                    />
+                    <Card 
+                    imageSrc="/Services-Moody-Blue.png"
+                    imageAlt="Blue tinted Services card image"
+                    imageWidth={669}
+                    imageHeight={375}
+                    text={
+                        <>
+                        <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Excellence</h3>
+                        <p>
+                            We hold ourselves to the highest standard, offering top quality technology,
+                            the most skilled technicians, and unparalleled customer service.
+                        </p>
+                        </>
+                    }
+                    />
+                </div>
+            </section>
 
             <section id="our-people" className="w-full section-diagonal">
                 <div className="container py-14 mx-auto flex justify-center">
@@ -297,6 +297,77 @@ export default function AboutPage() {
                             and redefining point-of-sale hardware and software through our steadfast commitment
                             to quality.
                         </p>
+                        </>
+                    }
+                    reverse
+                    textColor="text-brand-black"
+                    />
+                </div>
+            </section>
+
+            <section id="our-commitment" className="w-full py-14">
+                <div className="container mx-auto mb-4 flex flex-col gap-1 text-brand-black">
+                    <h2>
+                    Our Culture & Commitment
+                    </h2>
+                    <div>
+                    A Look Behind the Tech
+                    </div>
+                </div>
+                <div className="container mx-auto flex justify-center">
+                    <Blurb 
+                    media={{
+                        type: "image",
+                        src: "/heroImages/shutterstock1.jpg",
+                        alt: "Blue tinted image of IW team in meeting",
+                        width: 512,
+                        height: 342,
+                    }}
+                    text={
+                        <>
+                        <h3>IW Runs on Our People</h3>
+                        <p className="font-medium">
+                            More Than a Team. They're the Reason We Win.
+                        </p>
+                        <p>
+                            Appreciation isn't a memo here. It's a full-blown celebration.
+                        </p>
+                        <p>
+                            Every year we throw a week long party for the people who make it all happen.
+                            Food trucks roll in, ice cream flows, gifts appear, and smiles stick around.
+                        </p>
+                        <p>
+                            Step into our office and you'll feel it. A culture built on grattitude, pride,
+                            and real human energy. Because when you take care of your people, they take care of 
+                            everything else.
+                        </p>
+                        </>
+                    }
+                    textColor="text-brand-black"
+                    />
+                    <Blurb 
+                    media={{
+                        type: "video",
+                        youtubeId: "rdhYth983zg",
+                    }}
+                    text={
+                        <>
+                        <h3>Sustainability is the Standard</h3>
+                        <p>
+                            At IW, sustainability isn't a strategy, it's our operating model.
+                        </p>
+                        <p>
+                            <span className="font-medium">In 2024 alone, we recycled 815 tons of technology equipment</span>
+                            , driving down e-waste, emissions, and energy consumption across the IT supply chain.
+                        </p>
+                        <p>
+                            We lead with action in the circular economy, offering enterprise partners a path 
+                            to greener tech lifecycles through refurbishment, recovery, and responsible disposition.
+                        </p>
+                        <p>
+                            This isn't seasonal ESG messaging. It's year-round, measurable impact.
+                        </p>
+                        <p>And we show up with proof year after year.</p>
                         </>
                     }
                     reverse
