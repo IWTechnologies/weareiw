@@ -306,73 +306,75 @@ export default function AboutPage() {
             </section>
 
             <section id="our-commitment" className="w-full py-14">
-                <div className="container mx-auto mb-4 flex flex-col gap-1 text-brand-black">
-                    <h2>
-                    Our Culture & Commitment
-                    </h2>
-                    <div>
-                    A Look Behind the Tech
+                <div className="w-[90%] mx-auto">
+                    <div className="w-[90%] lg:w-full mx-auto mb-4 flex flex-col gap-1 text-brand-black">
+                        <h2>
+                        Our Culture & Commitment
+                        </h2>
+                        <div>
+                        A Look Behind the Tech
+                        </div>
                     </div>
-                </div>
-                <div className="container mx-auto flex justify-center">
-                    <Blurb 
-                    media={{
-                        type: "image",
-                        src: "/heroImages/shutterstock1.jpg",
-                        alt: "Blue tinted image of IW team in meeting",
-                        width: 512,
-                        height: 342,
-                    }}
-                    text={
-                        <>
-                        <h3>IW Runs on Our People</h3>
-                        <p className="font-medium">
-                            More Than a Team. They're the Reason We Win.
-                        </p>
-                        <p>
-                            Appreciation isn't a memo here. It's a full-blown celebration.
-                        </p>
-                        <p>
-                            Every year we throw a week long party for the people who make it all happen.
-                            Food trucks roll in, ice cream flows, gifts appear, and smiles stick around.
-                        </p>
-                        <p>
-                            Step into our office and you'll feel it. A culture built on grattitude, pride,
-                            and real human energy. Because when you take care of your people, they take care of 
-                            everything else.
-                        </p>
-                        </>
-                    }
-                    textColor="text-brand-black"
-                    />
-                    <Blurb 
-                    media={{
-                        type: "video",
-                        youtubeId: "rdhYth983zg",
-                    }}
-                    text={
-                        <>
-                        <h3>Sustainability is the Standard</h3>
-                        <p>
-                            At IW, sustainability isn't a strategy, it's our operating model.
-                        </p>
-                        <p>
-                            <span className="font-medium">In 2024 alone, we recycled 815 tons of technology equipment</span>
-                            , driving down e-waste, emissions, and energy consumption across the IT supply chain.
-                        </p>
-                        <p>
-                            We lead with action in the circular economy, offering enterprise partners a path 
-                            to greener tech lifecycles through refurbishment, recovery, and responsible disposition.
-                        </p>
-                        <p>
-                            This isn't seasonal ESG messaging. It's year-round, measurable impact.
-                        </p>
-                        <p>And we show up with proof year after year.</p>
-                        </>
-                    }
-                    reverse
-                    textColor="text-brand-black"
-                    />
+                    <div className="flex flex-col lg:flex-row justify-center">
+                        <Blurb 
+                        media={{
+                            type: "image",
+                            src: "/heroImages/shutterstock1.jpg",
+                            alt: "Blue tinted image of IW team in meeting",
+                            width: 512,
+                            height: 342,
+                        }}
+                        text={
+                            <>
+                            <h3>IW Runs on Our People</h3>
+                            <p className="font-medium">
+                                More Than a Team. They're the Reason We Win.
+                            </p>
+                            <p>
+                                Appreciation isn't a memo here. It's a full-blown celebration.
+                            </p>
+                            <p>
+                                Every year we throw a week long party for the people who make it all happen.
+                                Food trucks roll in, ice cream flows, gifts appear, and smiles stick around.
+                            </p>
+                            <p>
+                                Step into our office and you'll feel it. A culture built on grattitude, pride,
+                                and real human energy. Because when you take care of your people, they take care of 
+                                everything else.
+                            </p>
+                            </>
+                        }
+                        textColor="text-brand-black"
+                        />
+                        <Blurb 
+                        media={{
+                            type: "video",
+                            youtubeId: "rdhYth983zg",
+                        }}
+                        text={
+                            <>
+                            <h3>Sustainability is the Standard</h3>
+                            <p>
+                                At IW, sustainability isn't a strategy, it's our operating model.
+                            </p>
+                            <p>
+                                <span className="font-medium">In 2024 alone, we recycled 815 tons of technology equipment</span>
+                                , driving down e-waste, emissions, and energy consumption across the IT supply chain.
+                            </p>
+                            <p>
+                                We lead with action in the circular economy, offering enterprise partners a path 
+                                to greener tech lifecycles through refurbishment, recovery, and responsible disposition.
+                            </p>
+                            <p>
+                                This isn't seasonal ESG messaging. It's year-round, measurable impact.
+                            </p>
+                            <p>And we show up with proof year after year.</p>
+                            </>
+                        }
+                        reverse
+                        textColor="text-brand-black"
+                        />
+                    </div>
                 </div>
             </section>
 
