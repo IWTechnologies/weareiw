@@ -36,6 +36,66 @@ export default function OurStory() {
                     }
                 />
             </section>
+
+            <section className="flex justify-center p-5 bg-brand-black text-white">
+                <div>
+                    <h2 className="border-b-4 border-brand-aqua p-2">
+                        FOLLOW ALONG WITH US
+                    </h2>
+                </div>
+            </section>
+
+            <section className="w-full flex justify-center bg-brand-black text-brand-black">
+                <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
+                    <div className="w-[70%] mx-auto flex flex-col gap-5">
+                        <h2 className="w-full border-b-2 border-brand-black p-2 text-brand-navy">
+                            THE BEGINNING
+                        </h2>
+                        <div className="relative">
+                            <div className="timeline-container w-full p-2">
+                                <div className="seventyFour flex">
+                                    <div 
+                                    className="w-1/2 h-fit flex flex-col items-center p-5 mr-[5.5%] 
+                                    rounded-r-full bg-brand-navy text-white">
+                                        <h2>
+                                            1974
+                                        </h2>
+                                        <div>
+                                            THE INDUSTRY INSIGHT
+                                        </div>
+                                    </div>
+                                    <div 
+                                    className="w-1/2 p-5 pl-3 pt-0">
+                                        <div className="flex flex-col items-center gap-4">
+                                            <p>
+                                                Our Founder, Al Moorhouse, wasn't trying to start a 
+                                                business. He just saw something others didn't.
+                                            </p>
+                                            <p>
+                                                While working at a leading cash register company, he 
+                                                watched the industry shift from mechinical machines 
+                                                to electronic registers. A tech revolution was underway.
+                                            </p>
+                                            <p>
+                                                But there was a catch: Big manufacturers didn't offer 
+                                                trade-ins. If a company had six stores and needed a seventh 
+                                                register but the model was discontinued, they had to replace 
+                                                all seven. No trade-ins. No reuse.
+                                            </p>
+                                            <p>
+                                                Al saw the gap and decided to fill it with a smarter, 
+                                                more sustainable solution.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> {/* end of seventyFour container */}
+                                
+                            </div> {/* end of timeline container */}
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
         </div>
     )
 }

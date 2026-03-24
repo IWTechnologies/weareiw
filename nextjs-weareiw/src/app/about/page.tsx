@@ -75,7 +75,6 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
-                
             </section>
 
             <section className="w-[80%] mx-auto mb-14 text-brand-black">

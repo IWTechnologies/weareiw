@@ -111,3 +111,14 @@ background shapes for sections */
 .logo-slider:focus-within .animate-logo-scroll {
   animation-play-state: paused;
 }
+
+/* our story timeline */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  width: 3px;
+  height: 63%;
+  background: #0a1258;
+}
