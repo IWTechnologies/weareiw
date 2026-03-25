@@ -305,16 +305,19 @@ export default function AboutPage() {
             </section>
 
             <section id="our-commitment" className="w-full py-14">
-                <div className="w-[90%] mx-auto">
-                    <div className="w-[90%] lg:w-full mx-auto mb-4 flex flex-col gap-1 text-brand-black">
-                        <h2>
-                        Our Culture & Commitment
-                        </h2>
-                        <div>
-                        A Look Behind the Tech
+                <div className="flex flex-col gap-5">
+                    <div className="container mx-auto mb-4 text-brand-black">
+                        <div className="w-[90%] flex flex-col mx-auto gap-1 ">
+                            <h2>
+                                Our Culture & Commitment
+                            </h2>
+                            <div>
+                                A Look Behind the Tech
+                            </div>
                         </div>
+                        
                     </div>
-                    <div className="flex flex-col lg:flex-row justify-center">
+                    <div className="container mx-auto flex justify-center">
                         <Blurb 
                         media={{
                             type: "image",
@@ -345,6 +348,8 @@ export default function AboutPage() {
                         }
                         textColor="text-brand-black"
                         />
+                    </div>
+                    <div className="container mx-auto flex justify-center">
                         <Blurb 
                         media={{
                             type: "video",
