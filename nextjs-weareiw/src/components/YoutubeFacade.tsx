@@ -33,9 +33,9 @@ export default function YoutubeFacade({ youtubeId }: YoutubeProps) {
             />
             <div 
             className="absolute inset-0 flex items-center justify-center
-            bg-black/20 group-hover:bg-black/50 group-hover:cursor-pointer transition duration-300">
+            bg-brand-black/20 group-hover:bg-brand-black/50 group-hover:cursor-pointer transition duration-300">
                 <div 
-                className="bg-red-600 rounded-xl px-5 py-3 group-hover:bg-red-900 
+                className="bg-brand-navy group-hover:bg-brand-aqua rounded-xl px-5 py-3  
                 transition duration-300">
                     <svg className="w-8 h-8 text-white fill-current" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"/>
