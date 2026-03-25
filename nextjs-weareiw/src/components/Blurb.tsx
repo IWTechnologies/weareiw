@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 import LinkButton, { LinkVariant } from "./LinkButton";
+import YoutubeFacade from "./YoutubeFacade";
 
 type ImageMedia = {
     type: "image";
@@ -44,14 +45,7 @@ export default function Blurb({ media, text, link, reverse=false, textColor="tex
             )}
             {media.type === "video" && (
                 <div className="w-full lg:w-1/2 aspect-video">
-                    <iframe
-                    className="h-full w-full object-contain
-                    sm:max-lg:w-full" 
-                    src={`https://www.youtube.com/embed/${media.youtubeId}`}
-                    title="Embedded youtube video"
-                    loading="lazy"
-                    allowFullScreen
-                    />
+                    <YoutubeFacade youtubeId={media.youtubeId} />
                 </div>
                 
             )}
