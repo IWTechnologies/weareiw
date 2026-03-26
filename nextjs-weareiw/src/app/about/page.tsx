@@ -305,9 +305,9 @@ export default function AboutPage() {
             </section>
 
             <section id="our-commitment" className="w-full py-14">
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col">
                     <div className="container mx-auto mb-4 text-brand-black">
-                        <div className="w-[90%] flex flex-col mx-auto gap-1 ">
+                        <div className="flex flex-col mx-auto gap-1 ">
                             <h2>
                                 Our Culture & Commitment
                             </h2>
@@ -317,68 +317,73 @@ export default function AboutPage() {
                         </div>
                         
                     </div>
-                    <div className="container mx-auto flex justify-center">
-                        <Blurb 
-                        media={{
-                            type: "image",
-                            src: "/heroImages/shutterstock1.jpg",
-                            alt: "Blue tinted image of IW team in meeting",
-                            width: 512,
-                            height: 342,
-                        }}
-                        text={
-                            <>
-                            <h3>IW Runs on Our People</h3>
-                            <p className="font-medium">
-                                More Than a Team. They're the Reason We Win.
-                            </p>
-                            <p>
-                                Appreciation isn't a memo here. It's a full-blown celebration.
-                            </p>
-                            <p>
-                                Every year we throw a week long party for the people who make it all happen.
-                                Food trucks roll in, ice cream flows, gifts appear, and smiles stick around.
-                            </p>
-                            <p>
-                                Step into our office and you'll feel it. A culture built on grattitude, pride,
-                                and real human energy. Because when you take care of your people, they take care of 
-                                everything else.
-                            </p>
-                            </>
-                        }
-                        textColor="text-brand-black"
-                        />
+                    <div className="container mx-auto rounded-2xl overflow-hidden border-2 border-red-500">
+                        <div className="flex justify-center">
+                            <Blurb 
+                            media={{
+                                type: "image",
+                                src: "/heroImages/shutterstock1.jpg",
+                                alt: "Blue tinted image of IW team in meeting",
+                                width: 512,
+                                height: 342,
+                            }}
+                            text={
+                                <>
+                                <h3 className="lg:pt-8">IW Runs on Our People</h3>
+                                <p className="font-medium">
+                                    More Than a Team. They're the Reason We Win.
+                                </p>
+                                <p>
+                                    Appreciation isn't a memo here. It's a full-blown celebration.
+                                </p>
+                                <p>
+                                    Every year we throw a week long party for the people who make it all happen.
+                                    Food trucks roll in, ice cream flows, gifts appear, and smiles stick around.
+                                </p>
+                                <p>
+                                    Step into our office and you'll feel it. A culture built on grattitude, pride,
+                                    and real human energy. Because when you take care of your people, they take care of 
+                                    everything else.
+                                </p>
+                                </>
+                            }
+                            textColor="text-white"
+                            bgColor="bg-brand-black"
+                            />
+                        </div>
+                        <div className="flex justify-center">
+                            <Blurb 
+                            media={{
+                                type: "video",
+                                youtubeId: "rdhYth983zg",
+                            }}
+                            text={
+                                <>
+                                <h3 className="lg:pt-8">Sustainability is the Standard</h3>
+                                <p>
+                                    At IW, sustainability isn't a strategy, it's our operating model.
+                                </p>
+                                <p>
+                                    <span className="font-medium">In 2024 alone, we recycled 815 tons of technology equipment</span>
+                                    , driving down e-waste, emissions, and energy consumption across the IT supply chain.
+                                </p>
+                                <p>
+                                    We lead with action in the circular economy, offering enterprise partners a path 
+                                    to greener tech lifecycles through refurbishment, recovery, and responsible disposition.
+                                </p>
+                                <p>
+                                    This isn't seasonal ESG messaging. It's year-round, measurable impact.
+                                </p>
+                                <p>And we show up with proof year after year.</p>
+                                </>
+                            }
+                            reverse
+                            textColor="text-white"
+                            bgColor="bg-brand-black"
+                            />
+                        </div>
                     </div>
-                    <div className="container mx-auto flex justify-center">
-                        <Blurb 
-                        media={{
-                            type: "video",
-                            youtubeId: "rdhYth983zg",
-                        }}
-                        text={
-                            <>
-                            <h3>Sustainability is the Standard</h3>
-                            <p>
-                                At IW, sustainability isn't a strategy, it's our operating model.
-                            </p>
-                            <p>
-                                <span className="font-medium">In 2024 alone, we recycled 815 tons of technology equipment</span>
-                                , driving down e-waste, emissions, and energy consumption across the IT supply chain.
-                            </p>
-                            <p>
-                                We lead with action in the circular economy, offering enterprise partners a path 
-                                to greener tech lifecycles through refurbishment, recovery, and responsible disposition.
-                            </p>
-                            <p>
-                                This isn't seasonal ESG messaging. It's year-round, measurable impact.
-                            </p>
-                            <p>And we show up with proof year after year.</p>
-                            </>
-                        }
-                        reverse
-                        textColor="text-brand-black"
-                        />
-                    </div>
+                    
                 </div>
             </section>
 

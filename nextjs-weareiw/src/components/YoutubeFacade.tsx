@@ -32,8 +32,9 @@ export default function YoutubeFacade({ youtubeId }: YoutubeProps) {
             className="w-full h-full object-cover"
             />
             <div 
-            className="absolute inset-0 flex items-center justify-center
-            bg-brand-black/20 group-hover:bg-brand-black/50 group-hover:cursor-pointer transition duration-300">
+            className="absolute inset-0 flex items-center justify-center 
+            bg-brand-black/20 group-hover:bg-brand-black/50 group-hover:cursor-pointer 
+            transition duration-300">
                 <div 
                 className="bg-brand-navy group-hover:bg-brand-aqua rounded-xl px-5 py-3  
                 transition duration-300">
