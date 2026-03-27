@@ -65,72 +65,81 @@ export default function ServicesPage() {
 
             <section className="w-full py-14 rounded-t-3xl bg-background">
                 <div className="container mx-auto flex justify-center">
-                    <Blurb 
-                    media={{
-                        type: "image",
-                        src: "/copylifeCycle.png",
-                        alt: "Blue tinted image of IW team in meeting",
-                        width: 512,
-                        height: 342,
-                    }}
-                    text={
-                        <>
-                        <h3>This is placeholder content</h3>
-                        <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
-                        <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
-                        <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
-                        </>
-                    }
-                    reverse
-                    textColor="text-brand-black"
-                    />
+                    <div className="w-[90%]">
+                        <Blurb 
+                        media={{
+                            type: "image",
+                            src: "/copylifeCycle.png",
+                            alt: "Blue tinted image of IW team in meeting",
+                            width: 512,
+                            height: 342,
+                        }}
+                        text={
+                            <>
+                            <h3>This is placeholder content</h3>
+                            <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
+                            <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
+                            <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
+                            </>
+                        }
+                        reverse
+                        rounded
+                        textColor="text-brand-black"
+                        />
+                    </div>
                 </div>
             </section>
 
             <section className="w-full py-14 bg-background">
                 <div className="container mx-auto flex justify-center">
-                    <Blurb 
-                    media={{
-                        type: "image",
-                        src: "/copylifeCycle.png",
-                        alt: "Blue tinted image of IW team in meeting",
-                        width: 512,
-                        height: 342,
-                    }}
-                    text={
-                        <>
-                        <h3>This is placeholder content</h3>
-                        <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
-                        <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
-                        <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
-                        </>
-                    }
-                    textColor="text-brand-black"
-                    />
+                    <div className="w-[90%]">
+                        <Blurb 
+                        media={{
+                            type: "image",
+                            src: "/copylifeCycle.png",
+                            alt: "Blue tinted image of IW team in meeting",
+                            width: 512,
+                            height: 342,
+                        }}
+                        text={
+                            <>
+                            <h3>This is placeholder content</h3>
+                            <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
+                            <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
+                            <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
+                            </>
+                        }
+                        rounded
+                        textColor="text-brand-black"
+                        />
+                    </div>
                 </div>
             </section>
 
             <section className="w-full py-14 mb-5 bg-background">
                 <div className="container mx-auto flex justify-center">
-                    <Blurb 
-                    media={{
-                        type: "image",
-                        src: "/copylifeCycle.png",
-                        alt: "Blue tinted image of IW team in meeting",
-                        width: 512,
-                        height: 342,
-                    }}
-                    text={
-                        <>
-                        <h3>This is placeholder content</h3>
-                        <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
-                        <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
-                        <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
-                        </>
-                    }
-                    reverse
-                    textColor="text-brand-black"
-                    />
+                    <div className="w-[90%]">
+                        <Blurb 
+                        media={{
+                            type: "image",
+                            src: "/copylifeCycle.png",
+                            alt: "Blue tinted image of IW team in meeting",
+                            width: 512,
+                            height: 342,
+                        }}
+                        text={
+                            <>
+                            <h3>This is placeholder content</h3>
+                            <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
+                            <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
+                            <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
+                            </>
+                        }
+                        reverse
+                        rounded
+                        textColor="text-brand-black"
+                        />
+                    </div>
                 </div>
             </section>
         </div>

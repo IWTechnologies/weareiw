@@ -27,11 +27,12 @@ interface BlurbProps {
         variant?: LinkVariant;
     };
     reverse?: boolean;
+    rounded?: boolean;
     textColor?: "text-white" | "text-brand-black";
     bgColor?: "" | "bg-brand-black";
 };
 
-export default function Blurb({ media, text, link, reverse=false, textColor="text-white", bgColor="" }: BlurbProps) {
+export default function Blurb({ media, text, link, reverse=false, rounded=false, textColor="text-white", bgColor="" }: BlurbProps) {
     return (
         <div 
         className={`w-full mx-auto flex flex-col items-start
@@ -40,7 +41,8 @@ export default function Blurb({ media, text, link, reverse=false, textColor="tex
         `}>
             {media.type === "image" && (
                 <Image
-                className="w-full lg:w-1/2 h-auto lg:h-full object-cover lg:object-contain" 
+                className={`w-full lg:w-1/2 h-auto lg:h-full object-contain lg:object-cover
+                ${rounded ? "rounded-2xl" : ""}`} 
                 src={media.src} alt={media.alt} width={media.width} height={media.height}
                 sizes="(max-width: 1024px) 100vw, 50vw" />
             )}

@@ -125,86 +125,94 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="w-full py-14 mb-5">
+      <section className="w-full py-14">
         <div className="container mx-auto flex justify-center">
-          <Blurb 
-            media={{
-              type: "image",
-              src: "/copylifeCycle.png",
-              alt: "Blue tinted image of IW team in meeting",
-              width: 512,
-              height: 342,
-            }}
-            text={
-              <>
-                <h3>Someone has to own POS. We do</h3>
-                <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
-                <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
-                <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
-              </>
-            }
-            textColor="text-brand-black"
-          />
+          <div className="w-[90%]">
+            <Blurb 
+              media={{
+                type: "image",
+                src: "/copylifeCycle.png",
+                alt: "Blue tinted image of IW team in meeting",
+                width: 512,
+                height: 342,
+              }}
+              text={
+                <>
+                  <h3>Someone has to own POS. We do</h3>
+                  <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
+                  <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
+                  <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
+                </>
+              }
+              rounded
+              textColor="text-brand-black"
+            />
+          </div>
         </div>
       </section>
       <section className="w-full py-14">
         <div className="container mx-auto flex flex-col items-center">
-          <Blurb 
-            media={{
-              type: "video",
-              youtubeId: "L4O1ejWfDAc",
-            }}
-            text={
-              <>
-                <h3>Long-term ownership changes decisions</h3>
-                <p>
-                  When you’re accountable for the full lifecycle, you plan differently. 
-                  You deploy differently. You service differently. 
-                  You think beyond the install and optimize for what happens years later.
-                </p>
-                <p className="font-medium">That shows up in how assets are deployed, serviced, and retired.</p>
-                <p>That mindset is why customers bring us in…not just to roll out POS, but to own it.</p>
-              </>
-            }
-            link={{
-              href: "#",
-              label: "Let's Build Your Next Roll Out",
-              variant: "dark",
-            }}
-            reverse
-            textColor="text-brand-black"
-          />
+          <div className="w-[90%]">
+            <Blurb 
+              media={{
+                type: "video",
+                youtubeId: "L4O1ejWfDAc",
+              }}
+              text={
+                <>
+                  <h3>Long-term ownership changes decisions</h3>
+                  <p>
+                    When you’re accountable for the full lifecycle, you plan differently. 
+                    You deploy differently. You service differently. 
+                    You think beyond the install and optimize for what happens years later.
+                  </p>
+                  <p className="font-medium">That shows up in how assets are deployed, serviced, and retired.</p>
+                  <p>That mindset is why customers bring us in…not just to roll out POS, but to own it.</p>
+                </>
+              }
+              link={{
+                href: "#",
+                label: "Let's Build Your Next Roll Out",
+                variant: "dark",
+              }}
+              reverse
+              textColor="text-brand-black"
+            />
+          </div>
         </div>
       </section>
       <section
       className="w-full py-14 mb-5 bg-brand-black">
         <div className="container mx-auto flex justify-center">
-          <Blurb 
-            media={{
-              type: "image",
-              src: "/Team-Moody-Blue-1.webp",
-              alt: "Blue tinted image of IW team in meeting",
-              width: 512,
-              height: 342,
-            }}
-            text={
-              <>
-                <h3>
-                  One partner. Full accountability. <br/> POS managed for the long term.
-                </h3>
-                <p>
-                  With a massive inventory of IT assets and the most skilled and
-                  dedicated technicians in the industry, we are here to help you succeed.
-                </p>
-              </>
-            }
-            link={{
-              href: "#",
-              label: "Let's Work Together",
-              variant: "light",
-            }}
-            textColor="text-white"
-          />
+          <div className="w-[90%]">
+              <Blurb 
+              media={{
+                type: "image",
+                src: "/Team-Moody-Blue-1.webp",
+                alt: "Blue tinted image of IW team in meeting",
+                width: 512,
+                height: 342,
+              }}
+              text={
+                <>
+                  <h3>
+                    One partner. Full accountability. <br/> POS managed for the long term.
+                  </h3>
+                  <p>
+                    With a massive inventory of IT assets and the most skilled and
+                    dedicated technicians in the industry, we are here to help you succeed.
+                  </p>
+                </>
+              }
+              link={{
+                href: "#",
+                label: "Let's Work Together",
+                variant: "light",
+              }}
+              rounded
+              textColor="text-white"
+            />
+          </div>
         </div>
       </section>
 
