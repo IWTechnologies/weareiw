@@ -334,7 +334,8 @@ export default function AboutPage() {
                             }}
                             text={
                                 <>
-                                <h3 className="lg:mt-8">IW Runs on Our People</h3>
+                                <h3 className="border-l-4 border-brand-aqua pl-2.5
+                                text-brand-aqua lg:mt-8">IW Runs on Our People</h3>
                                 <p className="font-medium">
                                     More Than a Team. They're the Reason We Win.
                                 </p>
@@ -364,7 +365,8 @@ export default function AboutPage() {
                             }}
                             text={
                                 <>
-                                <h3 className="lg:mt-8">Sustainability is the Standard</h3>
+                                <h3 className="border-l-4 border-brand-aqua pl-2.5
+                                text-brand-aqua lg:mt-8">Sustainability is the Standard</h3>
                                 <p>
                                     At IW, sustainability isn't a strategy, it's our operating model.
                                 </p>
