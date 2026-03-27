@@ -264,6 +264,7 @@ export default function AboutPage() {
                             label: "Meet The Team",
                             variant: "dark",
                         }}
+                        rounded
                         textColor="text-brand-black"
                         />
                     </div>
@@ -302,6 +303,7 @@ export default function AboutPage() {
                             </>
                         }
                         reverse
+                        rounded
                         textColor="text-brand-black"
                         />
                     </div>
@@ -435,6 +437,7 @@ export default function AboutPage() {
                             label: "Explore Open Roles",
                             variant: "light",
                         }}
+                        rounded
                         textColor="text-white"
                         />
                     </div>
