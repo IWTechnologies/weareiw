@@ -329,7 +329,7 @@ export default function AboutPage() {
                             <Blurb 
                             media={{
                                 type: "image",
-                                src: "/heroImages/shutterstock1.jpg",
+                                src: "/aboutImages/Careers-at-IW.webp",
                                 alt: "Blue tinted image of IW team in meeting",
                                 width: 512,
                                 height: 342,
