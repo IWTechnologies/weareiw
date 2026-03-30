@@ -39,34 +39,35 @@ export default function OurStory() {
 
             <section className="flex justify-center py-10 bg-brand-black text-white">
                 <div>
-                    <h2 className="border-b-4 border-brand-aqua p-2">
+                    <h2 className="border-b-4 border-brand-aqua px-2 py-6">
                         FOLLOW ALONG WITH US
                     </h2>
                 </div>
             </section>
 
-            <section className="w-full flex justify-center bg-brand-black text-white">
+            <section className="w-full flex justify-center">
                 <div className="w-full py-14 mt-14">
                     <div className="w-[70%] mx-auto flex flex-col">
-                        <h2 className="w-full border-b-2 border-brand-black p-2">
+                        <h2 data-aos="fade-left"  className="w-full border-b-2 border-brand-black p-2 text-brand-navy">
                             THE BEGINNING
                         </h2>
                         <div className="relative py-16 pt-0 mt-16">
                             <div className="timeline-container w-full flex flex-col items-center">
+                                <div className="timeline-dot" />
                                 <div className="seventyFour w-full flex">
                                     <div 
-                                    className="w-1/2 h-fit flex flex-col items-center p-5 mr-[5.5%] 
+                                    className="title w-1/2 h-fit flex flex-col items-center p-5 mr-[5.5%] 
                                     rounded-r-full bg-brand-navy text-white">
-                                        <h2>
-                                            1974
-                                        </h2>
+                                        <div className="text-5xl">
+                                            <strong>1974</strong>
+                                        </div>
                                         <div>
                                             THE INDUSTRY INSIGHT
                                         </div>
                                     </div>
                                     <div 
-                                    className="w-1/2 p-5 pl-3 pt-0">
-                                        <div className="flex flex-col items-center gap-4">
+                                    className="text-block relative w-1/2 text-brand-navy">
+                                        <div className="flex flex-col gap-4">
                                             <p>
                                                 Our Founder, Al Moorhouse, wasn't trying to start a 
                                                 business. He just saw something others didn't.

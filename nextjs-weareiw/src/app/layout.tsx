@@ -4,6 +4,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import PromoBar from "@/components/PromoBar";
 import "./globals.css";
+import AOS from "@/components/AOS";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -42,9 +43,11 @@ export default function RootLayout({
             variant: "light",
           }}
         />
-        <main className="grow">
+        <AOS>
+          <main className="grow">
           {children}
         </main>
+        </AOS>
         <Footer 
           link={{
             href: "#",
