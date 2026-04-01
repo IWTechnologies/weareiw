@@ -125,7 +125,7 @@ background shapes for sections */
 /* our story timeline */
 
 /* media queries */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1023px) {
   .timeline-container::before,
   .timeline-dot {
     display: none;
@@ -147,8 +147,9 @@ background shapes for sections */
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 50%;
-  top: 15%;
+  /* left: 50%;
+  top: 15%; */
+  margin-top: 45px;
   transform: translateX(-44%);
   z-index: 2;
   background: #40e0d0;
