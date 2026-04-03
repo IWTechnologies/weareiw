@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import YoutubeFacade from "@/components/YoutubeFacade";
 
 export default function OurStory() {
     return (
@@ -456,6 +457,101 @@ export default function OurStory() {
                             </div> {/* end of timeline container */}
                         </div> {/* end of relative container */}
 
+                        <div className="border-b-2 border-brand-black p-2">
+                            <h2 data-aos="fade-down"  className="w-full text-brand-navy">
+                            THE PRESENT
+                            </h2>
+                        </div>
+
+                        <div className="twentySix w-full flex flex-col lg:flex-row my-16 gap-10">
+                            <div data-aos="fade-right"
+                            className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
+                            rounded-r-full bg-brand-navy text-white">
+                                <div className="text-5xl">
+                                    <strong>2026</strong>
+                                </div>
+                                <div>
+                                    EXPANSION THROUGH TRUST
+                                </div>
+                            </div>
+                            <div 
+                            className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-navy">
+                                <div data-aos="fade-left" className="">
+                                    <p>
+                                        As IW turns 50, we're not just proud of what we've built. <br/>
+                                        We're proud of how we built it:
+                                    </p>
+                                </div>
+                                <div data-aos="fade-left">
+                                    <ul className="list-disc pl-5">
+                                        <li>
+                                            <strong>With long-standing customers who've trusted us 
+                                            through every industry shift</strong>
+                                        </li>
+                                        <li>
+                                            <strong>With a service-first mindset that puts people first</strong>
+                                        </li>
+                                        <li>
+                                            <strong>With team members who've stayed for decades, growing 
+                                                with us
+                                            </strong>
+                                        </li>
+                                        <li>
+                                            <strong>With new-gen talent who bring fresh skills and ideas</strong>
+                                        </li>
+                                        <li>
+                                            <strong>And with a quiet commitment to doing things sustainably, long 
+                                                before it was popular
+                                            </strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div data-aos="fade-left">
+                                    <p>
+                                        For us, sustainability has never been a slogan. It's been our default: 
+                                        <strong> Refurbishing instead of replacing. Serving with long-term care instead 
+                                            of short-term gain. 
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> {/* end of twentySix container */}
+
+                        <div className="twentyTwenty w-full flex flex-col lg:flex-row items-center my-16 gap-10">
+                            <div className="w-full lg:w-1/2 h-fit flex flex-col lg:mr-[5.5%]">
+                                <div data-aos="fade-right" className="w-full z-10">
+                                    <Image
+                                    className="w-full h-auto object-contain rounded-3xl" 
+                                    src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
+                                    width="1920" height="1080"
+                                    sizes="(max-width: 1920px) 100vw, 50vw" />
+                                </div>
+                            </div>
+                            
+                            <div 
+                            className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 items-center text-brand-navy">
+                                <div data-aos="fade-left" className="flex flex-col text-center gap-2">
+                                    <p className="italic font-accent">
+                                        "If a customer needs help, we pick up the phone. No matter 
+                                        what.<br/> That's not policy. That's just who we are."
+                                    </p>
+                                    <div>
+                                        -
+                                    </div>
+                                    <div className="text-2xl">
+                                        Al Moorhouse
+                                    </div>
+                                </div>
+                            </div>
+                        </div> {/* end of twentyTwenty container */}
+                        
+                        <div className="w-full h-auto flex flex-col my-16 gap-10">
+                            <h2 data-aos="fade-down"  className="w-full text-brand-navy">
+                            50 Years, One Promise: Always Show Up
+                            </h2>
+
+                            <YoutubeFacade youtubeId={"L4O1ejWfDAc"} />
+                        </div>
                     </div>
                 </div>
             </section>
