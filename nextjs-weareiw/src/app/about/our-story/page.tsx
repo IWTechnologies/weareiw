@@ -102,11 +102,11 @@ export default function OurStory() {
 
                         <div className="relative py-16">
                             <div className="timeline-container w-full flex flex-col items-center">
-                                <div className="alMoor flex justify-center">
-                                    <div data-aos="fade-up" className="w-full lg:w-[80%] z-10">
+                                <div className="alMoor w-full flex justify-center">
+                                    <div data-aos="fade-up" className="w-full z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
+                                        src="/storyImages/Al-Moorhouse.webp" alt="Al Moorhouse photo with signature" 
                                         width="1920" height="1080"
                                         sizes="(max-width: 1920px) 100vw, 50vw" />
                                     </div>
@@ -157,15 +157,15 @@ export default function OurStory() {
 
                         <div className="relative py-16">
                             <div className="timeline-container w-full flex flex-col items-center">
-                                <div className="alMoor flex justify-center">
-                                    <div data-aos="fade-up" className="w-full lg:w-[80%] z-10">
+                                <div className="bwRegisters w-full flex justify-center">
+                                    <div data-aos="fade-up" className="w-full z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
-                                        width="1920" height="1080"
+                                        src="/storyImages/Cash-Registers.webp" alt="What's in it for you image graphic" 
+                                        width="1147" height="642"
                                         sizes="(max-width: 1920px) 100vw, 50vw" />
                                     </div>
-                                </div> {/* end of al image container */}
+                                </div> {/* end of registers image container */}
                             </div> {/* end of timeline container 2 */}
                         </div>{/* end of relative container */}
 
@@ -219,15 +219,15 @@ export default function OurStory() {
                                         <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
-                                            width="1920" height="1080"
+                                            src="/storyImages/IW-newspaper.webp" alt="photo of IW Technologies newspaper CIP feature" 
+                                            width="891" height="517"
                                             sizes="(max-width: 1920px) 100vw, 50vw" />
                                         </div>
                                         <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
-                                            width="1920" height="1080"
+                                            src="/storyImages/groupPhoto.webp" alt="group photo of past IW team" 
+                                            width="905" height="520"
                                             sizes="(max-width: 1920px) 100vw, 50vw" />
                                         </div>
                                     </div> {/* end of imagesRow container */}
@@ -235,15 +235,15 @@ export default function OurStory() {
                                         <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
-                                            width="1920" height="1080"
+                                            src="/storyImages/IL-Wholesale.webp" alt="photo of past IW technologies front desk reception" 
+                                            width="764" height="431"
                                             sizes="(max-width: 1920px) 100vw, 50vw" />
                                         </div>
                                         <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
-                                            width="1920" height="1080"
+                                            src="/storyImages/IW-Meeting.webp" alt="photo of past IW team meeting in conference room" 
+                                            width="766" height="428"
                                             sizes="(max-width: 1920px) 100vw, 50vw" />
                                         </div>
                                     </div> {/* end of imagesRow container */}
@@ -296,30 +296,30 @@ export default function OurStory() {
 
                         <div className="relative py-16">
                             <div className="timeline-container w-full flex flex-col items-center gap-10">
-                                <div className="assemblyLine flex justify-center">
-                                    <div data-aos="fade-up" className="w-full lg:w-[80%] z-10">
+                                <div className="assemblyLine w-full flex justify-center">
+                                    <div data-aos="fade-up" className="w-full z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
-                                        width="1920" height="1080"
-                                        sizes="(max-width: 1920px) 100vw, 50vw" />
+                                        src="/storyImages/IW-Technologies-assembly.webp" alt="placeholder" 
+                                        width="1080" height="380"
+                                        sizes="100vw" />
                                     </div>
                                 </div> {/* end of al image container */}
 
-                                <div className="imagesRow w-full flex flex-col items-center lg:flex-row gap-10">
-                                        <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
+                                <div className="imagesRow w-[60%] lg:w-[80%] flex flex-col items-center lg:flex-row lg:justify-center gap-10">
+                                        <div data-aos="fade-right" className="w-full lg:w-1/2 h-64 lg:h-80 relative z-10">
                                             <Image
-                                            className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
-                                            width="1920" height="1080"
-                                            sizes="(max-width: 1920px) 100vw, 50vw" />
+                                            className="object-contain lg:object-cover rounded-3xl" 
+                                            src="/storyImages/IW-Technologies-warehouse-aisle.webp" alt="placeholder" 
+                                            fill
+                                            sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
-                                        <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
+                                        <div data-aos="fade-left" className="w-full lg:w-1/2 h-64 lg:h-80 relative z-10">
                                             <Image
-                                            className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
-                                            width="1920" height="1080"
-                                            sizes="(max-width: 1920px) 100vw, 50vw" />
+                                            className="object-contain lg:object-cover rounded-3xl" 
+                                            src="/storyImages/IW-Technologies-warehouse-techs.webp" alt="placeholder" 
+                                            fill
+                                            sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                     </div> {/* end of imagesRow container */}
                             </div> {/* end of timeline container 2 */}
@@ -545,13 +545,16 @@ export default function OurStory() {
                             </div>
                         </div> {/* end of twentyTwenty container */}
                         
-                        <div className="w-full h-auto flex flex-col my-16 gap-10">
-                            <h2 data-aos="fade-down"  className="w-full text-brand-navy">
-                            50 Years, One Promise: Always Show Up
-                            </h2>
-
-                            <YoutubeFacade youtubeId={"L4O1ejWfDAc"} />
-                        </div>
+                        <section className="w-[80%] my-16 mx-auto">
+                            <div className="w-full h-auto flex flex-col gap-10">
+                                <h2 data-aos="fade-down"  className="w-full text-brand-navy">
+                                50 Years, One Promise: Always Show Up
+                                </h2>
+                                
+                                <YoutubeFacade youtubeId={"L4O1ejWfDAc"} />
+                            </div>
+                        </section>
+                        
                     </div>
                 </div>
             </section>
