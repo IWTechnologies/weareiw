@@ -306,17 +306,21 @@ export default function OurStory() {
                                     </div>
                                 </div> {/* end of al image container */}
 
-                                <div className="imagesRow w-[60%] lg:w-[80%] flex flex-col items-center lg:flex-row lg:justify-center gap-10">
-                                        <div data-aos="fade-right" className="w-full lg:w-1/2 h-64 lg:h-80 relative z-10">
+                                <div 
+                                className="imagesRow w-full sm:w-[60%] lg:w-[80%] 
+                                flex flex-col items-center lg:flex-row lg:justify-center gap-10">
+                                        <div data-aos="fade-right" 
+                                        className="relative z-10 w-full lg:w-1/2 h-64 lg:h-80">
                                             <Image
-                                            className="object-contain lg:object-cover rounded-3xl" 
+                                            className="object-cover rounded-3xl" 
                                             src="/storyImages/IW-Technologies-warehouse-aisle.webp" alt="placeholder" 
                                             fill
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
-                                        <div data-aos="fade-left" className="w-full lg:w-1/2 h-64 lg:h-80 relative z-10">
+                                        <div data-aos="fade-left" 
+                                        className="relative z-10 w-full lg:w-1/2 h-64 lg:h-80">
                                             <Image
-                                            className="object-contain lg:object-cover rounded-3xl" 
+                                            className="object-cover rounded-3xl" 
                                             src="/storyImages/IW-Technologies-warehouse-techs.webp" alt="placeholder" 
                                             fill
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
