@@ -47,7 +47,7 @@ export default function OurStory() {
             </section>
 
             <section className="w-full flex justify-center bg-brand-black">
-                <div className="w-full py-14 mt-14 rounded-t-3xl bg-background">
+                <div className="w-full py-28 mt-14 rounded-t-3xl bg-background">
                     <div className="w-[70%] mx-auto flex flex-col">
                         <div className="border-b-2 border-brand-black p-2">
                             <h2 data-aos="fade-down"  className="w-full text-brand-navy">
@@ -108,7 +108,7 @@ export default function OurStory() {
                                         className="w-full h-auto object-contain rounded-3xl" 
                                         src="/storyImages/Al-Moorhouse.webp" alt="Al Moorhouse photo with signature" 
                                         width="1920" height="1080"
-                                        sizes="(max-width: 1920px) 100vw, 50vw" />
+                                        sizes="(max-width: 1024px) 100vw, 50vw" />
                                     </div>
                                 </div> {/* end of al image container */}
                             </div> {/* end of timeline container 2 */}
@@ -163,7 +163,7 @@ export default function OurStory() {
                                         className="w-full h-auto object-contain rounded-3xl" 
                                         src="/storyImages/Cash-Registers.webp" alt="What's in it for you image graphic" 
                                         width="1147" height="642"
-                                        sizes="(max-width: 1920px) 100vw, 50vw" />
+                                        sizes="100vw" />
                                     </div>
                                 </div> {/* end of registers image container */}
                             </div> {/* end of timeline container 2 */}
@@ -221,14 +221,14 @@ export default function OurStory() {
                                             className="w-full h-auto object-contain rounded-3xl" 
                                             src="/storyImages/IW-newspaper.webp" alt="photo of IW Technologies newspaper CIP feature" 
                                             width="891" height="517"
-                                            sizes="(max-width: 1920px) 100vw, 50vw" />
+                                            sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                         <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
                                             src="/storyImages/groupPhoto.webp" alt="group photo of past IW team" 
                                             width="905" height="520"
-                                            sizes="(max-width: 1920px) 100vw, 50vw" />
+                                            sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                     </div> {/* end of imagesRow container */}
                                     <div className="imagesRow w-full flex flex-col items-center lg:flex-row gap-10">
@@ -237,14 +237,14 @@ export default function OurStory() {
                                             className="w-full h-auto object-contain rounded-3xl" 
                                             src="/storyImages/IL-Wholesale.webp" alt="photo of past IW technologies front desk reception" 
                                             width="764" height="431"
-                                            sizes="(max-width: 1920px) 100vw, 50vw" />
+                                            sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                         <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
                                             src="/storyImages/IW-Meeting.webp" alt="photo of past IW team meeting in conference room" 
                                             width="766" height="428"
-                                            sizes="(max-width: 1920px) 100vw, 50vw" />
+                                            sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                     </div> {/* end of imagesRow container */}
                                 </div>
@@ -304,7 +304,7 @@ export default function OurStory() {
                                         width="1080" height="380"
                                         sizes="100vw" />
                                     </div>
-                                </div> {/* end of al image container */}
+                                </div> {/* end of assembly image container */}
 
                                 <div 
                                 className="imagesRow w-full sm:w-[60%] lg:w-[80%] 
@@ -411,12 +411,12 @@ export default function OurStory() {
                                                 A NEW GENERATION OF LEADERSHIP
                                             </div>
                                         </div>
-                                        <div data-aos="fade-left" className="w-full z-10">
+                                        <div data-aos="fade-right" className="w-full z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
+                                            src="/storyImages/DarinPortrait.webp" alt="What's in it for you image graphic" 
                                             width="1920" height="1080"
-                                            sizes="(max-width: 1920px) 100vw, 50vw" />
+                                            sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                     </div>
                                     
@@ -461,74 +461,76 @@ export default function OurStory() {
                             </div> {/* end of timeline container */}
                         </div> {/* end of relative container */}
 
-                        <div className="border-b-2 border-brand-black p-2">
-                            <h2 data-aos="fade-down"  className="w-full text-brand-navy">
-                            THE PRESENT
-                            </h2>
+                        <div className="my-16">
+                            <div className="border-b-2 border-brand-black p-2">
+                                <h2 data-aos="fade-down"  className="w-full text-brand-navy">
+                                THE PRESENT
+                                </h2>
+                            </div>
+                            <div className="twentySix w-full flex flex-col lg:flex-row mt-16 gap-10">
+                                <div data-aos="fade-right"
+                                className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
+                                rounded-r-full bg-brand-navy text-white">
+                                    <div className="text-5xl">
+                                        <strong>2026</strong>
+                                    </div>
+                                    <div>
+                                        EXPANSION THROUGH TRUST
+                                    </div>
+                                </div>
+                                <div 
+                                className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-navy">
+                                    <div data-aos="fade-left" className="">
+                                        <p>
+                                            As IW turns 50, we're not just proud of what we've built. <br/>
+                                            We're proud of how we built it:
+                                        </p>
+                                    </div>
+                                    <div data-aos="fade-left">
+                                        <ul className="list-disc pl-5">
+                                            <li>
+                                                <strong>With long-standing customers who've trusted us 
+                                                through every industry shift</strong>
+                                            </li>
+                                            <li>
+                                                <strong>With a service-first mindset that puts people first</strong>
+                                            </li>
+                                            <li>
+                                                <strong>With team members who've stayed for decades, growing 
+                                                    with us
+                                                </strong>
+                                            </li>
+                                            <li>
+                                                <strong>With new-gen talent who bring fresh skills and ideas</strong>
+                                            </li>
+                                            <li>
+                                                <strong>And with a quiet commitment to doing things sustainably, long 
+                                                    before it was popular
+                                                </strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div data-aos="fade-left">
+                                        <p>
+                                            For us, sustainability has never been a slogan. It's been our default: 
+                                            <strong> Refurbishing instead of replacing. Serving with long-term care instead 
+                                                of short-term gain. 
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> {/* end of twentySix container */}
                         </div>
+                        
 
-                        <div className="twentySix w-full flex flex-col lg:flex-row my-16 gap-10">
-                            <div data-aos="fade-right"
-                            className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
-                            rounded-r-full bg-brand-navy text-white">
-                                <div className="text-5xl">
-                                    <strong>2026</strong>
-                                </div>
-                                <div>
-                                    EXPANSION THROUGH TRUST
-                                </div>
-                            </div>
-                            <div 
-                            className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-navy">
-                                <div data-aos="fade-left" className="">
-                                    <p>
-                                        As IW turns 50, we're not just proud of what we've built. <br/>
-                                        We're proud of how we built it:
-                                    </p>
-                                </div>
-                                <div data-aos="fade-left">
-                                    <ul className="list-disc pl-5">
-                                        <li>
-                                            <strong>With long-standing customers who've trusted us 
-                                            through every industry shift</strong>
-                                        </li>
-                                        <li>
-                                            <strong>With a service-first mindset that puts people first</strong>
-                                        </li>
-                                        <li>
-                                            <strong>With team members who've stayed for decades, growing 
-                                                with us
-                                            </strong>
-                                        </li>
-                                        <li>
-                                            <strong>With new-gen talent who bring fresh skills and ideas</strong>
-                                        </li>
-                                        <li>
-                                            <strong>And with a quiet commitment to doing things sustainably, long 
-                                                before it was popular
-                                            </strong>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div data-aos="fade-left">
-                                    <p>
-                                        For us, sustainability has never been a slogan. It's been our default: 
-                                        <strong> Refurbishing instead of replacing. Serving with long-term care instead 
-                                            of short-term gain. 
-                                        </strong>
-                                    </p>
-                                </div>
-                            </div>
-                        </div> {/* end of twentySix container */}
-
-                        <div className="twentyTwenty w-full flex flex-col lg:flex-row items-center my-16 gap-10">
+                        <div className="alQuote w-full flex flex-col lg:flex-row items-center my-16 gap-10">
                             <div className="w-full lg:w-1/2 h-fit flex flex-col lg:mr-[5.5%]">
                                 <div data-aos="fade-right" className="w-full z-10">
                                     <Image
                                     className="w-full h-auto object-contain rounded-3xl" 
-                                    src="/heroImages/shutterstock1.jpg" alt="What's in it for you image graphic" 
+                                    src="/storyImages/Al-MoorhouseCrop.webp" alt="What's in it for you image graphic" 
                                     width="1920" height="1080"
-                                    sizes="(max-width: 1920px) 100vw, 50vw" />
+                                    sizes="(max-width: 1024px) 100vw, 50vw" />
                                 </div>
                             </div>
                             
@@ -547,15 +549,17 @@ export default function OurStory() {
                                     </div>
                                 </div>
                             </div>
-                        </div> {/* end of twentyTwenty container */}
+                        </div> {/* end of alQuote container */}
                         
-                        <section className="w-[80%] my-16 mx-auto">
+                        <section className="w-full lg:w-[80%] lg:mx-auto my-16">
                             <div className="w-full h-auto flex flex-col gap-10">
                                 <h2 data-aos="fade-down"  className="w-full text-brand-navy">
-                                50 Years, One Promise: Always Show Up
+                                    50 Years, One Promise: Always Show Up
                                 </h2>
                                 
-                                <YoutubeFacade youtubeId={"L4O1ejWfDAc"} />
+                                <div data-aos="fade-up">
+                                    <YoutubeFacade youtubeId={"L4O1ejWfDAc"} />
+                                </div>
                             </div>
                         </section>
                         
