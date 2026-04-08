@@ -27,6 +27,9 @@ export const teamMember = defineType({
             name: 'portrait',
             title: 'Portrait',
             type: 'image',
+            options: {
+                hotspot: true,
+            },
             validation: rule => rule.required()
         }),
         defineField({
