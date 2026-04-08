@@ -30,9 +30,25 @@ export const teamMember = defineType({
             validation: rule => rule.required()
         }),
         defineField({
-            name: 'linkedinU',
+            name: 'linkedin',
             title: 'Linkedin URL',
             type: 'url',
         }),
+        defineField({
+            name: 'order',
+            title: 'Display Order',
+            type: 'number',
+            description: 'Control order in which team members are displayed on page.',
+            validation: rule => rule.required()
+        })
+    ],
+    orderings: [
+        {
+            name: 'orderAsc',
+            title: 'Display Order',
+            by: [
+                {field: 'order', direction: 'asc'}
+            ]
+        }
     ],
 })
