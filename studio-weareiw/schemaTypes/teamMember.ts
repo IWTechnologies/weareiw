@@ -6,23 +6,32 @@ export const teamMember = defineType({
     type: 'document',
     fields: [
         defineField({
-            name: 'name',
+            name: 'fullName',
+            title: 'Full Name',
             type: 'string',
+            validation: rule => rule.required()
         }),
         defineField({
-            name: 'title',
+            name: 'jobTitle',
+            title: 'Job Title',
             type: 'string',
+            validation: rule => rule.required()
         }),
         defineField({
             name: 'bio',
+            title: 'Bio',
             type: 'text',
+            validation: rule => rule.required()
         }),
         defineField({
-            name: 'photo',
+            name: 'portrait',
+            title: 'Portrait',
             type: 'image',
+            validation: rule => rule.required()
         }),
         defineField({
-            name: 'linkedin',
+            name: 'linkedinU',
+            title: 'Linkedin URL',
             type: 'url',
         }),
     ],
