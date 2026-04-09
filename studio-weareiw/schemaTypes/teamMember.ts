@@ -1,7 +1,7 @@
 import {defineField, defineType} from 'sanity'
 
 export const teamMember = defineType({
-    name: 'team member',
+    name: 'teamMember',
     title: 'Team Member',
     type: 'document',
     fields: [
@@ -9,19 +9,19 @@ export const teamMember = defineType({
             name: 'fullName',
             title: 'Full Name',
             type: 'string',
-            validation: rule => rule.required()
+            validation: rule => rule.required(),
         }),
         defineField({
             name: 'jobTitle',
             title: 'Job Title',
             type: 'string',
-            validation: rule => rule.required()
+            validation: rule => rule.required(),
         }),
         defineField({
             name: 'bio',
             title: 'Bio',
             type: 'text',
-            validation: rule => rule.required()
+            validation: rule => rule.required(),
         }),
         defineField({
             name: 'portrait',
@@ -30,7 +30,7 @@ export const teamMember = defineType({
             options: {
                 hotspot: true,
             },
-            validation: rule => rule.required()
+            validation: rule => rule.required(),
         }),
         defineField({
             name: 'linkedin',
@@ -42,8 +42,8 @@ export const teamMember = defineType({
             title: 'Display Order',
             type: 'number',
             description: 'Control order in which team members are displayed on page.',
-            validation: rule => rule.required()
-        })
+            validation: rule => rule.required(),
+        }),
     ],
     orderings: [
         {
@@ -51,7 +51,14 @@ export const teamMember = defineType({
             title: 'Display Order',
             by: [
                 {field: 'order', direction: 'asc'}
-            ]
-        }
+            ],
+        },
     ],
+    preview: {
+        select: {
+            title: 'fullName',
+            subtitle: 'jobTitle',
+            media: 'portrait',
+        },
+    },
 })
