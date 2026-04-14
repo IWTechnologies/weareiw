@@ -18,8 +18,21 @@ export default async function OurTeamPage() {
             <section className="w-full py-14">
                 <div className="w-[80%] mx-auto">
                     <h1>Our Team</h1>
-                    {/* team member grid will go here */}
+                    {/* 
+                    team member grid will go here
                     <pre>{JSON.stringify(teamMembers, null, 2)}</pre>
+                    */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {teamMembers.map((member) => (
+                            <div key={member._id} className="flex flex-col">
+                                <img src={member.portrait} alt={member.fullName} />
+                                <p>{member.fullName}</p>
+                                <p>{member.jobTitle}</p>
+                            </div>
+                            
+                        ))}
+                    </div>
+                    
                 </div>
             </section>
         </div>
