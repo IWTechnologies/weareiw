@@ -260,7 +260,7 @@ export default function AboutPage() {
                             </>
                         }
                         link={{
-                            href: "#",
+                            href: "/about/our-team",
                             label: "Meet The Team",
                             variant: "dark",
                         }}
