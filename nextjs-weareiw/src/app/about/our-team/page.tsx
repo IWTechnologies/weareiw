@@ -14,9 +14,9 @@ export default async function OurTeamPage() {
 
     return (
         <div>
-            <section className="w-[60%] lg:w-[70%] xl:w-[70%] mx-auto py-14">
-                <div className="w-[90%] md:w-full mx-auto flex flex-col gap-5">
-                    <h1>Our Team</h1>
+            <section className="w-[60%] lg:w-[70%] mx-auto py-14">
+                <div className="w-full mx-auto flex flex-col gap-5">
+                    <h1 className="w-fit border-b-4 border-brand-aqua p-2">Meet Our Team</h1>
                     <TeamGrid teamMembers={teamMembers} />
                 </div>
             </section>

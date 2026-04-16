@@ -20,7 +20,7 @@ export default function TeamGrid({ teamMembers }: gridProps) {
     }, [selectedId]);
 
     return (
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
             {teamMembers.map((member) => {
                 const isSelected = selectedId === member._id;
 
@@ -39,7 +39,7 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                                 <img
                                     src={member.portrait}
                                     alt={member.fullName}
-                                    className={`object-cover rounded-3xl overflow-hidden cursor-pointer
+                                    className={`object-cover rounded-3xl overflow-hidden hover:cursor-pointer
                                     grayscale hover:grayscale-0 transition duration-300
                                     ${isSelected ? "grayscale-0" : ""}`}
                                     onClick={() => setId(
@@ -59,7 +59,7 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                             {/* Bio */}
                             {isSelected && (
                                 <div className="lg:w-2/3 flex flex-col gap-4 p-8 lg:pl-2 bg-brand-black text-white">
-                                    <div className="w-full flex justify-between">
+                                    <div className="flex justify-between">
                                         {member.linkedin && (
                                             <a
                                                 href={member.linkedin}
@@ -76,14 +76,14 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                                         )}
                                         <button
                                         onClick={() => setId(null)}
-                                        className="hover:cursor-pointer
-                                        hover:text-brand-aqua transition duration-300"
+                                        className="py-1 px-2 rounded-md font-bold transition duration-300 
+                                        hover:cursor-pointer hover:bg-white hover:text-brand-black"
                                         aria-label="Close bio"
                                         >
                                             ✕
                                         </button>
                                     </div>
-                                    <p>{member.bio}</p>
+                                    <div>{member.bio}</div>
                                 </div>
                             )}
                         </div>
