@@ -1,10 +1,6 @@
 "use client"
-import { client } from "@/sanity/lib/client";
-import { fetchTeamMembers } from "@/sanity/queries/teamMember";
 import { TeamMember } from "@/types/teamMember";
-
 import { useState } from "react";
-import Image from "next/image";
 
 type gridProps = {
     teamMembers: TeamMember[];

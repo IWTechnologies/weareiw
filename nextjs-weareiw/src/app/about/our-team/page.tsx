@@ -1,7 +1,6 @@
 import { client } from "@/sanity/lib/client";
 import { fetchTeamMembers } from "@/sanity/queries/teamMember";
 import { TeamMember } from "@/types/teamMember";
-
 import type { Metadata } from "next";
 import TeamGrid from "@/components/TeamGrid";
 
