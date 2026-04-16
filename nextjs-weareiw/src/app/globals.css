@@ -1,29 +1,150 @@
 @import "tailwindcss";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  @apply text-sm lg:text-base leading-normal
+}
+
 :root {
-  --background: #ffffff;
+  --background: #F2F2F2;
   --foreground: #171717;
   --brand-navy: #0A1258;
   --brand-blue: #4280FC;
   --brand-aqua: #40e0d0;
+  --brand-ink-black: #020216;
+  --brand-gold: #B8860B;
 }
 
+/* might remove the spacing, default is 0.25rem */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-aqua: var(--brand-aqua);
+  --color-brand-black: var(--brand-ink-black);
+  --color-brand-gold: var(--brand-gold);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --inset-shadow-md: inset 0 0 20px rgba(0, 0, 0, 0.50);
+
+  /* Headings */
+  --font-heading: var(--font-sansDM);
+
+  /* body and UI like buttons,cta */
+  --font-body: var(--font-inter);
+
+  /* accent, used rarely */
+  --font-accent: var(--font-ibm);
+}
+
+h1 {
+  @apply font-heading text-4xl lg:text-5xl font-bold leading-[1.15]
+}
+h2 {
+  @apply font-heading text-3xl lg:text-4xl font-semibold leading-tight
+}
+h3 {
+  @apply font-heading text-xl lg:text-2xl font-medium leading-[1.3]
+}
+
+p {
+  @apply max-w-[70ch]
+}
+
+/* not being used but keep just in case 
+background shapes for sections */
+.section-diagonal {
+  --skew-angle: -5deg;
+  --skew-color: white;
+
+  position: relative
+}
+
+.section-diagonal::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background: var(--skew-color);
+  transform: skewY(var(--skew-angle));
+}
+
+
+
+/* section scroll margin */
+#partners,
+#our-people,
+#our-partners,
+#our-commitment,
+#open-positions,
+#hardware {
+  scroll-margin-top: 123px;
+}
+
+/* logo slider styles */
+@keyframes logo-scroll {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-logo-scroll {
+  animation: logo-scroll var(--duration) linear infinite;
+}
+
+.logo-slider:hover .animate-logo-scroll,
+.logo-slider:focus-within .animate-logo-scroll {
+  animation-play-state: paused;
+}
+
+/* our story timeline */
+/* media queries */
+@media screen and (max-width: 1023px) {
+  .timeline-container::before,
+  .timeline-dot {
+    display: none;
+  }
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  width: 3px;
+  height: 100%;
+  background: #0a1258;
+}
+
+.timeline-dot {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  /* left: 50%;
+  top: 15%; */
+  margin-top: 45px;
+  transform: translateX(-44%);
+  z-index: 2;
+  background: #40e0d0;
+  border-radius: 50%;
+  border: 5px solid black;
 }
