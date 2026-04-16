@@ -84,13 +84,6 @@ background shapes for sections */
   transform: skewY(var(--skew-angle));
 }
 
-/* .arrow {
-  padding: 10px 30px;
-  padding-left: 10px;
-  background: #0a1258;
-  corner-shape: round bevel bevel round;
-  border-radius: 16px 48px 48px 16px / 16px 50% 50% 16px;
-} */
 
 
 /* section scroll margin */
@@ -123,7 +116,6 @@ background shapes for sections */
 }
 
 /* our story timeline */
-
 /* media queries */
 @media screen and (max-width: 1023px) {
   .timeline-container::before,
@@ -156,4 +148,3 @@ background shapes for sections */
   border-radius: 50%;
   border: 5px solid black;
 }
-
