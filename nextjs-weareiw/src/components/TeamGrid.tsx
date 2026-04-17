@@ -59,7 +59,7 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                             {/* Bio */}
                             {isSelected && (
                                 <div className="lg:w-2/3 flex flex-col gap-4 p-8 lg:pl-2 bg-brand-black text-white">
-                                    <div className="flex justify-between">
+                                    <div className="flex justify-between items-center">
                                         {member.linkedin && (
                                             <a
                                                 href={member.linkedin}
