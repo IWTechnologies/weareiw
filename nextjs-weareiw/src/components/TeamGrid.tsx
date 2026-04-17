@@ -46,8 +46,8 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                                         isSelected ? null : member._id
                                     )}
                                 />
-                                <div className="flex flex-col gap-1 p-4 pb-0">
-                                    <div className="w-fit font-bold text-xl border-b-2 border-white">
+                                <div className="flex flex-col gap-1 p-1 pb-0 sm:p-4">
+                                    <div className="w-fit font-bold text-sm sm:text-base md:text-lg lg:text-xl border-b-2 border-brand-aqua">
                                         {member.fullName}
                                     </div>
                                     <p className="truncate" title={member.jobTitle}>
@@ -59,7 +59,7 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                             {/* Bio */}
                             {isSelected && (
                                 <div className="lg:w-2/3 flex flex-col gap-4 p-8 lg:pl-2 bg-brand-black text-white">
-                                    <div className="flex justify-between items-center">
+                                    <div className={`flex ${member.linkedin ? "justify-between" : "justify-end" } items-center`}>
                                         {member.linkedin && (
                                             <a
                                                 href={member.linkedin}
@@ -77,7 +77,7 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                                         <button
                                         onClick={() => setId(null)}
                                         className="py-1 px-2 rounded-md font-bold transition duration-300 
-                                        hover:cursor-pointer hover:bg-white hover:text-brand-black"
+                                        hover:cursor-pointer hover:bg-brand-aqua hover:text-brand-black"
                                         aria-label="Close bio"
                                         >
                                             ✕
