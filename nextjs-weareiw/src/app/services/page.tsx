@@ -13,15 +13,14 @@ const services = [
 ]
 
 const serviceStats = [
-    { value: 240000, label: "Sq Ft of Warehouse Space" },
-    { value: 18000, label: "Pallet Storage Locations" },
-    { value: 50, label: "Years in Business" },
-    { value: 40000, label: "Annual Shipments" },
-    { value: 7500, label: "Customers Nationwide", suffix: "+" },
-    { value: 35000, label: "Checkout Lanes Supported", suffix: "+" },
-    { value: 55000, label: "On-Site Service Events (2024)", suffix: "+" },
-    { value: 9650, label: "Locations Supported Across North America (2024)" },
-    { value: 1000, label: "Rapid-Scale Deployments in Under 8 Weeks", suffix: "+" }
+    { value: 240000, label: "Sq Ft of Warehouse Space", subLabel: "Staging, kitting, fulfillment all under one roof." },
+    { value: 18000, label: "Pallet Positions", subLabel: "Built to support rollouts, returns, and closures." },
+    { value: 38500, label: "Checkout Lanes Supported", subLabel: "Install, repair, and tech refreshes.", suffix: "+" },
+    { value: 40000, label: "Annual Shipments", subLabel: "Fast fulfillment of tech, tools, and parts." },
+    { value: 1850, label: "Vetted Technicians", subLabel: "Coverage within 100 miles of 99% of the US.", suffix: "+" },
+    { value: 9650, label: "Locations On Full Lifecycle Maintenance", subLabel: "But every service can stand on its own.", },
+    { value: 1000, label: "Rapid Rollouts (<8 wks)", subLabel: "Mobilized and scaled. No delays.", suffix: "+" },
+    { value: 12000, label: "Low Voltage Rollouts", subLabel: "Rough-in to turn-up. Wired for new builds, remodels, and relocations.", suffix: "+" }
 ];
 
 export const metadata: Metadata = {

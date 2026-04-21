@@ -5,13 +5,14 @@ import { useEffect, useRef, useState } from "react";
 type Stat = {
     value: number;
     label: string;
+    subLabel?: string;
     suffix?: string;
 };
 
 type StatSection = {
-    title?: string,
-    subTitle?: string,
-    stats: Stat[],
+    title?: string;
+    subTitle?: string;
+    stats: Stat[];
 };
 
 // const rowOne: Stat[] = [
@@ -29,7 +30,7 @@ type StatSection = {
 //     { value: 1000, label: "Rapid-Scale Deployments in Under 8 Weeks", suffix: "+" }
 // ];
 
-function StatItem({ value, label, suffix = "" }: Stat) {
+function StatItem({ value, label, subLabel, suffix = "" }: Stat) {
     const [visible, setVisible] = useState(false);
     const [display, setDisplay] = useState(0);
     const ref = useRef<HTMLDivElement>(null);
@@ -75,12 +76,13 @@ function StatItem({ value, label, suffix = "" }: Stat) {
             <div className="relative z-20 flex text-2xl tabular-nums font-bold">
                 {display.toLocaleString()}{suffix}
             </div>
-            <span className="relative z-20">{label}</span>
+            <span className="relative z-20 font-semibold">{label}</span>
+            <span className="relative z-20">{subLabel}</span>
         </div>
     );
 }
 
-export default function StatSection({ title="", subTitle="", stats }: StatSection) {
+export default function StatSection({ title, subTitle, stats }: StatSection) {
     return (
         <div className="w-[70%] flex flex-col mx-auto py-14 gap-5">
             <div className="w-full mb-4 text-brand-black">
