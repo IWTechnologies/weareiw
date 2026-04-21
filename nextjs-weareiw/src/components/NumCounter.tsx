@@ -8,10 +8,10 @@ type Stat = {
     suffix?: string;
 };
 
-export type StatSection = {
+type StatSection = {
     title?: string,
+    subTitle?: string,
     stats: Stat[],
-    columns?: number;
 };
 
 // const rowOne: Stat[] = [
@@ -80,11 +80,12 @@ function StatItem({ value, label, suffix = "" }: Stat) {
     );
 }
 
-export default function StatSection({ title="", stats, columns }: StatSection) {
+export default function StatSection({ title="", subTitle="", stats }: StatSection) {
     return (
         <div className="w-[70%] flex flex-col mx-auto py-14 gap-5">
             <div className="w-full mb-4 text-brand-black">
                 <h2>{title}</h2>
+                <div>{subTitle}</div>
             </div>
             {/* <div className="w-full mb-8 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8">
                 {rowOne.map((stat) => (

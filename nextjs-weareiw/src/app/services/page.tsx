@@ -12,6 +12,18 @@ const services = [
     { label: "Disposition", src: "heroImages/shutterstock2.jpg", alt: "Disposition image", href: "/services/disposition" }
 ]
 
+const serviceStats = [
+    { value: 240000, label: "Sq Ft of Warehouse Space" },
+    { value: 18000, label: "Pallet Storage Locations" },
+    { value: 50, label: "Years in Business" },
+    { value: 40000, label: "Annual Shipments" },
+    { value: 7500, label: "Customers Nationwide", suffix: "+" },
+    { value: 35000, label: "Checkout Lanes Supported", suffix: "+" },
+    { value: 55000, label: "On-Site Service Events (2024)", suffix: "+" },
+    { value: 9650, label: "Locations Supported Across North America (2024)" },
+    { value: 1000, label: "Rapid-Scale Deployments in Under 8 Weeks", suffix: "+" }
+];
+
 export const metadata: Metadata = {
   title: "Services - IW Technologies",
   description: "From installation to on-site repair to e-cycling, our offerings can cover the full lifecycle of your technology or be chosen a la carte.",
@@ -111,21 +123,13 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            <section className="w-[80%] flex justify-center mx-auto mb-14 bg-background text-brand-black">
+            <section className="w-full flex justify-center mx-auto mb-14 bg-background text-brand-black">
                 <div className="w-full flex flex-col items-center gap-4">
-                    <div className="w-[90%] flex flex-col">
-                        <h2>
-                            What End-to-End Service Looks Like at Scale
-                        </h2>
-                        <div>
-                            Every number here backs once promise: 
-                        </div>
-                    </div>
-                    <Image
-                    className="w-[90%] h-auto object-contain rounded-3xl" 
-                    src="/aboutImages/Whats-In-It-For-You.webp" alt="What's in it for you image graphic" 
-                    width="1920" height="1080"
-                    sizes="(max-width: 1920px) 100vw, 50vw" />
+                    <NumCounter 
+                    title="What End-to-End Service Looks Like at Scale" 
+                    subTitle="Every number here backs once promise:" 
+                    stats={serviceStats} 
+                    />
                 </div>
             </section>
 
