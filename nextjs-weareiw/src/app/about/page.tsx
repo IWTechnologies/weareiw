@@ -19,7 +19,7 @@ const industries = [
     { label: "Distribution", src: "/heroImages/shutterstock6.jpg", alt: "Distribution image with title" },
 ]
 
-const rowOne = [
+const aboutStats = [
     { value: 240000, label: "Sq Ft of Warehouse Space" },
     { value: 18000, label: "Pallet Storage Locations" },
     { value: 50, label: "Years in Business" },
@@ -122,7 +122,7 @@ export default function AboutPage() {
             </section>
 
             <section className="w-full pb-14 bg-background">
-                <NumCounter title="By the Numbers" stats={rowOne} />
+                <NumCounter title="By the Numbers" stats={aboutStats} />
             </section>
 
             <section className="w-[80%] flex justify-center mx-auto mb-14 text-brand-black">
