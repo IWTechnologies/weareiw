@@ -19,6 +19,18 @@ const industries = [
     { label: "Distribution", src: "/heroImages/shutterstock6.jpg", alt: "Distribution image with title" },
 ]
 
+const rowOne = [
+    { value: 240000, label: "Sq Ft of Warehouse Space" },
+    { value: 18000, label: "Pallet Storage Locations" },
+    { value: 50, label: "Years in Business" },
+    { value: 40000, label: "Annual Shipments" },
+    { value: 7500, label: "Customers Nationwide", suffix: "+" },
+    { value: 35000, label: "Checkout Lanes Supported", suffix: "+" },
+    { value: 55000, label: "On-Site Service Events (2024)", suffix: "+" },
+    { value: 9650, label: "Locations Supported Across North America (2024)" },
+    { value: 1000, label: "Rapid-Scale Deployments in Under 8 Weeks", suffix: "+" }
+];
+
 export default function AboutPage() {
     return (
         <div className="">
@@ -110,7 +122,7 @@ export default function AboutPage() {
             </section>
 
             <section className="w-full pb-14 bg-background">
-                <NumCounter />
+                <NumCounter title="By the Numbers" stats={rowOne} />
             </section>
 
             <section className="w-[80%] flex justify-center mx-auto mb-14 text-brand-black">

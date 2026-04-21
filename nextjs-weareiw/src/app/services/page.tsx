@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
+import NumCounter from "@/components/NumCounter";
 
 const services = [
     { label: "Procurement", src: "heroImages/shutterstock2.jpg", alt: "Procurement image", href: "/services/procurement" },
@@ -17,11 +19,11 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
     return (
-        <div className="bg-brand-black">
-            <section className="h-80 text-white">
+        <div className="">
+            <section className="h-fit text-white">
                 <Hero 
-                    imageSrc="/heroImages/shutterstock2.jpg"
-                    imageAlt="Blue tinted Services card image"
+                    imageSrc="/heroImages/servicesHero.png"
+                    imageAlt="Blue tinted Services hero image"
                     imageWidth={2048}
                     imageHeight={1357}
                     text={
@@ -32,7 +34,7 @@ export default function ServicesPage() {
                 />
             </section>
 
-            <section className="flex justify-center p-5 bg-brand-black text-white">
+            <section className="flex justify-center py-14 bg-brand-black text-white">
                 <div>
                     <h2 className="border-b-4 border-brand-aqua p-2">
                         End-to-End Lifecycle Services
@@ -40,7 +42,7 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 mb-5 bg-brand-black">
+            <section className="w-full py-5 bg-brand-black">
                 <div className="container w-[80%] sm:w-[90%] h-80 sm:h-60 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                     {services.map((service) => (
                     <Link key={service.label} href={service.href} prefetch={false}
@@ -63,30 +65,67 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 rounded-t-3xl bg-background">
-                <div className="container mx-auto flex justify-center">
-                    <div className="w-[90%]">
-                        <Blurb 
-                        media={{
-                            type: "image",
-                            src: "/copylifeCycle.png",
-                            alt: "Blue tinted image of IW team in meeting",
-                            width: 512,
-                            height: 342,
-                        }}
-                        text={
-                            <>
-                            <h3>This is placeholder content</h3>
-                            <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
-                            <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
-                            <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
-                            </>
-                        }
-                        reverse
-                        rounded
-                        textColor="text-brand-black"
-                        />
+            <section className="w-full flex justify-center bg-brand-black text-brand-black">
+                <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
+                    <div className="w-[80%] mx-auto flex flex-col gap-5">
+                        <h2 className="w-fit border-b-4 border-brand-aqua p-2">
+                            From POS Provider to End-to-End Partner
+                        </h2>
+                        <div className="font-bold">
+                            We didn't pivot into services. Our customers pulled us in.
+                        </div>
+                        <div>
+                            The expansion into services didn't begin in a boardroom. It started in 
+                            the field with recurring questions from longstanding hardware customers:
+                        </div>
+                        <div className="font-bold">
+                            "You already sell us the POS equipment. Can you help us install it? 
+                            Maintain it? Manage it?"
+                        </div>
+                        <div>
+                            What began as a favor turned into a repeat engagement. A handful of 
+                            installations grew into coordinated national rollouts.
+                        </div>
+                        <div>
+                            And in just a few years, that single request matured into a fully scaled 
+                            service division now powering over <span className="font-bold">55,000 on-site service events annually </span>
+                            across North America.
+                        </div>
+                        <div className="font-bold">
+                            Today, IW is more than a provider. We don't just sell hardware. We operationalize it.
+                        </div>
+                        <div>
+                            From procurement and deployment to break/fix support, decommissioning, 
+                            <span className="font-bold">a structured low voltage cabling</span>, 
+                            and sustainable recovery, we manage the full technology lifecycle as 
+                            an embedded partner.
+                        </div>
+                        <div>
+                            That includes everything from <span className="font-bold">rough-in and termination </span>
+                            to <span>technology installation </span>whether it's for <span>net-new stores, remodels, or multi-site relocations.</span> 
+                        </div>
+                        <div className="font-bold">
+                            No gaps. No handoffs. Just seamless execution from end to end.
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            <section className="w-[80%] flex justify-center mx-auto mb-14 bg-background text-brand-black">
+                <div className="w-full flex flex-col items-center gap-4">
+                    <div className="w-[90%] flex flex-col">
+                        <h2>
+                            What End-to-End Service Looks Like at Scale
+                        </h2>
+                        <div>
+                            Every number here backs once promise: 
+                        </div>
+                    </div>
+                    <Image
+                    className="w-[90%] h-auto object-contain rounded-3xl" 
+                    src="/aboutImages/Whats-In-It-For-You.webp" alt="What's in it for you image graphic" 
+                    width="1920" height="1080"
+                    sizes="(max-width: 1920px) 100vw, 50vw" />
                 </div>
             </section>
 
