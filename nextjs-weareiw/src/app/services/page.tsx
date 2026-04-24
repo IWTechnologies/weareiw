@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { ReactNode } from "react";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
+import Card from "@/components/Card";
 import NumCounter from "@/components/NumCounter";
+
+type serviceGridProps = {
+    text: ReactNode;
+}
 
 const services = [
     { label: "Procurement", src: "heroImages/shutterstock2.jpg", alt: "Procurement image", href: "/services/procurement" },
@@ -45,36 +51,6 @@ export default function ServicesPage() {
                 />
             </section>
 
-            <section className="flex justify-center py-14 bg-brand-black text-white">
-                <div>
-                    <h2 className="border-b-4 border-brand-aqua p-2">
-                        End-to-End Lifecycle Services
-                    </h2>
-                </div>
-            </section>
-
-            <section className="w-full py-5 bg-brand-black">
-                <div className="container w-[80%] sm:w-[90%] h-80 sm:h-60 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                    {services.map((service) => (
-                    <Link key={service.label} href={service.href} prefetch={false}
-                        className="group relative w-full h-full flex items-center rounded-3xl overflow-hidden bg-brand-black"
-                        style={{ WebkitMaskImage: "-webkit-radial-gradient(white, black)" }}>
-                        <img src={service.src} alt={service.alt}
-                            className="absolute inset-0 h-full w-full object-cover" />
-                        <div className="opacity-100 group-hover:opacity-0 transition duration-300 ease-in-out
-                            absolute inset-0 z-10 bg-linear-to-t from-background/50 to-transparent"></div>
-                        <div className="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out 
-                            absolute inset-0 z-10 bg-linear-to-t from-brand-black to-transparent"></div>
-                        <div className="relative w-full mx-auto z-30 flex justify-center items-center
-                            text-xl sm:text-3xl font-bold text-brand-black group-hover:text-white
-                            group-hover:motion-safe:animate-bounce transition-all duration-300 ease-in-out">
-                            {service.label}
-                            <span className="ml-2 text-base opacity-0 group-hover:opacity-100 transition duration-300">→</span>
-                        </div>
-                    </Link>
-                    ) )}
-                </div>
-            </section>
 
             <section className="w-full flex justify-center bg-brand-black text-brand-black">
                 <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
@@ -122,33 +98,57 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            <section className="w-full flex justify-center mx-auto mb-14 bg-background text-brand-black">
-                <div className="w-full flex flex-col items-center gap-4">
-                    <NumCounter 
-                    title="What End-to-End Service Looks Like at Scale" 
-                    subTitle="Every number here backs once promise:" 
-                    stats={serviceStats} 
+            <section className="w-full flex justify-center mx-auto mb-14 text-brand-black">
+                <div className="relative w-full flex flex-col items-center gap-4">
+                    <Image 
+                        src="/serviceImages/serviceStatsBG.png" alt="placeholder"
+                        width={892} height={727} sizes="100vw"
+                        className="absolute inset-0 h-full w-full object-cover"
                     />
+                    <div className="absolute inset-0 z-10 bg-linear-to-t from-background via-transparent to-background"></div>
+                    <div className="relative z-20">
+                        <NumCounter 
+                        title="What End-to-End Service Looks Like at Scale" 
+                        subTitle="Every number here backs once promise:" 
+                        stats={serviceStats} 
+                        />
+                    </div>
+                    
                 </div>
             </section>
 
-            <section className="w-full py-14 bg-background">
+            <section className="w-full py-14">
                 <div className="container mx-auto flex justify-center">
                     <div className="w-[90%]">
                         <Blurb 
                         media={{
                             type: "image",
-                            src: "/copylifeCycle.png",
+                            src: "/serviceImages/servicesCircle.webp",
                             alt: "Blue tinted image of IW team in meeting",
-                            width: 512,
-                            height: 342,
+                            width: 1546,
+                            height: 1067,
                         }}
                         text={
                             <>
-                            <h3>This is placeholder content</h3>
-                            <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
-                            <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
-                            <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
+                            <h3>What We Do</h3>
+                            <h4 className="font-semibold">Comprehensive Services, Built for Complex Environments</h4>
+                            <p>
+                                We operate as an extension of your infrastructure and operations team managing every phase 
+                                of the IT asset lifecyle with speed, precision, and accountability.
+                            </p>
+                            <p>
+                                From large-scale rollouts and tech upgrades to site refreshes and full asset recovery, our 
+                                teams deliver with rigor across every stage: sourcing, staging, deploying, servicing, and 
+                                reclaiming technology regardless of industry or footprint.
+                            </p>
+                            <p>
+                                This isn't task support. It's full-spectrum service tailored to your operating model, 
+                                integraded into your systems, and executed at scale.
+                            </p>
+                            <p>
+                                And if your business runs on technology at the front of house, back of store, or across 
+                                a national footprint we've probably worked in your industry.
+                            </p>
                             </>
                         }
                         rounded
@@ -158,29 +158,155 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 mb-5 bg-background">
+            <section className="w-full py-14 my-5">
                 <div className="container mx-auto flex justify-center">
-                    <div className="w-[90%]">
-                        <Blurb 
-                        media={{
-                            type: "image",
-                            src: "/copylifeCycle.png",
-                            alt: "Blue tinted image of IW team in meeting",
-                            width: 512,
-                            height: 342,
-                        }}
-                        text={
-                            <>
-                            <h3>This is placeholder content</h3>
-                            <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
-                            <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
-                            <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
-                            </>
-                        }
-                        reverse
-                        rounded
-                        textColor="text-brand-black"
-                        />
+                    <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <Link href="/services/procurement"
+                        className="w-full flex items-stretch
+                        border-2 border-transparent rounded-md col-span-2
+                        transition delay-150 duration-300 ease-in-out 
+                        hover:-translate-y-1 hover:border-brand-aqua">
+                            <Card
+                                text={
+                                    <>
+                                    <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">
+                                        Procurement
+                                    </h3>
+                                    <p className="font-semibold">
+                                        Sourcing built for speed, savings, and sustainability.
+                                    </p>
+                                    <p>
+                                        We help enterprises reducs capital costs, reclaim value from legacy hardware, and 
+                                        align purchasing with ESG goals all from our <span className="font-semibold">240,000+ sq ft warehouse</span>, stocked with 
+                                        new and certified refurbished assets.
+                                    </p>
+                                    <p className="font-semibold">
+                                        Explore how we cut cost and carbon across the supply chain.
+                                    </p>
+                                    </>
+                                }
+                            />
+                        </Link>
+
+                        <Link href="/services/procurement"
+                        className="w-full flex items-stretch
+                        border-2 border-transparent rounded-md col-span-2
+                        transition delay-150 duration-300 ease-in-out 
+                        hover:-translate-y-1 hover:border-brand-aqua">
+                            <Card
+                                text={
+                                    <>
+                                    <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">
+                                        Deployment
+                                    </h3>
+                                    <p className="font-semibold">
+                                        Deployment without disruption at enterprise scale.
+                                    </p>
+                                    <p>
+                                        With <span className="font-semibold">1,000+ rapid rollouts under 8 weeks</span>, our teams 
+                                        stage, configure, and install IT assets nationwide. Every deployment 
+                                        is PMO-managed and backed by <span className="font-semibold">40,000 annual shipments </span>
+                                        and <span>9,650+ locations on full lifecycle maintenance (you can à la carte if you prefer)</span>.
+                                    </p>
+                                    <p className="font-semibold">
+                                        See how we deliver ready-to-run tech, not just boxes.
+                                    </p>
+                                    </>
+                                }
+                            />
+                        </Link>
+
+                        <Link href="/services/procurement"
+                        className="w-full flex items-stretch
+                        border-2 border-transparent rounded-md col-span-2 lg:col-span-1
+                        transition delay-150 duration-300 ease-in-out 
+                        hover:-translate-y-1 hover:border-brand-aqua">
+                            <Card
+                                text={
+                                    <>
+                                    <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">
+                                        Maintenance
+                                    </h3>
+                                    <p className="font-semibold">
+                                        Uptime isn't optional. We keep you running.
+                                    </p>
+                                    <p>
+                                        Our network of <span className="font-semibold">1,850+ vetted technicians </span>cover 99% of the U.S. 
+                                        resolving over <span className="font-semibold">55,000 on-site service events </span>annually. From 
+                                        same-day repair to part replacement, we meet issues with answers fast..
+                                    </p>
+                                    <p className="font-semibold">
+                                        Discover how we turn SLAs into solved problems.
+                                    </p>
+                                    </>
+                                }
+                            />
+                        </Link>
+
+                        <Link href="/services/procurement"
+                        className="w-full flex items-stretch
+                        border-2 border-transparent rounded-md col-span-2
+                        transition delay-150 duration-300 ease-in-out 
+                        hover:-translate-y-1 hover:border-brand-aqua">
+                            <Card
+                                text={
+                                    <>
+                                    <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">
+                                        Low Voltage Cabling
+                                    </h3>
+                                    <p className="font-semibold">
+                                        The infrastructure behind every install designed to scale with your operations.
+                                    </p>
+                                    <p>
+                                        From rough-in to termination and final technology integration, IW delivers 
+                                        structured low-voltage cabling that supports everything from net-new stores 
+                                        and remodels to relocations and refreshes.
+                                    </p>
+                                    <p>
+                                        Whether you're opening 5 locations or retrofitting 500, our certified field teams 
+                                        install and validate cabling to power POS, networking, displays, IoT, and more 
+                                        with consistency, compliance, and minimal disruption.
+                                    </p>
+                                    <p>
+                                        With 9,650+ locations running on IW's full lifecycle service and 1,850+ technicians 
+                                        across 384 metro areas, our infrastructure work is precise, scalable, and deployment-ready 
+                                        just like everything we do.
+                                    </p>
+                                    <p className="font-semibold">
+                                        Great tech starts with clean wiring. We make sure of it.
+                                    </p>
+                                    </>
+                                }
+                            />
+                        </Link>
+
+                        <Link href="/services/procurement"
+                        className="w-full flex items-stretch
+                        border-2 border-transparent rounded-md col-span-2 lg:col-span-1
+                        transition delay-150 duration-300 ease-in-out 
+                        hover:-translate-y-1 hover:border-brand-aqua">
+                            <Card
+                                text={
+                                    <>
+                                    <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">
+                                        Disposition
+                                    </h3>
+                                    <p className="font-semibold">
+                                        End-of-life isn't the end of responsibility.
+                                    </p>
+                                    <p>
+                                        We manage secure deinstallation, recovery, and data destruction across your 
+                                        footprint diverting waste, reclaiming value, and protecting compliance. In 2024 
+                                        alone, we recycled <span className="font-semibold">815 tons of IT equipment</span>.
+                                    </p>
+                                    <p className="font-semibold">
+                                        Learn how we deliver full lifecycle accountability sustainably.
+                                    </p>
+                                    </>
+                                }
+                            />
+                        </Link>
+                        
                     </div>
                 </div>
             </section>
