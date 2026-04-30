@@ -33,6 +33,7 @@ export const navItems: NavItem[] = [
         submenu: [
             { label: "Procurement", href: "/services/procurement" },
             { label: "Deployment", href: "/services/deployment" },
+            { label: "Low Voltage Cabling", href: "/services/low-voltage" },
             { label: "Maintenance", href: "/services/maintenance" },
             { label: "Disposition", href: "/services/disposition" },
         ],

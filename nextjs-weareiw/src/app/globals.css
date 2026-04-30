@@ -62,9 +62,9 @@ h3 {
   @apply font-heading text-xl lg:text-2xl font-medium leading-[1.3]
 }
 
-p {
+/* p {
   @apply max-w-[70ch]
-}
+} */
 
 /* not being used but keep just in case 
 background shapes for sections */
