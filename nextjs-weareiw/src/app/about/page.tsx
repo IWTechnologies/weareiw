@@ -125,15 +125,15 @@ export default function AboutPage() {
                 <NumCounter title="By the Numbers" stats={aboutStats} />
             </section>
 
-            <section className="w-[80%] flex justify-center mx-auto mb-14 text-brand-black">
+            <section className="w-[90%] lg:w-[80%] flex justify-center mx-auto mb-14 text-brand-black">
                 <div className="w-full sm:w-[80%] flex flex-col items-center gap-4">
-                    <div className="w-[90%] flex">
+                    <div className="w-full lg:w-[90%] flex">
                         <h2>
                             What's In It For You
                         </h2>
                     </div>
                     <Image
-                    className="w-[90%] h-auto object-contain rounded-3xl" 
+                    className="w-full lg:w-[90%] h-auto object-contain rounded-3xl" 
                     src="/aboutImages/Whats-In-It-For-You.webp" alt="What's in it for you image graphic" 
                     width="1920" height="1080"
                     sizes="(max-width: 1920px) 100vw, 50vw" />
