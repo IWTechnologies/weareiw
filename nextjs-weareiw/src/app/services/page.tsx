@@ -714,7 +714,7 @@ export default function ServicesPage() {
                     <p>
                         Whether you're scaling, consolidating, or refreshing your tech stack. Let's talk.
                     </p>
-                    <LinkButton href="https://www.weareiw.com/get-in-touch/" label="Let's Skip The RFP Theater" variant="light" />
+                    <LinkButton href="https://www.weareiw.com/get-in-touch/" label="Let's Skip The RFP Theater" target="_blank" variant="light" />
                 </div>
             </section> {/* end of  Ready to talk */}
         </div>
