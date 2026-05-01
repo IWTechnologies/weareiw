@@ -43,17 +43,17 @@ export default function AboutPage() {
                     text={
                     <>
                       <h1>Powering the Tech Ecosystems Behind the World's Top Brands</h1>
-                      <div className="font-bold">About IW Technologies</div>
-                      <div className="">
+                      <p className="font-bold">About IW Technologies</p>
+                      <p className="">
                         IW Technologies architects and optimizes <span className="font-bold">POS and tech ecosystems </span>
                         for leading brands across <span className="font-bold">Retail, Grocery, QSR, Hospitality, Convenience,
                         and Distribution.</span> 
-                      </div>
-                      <div className="">
+                      </p>
+                      <p className="">
                         With nearly 50 years of experience and a 240,000 sq ft warehouse of new
                         and refurbished inventory, we deliver fast, scalable, future-ready solutions
                         from mobile POS to self-checkout, networking, and more.
-                      </div>
+                      </p>
                     </>
                     }
                     link={{
@@ -69,22 +69,22 @@ export default function AboutPage() {
                     <div className="w-[80%] mx-auto flex flex-col gap-5">
                         <h2 className="w-fit border-b-4 border-brand-aqua p-2">What We Do</h2>
                         <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
-                        <div>
+                        <p>
                             We intergrate cutting-edge hardware, agile deployment, and white-glove
                             support to deliver end-to-end IT lifecycle solutions. Whether it's
                             nationwide rollouts, on-site break/fix, or secure tech disposition,
                             IW scales to meet the demands of modern enterprise.
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                             We design, deploy, and support the critical infrastructure behind every
                             transaction, every interaction, and every rollout.
-                        </div>
-                        <div className="font-bold">
+                        </p>
+                        <p className="font-bold">
                             Procurement | Configuration & Deployment | Field Maintenance | Secure Disposition
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                             Modular or full-stack - your tech, your pace.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -146,13 +146,13 @@ export default function AboutPage() {
                     <h2>
                     Guided By Our Values
                     </h2>
-                    <div>
+                    <p>
                     We believe in going above and beyond for our customers, providing them with the 
                     most comprehensive enterprise solutions in the industry.
-                    </div>
+                    </p>
                 </div>
-                <div className="w-full flex flex-col items-center gap-8
-                lg:flex-row lg:justify-between lg:items-stretch">
+                <div className="w-full grid grid-cols-1 gap-8
+                lg:grid-cols-2 xl:grid-cols-4 items-stretch">
                     <Card 
                     imageSrc="/View-our-products-Moody-blue.png"
                     imageAlt="Blue tinted view our products card image"
