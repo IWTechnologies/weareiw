@@ -187,7 +187,7 @@ export default function DispositionPage() {
                         </div>
 
                         <div className="w-full flex flex-col items-center mx-auto my-5">
-                                <LinkButton href="/products" label="Your Tech's Done Working. We're Not" subLabel="Let's close the loop - securely and sustainably." target="_blank" variant="dark" />
+                                <LinkButton href="#" label="Your Tech's Done Working. We're Not" subLabel="Let's close the loop - securely and sustainably." target="_blank" variant="dark" />
                         </div>
                     </div>
                 </div>
