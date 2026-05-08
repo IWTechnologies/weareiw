@@ -45,7 +45,7 @@ export default function DispositionPage() {
                             <Card 
                                 text={
                                     <>
-                                    <img src="/serviceImages/icons/gear-solid-full.svg"
+                                    <img src="/serviceImages/icons/snowplow-solid-full.svg"
                                     alt="blue and white circle check icon" width={50} height={50}
                                     className="shrink-0" />
                                     <h3 className="font-semibold">
@@ -67,7 +67,7 @@ export default function DispositionPage() {
                             <Card 
                                 text={
                                     <>
-                                    <img src="/serviceImages/icons/clipboard-check-solid-full.svg"
+                                    <img src="/serviceImages/icons/recycle-solid-full.svg"
                                         alt="blue and white circle check icon" width={50} height={50}
                                         className="shrink-0" />
                                     <h3 className="font-semibold">
@@ -106,7 +106,7 @@ export default function DispositionPage() {
                             <Card 
                                 text={
                                     <>
-                                    <img src="/serviceImages/icons/people-group-solid-full.svg"
+                                    <img src="/serviceImages/icons/database-solid-full.svg"
                                         alt="blue and white circle check icon" width={50} height={50}
                                         className="shrink-0" />
                                     <h3 className="font-semibold">

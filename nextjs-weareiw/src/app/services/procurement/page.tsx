@@ -75,7 +75,7 @@ export default function ProcurementPage() {
                             <Card 
                                 text={
                                     <>
-                                    <img src="/serviceImages/icons/truck-fast-solid-full.svg"
+                                    <img src="/serviceImages/icons/arrow-pointer-solid-full.svg"
                                         alt="blue and white circle check icon" width={50} height={50}
                                         className="shrink-0" />
                                     <h3 className="font-semibold">
