@@ -9,6 +9,15 @@ export const metadata: Metadata = {
   description: "Careers placeholder content.",
 };
 
+const benefitPerks = [
+    { src: "/careerImages/icons/circle-dollar-to-slot-solid-full.svg", alt: "401k icon", label: "401k" },
+    { src: "/careerImages/icons/heart-umbrella-solid-full.svg", alt: "LTD Insurance icon", label: "LTD Insurance" },
+    { src: "/careerImages/icons/heart-pulse-solid-full.svg", alt: "Life Insurance icon", label: "Life Insurance" },
+    { src: "/careerImages/icons/shield-heart-solid-full.svg", alt: "Health Insurance icon", label: "Health Insurance" },
+    { src: "/careerImages/icons/tooth-solid-full.svg", alt: "Dental Insurance icon", label: "Dental Insurance" },
+    { src: "/careerImages/icons/calendar-days-solid-full.svg", alt: "PTO icon", label: "PTO" },
+]
+
 export default function CareersPage() {
     return (
         <div>
@@ -58,8 +67,7 @@ export default function CareersPage() {
             </section>
 
             <section className="w-full py-14">
-                <div className="container mx-auto flex justify-center">
-                    <div className="w-[90%]">
+                <div className="w-[90%] mx-auto">
                     <Blurb 
                         media={{
                         type: "image",
@@ -83,13 +91,11 @@ export default function CareersPage() {
                         rounded
                         textColor="text-brand-black"
                     />
-                    </div>
                 </div>
             </section>
 
             <section className="w-full py-14">
-                <div className="container mx-auto flex justify-center">
-                    <div className="w-[90%]">
+                <div className="w-[90%] mx-auto">
                     <Blurb 
                         media={{
                         type: "image",
@@ -115,11 +121,10 @@ export default function CareersPage() {
                         rounded
                         textColor="text-brand-black"
                     />
-                    </div>
                 </div>
             </section>
 
-            <section className="w-[80%] mx-auto my-15 flex flex-col items-center gap-5">
+            <section className="w-[90%] mx-auto py-14 flex flex-col items-center gap-5">
                 <div className="w-full flex flex-col gap-1 text-brand-black">
                     <h2 className="">
                         Core values we live by
@@ -130,59 +135,78 @@ export default function CareersPage() {
                     <Card
                         text={
                             <>
-                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-white">Service</h3>
-                            <p className="text-white">
+                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Service</h3>
+                            <p className="">
                                 Our dedication to our customers is second to none. When they have a need,
                                 issue, or last-minute request, we always deliver.
                             </p>
                             </>
                         }
-                        bgColor="bg-brand-black"
+                        
                     />
                     <Card
                         text={
                             <>
-                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-white">Integrity</h3>
-                            <p className="text-white">
+                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Integrity</h3>
+                            <p className="">
                                 We have the best interests of our people and our customers in mind always,
                                 and we act accordingly, following through on our commitments and fostering respect.
                             </p>
                             </>
                         }
-                        bgColor="bg-brand-black"
+                        
                     />
                     <Card
                         text={
                             <>
-                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-white">Partnership</h3>
-                            <p className="text-white">
+                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Partnership</h3>
+                            <p className="">
                                 We are committed to being a true partner to our customers every step
                                 of the way, offering fully customized solutions and consistent support.
                             </p>
                             </>
                         }
-                        bgColor="bg-brand-black"
+                        
                     />
                     <Card
                         text={
                             <>
-                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-white">Excellence</h3>
-                            <p className="text-white">
+                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Excellence</h3>
+                            <p className="">
                                 We hold ourselves to the highest standard, offering top quality technology,
                                 the most skilled technicians, and unparalleled customer service.
                             </p>
                             </>
                         }
-                        bgColor="bg-brand-black"
+                        
                     />
                 </div>
             </section>
 
-            <section className="w-full py-14 bg-brand-black">
-                <div className="container mx-auto flex justify-center">
-                    <div className="w-[90%] text-white">
-                        placeholder.
-                    </div>
+            <section className="w-full py-20 bg-brand-black">
+                <div className="w-[90%] mx-auto flex flex-col items-center gap-10">
+                        <h2 className="text-white">
+                            The employee perks and benefits at IW Technologies are something 
+                            we can't help but brag about:
+                        </h2>
+                        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                            {benefitPerks.map((perks) => (
+                                <div key={perks.label} className="relative rounded-2xl overflow-hidden">
+                                    <div className="absolute inset-0 z-10 bg-radial-[at_5%_10%] from-brand-navy/20 to-transparent" />
+                                    <Card
+                                        text={
+                                            <>
+                                                <div className="z-20 flex flex-col items-center">
+                                                    <img src={perks.src} alt={perks.alt} height={100} width={100} />
+                                                    <h3 className="text-white">{perks.label}</h3>
+                                                </div>
+                                            </>
+                                        }
+                                        bgColor="bg-brand-black"
+                                    />
+                                </div>
+                            ))}
+                        </div>
                 </div>
             </section>
         </div>
