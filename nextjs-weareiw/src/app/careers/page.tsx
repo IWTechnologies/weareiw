@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import Card from "@/components/Card";
+import PhotoGrid from "@/components/PhotoGrid";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
@@ -136,7 +137,7 @@ export default function CareersPage() {
                     </h2>
                 </div>
                 <div className="w-full grid grid-cols-1 gap-8
-                xl:grid-cols-2 items-stretch">
+                md:grid-cols-2 items-stretch">
                     <Card
                         text={
                             <>
@@ -212,6 +213,43 @@ export default function CareersPage() {
                                 </div>
                             ))}
                         </div>
+                </div>
+            </section>
+
+            <section className="w-full py-20 bg-brand-black">
+                <div className="w-[80%] mx-auto">
+                    <PhotoGrid />
+                </div>
+            </section>
+
+            {/* <section className="relative w-full py-20">
+                <div className="absolute inset-0 z-10 bg-linear-to-b from-brand-black via-brand-navy/80 to-transparent"></div>
+                <div className="relative w-[80%] mx-auto z-20">
+                    <PhotoGrid />
+                </div>
+            </section> */}
+
+            <section className="w-full py-14">
+                <div className="w-[90%] lg:w-[60%] mx-auto">
+                    <Card
+                        text={
+                            <>
+                            <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">
+                                Ready to grow with us?
+                            </h3>
+                            <p className="">
+                                We are always on the lookout for hardworking, respectful, motivated 
+                                individuals to join our team. Check out our current opportunities and 
+                                apply.
+                            </p>
+                            </>
+                        }
+                        link={{
+                            href: "#",
+                            label: "Explore Opportunities",
+                            variant: "dark",
+                        }}
+                    />
                 </div>
             </section>
         </div>
