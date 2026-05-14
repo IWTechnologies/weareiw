@@ -29,7 +29,7 @@ export default function CareersPage() {
                     imageHeight={457}
                     text={
                     <>
-                        <h1>Level Up Your Career</h1>
+                        <h1>Level up your career</h1>
                         <p>Join our grouwing team of motivated people.</p>
                         <p>
                             We are an agile group of hard workers who support and respect 
@@ -67,61 +67,66 @@ export default function CareersPage() {
             </section>
 
             <section className="w-full py-14">
-                <div className="w-[90%] mx-auto">
-                    <Blurb 
-                        media={{
-                        type: "image",
-                        src: "/copylifeCycle.png",
-                        alt: "Blue tinted image of IW team in meeting",
-                        width: 512,
-                        height: 342,
-                        }}
-                        text={
-                        <>
-                            <h3>Welcoming Work Environment</h3>
-                            <p>
-                                We hold ourselves to the highest standard of integrity, 
-                                always striving to be respectful, fair and inclusive. We 
-                                embrace differences in experience and identity and are commited 
-                                to creating a welcoming workplace, regardless of gender, race, 
-                                religion, sexual orientation, age or ability.
-                            </p>
-                        </>
-                        }
-                        rounded
-                        textColor="text-brand-black"
-                    />
+                <div className="container mx-auto">
+                    <div className="w-[90%] mx-auto">
+                        <Blurb 
+                            media={{
+                            type: "image",
+                            src: "/copylifeCycle.png",
+                            alt: "Blue tinted image of IW team in meeting",
+                            width: 512,
+                            height: 342,
+                            }}
+                            text={
+                            <>
+                                <h3>Welcoming Work Environment</h3>
+                                <p>
+                                    We hold ourselves to the highest standard of integrity, 
+                                    always striving to be respectful, fair and inclusive. We 
+                                    embrace differences in experience and identity and are commited 
+                                    to creating a welcoming workplace, regardless of gender, race, 
+                                    religion, sexual orientation, age or ability.
+                                </p>
+                            </>
+                            }
+                            rounded
+                            textColor="text-brand-black"
+                        />
+                    </div>
                 </div>
             </section>
 
             <section className="w-full py-14">
-                <div className="w-[90%] mx-auto">
-                    <Blurb 
-                        media={{
-                        type: "image",
-                        src: "/copylifeCycle.png",
-                        alt: "Blue tinted image of IW team in meeting",
-                        width: 512,
-                        height: 342,
-                        }}
-                        text={
-                        <>
-                            <h3>Environmental Conscious Practices</h3>
-                            <p>
-                                When it comes to the environment, we are leading the way in our 
-                                industry, preventing improperly discarded electronic equipment from 
-                                polluting our soil and waterways. At IW Technologies, we practice 
-                                e-cycling — collecting, distributing, repairing, or reusing used 
-                                electronic components before responsibly recycling them. This 
-                                conserves natural resources, cuts down on costs, and saves energy.
-                            </p>
-                        </>
-                        }
-                        reverse
-                        rounded
-                        textColor="text-brand-black"
-                    />
+                <div className="container mx-auto">
+                    <div className="w-[90%] mx-auto">
+                        <Blurb 
+                            media={{
+                            type: "image",
+                            src: "/copylifeCycle.png",
+                            alt: "Blue tinted image of IW team in meeting",
+                            width: 512,
+                            height: 342,
+                            }}
+                            text={
+                            <>
+                                <h3>Environmental Conscious Practices</h3>
+                                <p>
+                                    When it comes to the environment, we are leading the way in our 
+                                    industry, preventing improperly discarded electronic equipment from 
+                                    polluting our soil and waterways. At IW Technologies, we practice 
+                                    e-cycling — collecting, distributing, repairing, or reusing used 
+                                    electronic components before responsibly recycling them. This 
+                                    conserves natural resources, cuts down on costs, and saves energy.
+                                </p>
+                            </>
+                            }
+                            reverse
+                            rounded
+                            textColor="text-brand-black"
+                        />
+                    </div>
                 </div>
+                
             </section>
 
             <section className="w-[90%] mx-auto py-14 flex flex-col items-center gap-5">
@@ -184,8 +189,8 @@ export default function CareersPage() {
             </section>
 
             <section className="w-full py-20 bg-brand-black">
-                <div className="w-[90%] mx-auto flex flex-col items-center gap-10">
-                        <h2 className="text-white">
+                <div className="w-[90%] mx-auto flex flex-col gap-10">
+                        <h2 className="w-[80%] text-white">
                             The employee perks and benefits at IW Technologies are something 
                             we can't help but brag about:
                         </h2>
