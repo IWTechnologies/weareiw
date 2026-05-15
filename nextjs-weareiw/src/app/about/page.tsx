@@ -121,7 +121,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full pb-14 bg-background">
+            <section className="w-full pb-14">
                 <NumCounter title="By the Numbers" stats={aboutStats} />
             </section>
 

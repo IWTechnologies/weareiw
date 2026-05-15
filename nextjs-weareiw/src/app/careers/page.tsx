@@ -97,8 +97,11 @@ export default function CareersPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14">
-                <div className="container mx-auto">
+            <section className="relative w-full py-14">
+                <div className="absolute inset-0 z-10 opacity-50">
+                    <img src="/IWT_Logomark_White.png" alt="White IW logo displayed on section background" />
+                </div>
+                <div className="relative z-20 container mx-auto">
                     <div className="w-[90%] mx-auto">
                         <Blurb 
                             media={{
@@ -130,7 +133,7 @@ export default function CareersPage() {
                 
             </section>
 
-            <section className="w-[90%] mx-auto py-14 flex flex-col items-center gap-5">
+            <section className="relative z-20 w-[90%] mx-auto py-14 flex flex-col items-center gap-5">
                 <div className="w-full flex flex-col gap-1 text-brand-black">
                     <h2 className="">
                         Core values we live by
@@ -216,18 +219,14 @@ export default function CareersPage() {
                 </div>
             </section>
 
-            <section className="w-full py-20 bg-brand-black">
-                <div className="w-[80%] mx-auto">
-                    <PhotoGrid />
+            <section className="relative w-full py-20 bg-brand-black">
+                <div className="absolute inset-0 z-10 opacity-50">
+                    <img src="/IWT_Logomark_Navy.png" alt="White IW logo displayed on section background" />
                 </div>
-            </section>
-
-            {/* <section className="relative w-full py-20">
-                <div className="absolute inset-0 z-10 bg-linear-to-b from-brand-black via-brand-navy/80 to-transparent"></div>
                 <div className="relative w-[80%] mx-auto z-20">
                     <PhotoGrid />
                 </div>
-            </section> */}
+            </section>
 
             <section className="w-full py-14">
                 <div className="w-[90%] lg:w-[60%] mx-auto">
@@ -245,7 +244,7 @@ export default function CareersPage() {
                             </>
                         }
                         link={{
-                            href: "#",
+                            href: "/careers/opportunities",
                             label: "Explore Opportunities",
                             variant: "dark",
                         }}
