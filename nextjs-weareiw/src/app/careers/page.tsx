@@ -41,7 +41,7 @@ export default function CareersPage() {
                     </>
                     }
                     link={{
-                        href: "#",
+                        href: "/opportunities",
                         label: "Explore Opportunities",
                         variant: "light",
                     }}
@@ -244,7 +244,7 @@ export default function CareersPage() {
                             </>
                         }
                         link={{
-                            href: "/careers/opportunities",
+                            href: "/opportunities",
                             label: "Explore Opportunities",
                             variant: "dark",
                         }}
