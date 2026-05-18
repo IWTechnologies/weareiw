@@ -55,7 +55,7 @@ export const job = defineType({
     ],
     preview: {
         select: {
-            title: 'title',
+            title: 'jobTitle',
             subtitle: 'jobCategory',
         }
     }
