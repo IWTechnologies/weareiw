@@ -15,7 +15,7 @@ export const job = defineType({
             name: 'slug',
             title: 'Slug',
             type: 'slug',
-            options: {source: 'title'},
+            options: {source: 'jobTitle'},
             validation: rule => rule.required(),
         }),
         defineField({
