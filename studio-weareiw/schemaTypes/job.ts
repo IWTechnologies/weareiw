@@ -6,6 +6,13 @@ export const job = defineType({
     type: 'document',
     fields: [
         defineField({
+            name: 'active',
+            title: 'Active',
+            type: 'boolean',
+            description: 'Uncheck to hide without deleting',
+            initialValue: true,
+        }),
+        defineField({
             name: 'jobTitle',
             title: 'Job Title',
             type: 'string',
