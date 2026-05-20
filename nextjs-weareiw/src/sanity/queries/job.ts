@@ -10,4 +10,14 @@ export const fetchAllJobs = groq`
         type,
         jobDescription,
     }
-    `;
+`;
+
+export const fetchJobCategories = groq`
+    *[_type == "jobCategory"] | order(title asc) {
+        _id,
+        title,
+        "slug": slug.current,
+        description,
+        "categoryImage": categoryImage.asset->url
+    }
+`;

@@ -67,7 +67,14 @@ export const job = defineType({
     preview: {
         select: {
             title: 'jobTitle',
-            subtitle: 'jobCategory',
+            category: 'category.title',
+        },
+        prepare(selection) {
+            const {title, category} = selection
+            return {
+                title: title,
+                subtitle: `${category ? category : 'unknown'}`
+            }
         }
     }
 })
