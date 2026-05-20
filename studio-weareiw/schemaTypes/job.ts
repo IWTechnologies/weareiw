@@ -38,7 +38,31 @@ export const job = defineType({
         defineField({
             name: 'jobLocation',
             title: 'Job Location',
-            type: 'string',
+            type: 'object',
+            fields: [
+                {
+                    name: 'city',
+                    title: 'City',
+                    type: 'string',
+                    options: {
+                        list: [
+                            { title: 'Elgin', value: 'elgin' },
+                            { title: 'Minneapolis', value: 'minneapolis' }
+                        ]
+                    }
+                },
+                {
+                    name: 'state',
+                    title: 'State',
+                    type: 'string',
+                    options: {
+                        list: [
+                            { title: 'Illinois', value: 'illinois' },
+                            { title: 'Minnesota', value: 'minnesota' }
+                        ]
+                    }
+                },
+            ],
             validation: rule => rule.required(),
         }),
         defineField({

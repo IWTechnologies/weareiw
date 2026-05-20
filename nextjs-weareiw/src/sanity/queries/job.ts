@@ -6,7 +6,7 @@ export const fetchAllJobs = groq`
         jobTitle,
         "slug": slug.current,
         category,
-        jobLocation,
+        "jobLocation": jobLocation.city + ", " + jobLocation.state,
         type,
         jobDescription,
     }
