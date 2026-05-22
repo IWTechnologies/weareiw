@@ -53,7 +53,7 @@ export default async function OpportunitiesPage() {
                                             <h3 className="hover:text-brand-aqua">{category.title}</h3>
                                         </>
                                     }
-                                    />
+                                />
                             </Link>
                         ))}
                     </div>
