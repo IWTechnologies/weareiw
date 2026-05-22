@@ -451,7 +451,7 @@ export default function AboutPage() {
                             </>
                         }
                         link={{
-                            href: "#",
+                            href: "/opportunities",
                             label: "Explore Open Roles",
                             variant: "light",
                         }}
