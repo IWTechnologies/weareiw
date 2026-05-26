@@ -31,7 +31,7 @@ export const fetchJobsByCategory = groq`
         _id,
         jobTitle,
         "slug": slug.current,
-        "jobLocation": jobLocation.city + ", " + jobLocation.state,
+        "location": jobLocation.city + ", " + jobLocation.state,
         type,
         "category": category->title,
     }

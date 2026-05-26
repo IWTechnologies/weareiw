@@ -46,8 +46,8 @@ export const job = defineType({
                     type: 'string',
                     options: {
                         list: [
-                            { title: 'Elgin', value: 'elgin' },
-                            { title: 'Minneapolis', value: 'minneapolis' }
+                            { title: 'Elgin', value: 'Elgin' },
+                            { title: 'Minneapolis', value: 'Minneapolis' }
                         ]
                     }
                 },
@@ -57,8 +57,8 @@ export const job = defineType({
                     type: 'string',
                     options: {
                         list: [
-                            { title: 'Illinois', value: 'illinois' },
-                            { title: 'Minnesota', value: 'minnesota' }
+                            { title: 'Illinois', value: 'Illinois' },
+                            { title: 'Minnesota', value: 'Minnesota' }
                         ]
                     }
                 },
@@ -71,9 +71,9 @@ export const job = defineType({
             type: 'string',
             options: {
                 list: [
-                    { title: 'Full Time', value: 'full-time' },
-                    { title: 'Part Time', value: 'part-time' },
-                    { title: 'Contract', value: 'contract' },
+                    { title: 'Full Time', value: 'Full-Time' },
+                    { title: 'Part Time', value: 'Part-Time' },
+                    { title: 'Contract', value: 'Contract' },
                 ]
             },
             validation: rule => rule.required(),

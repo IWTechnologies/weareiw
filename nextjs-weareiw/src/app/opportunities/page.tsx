@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import Hero from "@/components/Hero";
-import Card from "@/components/Card";
 
 import { client } from "@/sanity/lib/client";
 import { fetchAllJobCategories } from "@/sanity/queries/job";
@@ -45,7 +43,7 @@ export default async function OpportunitiesPage() {
                     <div className="w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {categories.map((category) => (
                             <Link key={category._id} 
-                            href={`/careers/opportunities/${category.slug}`}
+                            href={`/opportunities/${category.slug}`}
                             className="group relative w-full h-40 lg:h-60 flex flex-col justify-center items-center rounded-3xl overflow-hidden">
                                 <div className="">
                                     <div className="absolute inset-0 z-10 bg-linear-to-t from-brand-navy/40 to-transparent" />
