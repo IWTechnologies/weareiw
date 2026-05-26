@@ -17,15 +17,22 @@ export default async function CategoryPage({ params }: { params: { slug: string 
 
     if (!jobs.length) {
         return (
-            <div>none</div>
+            <div>
+                <section className="w-full py-16 text-brand-black">
+                    <div className="w-[80%] lg:w-[60%] mx-auto flex flex-col gap-4">
+                        <h1 className="w-full">Current Opportunities</h1>
+                        <p className="w-full">No open roles at this time.</p>
+                    </div>
+                </section>
+            </div>
         )
     } else {
         return (
         <div>
-            <section className="w-full py-16">
-                <div className="w-[80%] mx-auto flex flex-col gap-4 text-brand-black">
-                    <h1 className="">Current Opportunities</h1>
-                    <div className="w-full flex justify-between px-6">
+            <section className="w-full py-16 text-brand-black">
+                <div className="w-[80%] lg:w-[60%] mx-auto flex flex-col gap-4">
+                    <h1 className="w-full">Current Opportunities</h1>
+                    <div className="hidden w-full lg:flex justify-between items-end px-6">
                         <div className="w-2/4">ROLE</div>
                         <div className="w-1/4">LOCATION</div>
                         <div className="w-1/4">EMPLOYMENT STATUS</div>
@@ -34,12 +41,12 @@ export default async function CategoryPage({ params }: { params: { slug: string 
                         <div key={job._id} className="flex flex-col">
                             <Link  
                             href={`/opportunities/${job.slug}`}
-                            className="group w-full flex justify-between p-6 rounded-2xl 
+                            className="group w-full flex flex-col items-center lg:flex-row lg:justify-between p-6 rounded-2xl 
                             shadow-lg border-2 border-brand-black/20
                             ">
-                                <h3 className="w-2/4 group-hover:text-brand-aqua">{job.jobTitle}</h3>
-                                <p className="w-1/4 group-hover:text-brand-aqua">{job.location}</p>
-                                <p className="w-1/4 group-hover:text-brand-aqua">{job.type}</p>
+                                <h3 className="w-full lg:w-2/4 group-hover:text-brand-aqua">{job.jobTitle}</h3>
+                                <p className="w-full lg:w-1/4 group-hover:text-brand-aqua">{job.location}</p>
+                                <p className="w-full lg:w-1/4 group-hover:text-brand-aqua">{job.type}</p>
                             </Link>
                         </div>
                         
