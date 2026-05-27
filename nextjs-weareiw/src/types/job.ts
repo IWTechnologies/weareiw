@@ -10,7 +10,8 @@ export type Job = {
     _id: string;
     jobTitle: string;
     slug: string;
-    location: string;
+    city: string;
+    state: string;
     type: string;
     category: string;
 };
