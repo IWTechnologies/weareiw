@@ -50,8 +50,8 @@ export const navItems: NavItem[] = [
         ],
     },
     {
-        label: "Blog",
-        href: "/blog",
+        label: "Resources",
+        href: "/resources",
     },
     {
         label: "Shop",
