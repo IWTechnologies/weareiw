@@ -80,7 +80,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
                                         <img src="/careerImages/icons/location-dot-solid-full.svg" 
                                         alt="location pin icon" height="25" width="25"
                                         className="" />
-                                        <span className="w-full flex flex-col sm:flex-row justify-center items-center gap-0.5">
+                                        <span className="w-full flex flex-col sm:flex-row justify-center sm:justify-start items-center gap-0.5">
                                             <p>{job.city},</p>
                                             <p>{job.state}</p>
                                         </span>
