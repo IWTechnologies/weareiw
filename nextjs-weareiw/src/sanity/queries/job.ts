@@ -53,10 +53,11 @@ export const fetchJobBySlug = groq`
         _id,
         jobTitle,
         "slug": slug.current,
-        "jobLocation": jobLocation.city + ", " + jobLocation.state,
+        "city": jobLocation.city,
+        "state": jobLocation.state,
         type,
         jobDescription,
         "category": category->title,
-        "categorySlug": caetgorySlug->slug.current,
+        "categorySlug": category->slug.current,
     }
 `;

@@ -92,7 +92,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
                                 
                             </div>
                             <div className="w-full md:w-[50%] mx-auto lg:w-1/3 flex justify-end lg:justify-center items-center">
-                                <a href={`/opportunities/${job.slug}`}
+                                <a href={`/opportunities/${params.slug}/${job.slug}`}
                                 className="w-full h-fit px-4 py-2 text-center 
                                 border-3 border-brand-black bg-brand-black text-white rounded-md
                                 hover:bg-transparent hover:text-brand-black active:bg-transparent active:text-brand-black
