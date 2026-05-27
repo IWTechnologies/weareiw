@@ -61,5 +61,8 @@ export const navItems: NavItem[] = [
     {
         label: "Careers",
         href: "/careers",
+        submenu: [
+            { label: "Opportunities", href: "/careers/opportunities" },
+        ]
     },
 ]
