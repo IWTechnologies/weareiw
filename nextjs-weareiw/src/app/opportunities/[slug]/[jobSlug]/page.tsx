@@ -12,7 +12,7 @@ export default async function JobDetailPage({ params }: { params: { slug: string
     if (!job) notFound();
 
     return (
-        <main>
+        <div>
             <section className="w-[80%] mx-auto py-14 text-brand-black">
                 <a href={`/opportunities/${job.categorySlug}`}
                 className="hover:text-brand-aqua">← Go back</a>
@@ -28,6 +28,6 @@ export default async function JobDetailPage({ params }: { params: { slug: string
                     <PortableText value={job.jobDescription} />
                 </div>
             </section>
-        </main>
+        </div>
     );
 }
