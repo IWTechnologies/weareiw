@@ -5,25 +5,17 @@ import { useEffect, useRef, useState } from "react";
 type Stat = {
     value: number;
     label: string;
+    subLabel?: string;
     suffix?: string;
-}
+};
 
-const rowOne: Stat[] = [
-    { value: 240000, label: "Sq Ft of Warehouse Space" },
-    { value: 18000, label: "Pallet Storage Locations" },
-    { value: 50, label: "Years in Business" },
-    { value: 40000, label: "Annual Shipments" },
-    { value: 7500, label: "Customers Nationwide", suffix: "+" }
-];
+type StatSection = {
+    title?: string;
+    subTitle?: string;
+    stats: Stat[];
+};
 
-const rowTwo: Stat[] = [
-    { value: 35000, label: "Checkout Lanes Supported", suffix: "+" },
-    { value: 55000, label: "On-Site Service Events (2024)", suffix: "+" },
-    { value: 9650, label: "Locations Supported Across North America (2024)" },
-    { value: 1000, label: "Rapid-Scale Deployments in Under 8 Weeks", suffix: "+" }
-];
-
-function StatItem({ value, label, suffix = "" }: Stat) {
+function StatItem({ value, label, subLabel, suffix = "" }: Stat) {
     const [visible, setVisible] = useState(false);
     const [display, setDisplay] = useState(0);
     const ref = useRef<HTMLDivElement>(null);
@@ -69,24 +61,21 @@ function StatItem({ value, label, suffix = "" }: Stat) {
             <div className="relative z-20 flex text-2xl tabular-nums font-bold">
                 {display.toLocaleString()}{suffix}
             </div>
-            <span className="relative z-20">{label}</span>
+            <span className="relative z-20 font-semibold">{label}</span>
+            <span className="relative z-20">{subLabel}</span>
         </div>
     );
 }
 
-export default function StatSection() {
+export default function StatSection({ title, subTitle, stats }: StatSection) {
     return (
         <div className="w-[70%] flex flex-col mx-auto py-14 gap-5">
-            <div className="w-full mb-8 text-brand-black">
-                <h2>By the Numbers</h2>
+            <div className="w-full mb-4 text-brand-black">
+                <h2>{title}</h2>
+                <div>{subTitle}</div>
             </div>
-            <div className="w-full mb-8 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8">
-                {rowOne.map((stat) => (
-                    <StatItem key={stat.label} {...stat} />
-                ))}
-            </div>
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                {rowTwo.map((stat) => (
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {stats.map((stat) => (
                     <StatItem key={stat.label} {...stat} />
                 ))}
             </div>

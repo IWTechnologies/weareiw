@@ -29,7 +29,6 @@ const customerLogos = [
     { src: "/customerLogos/Speedway.png", alt: "Speedway logo" },
     { src: "/customerLogos/StopShop.png", alt: "Stop and Shop logo" },
     { src: "/customerLogos/Target2.png", alt: "Target logo" },
-    { src: "/customerLogos/TraderJoes.png", alt: "Trader Joe's logo" },
     { src: "/customerLogos/VictoriasSecret.png", alt: "Victoria's Secret logo" },
     { src: "/customerLogos/Wegmans.png", alt: "Wegmans logo" },
     { src: "/customerLogos/Wendys.png", alt: "Wendy's logo" },
@@ -125,8 +124,11 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="w-full py-14">
-        <div className="container mx-auto flex justify-center">
+      <section className="relative w-full py-14">
+        <div className="absolute inset-0 z-10 opacity-50">
+            <img src="/IWT_Logomark_White.png" alt="White IW logo displayed on section background" />
+        </div>
+        <div className="relative z-20 container mx-auto flex justify-center">
           <div className="w-[90%]">
             <Blurb 
               media={{
@@ -150,7 +152,7 @@ export default function IndexPage() {
           </div>
         </div>
       </section>
-      <section className="w-full py-14">
+      <section className="relative z-20 w-full py-14">
         <div className="container mx-auto flex flex-col items-center">
           <div className="w-[90%]">
             <Blurb 

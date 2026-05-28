@@ -50,7 +50,7 @@ export default function OurStory() {
                 <div className="w-full py-28 mt-14 rounded-t-3xl bg-background">
                     <div className="w-[70%] mx-auto flex flex-col">
                         <div className="border-b-2 border-brand-black p-2">
-                            <h2 data-aos="fade-down"  className="w-full text-brand-navy">
+                            <h2 data-aos="fade-down"  className="w-full text-brand-black">
                             THE BEGINNING
                             </h2>
                         </div>
@@ -64,7 +64,7 @@ export default function OurStory() {
                                 <div className="seventyFour w-full flex flex-col lg:flex-row gap-10">
                                     <div data-aos="fade-right"
                                     className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
-                                    rounded-r-full bg-brand-navy text-white">
+                                    rounded-r-full bg-brand-black text-white">
                                         <div className="text-5xl">
                                             <strong>1974</strong>
                                         </div>
@@ -73,7 +73,7 @@ export default function OurStory() {
                                         </div>
                                     </div>
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2 text-brand-navy">
+                                    className="text-block relative w-full lg:w-1/2">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 Our Founder, Al Moorhouse, wasn't trying to start a 
@@ -123,7 +123,7 @@ export default function OurStory() {
                                 <div className="seventySix w-full flex flex-col lg:flex-row gap-10">
                                     <div data-aos="fade-right"
                                     className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
-                                    rounded-r-full bg-brand-navy text-white">
+                                    rounded-r-full bg-brand-black text-white">
                                         <div className="text-5xl">
                                             <strong>1976</strong>
                                         </div>
@@ -132,7 +132,7 @@ export default function OurStory() {
                                         </div>
                                     </div>
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2 text-brand-navy">
+                                    className="text-block relative w-full lg:w-1/2">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 IW didn't begin in the boardroom. It started in Al's bedroom,
@@ -179,7 +179,7 @@ export default function OurStory() {
                                     <div className="growthGrit w-full flex flex-col lg:flex-row gap-10">
                                         <div data-aos="fade-right"
                                         className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
-                                        rounded-r-full bg-brand-navy text-white">
+                                        rounded-r-full bg-brand-black text-white">
                                             <div className="text-5xl">
                                                 <strong>1980s-1990s</strong>
                                             </div>
@@ -188,7 +188,7 @@ export default function OurStory() {
                                             </div>
                                         </div>
                                         <div 
-                                        className="text-block relative w-full lg:w-1/2 text-brand-navy">
+                                        className="text-block relative w-full lg:w-1/2">
                                             <div data-aos="fade-left" className="flex flex-col gap-4">
                                                 <p>
                                                     The company grew oragnically — not through flashy 
@@ -260,7 +260,7 @@ export default function OurStory() {
                                 <div className="twoThousand w-full flex flex-col lg:flex-row gap-10">
                                     <div data-aos="fade-right"
                                     className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
-                                    rounded-r-full bg-brand-navy text-white">
+                                    rounded-r-full bg-brand-black text-white">
                                         <div className="text-5xl">
                                             <strong>2000s</strong>
                                         </div>
@@ -269,7 +269,7 @@ export default function OurStory() {
                                         </div>
                                     </div>
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2 text-brand-navy">
+                                    className="text-block relative w-full lg:w-1/2">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 With a formal name <strong>Illinois Wholesale Cash Register Corporation </strong>, 
@@ -338,7 +338,7 @@ export default function OurStory() {
                                 <div className="twentyNineteen w-full flex flex-col lg:flex-row gap-10">
                                     <div data-aos="fade-right"
                                     className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
-                                    rounded-r-full bg-brand-navy text-white">
+                                    rounded-r-full bg-brand-black text-white">
                                         <div className="text-5xl">
                                             <strong>2019</strong>
                                         </div>
@@ -347,7 +347,7 @@ export default function OurStory() {
                                         </div>
                                     </div>
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-navy">
+                                    className="text-block relative w-full lg:w-1/2 flex flex-col gap-4">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 The services expansion wasn't a pivot. It was a response to a question 
@@ -403,7 +403,7 @@ export default function OurStory() {
                                     <div className="w-full lg:w-1/2 h-fit flex flex-col items-center lg:mr-[5.5%] gap-10">
                                         <div data-aos="fade-right"
                                         className="title w-full h-fit flex flex-col items-center p-5 
-                                        rounded-r-full bg-brand-navy text-white">
+                                        rounded-r-full bg-brand-black text-white">
                                             <div className="text-5xl">
                                                 <strong>2020</strong>
                                             </div>
@@ -421,7 +421,7 @@ export default function OurStory() {
                                     </div>
                                     
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-navy">
+                                    className="text-block relative w-full lg:w-1/2 flex flex-col gap-4">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 In 2020, IW Technologies entered its next chapter as leadership 
@@ -463,14 +463,14 @@ export default function OurStory() {
 
                         <div className="my-16">
                             <div className="border-b-2 border-brand-black p-2">
-                                <h2 data-aos="fade-down"  className="w-full text-brand-navy">
+                                <h2 data-aos="fade-down" className="w-full">
                                 THE PRESENT
                                 </h2>
                             </div>
                             <div className="twentySix w-full flex flex-col lg:flex-row mt-16 gap-10">
                                 <div data-aos="fade-right"
                                 className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
-                                rounded-r-full bg-brand-navy text-white">
+                                rounded-r-full bg-brand-black text-white">
                                     <div className="text-5xl">
                                         <strong>2026</strong>
                                     </div>
@@ -479,7 +479,7 @@ export default function OurStory() {
                                     </div>
                                 </div>
                                 <div 
-                                className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-navy">
+                                className="text-block relative w-full lg:w-1/2 flex flex-col gap-4">
                                     <div data-aos="fade-left" className="">
                                         <p>
                                             As IW turns 50, we're not just proud of what we've built. <br/>
@@ -535,7 +535,7 @@ export default function OurStory() {
                             </div>
                             
                             <div 
-                            className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 items-center text-brand-navy">
+                            className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 items-center">
                                 <div data-aos="fade-left" className="flex flex-col text-center gap-2">
                                     <p className="italic font-accent">
                                         "If a customer needs help, we pick up the phone. No matter 
@@ -553,7 +553,7 @@ export default function OurStory() {
                         
                         <section className="w-full lg:w-[80%] lg:mx-auto my-16">
                             <div className="w-full h-auto flex flex-col gap-10">
-                                <h2 data-aos="fade-down"  className="w-full text-brand-navy">
+                                <h2 data-aos="fade-down"  className="w-full">
                                     50 Years, One Promise: Always Show Up
                                 </h2>
                                 

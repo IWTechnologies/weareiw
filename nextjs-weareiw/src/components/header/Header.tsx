@@ -43,10 +43,15 @@ export default function Header({ link }: HeaderProps) {
         <header className="sticky top-0 z-50 h-30.75 flex items-center bg-brand-black font-semibold text-xl text-white">
             <div className="h-full w-[95%] mx-auto flex justify-between items-center">
                 <div className="h-full flex items-center">
-                    <Link href="/" className="focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-brand-aqua">
+                    <Link href="/" className="hidden lg:block focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-brand-aqua">
                         <Image className="max-h-17.5 w-auto object-contain" 
                         priority width={400} height={75} 
                         src="/fiftyYear/iw-50-whiteGold.png" alt="50 yearIW Technologies Logo" />
+                    </Link>
+                    <Link href="/" className="lg:hidden focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-brand-aqua">
+                        <Image className="max-h-17.5 w-auto object-contain" 
+                        priority width={400} height={75} 
+                        src="/fiftyYear/iw-50-whiteMobile.png" alt="50 yearIW Technologies Logo" />
                     </Link>
                 </div>
 

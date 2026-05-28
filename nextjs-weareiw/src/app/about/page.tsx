@@ -19,6 +19,18 @@ const industries = [
     { label: "Distribution", src: "/heroImages/shutterstock6.jpg", alt: "Distribution image with title" },
 ]
 
+const aboutStats = [
+    { value: 240000, label: "Sq Ft of Warehouse Space" },
+    { value: 18000, label: "Pallet Storage Locations" },
+    { value: 50, label: "Years in Business" },
+    { value: 40000, label: "Annual Shipments" },
+    { value: 7500, label: "Customers Nationwide", suffix: "+" },
+    { value: 35000, label: "Checkout Lanes Supported", suffix: "+" },
+    { value: 55000, label: "On-Site Service Events (2024)", suffix: "+" },
+    { value: 9650, label: "Locations Supported Across North America (2024)" },
+    { value: 1000, label: "Rapid-Scale Deployments in Under 8 Weeks", suffix: "+" }
+];
+
 export default function AboutPage() {
     return (
         <div className="">
@@ -31,17 +43,17 @@ export default function AboutPage() {
                     text={
                     <>
                       <h1>Powering the Tech Ecosystems Behind the World's Top Brands</h1>
-                      <div className="font-bold">About IW Technologies</div>
-                      <div className="">
+                      <p className="font-bold">About IW Technologies</p>
+                      <p className="">
                         IW Technologies architects and optimizes <span className="font-bold">POS and tech ecosystems </span>
                         for leading brands across <span className="font-bold">Retail, Grocery, QSR, Hospitality, Convenience,
                         and Distribution.</span> 
-                      </div>
-                      <div className="">
+                      </p>
+                      <p className="">
                         With nearly 50 years of experience and a 240,000 sq ft warehouse of new
                         and refurbished inventory, we deliver fast, scalable, future-ready solutions
                         from mobile POS to self-checkout, networking, and more.
-                      </div>
+                      </p>
                     </>
                     }
                     link={{
@@ -55,24 +67,24 @@ export default function AboutPage() {
             <section className="w-full flex justify-center bg-brand-black text-brand-black">
                 <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
                     <div className="w-[80%] mx-auto flex flex-col gap-5">
-                        <h2 className="w-fit border-b-4 border-brand-aqua p-2">What We Do</h2>
+                        <h2 className="w-fit border-b-4 border-brand-aqua px-2 pl-0">What We Do</h2>
                         <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
-                        <div>
+                        <p>
                             We intergrate cutting-edge hardware, agile deployment, and white-glove
                             support to deliver end-to-end IT lifecycle solutions. Whether it's
                             nationwide rollouts, on-site break/fix, or secure tech disposition,
                             IW scales to meet the demands of modern enterprise.
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                             We design, deploy, and support the critical infrastructure behind every
                             transaction, every interaction, and every rollout.
-                        </div>
-                        <div className="font-bold">
+                        </p>
+                        <p className="font-bold">
                             Procurement | Configuration & Deployment | Field Maintenance | Secure Disposition
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                             Modular or full-stack - your tech, your pace.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -109,19 +121,19 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <section className="w-full pb-14 bg-background">
-                <NumCounter />
+            <section className="w-full pb-14">
+                <NumCounter title="By the Numbers" stats={aboutStats} />
             </section>
 
-            <section className="w-[80%] flex justify-center mx-auto mb-14 text-brand-black">
+            <section className="w-[90%] lg:w-[80%] flex justify-center mx-auto mb-14 text-brand-black">
                 <div className="w-full sm:w-[80%] flex flex-col items-center gap-4">
-                    <div className="w-[90%] flex">
+                    <div className="w-full lg:w-[90%] flex">
                         <h2>
                             What's In It For You
                         </h2>
                     </div>
                     <Image
-                    className="w-[90%] h-auto object-contain rounded-3xl" 
+                    className="w-full lg:w-[90%] h-auto object-contain rounded-3xl" 
                     src="/aboutImages/Whats-In-It-For-You.webp" alt="What's in it for you image graphic" 
                     width="1920" height="1080"
                     sizes="(max-width: 1920px) 100vw, 50vw" />
@@ -134,13 +146,13 @@ export default function AboutPage() {
                     <h2>
                     Guided By Our Values
                     </h2>
-                    <div>
+                    <p>
                     We believe in going above and beyond for our customers, providing them with the 
                     most comprehensive enterprise solutions in the industry.
-                    </div>
+                    </p>
                 </div>
-                <div className="w-full flex flex-col items-center gap-8
-                lg:flex-row lg:justify-between lg:items-stretch">
+                <div className="w-full grid grid-cols-1 gap-8
+                lg:grid-cols-2 xl:grid-cols-4 items-stretch">
                     <Card 
                     imageSrc="/View-our-products-Moody-blue.png"
                     imageAlt="Blue tinted view our products card image"
@@ -439,7 +451,7 @@ export default function AboutPage() {
                             </>
                         }
                         link={{
-                            href: "#",
+                            href: "/opportunities",
                             label: "Explore Open Roles",
                             variant: "light",
                         }}
