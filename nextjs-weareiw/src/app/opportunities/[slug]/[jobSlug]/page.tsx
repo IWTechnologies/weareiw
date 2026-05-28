@@ -24,7 +24,11 @@ export default async function JobDetailPage({ params }: { params: { slug: string
                     <p>{job.category}</p>
                 </div>
                 <div className="mt-10">
-                    <PortableText value={job.jobDescription} />
+                    <h2>Job Summary:</h2>
+                    <div className="prose max-w-none">
+                        <PortableText value={job.jobDescription} />
+                    </div>
+                    {/* <PortableText value={job.jobDescription} /> */}
                 </div>
             </section>
         </div>
