@@ -27,7 +27,7 @@ export const fetchAllJobCategories = groq`
 // get all jobs under their category(list view).
 export const fetchJobsByCategory = groq`
     {
-        "jobs": *[_type == "jobs" && active == true && category->slug.current == $slug] | order(_createdAt desc)
+        "jobs": *[_type == "jobs" && active == true && category->slug.current == $slug] | order(jobTitle asc)
         {
             _id,
             jobTitle,
