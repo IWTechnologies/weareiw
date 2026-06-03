@@ -58,8 +58,10 @@ export default async function JobDetailPage({ params }: { params: { slug: string
                         </div>
                     </div>
                 </div>
-                
             </section>
+
+            {/* hubspot form */}
+            <div className="hs-form-frame w-[70%] mx-auto" data-region="na1" data-form-id="773aa87e-707d-4603-8661-83715e7f90b9" data-portal-id="49643826"></div>
         </div>
     );
 }

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import PromoBar from "@/components/PromoBar";
 import "./globals.css";
 import AOS from "@/components/AOS";
+import Script from "next/script";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
           }}
           />
       </body>
+      <Script src="https://js.hsforms.net/forms/embed/49643826.js" strategy="afterInteractive" />
     </html>
   );
 }
