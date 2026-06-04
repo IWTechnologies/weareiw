@@ -153,11 +153,7 @@ export default function AboutPage() {
                 </div>
                 <div className="w-full grid grid-cols-1 gap-8
                 lg:grid-cols-2 xl:grid-cols-4 items-stretch">
-                    <Card 
-                    imageSrc="/View-our-products-Moody-blue.png"
-                    imageAlt="Blue tinted view our products card image"
-                    imageWidth={663}
-                    imageHeight={432}
+                    <Card
                     text={
                         <>
                         <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Service</h3>
@@ -168,11 +164,7 @@ export default function AboutPage() {
                         </>
                     }
                     />
-                    <Card 
-                    imageSrc="/Services-Moody-Blue.png"
-                    imageAlt="Blue tinted Services card image"
-                    imageWidth={669}
-                    imageHeight={375}
+                    <Card
                     text={
                         <>
                         <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Integrity</h3>
@@ -183,11 +175,7 @@ export default function AboutPage() {
                         </>
                     }
                     />
-                    <Card 
-                    imageSrc="/Services-Moody-Blue.png"
-                    imageAlt="Blue tinted Services card image"
-                    imageWidth={669}
-                    imageHeight={375}
+                    <Card
                     text={
                         <>
                         <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Partnership</h3>
@@ -198,11 +186,7 @@ export default function AboutPage() {
                         </>
                     }
                     />
-                    <Card 
-                    imageSrc="/Services-Moody-Blue.png"
-                    imageAlt="Blue tinted Services card image"
-                    imageWidth={669}
-                    imageHeight={375}
+                    <Card
                     text={
                         <>
                         <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Excellence</h3>
