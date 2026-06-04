@@ -200,7 +200,7 @@ export default function ServicesPage() {
                             />
                         </Link>
 
-                        <Link href="/services/procurement"
+                        <Link href="/services/deployment"
                         className="group w-full flex items-stretch
                         border-2 border-transparent rounded-md col-span-2
                         transition delay-150 duration-300 ease-in-out 
@@ -234,7 +234,7 @@ export default function ServicesPage() {
                             />
                         </Link>
 
-                        <Link href="/services/procurement"
+                        <Link href="/services/maintenance"
                         className="group w-full flex items-stretch
                         border-2 border-transparent rounded-md col-span-2 lg:col-span-1
                         transition delay-150 duration-300 ease-in-out 
@@ -310,7 +310,7 @@ export default function ServicesPage() {
                             />
                         </Link>
 
-                        <Link href="/services/procurement"
+                        <Link href="/services/disposition"
                         className="group w-full flex items-stretch
                         border-2 border-transparent rounded-md col-span-2 lg:col-span-1
                         transition delay-150 duration-300 ease-in-out 
@@ -348,7 +348,7 @@ export default function ServicesPage() {
             </section>
 
             {/* How we do it */}
-            <section className="w-full py-14 my-5 section-diagonal">
+            <section className="w-full py-14 my-5 text-brand-black section-diagonal">
                 <div className="w-[80%] mx-auto flex flex-col gap-2">
                     <h2>How We Do It</h2>
                     <h3>Smart Systems. Scalable Coverage. Transparent Execution.</h3>
@@ -523,7 +523,7 @@ export default function ServicesPage() {
             </section>
 
             {/* Measurable Outcomes */}
-            <section className="w-full py-14 my-5">
+            <section className="w-full py-14 my-5 text-brand-black">
                 <div className="w-[80%] mx-auto flex flex-col gap-2">
                     <h2>Measurable Outcomes. Strategic Advantage</h2>
                     <p>
@@ -626,7 +626,7 @@ export default function ServicesPage() {
             </section> {/* end of  Measurable Outcomes */}
 
             {/* Sustainability */}
-            <section className="w-full py-14 my-5">
+            <section className="w-full py-14 my-5 text-brand-black">
                 <div className="w-[80%] mx-auto flex flex-col gap-2">
                     <h2>Sustainability Isn't Strategy. It's Our Standard</h2>
                     <h3>Circular by Design. Measured by Impact.</h3>
