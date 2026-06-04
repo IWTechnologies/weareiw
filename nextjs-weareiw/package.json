@@ -9,18 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "@sanity/image-url": "^1.2.0",
     "aos": "^2.3.4",
-    "next": "^16.1.6",
-    "next-sanity": "^11.4.2",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "next": "^16.2.7",
+    "next-sanity": "^13.0.11",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
+    "@eslint/eslintrc": "^3.3.5",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/aos": "^3.0.7",
+    "@types/aos": "^3.0.8",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
