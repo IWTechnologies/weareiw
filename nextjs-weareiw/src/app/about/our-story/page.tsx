@@ -73,7 +73,7 @@ export default function OurStory() {
                                         </div>
                                     </div>
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2">
+                                    className="text-block relative w-full lg:w-1/2 text-brand-black">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 Our Founder, Al Moorhouse, wasn't trying to start a 
@@ -132,7 +132,7 @@ export default function OurStory() {
                                         </div>
                                     </div>
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2">
+                                    className="text-block relative w-full lg:w-1/2 text-brand-black">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 IW didn't begin in the boardroom. It started in Al's bedroom,
@@ -188,7 +188,7 @@ export default function OurStory() {
                                             </div>
                                         </div>
                                         <div 
-                                        className="text-block relative w-full lg:w-1/2">
+                                        className="text-block relative w-full lg:w-1/2 text-brand-black">
                                             <div data-aos="fade-left" className="flex flex-col gap-4">
                                                 <p>
                                                     The company grew oragnically — not through flashy 
@@ -269,7 +269,7 @@ export default function OurStory() {
                                         </div>
                                     </div>
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2">
+                                    className="text-block relative w-full lg:w-1/2 text-brand-black">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 With a formal name <strong>Illinois Wholesale Cash Register Corporation </strong>, 
@@ -347,7 +347,7 @@ export default function OurStory() {
                                         </div>
                                     </div>
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2 flex flex-col gap-4">
+                                    className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-black">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 The services expansion wasn't a pivot. It was a response to a question 
@@ -421,7 +421,7 @@ export default function OurStory() {
                                     </div>
                                     
                                     <div 
-                                    className="text-block relative w-full lg:w-1/2 flex flex-col gap-4">
+                                    className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-black">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
                                                 In 2020, IW Technologies entered its next chapter as leadership 
@@ -463,8 +463,8 @@ export default function OurStory() {
 
                         <div className="my-16">
                             <div className="border-b-2 border-brand-black p-2">
-                                <h2 data-aos="fade-down" className="w-full">
-                                THE PRESENT
+                                <h2 data-aos="fade-down" className="w-full text-brand-black">
+                                    THE PRESENT
                                 </h2>
                             </div>
                             <div className="twentySix w-full flex flex-col lg:flex-row mt-16 gap-10">
@@ -479,7 +479,7 @@ export default function OurStory() {
                                     </div>
                                 </div>
                                 <div 
-                                className="text-block relative w-full lg:w-1/2 flex flex-col gap-4">
+                                className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 text-brand-black">
                                     <div data-aos="fade-left" className="">
                                         <p>
                                             As IW turns 50, we're not just proud of what we've built. <br/>
@@ -535,7 +535,7 @@ export default function OurStory() {
                             </div>
                             
                             <div 
-                            className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 items-center">
+                            className="text-block relative w-full lg:w-1/2 flex flex-col gap-4 items-center text-brand-black">
                                 <div data-aos="fade-left" className="flex flex-col text-center gap-2">
                                     <p className="italic font-accent">
                                         "If a customer needs help, we pick up the phone. No matter 
