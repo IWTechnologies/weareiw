@@ -3,6 +3,7 @@ import { fetchJobBySlug } from "@/sanity/queries/job";
 import { JobDetail } from "@/types/job";
 import { PortableText } from "@portabletext/react";
 import { notFound } from "next/navigation";
+import JobForm from "@/components/JobForm";
 
 export default async function JobDetailPage({ params }: { params: { slug: string, jobSlug: string } }) {
     //const { slug } = await params;
@@ -60,9 +61,16 @@ export default async function JobDetailPage({ params }: { params: { slug: string
                 </div>
             </section>
 
+            <section className="w-full py-14">
+                <div className="w-[70%] mx-auto">
+                    {/* this is an example form to make sure form works properly */}
+                    <JobForm />
+                </div>
+            </section>
+
             {/* this is temporary till i get formspree working */}
             {/* hubspot form */}
-            <div className="hs-form-frame w-[70%] mx-auto" data-region="na1" data-form-id="773aa87e-707d-4603-8661-83715e7f90b9" data-portal-id="49643826"></div>
+            {/* <div className="hs-form-frame w-[70%] mx-auto" data-region="na1" data-form-id="773aa87e-707d-4603-8661-83715e7f90b9" data-portal-id="49643826"></div> */}
         </div>
     );
 }
