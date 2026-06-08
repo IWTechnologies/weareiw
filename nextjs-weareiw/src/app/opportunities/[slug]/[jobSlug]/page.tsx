@@ -61,10 +61,12 @@ export default async function JobDetailPage({ params }: { params: { slug: string
                 </div>
             </section>
 
-            <section className="w-full py-14">
-                <div className="w-[70%] mx-auto">
-                    {/* this is an example form to make sure form works properly */}
-                    <JobForm />
+            <section className="w-full py-14 bg-brand-black">
+                <div className="w-[50%] flex flex-col mx-auto gap-4 text-white">
+                    <h2>
+                        Apply Now
+                    </h2>
+                    <JobForm jobTitle={job.jobTitle} jobCategory={job.category} />
                 </div>
             </section>
         </div>
