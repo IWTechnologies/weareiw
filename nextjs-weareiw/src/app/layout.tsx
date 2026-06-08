@@ -57,8 +57,6 @@ export default function RootLayout({
           }}
           />
       </body>
-      {/* this is temporary till i get formspree working */}
-      {/* <Script src="https://js.hsforms.net/forms/embed/49643826.js" strategy="afterInteractive" /> */}
     </html>
   );
 }
