@@ -62,8 +62,8 @@ export default async function JobDetailPage({ params }: { params: { slug: string
             </section>
 
             <section className="w-full py-14 bg-brand-black">
-                <div className="w-[50%] flex flex-col mx-auto gap-4 text-white">
-                    <h2>
+                <div className="w-[70%] md:w-[50%] flex flex-col mx-auto gap-4 text-white">
+                    <h2 className="w-fit border-b-4 border-brand-aqua">
                         Apply Now
                     </h2>
                     <JobForm jobTitle={job.jobTitle} jobCategory={job.category} />

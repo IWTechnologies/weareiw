@@ -29,8 +29,8 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
         <input type="hidden" name="jobCategory" value={jobCategory} />
 
         {/* name fields */}
-        <div className="w-full flex gap-4">
-            <div className="w-1/2 flex flex-col gap-2">
+        <div className="w-full flex flex-col lg:flex-row gap-4">
+            <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="firstName" className="pl-2">First Name:</label>
                 <input id="firstName" type="text" name="firstName" required 
                 className="w-full p-2 border rounded-2xl bg-white text-brand-black 
@@ -38,7 +38,7 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
                 <ValidationError prefix="First Name" field="firstName" errors={state.errors} />
             </div>
 
-            <div className="w-1/2 flex flex-col gap-2">
+            <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="lastName" className="pl-2">Last Name:</label>
                 <input id="lastName" type="text" name="lastName" required 
                 className="w-full p-2 border rounded-2xl bg-white text-brand-black 
@@ -47,9 +47,9 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
             </div>
         </div>
 
-        <div className="w-full flex gap-4">
+        <div className="w-full flex flex-col lg:flex-row gap-4">
             {/* email field */}
-            <div className="w-1/2 flex flex-col gap-2">
+            <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="email" className="pl-2">Email:</label>
                 <input id="email" type="email" name="email" required 
                 className="w-full p-2 border rounded-2xl bg-white text-brand-black 
@@ -58,7 +58,7 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
             </div>
 
             {/* phone field */}
-            <div className="w-1/2 flex flex-col gap-2">
+            <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="phone" className="pl-2">Phone:</label>
                 <input id="phone" type="tel" name="phone" required 
                 className="w-full p-2 border rounded-2xl bg-white text-brand-black 
