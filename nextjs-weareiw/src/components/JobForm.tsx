@@ -75,7 +75,7 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
         <button type="submit" disabled={state.submitting} 
         className="w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
         border-3 border-white bg-white text-brand-black rounded-md
-        hover:bg-transparent hover:text-white active:bg-transparent active:text-white
+        hover:cursor-pointer hover:bg-transparent hover:text-white active:bg-transparent active:text-white
         focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
         transition duration-300 ease-in-out">
         Submit Application
