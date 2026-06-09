@@ -1,9 +1,29 @@
-import { client } from "@/sanity/lib/client";
-import { fetchJobBySlug } from "@/sanity/queries/job";
-import { JobDetail } from "@/types/job";
+import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
 import { notFound } from "next/navigation";
 import JobForm from "@/components/JobForm";
+
+import { client } from "@/sanity/lib/client";
+import { fetchJobBySlug } from "@/sanity/queries/job";
+import { JobDetail } from "@/types/job";
+
+export async function generateMetadata(
+    { params }: { params: { jobSlug: string } }
+): Promise<Metadata> {
+    const { jobSlug } = await params;
+    const job = await client.fetch(fetchJobBySlug, { slug: jobSlug });
+
+    if(!job) {
+        return {
+            title: "Job Not Found - IW Technologies",
+        };
+    }
+
+    return {
+        title: `${job.jobTitle} - IW Technologies`,
+        description: `Apply for the ${job.jobTitle} position at IW Technologies. Located in ${job.city}, ${job.state}.`,
+    };
+}
 
 export default async function JobDetailPage({ params }: { params: { slug: string, jobSlug: string } }) {
     //const { slug } = await params;
