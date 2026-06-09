@@ -32,7 +32,7 @@ export const job = defineType({
             to: [
                 { type: 'jobCategory' }
             ],
-            description: 'Add from dropdown list, if none exist. Create one in Job Category tab.',
+            description: 'Add from dropdown list.',
             validation: rule => rule.required(),
         }),
         defineField({
