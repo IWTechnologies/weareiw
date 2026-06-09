@@ -7,7 +7,7 @@ import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: "Careers - IW Technologies",
-  description: "Careers placeholder content.",
+  description: "Join our growing team of people and build your career at IW Technologies with the skills that you want to master.",
 };
 
 const benefitPerks = [

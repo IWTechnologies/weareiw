@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
+
+export const metadata: Metadata = {
+  title: "Products - IW Technologies",
+  description: "IW Technologies provides cutting-edge, new and refurbished POS technology and equipment. From printers to scanners and everything in between, our expansive inventory of point-of-sale solutions can meet your needs.",
+};
 
 export default function ProductsPage() {
     return (

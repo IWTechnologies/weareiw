@@ -8,7 +8,7 @@ import { JobCategory } from "@/types/job";
 
 export const metadata: Metadata = {
   title: "Opportunities - IW Technologies",
-  description: "Opportunities at IW Technologies.",
+  description: "View current opportunities at IW Technologies.",
 };
 
 export default async function OpportunitiesPage() {
