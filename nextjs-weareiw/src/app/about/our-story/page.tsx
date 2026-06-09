@@ -3,6 +3,11 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import YoutubeFacade from "@/components/YoutubeFacade";
 
+export const metadata: Metadata = {
+  title: "Our Story - IW Technologies",
+  description: "View the story of IW Technologies, from the very beginning to us celebrating 50 years.",
+};
+
 export default function OurStory() {
     return (
         <div>

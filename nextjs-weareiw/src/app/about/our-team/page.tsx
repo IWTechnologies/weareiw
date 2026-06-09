@@ -7,7 +7,7 @@ import Hero from "@/components/Hero";
 
 export const metadata: Metadata = {
   title: "Meet Our Team - IW Technologies",
-  description: "this is placeholder.",
+  description: "Meet the team deidcated to being your partner. We provide cutting-edge, new and refurbished POS technology and expert services.",
 };
 
 export default async function OurTeamPage() {

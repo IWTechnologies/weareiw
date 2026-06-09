@@ -7,8 +7,8 @@ import { fetchAllJobCategories } from "@/sanity/queries/job";
 import { JobCategory } from "@/types/job";
 
 export const metadata: Metadata = {
-  title: "Opportunities - IW Technologies",
-  description: "View current opportunities at IW Technologies.",
+  title: "Current Opportunities - IW Technologies",
+  description: "We’re building a culture where amazing people (like you) can do their best work. If you’re ready to level-up and grow your career, you’ve come to the right place.",
 };
 
 export default async function OpportunitiesPage() {

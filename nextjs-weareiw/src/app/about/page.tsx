@@ -7,7 +7,7 @@ import NumCounter from "@/components/NumCounter";
 
 export const metadata: Metadata = {
   title: "About - IW Technologies",
-  description: "IW Technologies architects and optimizes POS and tech ecosystems for leading brands across Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
+  description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions.",
 };
 
 const industries = [
