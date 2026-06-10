@@ -30,7 +30,7 @@ export default function ProductsPage() {
             </section>
 
             <section id="partners" className="w-full flex justify-center bg-brand-black text-brand-black">
-                <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
+                <div className="w-full py-16 mt-4 rounded-t-3xl bg-background">
                     <div className="container mx-auto flex justify-center">
                         <div className="w-[90%]">
                             <Blurb 
@@ -65,9 +65,22 @@ export default function ProductsPage() {
                             rounded
                             textColor="text-brand-black"
                             />
-                        </div>
-                        
+                        </div> 
                     </div>
+                </div>
+            </section>
+
+            <section className="w-full my-16 text-brand-black">
+                <div className="w-[70%] mx-auto flex flex-col items-center gap-5">
+                    <h2 className="">
+                        Featured POS Solutions
+                    </h2>
+                    <p className="">
+                        Whether you're starting from scratch or completing your existing set, IW Technologies 
+                        partners with top manufacturersto provide you with top-quality scanners, printers and 
+                        registers tailored to your needs. If you're not finding your POS hardware of choice, 
+                        fill out the form below and contact us for a solution!
+                    </p>
                 </div>
             </section>
         </div>
