@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
 import { notFound } from "next/navigation";
-import JobForm from "@/components/JobForm";
+import JobForm from "@/components/forms/JobForm";
 
 import { client } from "@/sanity/lib/client";
 import { fetchJobBySlug } from "@/sanity/queries/job";
