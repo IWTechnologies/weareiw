@@ -5,7 +5,7 @@ export const fetchAllProductCategories = groq`
     *[_type == "productCategory"] | order(title asc) {
         _id,
         title,
-        "slug": slug.current,
+        "slug": slug.current
     }
 `;
 
