@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
+import ContactUs from "@/components/forms/ContactUs";
 
 import { client } from "@/sanity/lib/client";
 import { fetchAllProducts, fetchAllProductCategories } from "@/sanity/queries/product";
@@ -95,6 +96,21 @@ export default async function ProductsPage() {
                     </div>
 
                     <ProductGrid products={products} categories={categories} />
+                </div>
+            </section>
+
+            <section className="w-full py-14 bg-brand-black">
+                <div className="w-[70%] md:w-[50%] flex flex-col mx-auto gap-4 text-white">
+                    <h2 className="w-fit border-b-4 border-brand-aqua">
+                        Don't see what you're looking for?
+                    </h2>
+                    <p>
+                        Our inventory is always changing. If you can't find what you're looking for on our site, 
+                        complete the form below to share your needs. With the largest inventory of POS equipment 
+                        in the midwest and the most skilled craftsmen on our staff, we can find or make anything 
+                        to suit your specific situation.
+                    </p>
+                    <ContactUs />
                 </div>
             </section>
         </div>

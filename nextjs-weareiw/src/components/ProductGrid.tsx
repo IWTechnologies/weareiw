@@ -16,7 +16,7 @@ export default function ProductGrid({ products, categories }: GridProps) {
     return (
         <div className="w-full flex flex-col gap-4">
             {/* category tabs */}
-            <div className="w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
                 <button
                     onClick={() => setActiveTab("all")}
                     className={`w-full flex justify-center items-center wrap-anywhere 
@@ -43,6 +43,29 @@ export default function ProductGrid({ products, categories }: GridProps) {
                     </button>
                 ))}
             </div>
+
+            {/* product grid */}
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                {filtered.map((product) => (
+                    <Link key={product._id} href={`/products/${product.slug}`}
+                    className="w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden">
+                        <div className="h-48 py-2.5 rounded-3xl overflow-hidden bg-white">
+                            <img src={product.image} alt={product.name}
+                            className="w-full h-full object-contain" />
+                        </div>
+                        <p className="w-full py-4 text-center font-semibold text-white">
+                            {product.name}
+                        </p>
+                    </Link>
+                ))}
+            </div>
+
+            {/* if category is empty */}
+            {filtered.length === 0 && (
+                <p className="text-center text-gray-500">
+                    No products found in this category.
+                </p>
+            )}
         </div>
     )
 }

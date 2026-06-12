@@ -7,6 +7,7 @@ export type ProductCategory = {
 export type Product = {
     _id: string;
     name: string;
+    slug: string;
     image: string;
     category: string;
     categorySlug: string;
