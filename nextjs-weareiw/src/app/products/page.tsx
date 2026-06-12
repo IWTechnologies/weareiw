@@ -2,12 +2,22 @@ import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 
+import { client } from "@/sanity/lib/client";
+import { fetchAllProducts, fetchAllProductCategories } from "@/sanity/queries/product";
+import { Product, ProductCategory } from "@/types/product";
+import ProductGrid from "@/components/ProductGrid";
+
 export const metadata: Metadata = {
   title: "Products - IW Technologies",
   description: "IW Technologies provides cutting-edge, new and refurbished POS technology and equipment. From printers to scanners and everything in between, our expansive inventory of point-of-sale solutions can meet your needs.",
 };
 
-export default function ProductsPage() {
+export default async function ProductsPage() {
+    const [products, categories] = await Promise.all([
+        client.fetch<Product[]>(fetchAllProducts),
+        client.fetch<ProductCategory[]>(fetchAllProductCategories),
+    ]);
+
     return (
         <div>
             <section className="h-fit flex flex-col items-center text-white">
@@ -81,6 +91,8 @@ export default function ProductsPage() {
                         registers tailored to your needs. If you're not finding your POS hardware of choice, 
                         fill out the form below and contact us for a solution!
                     </p>
+
+                    <ProductGrid products={products} categories={categories} />
                 </div>
             </section>
         </div>
