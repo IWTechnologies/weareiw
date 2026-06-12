@@ -81,16 +81,18 @@ export default async function ProductsPage() {
             </section>
 
             <section className="w-full my-16 text-brand-black">
-                <div className="w-[70%] mx-auto flex flex-col items-center gap-5">
-                    <h2 className="">
-                        Featured POS Solutions
-                    </h2>
-                    <p className="">
-                        Whether you're starting from scratch or completing your existing set, IW Technologies 
-                        partners with top manufacturersto provide you with top-quality scanners, printers and 
-                        registers tailored to your needs. If you're not finding your POS hardware of choice, 
-                        fill out the form below and contact us for a solution!
-                    </p>
+                <div className="w-[70%] mx-auto flex flex-col gap-10">
+                    <div className="w-full flex flex-col items-center gap-5">
+                        <h2 className="">
+                            Featured POS Solutions
+                        </h2>
+                        <p className="">
+                            Whether you're starting from scratch or completing your existing set, IW Technologies 
+                            partners with top manufacturersto provide you with top-quality scanners, printers and 
+                            registers tailored to your needs. If you're not finding your POS hardware of choice, 
+                            fill out the form below and contact us for a solution!
+                        </p>
+                    </div>
 
                     <ProductGrid products={products} categories={categories} />
                 </div>
