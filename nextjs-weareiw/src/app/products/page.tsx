@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import ContactUs from "@/components/forms/ContactUs";
@@ -12,6 +13,11 @@ export const metadata: Metadata = {
   title: "Products - IW Technologies",
   description: "IW Technologies provides cutting-edge, new and refurbished POS technology and equipment. From printers to scanners and everything in between, our expansive inventory of point-of-sale solutions can meet your needs.",
 };
+
+const storeLogos = [
+    { src:"/storeImages/amazon-logo.png", alt: "IW Technologies Amazon store link", url: "https://www.amazon.com/stores/page/C6685172-E36F-4BAB-B6D6-E63769A1429E?language=en_US&ref_=pe_24209330_600747923" },
+    { src:"/storeImages/ebay-logo.png", alt: "IW Technologies Ebay store link", url: "https://www.ebay.com/str/illinoiswholesale" },
+];
 
 export default async function ProductsPage() {
     const [products, categories] = await Promise.all([
@@ -100,11 +106,19 @@ export default async function ProductsPage() {
             </section>
 
             <section className="w-full my-16 text-brand-black">
-                <div className="w-[70%] mx-auto flex flex-col gap-10">
-                    <div className="w-full flex flex-col items-center gap-5">
-                        <h2 className="">
-                            Visit Our Online Stores
-                        </h2>
+                <div className="w-[70%] mx-auto flex flex-col items-center gap-10">
+                    <h2 className="">
+                        Visit Our Online Stores
+                    </h2>
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        {storeLogos.map((store) => (
+                            <Link key={store.src} href={store.url}
+                            className="w-full flex flex-col p-8 rounded-3xl bg-white
+                            hover:bg-brand-aqua/20 hover:shadow-lg">
+                                <img src={store.src} alt={store.alt}
+                                className="w-full h-20 p-4 object-contain" />
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </section>
