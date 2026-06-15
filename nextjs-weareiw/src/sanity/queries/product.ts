@@ -11,7 +11,7 @@ export const fetchAllProductCategories = groq`
 
 // get all products with their category
 export const fetchAllProducts = groq`
-    *[_type == "products"] | order(title asc) {
+    *[_type == "products"] | order(name asc) {
         _id,
         name,
         "slug": slug.current,
@@ -23,7 +23,7 @@ export const fetchAllProducts = groq`
 
 // get all individual product details
 export const fetchAllProductsBySlug = groq`
-    *[_type == "products"] | order(title asc) {
+    *[_type == "products"] | order(name asc) {
         _id,
         name,
         "slug": slug.current,
