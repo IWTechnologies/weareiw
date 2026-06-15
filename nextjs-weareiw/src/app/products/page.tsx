@@ -99,6 +99,16 @@ export default async function ProductsPage() {
                 </div>
             </section>
 
+            <section className="w-full my-16 text-brand-black">
+                <div className="w-[70%] mx-auto flex flex-col gap-10">
+                    <div className="w-full flex flex-col items-center gap-5">
+                        <h2 className="">
+                            Visit Our Online Stores
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
             <section className="w-full py-14 bg-brand-black">
                 <div className="w-[70%] md:w-[50%] flex flex-col mx-auto gap-4 text-white">
                     <h2 className="w-fit border-b-4 border-brand-aqua">
