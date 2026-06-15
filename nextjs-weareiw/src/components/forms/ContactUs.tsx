@@ -11,7 +11,7 @@ export default function ContactUs() {
                 Form submitted!
             </h3>
             <p>
-                Thank you for reaching out and showing interest , we will be in touch.
+                Thank you for reaching out and showing interest, one of our reps will be in touch to help.
             </p>
         </div>
     );
@@ -74,7 +74,7 @@ export default function ContactUs() {
                     What industry best describes your company?
                 </label>
                 <select name="industry" id="industry" required
-                className="w-full p-2 border rounded-xl bg-white text-brand-black 
+                className="w-full p-2 rounded-xl bg-white text-brand-black 
                 focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
                     <option value="">--Please choose an option--</option>
                     <option value="retail">Retail</option>
@@ -93,7 +93,7 @@ export default function ContactUs() {
                     I'd like to...
                 </label>
                 <select name="inquiries" id="inquiries" required
-                className="w-full p-2 border rounded-xl bg-white text-brand-black 
+                className="w-full p-2 rounded-xl bg-white text-brand-black 
                 focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
                     <option value="">--Please choose an option--</option>
                     <option value="schedule-demo">Schedule a demo</option>
@@ -107,11 +107,22 @@ export default function ContactUs() {
                 <ValidationError prefix="Inquiries" field="inquiries" errors={state.errors} />
             </div>
         </div>
+
+
+        {/* additional info text area */}
+        <div className="w-full flex flex-col gap-2">
+            <label htmlFor="message" className="pl-2">Additional info:</label>
+            <textarea id="message" name="message" 
+            className="p-2 rounded-2xl bg-white text-brand-black
+            focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
+            </textarea>
+            <ValidationError prefix="Message" field="message" errors={state.errors} />
+        </div>
         
 
         {/* submit button */}
         <button type="submit" disabled={state.submitting} 
-        className="w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
+        className="w-full md:w-[50%] lg:w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
         border-3 border-white bg-white text-brand-black rounded-md
         hover:cursor-pointer hover:bg-transparent hover:text-white active:bg-transparent active:text-white
         focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
