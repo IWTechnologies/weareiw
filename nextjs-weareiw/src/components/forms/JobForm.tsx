@@ -72,7 +72,7 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
             <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="resume" className="pl-2">Upload Resume:</label>
                 <input id="resume" type="file" name="resume" accept=".pdf,.doc,.docx" required 
-                className="w-full p-2 rounded-md file:border-2 file:border-white
+                className="w-full p-2 file:border-2 file:border-white
                 file:mr-4 file:py-2 file:px-4 file:rounded-md 
                 file:bg-brand-black file:text-white hover:cursor-pointer hover:file:cursor-pointer
                 hover:file:bg-brand-navy hover:file:border-brand-navy transition duration-300" />
@@ -88,7 +88,7 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
                     <span className="text-sm"> (optional)</span>
                 </label>
                 <input id="coverLetter" type="file" name="coverLetter" accept=".pdf,.doc,.docx" 
-                className="w-full p-2 rounded-md file:border-2 file:border-white
+                className="w-full p-2 file:border-2 file:border-white
                 file:mr-4 file:py-2 file:px-4 file:rounded-md 
                 file:bg-brand-black file:text-white hover:cursor-pointer hover:file:cursor-pointer
                 hover:file:bg-brand-navy hover:file:border-brand-navy transition duration-300" />
@@ -102,7 +102,7 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
 
         {/* submit button */}
         <button type="submit" disabled={state.submitting} 
-        className="w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
+        className="w-full md:w-[50%] lg:w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
         border-3 border-white bg-white text-brand-black rounded-md
         hover:cursor-pointer hover:bg-transparent hover:text-white active:bg-transparent active:text-white
         focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
