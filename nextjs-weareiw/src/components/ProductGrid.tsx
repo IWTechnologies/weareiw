@@ -47,7 +47,7 @@ export default function ProductGrid({ products, categories }: GridProps) {
             </div>
 
             {/* product grid */}
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="w-full my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {filtered.map((product) => (
                     <Link key={product._id} href={`/products/${product.slug}`}
                     className="w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden">

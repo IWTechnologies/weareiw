@@ -114,7 +114,8 @@ export default async function ProductsPage() {
                         {storeLogos.map((store) => (
                             <Link key={store.src} href={store.url}
                             className="w-full flex flex-col p-8 rounded-3xl bg-white
-                            hover:bg-brand-aqua/20 hover:shadow-lg">
+                            border-3 border-white shadow-lg transition duration-300
+                            hover:border-brand-aqua">
                                 <img src={store.src} alt={store.alt}
                                 className="w-full h-20 p-4 object-contain" />
                             </Link>
