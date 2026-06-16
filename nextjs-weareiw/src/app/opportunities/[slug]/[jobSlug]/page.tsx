@@ -25,6 +25,15 @@ export async function generateMetadata(
     };
 }
 
+// pre-render pages at build time
+export async function generateStaticParams() {
+    const jobs = await client.fetch(fetchJobBySlug);
+    return jobs.map((job: { slug: string, categorySlug: string }) => ({
+        slug: job.categorySlug,
+        jobSlug: job.slug,
+    }));
+}
+
 export default async function JobDetailPage({ params }: { params: { slug: string, jobSlug: string } }) {
     //const { slug } = await params;
     const { jobSlug } = await params;
