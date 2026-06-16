@@ -21,7 +21,7 @@ export default function ProductGrid({ products, categories }: GridProps) {
                     onClick={() => setActiveTab("all")}
                     className={`w-full flex justify-center items-center wrap-anywhere 
                     px-4 py-2 rounded-2xl border-3 transition duration-300
-                    focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
+                    focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
                     ${activeTab === "all"
                         ? "bg-brand-black text-white border-brand-black"
                         : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
@@ -35,7 +35,7 @@ export default function ProductGrid({ products, categories }: GridProps) {
                         onClick={() => setActiveTab(category.slug)}
                         className={`w-full flex justify-center items-center wrap-anywhere 
                         px-4 py-2 rounded-2xl border-3 transition duration-300
-                        focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
+                        focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
                         ${activeTab === category.slug
                             ? "bg-brand-black text-white border-brand-black"
                             : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
