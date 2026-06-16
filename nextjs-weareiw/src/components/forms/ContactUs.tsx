@@ -1,7 +1,14 @@
 "use client"
 import { useForm, ValidationError } from "@formspree/react";
 
-export default function ContactUs() {
+type ContactProps = {
+    buttonColor?: "bg-white" | "bg-brand-black";
+    buttonTextColor?: "text-white" | "text-brand-black";
+    buttonTextHover?: "text-white" | "text-brand-black";
+    buttonBorderColor?: "border-white" | "border-brand-black";
+};
+
+export default function ContactUs({ buttonColor="bg-white", buttonTextColor="text-brand-black", buttonTextHover="text-white", buttonBorderColor="border-white" }: ContactProps) {
   const [state, handleSubmit] = useForm("xgobnjqp");
 
   if (state.succeeded) {
@@ -24,7 +31,7 @@ export default function ContactUs() {
             <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="firstName" className="pl-2">First Name:</label>
                 <input id="firstName" type="text" name="firstName" required 
-                className="w-full p-2 border rounded-2xl bg-white text-brand-black 
+                className="w-full p-2 rounded-2xl bg-white text-brand-black 
                 focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua" />
                 <ValidationError prefix="First Name" field="firstName" errors={state.errors} />
             </div>
@@ -32,7 +39,7 @@ export default function ContactUs() {
             <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="lastName" className="pl-2">Last Name:</label>
                 <input id="lastName" type="text" name="lastName" required 
-                className="w-full p-2 border rounded-2xl bg-white text-brand-black 
+                className="w-full p-2 rounded-2xl bg-white text-brand-black 
                 focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua" />
                 <ValidationError prefix="Last Name" field="lastName" errors={state.errors} />
             </div>
@@ -42,7 +49,7 @@ export default function ContactUs() {
         <div className="w-full flex flex-col gap-2">
             <label htmlFor="company" className="pl-2">Company:</label>
             <input id="company" type="text" name="company" required 
-            className="w-full p-2 border rounded-2xl bg-white text-brand-black 
+            className="w-full p-2 rounded-2xl bg-white text-brand-black 
             focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua" />
             <ValidationError prefix="Company" field="company" errors={state.errors} />
         </div>
@@ -52,7 +59,7 @@ export default function ContactUs() {
             <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="email" className="pl-2">Email:</label>
                 <input id="email" type="email" name="email" required 
-                className="w-full p-2 border rounded-2xl bg-white text-brand-black 
+                className="w-full p-2 rounded-2xl bg-white text-brand-black 
                 focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua" />
                 <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
@@ -61,7 +68,7 @@ export default function ContactUs() {
             <div className="w-full lg:w-1/2 flex flex-col gap-2">
                 <label htmlFor="phone" className="pl-2">Phone:</label>
                 <input id="phone" type="tel" name="phone" placeholder="000-000-0000" required 
-                className="w-full p-2 border rounded-2xl bg-white text-brand-black 
+                className="w-full p-2 rounded-2xl bg-white text-brand-black 
                 focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua" />
                 <ValidationError prefix="Phone" field="phone" errors={state.errors} />
             </div>
@@ -122,11 +129,11 @@ export default function ContactUs() {
 
         {/* submit button */}
         <button type="submit" disabled={state.submitting} 
-        className="w-full md:w-[50%] lg:w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
-        border-3 border-white bg-white text-brand-black rounded-md
-        hover:cursor-pointer hover:bg-transparent hover:text-white active:bg-transparent active:text-white
+        className={`w-full md:w-[50%] lg:w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
+        border-3 ${buttonBorderColor} ${buttonColor} ${buttonTextColor} rounded-md
+        hover:cursor-pointer hover:bg-transparent hover:${buttonTextHover} active:bg-transparent active:text-white
         focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
-        transition duration-300 ease-in-out">
+        transition duration-300 ease-in-out`}>
         Let's Talk
         </button>
         <ValidationError errors={state.errors} />

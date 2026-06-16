@@ -39,7 +39,7 @@ export default function RootLayout({
         <PromoBar />
         <Header 
           link={{
-            href: "#",
+            href: "/get-in-touch",
             label: "Get In Touch",
             variant: "light",
           }}
@@ -51,7 +51,7 @@ export default function RootLayout({
         </AOS>
         <Footer 
           link={{
-            href: "#",
+            href: "/get-in-touch",
             label: "Get In Touch",
             variant: "dark",
           }}
