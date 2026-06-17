@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 import { client } from "@/sanity/lib/client";
-import { fetchJobsByCategory } from "@/sanity/queries/job";
+import { fetchJobsByCategory,fetchAllJobCategorySlugs } from "@/sanity/queries/job";
 import { Job } from "@/types/job";
 
 type CategoryData = {
@@ -30,6 +30,14 @@ export async function generateMetadata(
         title: `${data.category.title} Opportunities - IW Technologies`,
         description: `View current ${data.category.title} opportunities at IW Technologies.`,
     };
+}
+
+// pre-render pages at build time
+export async function generateStaticParams() {
+    const categories = await client.fetch(fetchAllJobCategorySlugs);
+    return categories.map((category: { slug: string }) => ({
+        slug: category.slug,
+    }));
 }
 
 export default async function CategoryPage({ params }: { params: { slug: string } }) {

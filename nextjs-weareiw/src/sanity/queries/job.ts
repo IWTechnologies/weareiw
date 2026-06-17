@@ -8,6 +8,13 @@ export const fetchAllJobSlugs = groq`
     }
 `;
 
+// get all category slugs
+export const fetchAllJobCategorySlugs = groq`
+    *[_type == "jobCategory"] {
+        "slug": slug.current,
+    }
+`;
+
 // get all job categories for opportunities page
 export const fetchAllJobCategories = groq`
     *[_type == "jobCategory"] | order(title asc) 
