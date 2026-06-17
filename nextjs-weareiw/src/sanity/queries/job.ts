@@ -1,16 +1,12 @@
 import { groq } from "next-sanity";
 
-// export const fetchAllJobs = groq`
-//     *[_type == "jobs" && active == true] {
-//         _id,
-//         jobTitle,
-//         "slug": slug.current,
-//         category,
-//         "jobLocation": jobLocation.city + ", " + jobLocation.state,
-//         type,
-//         jobDescription,
-//     }
-// `;
+// get all job slugs
+export const fetchAllJobSlugs = groq`
+    *[_type == "jobs" && active == true] {
+        "slug": slug.current,
+        "categorySlug": category->slug.current,
+    }
+`;
 
 // get all job categories for opportunities page
 export const fetchAllJobCategories = groq`
@@ -43,7 +39,6 @@ export const fetchJobsByCategory = groq`
             description,
         }
     }
-    
 `;
 
 // get individual job details

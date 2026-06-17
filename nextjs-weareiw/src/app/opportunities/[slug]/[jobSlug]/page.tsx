@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import JobForm from "@/components/forms/JobForm";
 
 import { client } from "@/sanity/lib/client";
-import { fetchJobBySlug } from "@/sanity/queries/job";
+import { fetchJobBySlug, fetchAllJobSlugs } from "@/sanity/queries/job";
 import { JobDetail } from "@/types/job";
 
 export async function generateMetadata(
@@ -27,7 +27,7 @@ export async function generateMetadata(
 
 // pre-render pages at build time
 export async function generateStaticParams() {
-    const jobs = await client.fetch(fetchJobBySlug);
+    const jobs = await client.fetch(fetchAllJobSlugs);
     return jobs.map((job: { slug: string, categorySlug: string }) => ({
         slug: job.categorySlug,
         jobSlug: job.slug,
