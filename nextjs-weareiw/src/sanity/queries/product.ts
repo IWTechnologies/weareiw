@@ -23,7 +23,7 @@ export const fetchAllProducts = groq`
 
 // get all individual product details
 export const fetchAllProductsBySlug = groq`
-    *[_type == "products"] | order(name asc) {
+    *[_type == "products" && slug.current == $slug][0] {
         _id,
         name,
         "slug": slug.current,
@@ -31,6 +31,6 @@ export const fetchAllProductsBySlug = groq`
         "category": category->title,
         "categorySlug": category->slug.current,
         description,
-        specs
+        specs,
     }
 `;

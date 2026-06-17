@@ -87,7 +87,7 @@ export default async function ProductsPage() {
                 </div>
             </section>
 
-            <section className="w-full my-16 text-brand-black">
+            <section id="pos" className="w-full my-16 text-brand-black">
                 <div className="w-[70%] mx-auto flex flex-col gap-10">
                     <div className="w-full flex flex-col items-center gap-5">
                         <h2 className="">
