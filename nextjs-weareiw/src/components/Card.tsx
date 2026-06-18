@@ -19,7 +19,7 @@ type CardProps = {
 export default function Card({ imageSrc="", imageAlt="", imageWidth=0, imageHeight=0, text, link, bgColor="bg-white" }: CardProps) {
     return (
         <div 
-        className={`w-full flex flex-col rounded-md ${bgColor} shadow-lg overflow-hidden`}>
+        className={`w-full h-full flex flex-col rounded-md ${bgColor} shadow-lg overflow-hidden`}>
             {imageSrc && (
                 <Image className="min-h-62.5 max-h-62.5 h-auto w-auto object-cover" 
                 src={imageSrc} alt={imageAlt} width={imageWidth} height={imageHeight}

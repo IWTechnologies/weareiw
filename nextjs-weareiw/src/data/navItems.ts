@@ -52,6 +52,15 @@ export const navItems: NavItem[] = [
     {
         label: "Resources",
         href: "/resources",
+        submenu: [
+            { label: "Blog", href: "/resources/blog" },
+            { label: "News", href: "/resources/news" },
+            // { label: "Podcast", href: "/resources/podcast" },
+        ],
+    },
+    {
+        label: "FAQ",
+        href: "/faq",
     },
     {
         label: "Shop",
