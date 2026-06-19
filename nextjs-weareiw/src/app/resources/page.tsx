@@ -14,7 +14,7 @@ const resourceCards = [
     { url:"/resources/news", title: "Explore our Newsletter", description: "Catch up on the latest news in the POS industry." },
 ];
 
-export default async function ProductsPage() {
+export default async function ResourcesPage() {
 
     return (
         <div>
