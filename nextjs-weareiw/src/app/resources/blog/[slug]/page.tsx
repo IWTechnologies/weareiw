@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 
-export default async function BlogPage() {
+export default async function BlogPostPage() {
 
     return (
         <div>
