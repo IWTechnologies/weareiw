@@ -49,6 +49,7 @@ export const blogPost = defineType({
       of: [
         {type: 'block'},
         {type: 'table'},
+        {type: 'image'},
       ],
     }),
   ],
