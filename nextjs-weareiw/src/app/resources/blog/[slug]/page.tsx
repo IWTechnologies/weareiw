@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Blurb from "@/components/Blurb";
-import Card from "@/components/Card";
 
 export const metadata: Metadata = {
   title: "Blog - IW Technologies",
@@ -20,22 +17,7 @@ export default async function BlogPostPage() {
                     </h2>
                     <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
                         <div className="">
-                            <Card 
-                                imageSrc="/View-our-products-Moody-blue.png"
-                                imageAlt="Blue tinted view our products card image"
-                                imageWidth={663}
-                                imageHeight={432}
-                                text={
-                                    <>
-                                    <p>placeholder</p>
-                                    </>
-                                }
-                                link={{
-                                    href: "",
-                                    label: "Read more",
-                                    variant: "dark",
-                                }}
-                            />
+                            placeholder
                         </div>
                     </div>
                 </div>
