@@ -7,6 +7,7 @@ export const fetchAllBlogPosts = groq`
         title,
         "slug": slug.current,
         "image": image.asset->url,
+        "altText": image.asset->altText,
         publishedAt
     }
 `;
@@ -18,6 +19,7 @@ export const fetchAllBlogsBySlug = groq`
         title,
         "slug": slug.current,
         "image": image.asset->url,
+        "altText": image.asset->altText,
         publishedAt,
         metaDescription,
         seoTitle,

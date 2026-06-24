@@ -3,6 +3,7 @@ export type Blog = {
     title: string;
     slug: string;
     image: string;
+    altText: string;
 };
 
 export type BlogDetail = Blog & {

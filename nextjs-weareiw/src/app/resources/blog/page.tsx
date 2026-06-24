@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Blurb from "@/components/Blurb";
 import Card from "@/components/Card";
+
+import { client } from "@/sanity/lib/client";
+import { fetchAllBlogPosts, fetchAllBlogsBySlug } from "@/sanity/queries/blog";
+import { Blog, BlogDetail } from "@/types/blog";
 
 export const metadata: Metadata = {
   title: "Blog - IW Technologies",
@@ -10,6 +13,7 @@ export const metadata: Metadata = {
 
 
 export default async function BlogPage() {
+    const blogs: Blog[] = await client.fetch(fetchAllBlogPosts);
 
     return (
         <div>
@@ -18,20 +22,39 @@ export default async function BlogPage() {
                     <h2 className="">
                         Explore our blog
                     </h2>
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
-                        <div className="">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-4 gap-5">
+                        {blogs.map((blog) => (
+                        <div key={blog._id} className="">
                             <Card 
-                                imageSrc="/View-our-products-Moody-blue.png"
-                                imageAlt="Blue tinted view our products card image"
+                                imageSrc={blog.image}
+                                imageAlt={blog.altText}
                                 imageWidth={663}
                                 imageHeight={432}
                                 text={
                                     <>
-                                    <p>placeholder</p>
+                                    <h4>{blog.title}</h4>
                                     </>
                                 }
+                                link={{
+                                    href: `/resources/blog/${blog.slug}`,
+                                    label: "Read more",
+                                    variant: "dark",
+                                }}
                             />
                         </div>
+
+                        // <Link key={blog._id} href={`/resources/blog/${blog.slug}`}
+                        // className="w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden">
+                        //     <div className="w-full h-48 py-2.5 rounded-3xl overflow-hidden bg-white">
+                        //         <img src={blog.image} alt={blog.altText}
+                        //         className="w-full h-full object-contain" />
+                        //     </div>
+                        //     <h3 className="w-full py-4 text-center font-semibold text-white">
+                        //         {blog.title}
+                        //     </h3>
+                        // </Link>
+                        ))}
+                        
                     </div>
                 </div>
             </section>
