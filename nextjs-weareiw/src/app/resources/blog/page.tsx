@@ -22,7 +22,7 @@ export default async function BlogPage() {
                     <h2 className="">
                         Explore our blog
                     </h2>
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-4 gap-5">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                         {blogs.map((blog) => (
                             <Link key={blog._id} href={`/resources/blog/${blog.slug}`}
                             className="group w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden
