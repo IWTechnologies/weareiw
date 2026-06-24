@@ -50,12 +50,13 @@ export default function ProductGrid({ products, categories }: GridProps) {
             <div className="w-full my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {filtered.map((product) => (
                     <Link key={product._id} href={`/products/${product.slug}`}
-                    className="w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden">
+                    className="group w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden transition duration-300
+                    focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
                         <div className="w-full h-48 py-2.5 rounded-3xl overflow-hidden bg-white">
                             <img src={product.image} alt={product.name}
                             className="w-full h-full object-contain" />
                         </div>
-                        <p className="w-full py-4 text-center font-semibold text-white">
+                        <p className="w-full py-4 text-center font-semibold transition duration-300 text-white group-hover:text-brand-aqua">
                             {product.name}
                         </p>
                     </Link>

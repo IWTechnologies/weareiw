@@ -25,14 +25,14 @@ export default async function BlogPage() {
                     <div className="w-full grid grid-cols-1 lg:grid-cols-4 gap-5">
                         {blogs.map((blog) => (
                             <Link key={blog._id} href={`/resources/blog/${blog.slug}`}
-                            className="w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden
-                            group">
+                            className="group w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden
+                            transition duration-300 focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
                                 {/* display blog image, if not blog image. use fallback image */}
                                 <div className="w-full h-48 rounded-3xl overflow-hidden">
                                     <img src={blog.image || "/IWT_Logomark_White.png"} alt={blog.altText}
                                     className="w-full h-full object-cover" />
                                 </div>
-                                <h4 className="w-full py-4 text-center text-white group-hover:text-brand-aqua">
+                                <h4 className="w-full py-4 text-center transition duration-300 text-white group-hover:text-brand-aqua">
                                     {blog.title}
                                 </h4>
                             </Link>
