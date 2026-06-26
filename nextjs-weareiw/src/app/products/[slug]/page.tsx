@@ -41,7 +41,7 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function ProductDetailPage({ params }: { params: { slug: string, jobSlug: string } }) {
+export default async function ProductDetailPage({ params }: { params: { slug: string, categorySlug: string } }) {
     const { slug } = await params;
     const product: ProductDetail = await client.fetch(fetchAllProductsBySlug, { slug });
 
