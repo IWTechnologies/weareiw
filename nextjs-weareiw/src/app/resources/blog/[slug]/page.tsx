@@ -126,6 +126,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
                         </a>
                     
                     <div className="w-full flex flex-col gap-8">
+                        {/* only render if blog image exists for blog */}
                         {blog.image && (
                             <div className="w-full lg:w-[70%] mx-auto">
                                 <img
