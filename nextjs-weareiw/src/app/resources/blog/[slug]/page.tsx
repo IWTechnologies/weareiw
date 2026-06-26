@@ -126,13 +126,15 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
                         </a>
                     
                     <div className="w-full flex flex-col gap-8">
-                        <div className="w-full lg:w-[70%] mx-auto">
-                            <img
-                                src={blog.image}
-                                alt={blog.altText}
-                                className="w-full h-auto rounded-2xl object-contain"
-                            />
-                        </div>
+                        {blog.image && (
+                            <div className="w-full lg:w-[70%] mx-auto">
+                                <img
+                                    src={blog.image}
+                                    alt={blog.altText}
+                                    className="w-full h-auto rounded-2xl object-contain"
+                                />
+                            </div>
+                        )}
 
                         <div className="w-full flex flex-col gap-4">
                             <div className="w-full flex flex-col pl-2 border-brand-aqua border-l-4 gap-2">
