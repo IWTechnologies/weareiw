@@ -59,7 +59,7 @@ const components: PortableTextComponents = {
             return (
                 <figure className="">
                     <img
-                        src={urlFor(value).width(200).fit('max').auto('format').url()}
+                        src={urlFor(value).width(300).fit('max').auto('format').url()}
                         alt={value.alt || 'Blog image'}
                         className="max-w-full h-auto"
                         loading="lazy"
