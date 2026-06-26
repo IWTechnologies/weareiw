@@ -2,7 +2,7 @@ import { groq } from "next-sanity";
 
 // get all blog posts
 export const fetchAllBlogPosts = groq`
-    *[_type == "blogPost"] | order(name asc) {
+    *[_type == "blogPost"] | order(publishedAt desc) {
         _id,
         title,
         "slug": slug.current,
