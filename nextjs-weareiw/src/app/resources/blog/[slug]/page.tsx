@@ -139,7 +139,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
                                 <h1>{blog.title}</h1>
                             </div>
 
-                            {/* only render if description exists for product */}
+                            {/* only render if blog content exists for blog */}
                             {blog.body && (
                                 <div className="prose prose-ink-black prose-figure:m-0 max-w-none">
                                     <PortableText value={blog.body} components={components} />
