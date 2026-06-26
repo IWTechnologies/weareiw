@@ -16,6 +16,8 @@ export function urlFor(source: string) {
 }
 
 // tables are custom types and this allows any tables in the body to be rendered.
+// images are custom types and this allows any images in the body to be rendered.
+// these are passed into the portable text component
 const components: PortableTextComponents = {
     types: {
         table: ({ value }) => {
@@ -62,7 +64,7 @@ const components: PortableTextComponents = {
                         className="max-w-full h-auto"
                         loading="lazy"
                     />
-                    </figure>
+                </figure>
             );
         },
     },
@@ -139,7 +141,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
 
                             {/* only render if description exists for product */}
                             {blog.body && (
-                                <div className="prose prose-ink-black max-w-none">
+                                <div className="prose prose-ink-black prose-figure:m-0 max-w-none">
                                     <PortableText value={blog.body} components={components} />
                                 </div>
                             )}
