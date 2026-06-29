@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Card from "@/components/Card";
 
 import { client } from "@/sanity/lib/client";
 import { fetchAllNewsPosts } from "@/sanity/queries/news";
-import { News, NewsDetail } from "@/types/news";
+import { News } from "@/types/news";
 
 export const metadata: Metadata = {
   title: "News - IW Technologies",
