@@ -5,10 +5,12 @@ import { job } from './job'
 import { jobCategory } from './jobCategory'
 import { product } from './product'
 import { productCategory } from './productCategory'
+import { faqPost } from './faq'
 
 export const schemaTypes = [
     blogPost,
-    newsArticle, 
+    newsArticle,
+    faqPost, 
     teamMember, 
     job, 
     jobCategory,
