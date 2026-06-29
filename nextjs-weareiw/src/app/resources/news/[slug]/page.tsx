@@ -90,7 +90,7 @@ export async function generateMetadata(
             description: news.metaDescription,
             images: [
                 {
-                    url: news.image
+                    url: news.image || 'iw-logo-simple.png'
                 }
             ],
         },
