@@ -43,12 +43,12 @@ export const faqPost = defineType({
         type: 'string',
         options: {
             list: [
-                { title: 'POS Lifecycle Services', value: 'POS' },
-                { title: 'Staging, Imaging & Kitting', value: 'SIT' },
-                { title: 'Nationwide Field Services', value: 'NFS' },
-                { title: 'ITAD & Asset Disposition', value: 'ITAD' },
-                { title: 'Low Voltage Cabling & Store Connectivity', value: 'LVC' },
-                { title: 'About IW Technologies', value: 'About' },
+                { title: 'POS Lifecycle Services', value: 'POS Lifecycle Services' },
+                { title: 'Staging, Imaging & Kitting', value: 'Staging, Imaging & Kitting' },
+                { title: 'Nationwide Field Services', value: 'Nationwide Field Services' },
+                { title: 'ITAD & Asset Disposition', value: 'ITAD & Asset Disposition' },
+                { title: 'Low Voltage Cabling & Store Connectivity', value: 'Low Voltage Cabling & Store Connectivity' },
+                { title: 'About IW Technologies', value: 'About IW Technologies' },
             ]
         },
         validation: rule => rule.required(),

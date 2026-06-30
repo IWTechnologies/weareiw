@@ -24,11 +24,12 @@ export default async function BlogPage() {
                     <div className="w-full flex flex-col gap-5">
                         {faqs.map((faq) => (
                             <Link key={faq._id} href={`/faq/${faq.slug}`}
-                            className="group w-full flex flex-col p-4 rounded-3xl bg-white overflow-hidden shadow-md
+                            className="group w-full flex flex-col p-4 items-center gap-2 rounded-3xl bg-white overflow-hidden shadow-md
                             transition duration-300 focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
-                                <h4 className="w-full py-4 text-center transition duration-300 text-brand-black group-hover:text-brand-aqua">
+                                <h4 className="p-4 transition duration-300 text-brand-black group-hover:text-brand-aqua">
                                     {faq.title} →
                                 </h4>
+                                <p className="font-semibold text-brand-navy">{faq.category}</p>
                             </Link>
                         ))} 
                     </div>
