@@ -126,7 +126,8 @@ export default function ContactUs({ buttonColor="bg-white", buttonTextColor="tex
             <ValidationError prefix="Message" field="message" errors={state.errors} />
         </div>
         
-
+        {/* recaptcha v3 */}
+        <div className="g-recaptcha" data-sitekey="6LdH1zwtAAAAAG6oT5FEke8aaYvzxE_JZIUaVdRo"></div>
         {/* submit button */}
         <button type="submit" disabled={state.submitting} 
         className={`w-full md:w-[50%] lg:w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
