@@ -106,7 +106,7 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function BlogDetailPage({ params }: { params: { slug: string } }) {
+export default async function NewsDetailPage({ params }: { params: { slug: string } }) {
     const { slug } = await params;
     const news: NewsDetail = await client.fetch(fetchAllNewsBySlug, { slug });
 

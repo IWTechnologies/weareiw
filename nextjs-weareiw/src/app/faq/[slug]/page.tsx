@@ -42,7 +42,7 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function BlogDetailPage({ params }: { params: { slug: string } }) {
+export default async function FaqDetailPage({ params }: { params: { slug: string } }) {
     const { slug } = await params;
     const faq: FaqDetail = await client.fetch(fetchAllFaqBySlug, { slug });
 
