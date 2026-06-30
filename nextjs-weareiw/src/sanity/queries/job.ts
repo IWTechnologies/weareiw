@@ -23,7 +23,8 @@ export const fetchAllJobCategories = groq`
         title,
         "slug": slug.current,
         description,
-        "categoryImage": categoryImage.asset->url
+        "categoryImage": categoryImage.asset->url,
+        "jobCount": count(*[_type == "jobs" && active == true && category._ref == ^._id])
     }
 `;
 

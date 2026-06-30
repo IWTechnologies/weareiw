@@ -42,19 +42,43 @@ export default async function OpportunitiesPage() {
                 <div className="w-full py-16 rounded-t-3xl bg-background">
                     <div className="w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {categories.map((category) => (
-                            <Link key={category._id} 
-                            href={`/opportunities/${category.slug}`} target="_blank"
-                            className="group relative w-full h-40 lg:h-60 flex flex-col justify-center items-center rounded-3xl overflow-hidden">
-                                <div className="">
-                                    <div className="absolute inset-0 z-10 bg-linear-to-t from-brand-navy/40 to-transparent" />
-                                    <img
-                                    className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0"
-                                    src={category.categoryImage} alt={category.title} />
-                                    <h3 className="relative z-20 w-fit h-fit p-2 rounded-2xl border-2 border-white/20
-                                    group-hover:border-brand-aqua transition-opacity duration-300 
-                                    text-white text-shadow-lg backdrop-blur-sm">{category.title}</h3>
+                            category.jobCount > 0 ? (
+                                <Link key={category._id} 
+                                href={`/opportunities/${category.slug}`} target="_blank"
+                                className="group relative w-full h-40 lg:h-60 flex flex-col justify-center items-center rounded-3xl overflow-hidden">
+                                    <div className="">
+                                        <div className="absolute inset-0 z-10 bg-linear-to-t from-brand-navy/40 to-transparent" />
+                                        <img
+                                        className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0"
+                                        src={category.categoryImage} alt={category.title} />
+                                        <h3 className="relative z-20 w-fit h-fit p-2 rounded-2xl border-2 border-white/20
+                                        group-hover:border-brand-aqua transition-opacity duration-300 
+                                        text-white text-shadow-lg backdrop-blur-sm">{category.title}</h3>
+                                        <p className="relative z-20 w-fit h-fit px-2 text-white font-semibold text-shadow-md 
+                                        opacity-100 lg:opacity-0 lg:group-hover:opacity-100 translate-y-2 transition duration-300">
+                                            Check out our roles!
+                                        </p>
+                                    </div>
+                                </Link>
+                            ) : (
+                                <div key={category._id} 
+                                className="group relative w-full h-40 lg:h-60 flex flex-col justify-center items-center rounded-3xl overflow-hidden">
+                                    <div className="">
+                                        <div className="absolute inset-0 z-10 bg-linear-to-t from-brand-navy/40 to-transparent" />
+                                        <img
+                                        className="absolute inset-0 w-full h-full object-cover grayscale"
+                                        src={category.categoryImage} alt={category.title} />
+                                        <h3 className="relative z-20 w-fit h-fit p-2 rounded-2xl border-2 border-white/20
+                                        group-hover:border-brand-aqua transition-opacity duration-300 
+                                        text-white text-shadow-lg backdrop-blur-sm">{category.title}</h3>
+                                        <p className="relative z-20 w-fit h-fit px-2 text-white font-semibold text-shadow-md 
+                                        opacity-100 lg:opacity-0 lg:group-hover:opacity-100 translate-y-2 transition duration-300">
+                                            No open positions.
+                                        </p>
+                                    </div>
                                 </div>
-                            </Link>
+                            )
+                            
                         ))}
                     </div>
                 </div>
