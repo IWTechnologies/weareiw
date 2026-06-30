@@ -82,7 +82,7 @@ export default function IndexPage() {
               </>
             }
             link={{
-              href: "#",
+              href: "/products",
               label: "Explore hardware",
               variant: "dark",
             }}
@@ -100,7 +100,7 @@ export default function IndexPage() {
               </>
             }
             link={{
-              href: "#",
+              href: "/services",
               label: "See how we support the lifecycle",
               variant: "dark",
             }}
@@ -173,7 +173,7 @@ export default function IndexPage() {
                 </>
               }
               link={{
-                href: "#",
+                href: "/get-in-touch",
                 label: "Let's Build Your Next Roll Out",
                 variant: "dark",
               }}
@@ -207,7 +207,7 @@ export default function IndexPage() {
                 </>
               }
               link={{
-                href: "#",
+                href: "/get-in-touch",
                 label: "Let's Work Together",
                 variant: "light",
               }}

@@ -25,7 +25,7 @@ export default function Footer({ link }: FooterProps) {
                     {link && <LinkButton {...link} />}
                     <Link href="https://www.termsfeed.com/live/5300ce41-8ea3-4e06-a1dc-198dd34fd3f2"
                     className="text-brand-navy underline hover:text-brand-aqua" target="_blank">Privacy Policy</Link>
-                    <Link href="https://www.weareiw.com/faq/" 
+                    <Link href="/faq" 
                     className="text-brand-navy underline hover:text-brand-aqua" target="_blank">FAQ</Link>
                 </div>
                 <div className="w-1/2 flex flex-col justify-evenly items-center sm:items-end text-center sm:text-right text-brand-black">
@@ -38,9 +38,9 @@ export default function Footer({ link }: FooterProps) {
                         <p>Phone: (847) 310-4200</p>
                         <p>Toll Free: (800) 544-5493</p>
                         <div className="flex justify-evenly sm:justify-end sm:space-x-2 mt-2 sm:mt-0">
-                            <Link href="https://www.linkedin.com/company/iw-technologies" className="" target="_blank"><Image className="max-h-6.25 h-auto w-auto object-contain" src="/LinkedIn.jpg" alt="IW Linkedin" width={50} height={50} /></Link>
-                            <Link href="https://www.facebook.com/IWTechnologies/" className="" target="_blank"><Image className="max-h-6.25 h-auto w-auto object-contain" src="/Facebook.jpg" alt="IW Facebook" width={50} height={50} /></Link>
-                            <Link href="https://www.youtube.com/user/illinoiswholesale/videos" className="" target="_blank"><Image className="max-h-6.25 h-auto w-auto object-contain" src="/Youtube.jpg" alt="IW Youtube" width={50} height={50} /></Link>
+                            <Link href="https://www.linkedin.com/company/iw-technologies" className="" target="_blank"><img className="h-10 w-auto object-contain" src="/icons/square-linkedin-brands-solid-full.svg" alt="IW Linkedin" width={50} height={50} /></Link>
+                            <Link href="https://www.facebook.com/IWTechnologies/" className="" target="_blank"><img className="h-10 w-auto object-contain" src="/icons/square-facebook-brands-solid-full.svg" alt="IW Facebook" width={50} height={50} /></Link>
+                            <Link href="https://www.youtube.com/user/illinoiswholesale/videos" className="" target="_blank"><img className="h-10 w-auto object-contain" src="/icons/square-youtube-brands-solid-full.svg" alt="IW Youtube" width={50} height={50} /></Link>
                         </div>
                     </div>
                 </div>
