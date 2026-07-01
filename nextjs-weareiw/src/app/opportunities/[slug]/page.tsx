@@ -38,7 +38,7 @@ export async function generateMetadata(
             url: `${BASE_URL}/opportunities/${slug}`,
             images: [
                 {
-                    url: 'iw-logo-simple.png'
+                    url: `${BASE_URL}/iw-logo-simple.png`,
                 }
             ],
         },
