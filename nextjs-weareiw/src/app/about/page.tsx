@@ -71,7 +71,7 @@ export default function AboutPage() {
                     </>
                     }
                     link={{
-                        href: "#",
+                        href: "/get-in-touch",
                         label: "Let's Build Your Next Roll Out",
                         variant: "light",
                     }}
