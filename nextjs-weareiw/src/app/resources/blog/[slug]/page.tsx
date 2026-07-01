@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import { notFound } from "next/navigation";
 
 import { client } from "@/sanity/lib/client";
@@ -86,11 +87,14 @@ export async function generateMetadata(
         title: `${blog.seoTitle} - IW Technologies`,
         description: `${blog.metaDescription}`,
         openGraph: {
+            type: "article",
+            siteName: "IW Technologies",
             title: blog.seoTitle,
             description: blog.metaDescription,
+            url: `${BASE_URL}/resources/blog/${slug}`,
             images: [
                 {
-                    url: blog.image || 'iw-logo-simple.png'
+                    url: blog.image || `${BASE_URL}/iw-logo-simple.png`
                 }
             ],
         },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import YoutubeFacade from "@/components/YoutubeFacade";
@@ -6,6 +7,19 @@ import YoutubeFacade from "@/components/YoutubeFacade";
 export const metadata: Metadata = {
   title: "Our Story - IW Technologies",
   description: "View the story of IW Technologies, from the very beginning to us celebrating 50 years.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Our Story - IW Technologies",
+        description: "View the story of IW Technologies, from the very beginning to us celebrating 50 years.",
+        url: `${BASE_URL}/about/our-story`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Our Story IW Technologies',
+            }
+        ],
+    },
 };
 
 export default function OurStory() {

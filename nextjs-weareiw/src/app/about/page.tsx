@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
@@ -8,6 +9,19 @@ import NumCounter from "@/components/NumCounter";
 export const metadata: Metadata = {
   title: "About - IW Technologies",
   description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions.",
+  openGraph: {
+      type: "website",
+      siteName: "IW Technologies",
+      title: "About - IW Technologies",
+      description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions.",
+      url: `${BASE_URL}/about`,
+      images: [
+          {
+              url: `${BASE_URL}/iw-logo-simple.png`,
+              alt: 'About IW Technologies',
+          }
+      ],
+  },
 };
 
 const industries = [

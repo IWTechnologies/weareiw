@@ -1,13 +1,27 @@
+import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import { client } from "@/sanity/lib/client";
 import { fetchTeamMembers } from "@/sanity/queries/teamMember";
 import { TeamMember } from "@/types/teamMember";
-import type { Metadata } from "next";
 import TeamGrid from "@/components/TeamGrid";
 import Hero from "@/components/Hero";
 
 export const metadata: Metadata = {
   title: "Meet Our Team - IW Technologies",
   description: "Meet the team deidcated to being your partner. We provide cutting-edge, new and refurbished POS technology and expert services.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Meet Our Team - IW Technologies",
+        description: "Meet the team deidcated to being your partner. We provide cutting-edge, new and refurbished POS technology and expert services.",
+        url: `${BASE_URL}/about/our-team`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Meet Our Team IW Technologies',
+            }
+        ],
+    },
 };
 
 export default async function OurTeamPage() {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import { PortableText } from "@portabletext/react";
 import { notFound } from "next/navigation";
 import JobForm from "@/components/forms/JobForm";
@@ -22,6 +23,18 @@ export async function generateMetadata(
     return {
         title: `${job.jobTitle} - IW Technologies`,
         description: `Apply for the ${job.jobTitle} position at IW Technologies. Located in ${job.city}, ${job.state}.`,
+        openGraph: {
+            type: "website",
+            siteName: "IW Technologies",
+            title: `${job.jobTitle} - IW Technologies`,
+            description: `Apply for the ${job.jobTitle} position at IW Technologies. Located in ${job.city}, ${job.state}.`,
+            url: `${BASE_URL}/opportunities/${job.categorySlug}/${jobSlug}`,
+            images: [
+                {
+                    url: 'iw-logo-simple.png'
+                }
+            ],
+        },
     };
 }
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import Card from "@/components/Card";
@@ -8,6 +9,19 @@ import LinkButton from "@/components/LinkButton";
 export const metadata: Metadata = {
   title: "Careers - IW Technologies",
   description: "Join our growing team of people and build your career at IW Technologies with the skills that you want to master.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Careers - IW Technologies",
+        description: "Join our growing team of people and build your career at IW Technologies with the skills that you want to master.",
+        url: `${BASE_URL}/careers`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Careers IW Technologies',
+            }
+        ],
+    },
 };
 
 const benefitPerks = [

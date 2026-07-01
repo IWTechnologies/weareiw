@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 
@@ -9,6 +10,19 @@ import { JobCategory } from "@/types/job";
 export const metadata: Metadata = {
   title: "Current Opportunities - IW Technologies",
   description: "We’re building a culture where amazing people (like you) can do their best work. If you’re ready to level-up and grow your career, you’ve come to the right place.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Current Opportunities - IW Technologies",
+        description: "We’re building a culture where amazing people (like you) can do their best work. If you’re ready to level-up and grow your career, you’ve come to the right place.",
+        url: `${BASE_URL}/opportunities`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Opportunities at IW Technologies',
+            }
+        ],
+    },
 };
 
 export default async function OpportunitiesPage() {

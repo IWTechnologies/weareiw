@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Blurb from "@/components/Blurb";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Card from "@/components/Card";
 
 export const metadata: Metadata = {
   title: "Resources - IW Technologies",
-  description: "placeholder.",
+  description: "Checkout our resources to learn more about the latest news and trends in the POS industry with IW Techonologies.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Resources - IW Technologies",
+        description: "Checkout our resources to learn more about the latest news and trends in the POS industry with IW Techonologies.",
+        url: `${BASE_URL}/resources`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Resources at IW Technologies',
+            }
+        ],
+    },
 };
 
 // this will be changed to include links for blog, news, podcasts

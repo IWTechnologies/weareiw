@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import { notFound } from "next/navigation";
 
 import { client } from "@/sanity/lib/client";
@@ -14,7 +15,7 @@ export async function generateMetadata(
 
     if (!faq) {
         return {
-            title: "Blog Post Not Found - IW Technologies",
+            title: "FAQ Post Not Found - IW Technologies",
         };
     }
 
@@ -22,11 +23,14 @@ export async function generateMetadata(
         title: `${faq.seoTitle} - IW Technologies`,
         description: `${faq.metaDescription}`,
         openGraph: {
+            type: "article",
+            siteName: "IW Technologies",
             title: faq.seoTitle,
             description: faq.metaDescription,
+            url: `${BASE_URL}/faq/${slug}`,
             images: [
                 {
-                    url: 'iw-logo-simple.png'
+                    url: `${BASE_URL}/iw-logo-simple.png`
                 }
             ],
         },

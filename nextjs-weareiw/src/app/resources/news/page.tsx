@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Link from "next/link";
 
 import { client } from "@/sanity/lib/client";
@@ -8,6 +9,19 @@ import { News } from "@/types/news";
 export const metadata: Metadata = {
   title: "News - IW Technologies",
   description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "News - IW Technologies",
+        description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+        url: `${BASE_URL}/resources/news`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'News IW Technologies',
+            }
+        ],
+    },
 };
 
 

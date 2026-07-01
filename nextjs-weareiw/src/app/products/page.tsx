@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
@@ -12,6 +13,19 @@ import ProductGrid from "@/components/ProductGrid";
 export const metadata: Metadata = {
   title: "Products - IW Technologies",
   description: "IW Technologies provides cutting-edge, new and refurbished POS technology and equipment. From printers to scanners and everything in between, our expansive inventory of point-of-sale solutions can meet your needs.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Products - IW Technologies",
+        description: "IW Technologies is your partner in driving your business forward. Let's get in touch!",
+        url: `${BASE_URL}/products`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Products IW Technologies',
+            }
+        ],
+    },
 };
 
 const storeLogos = [

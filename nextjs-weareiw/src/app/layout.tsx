@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import { DM_Sans, Inter, IBM_Plex_Serif } from "next/font/google";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import PromoBar from "@/components/PromoBar";
 import "./globals.css";
 import AOS from "@/components/AOS";
-import Script from "next/script";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -24,6 +24,19 @@ const ibmPlexSerif = IBM_Plex_Serif({
 export const metadata: Metadata = {
   title: "IW Technologies - Your Enterprise Solution Partner",
   description: "IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
+  openGraph: {
+      type: "website",
+      siteName: "IW Technologies",
+      title: "IW Technologies - Your Enterprise Solution Partner",
+      description: "IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
+      url: `${BASE_URL}`,
+      images: [
+          {
+              url: `${BASE_URL}/iw-logo-simple.png`,
+              alt: 'IW Technologies',
+          }
+      ],
+  },
 };
 
 export default function RootLayout({

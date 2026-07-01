@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Hero from "@/components/Hero";
 import Card from "@/components/Card";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: "Low Voltage Cabling - IW Technologies",
-  description: "Low Voltage Cabling service.",
+  description: "Low Voltage Cabling service offered by IW Technologies located in Elgin, IL.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Low Voltage Cabling - IW Technologies",
+        description: "Low Voltage Cabling service offered by IW Technologies located in Elgin, IL.",
+        url: `${BASE_URL}/services/low-voltage`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Low Voltage Cabling Services IW Technologies',
+            }
+        ],
+    },
 };
 
 export default function LowVoltagePage() {
@@ -143,7 +157,7 @@ export default function LowVoltagePage() {
                                 All delivered by a partner who understands the stakes and owns the outcome.
                             </p>
                             <div className="w-full flex flex-col items-center mx-auto my-5">
-                                <LinkButton href="https://www.weareiw.com/get-in-touch/" label="Built For Scale. Wired For It, Too" subLabel="If your cabling can't scale, your tech won't either. Let's Talk" target="_blank" variant="dark" />
+                                <LinkButton href="/get-in-touch" label="Built For Scale. Wired For It, Too" subLabel="If your cabling can't scale, your tech won't either. Let's Talk" target="_blank" variant="dark" />
                             </div>
                             
                         </div>

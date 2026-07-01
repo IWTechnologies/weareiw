@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
@@ -29,6 +30,18 @@ export async function generateMetadata(
     return {
         title: `${data.category.title} Opportunities - IW Technologies`,
         description: `View current ${data.category.title} opportunities at IW Technologies.`,
+        openGraph: {
+            type: "website",
+            siteName: "IW Technologies",
+            title: `${data.category.title} Opportunities - IW Technologies`,
+            description: `View current ${data.category.title} opportunities at IW Technologies.`,
+            url: `${BASE_URL}/opportunities/${slug}`,
+            images: [
+                {
+                    url: 'iw-logo-simple.png'
+                }
+            ],
+        },
     };
 }
 

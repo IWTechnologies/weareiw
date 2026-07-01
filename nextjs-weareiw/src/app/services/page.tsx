@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Link from "next/link";
 import Image from "next/image";
 import { ReactNode } from "react";
@@ -33,6 +34,19 @@ const serviceStats = [
 export const metadata: Metadata = {
   title: "Services - IW Technologies",
   description: "From installation to on-site repair to e-cycling, our offerings can cover the full lifecycle of your technology or be chosen a la carte.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Services - IW Technologies",
+        description: "From installation to on-site repair to e-cycling, our offerings can cover the full lifecycle of your technology or be chosen a la carte.",
+        url: `${BASE_URL}/services`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Services IW Technologies',
+            }
+        ],
+    },
 };
 
 export default function ServicesPage() {

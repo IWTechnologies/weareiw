@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
-import Hero from "@/components/Hero";
+import { BASE_URL } from "@/sanity/lib/constants";
 import ContactUs from "@/components/forms/ContactUs";
 
 export const metadata: Metadata = {
   title: "Contact Us - IW Technologies",
   description: "IW Technologies is your partner in driving your business forward. Let's get in touch!",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Contact Us - IW Technologies",
+        description: "IW Technologies is your partner in driving your business forward. Let's get in touch!",
+        url: `${BASE_URL}/get-in-touch`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Contact Us IW Technologies',
+            }
+        ],
+    },
 };
 
 export default async function GetInTouchPage() {

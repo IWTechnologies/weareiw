@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import { notFound } from "next/navigation";
 
 import { client } from "@/sanity/lib/client";
@@ -22,7 +23,11 @@ export async function generateMetadata(
         title: `${product.name} - IW Technologies`,
         description: `Learn more about ${product.name} from IW Technologies.`,
         openGraph: {
-            title: product.name,
+            type: "website",
+            siteName: "IW Technologies",
+            title: `${product.name} - IW Technologies`,
+            description: `Learn more about ${product.name} from IW Technologies.`,
+            url: `${BASE_URL}/products/${slug}`,
             images: [
                 {
                     url: product.image
