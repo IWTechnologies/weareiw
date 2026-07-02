@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { BASE_URL } from "@/sanity/lib/constants";
 import { DM_Sans, Inter, IBM_Plex_Serif } from "next/font/google";
 import Header from "@/components/header/Header";
@@ -70,6 +71,7 @@ export default function RootLayout({
           }}
           />
       </body>
+      <Script src="https://www.google.com/recaptcha/api.js" async defer />
     </html>
   );
 }
