@@ -61,7 +61,7 @@ export default function IndexPage() {
       
       <section id="hardware"
       className="w-full flex flex-col items-center">
-        <div className="w-full lg:w-[80%] mx-auto mb-15 text-brand-black text-center">
+        <div className="w-[80%] mx-auto mb-15 text-brand-black text-center">
           <h2>
             Start with hardware. Or start with services. We’re built to scale with you.
           </h2>

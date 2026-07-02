@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link";
 import { navItems } from "@/data/navItems";
 import MobileNavItem from "./MobileNavItem";
@@ -17,7 +15,6 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
             role="dialog" 
             aria-modal="true" 
             aria-label="mobile navigation"
-            aria-hidden={!open}
             inert={!open ? true : undefined}
         >
             <nav className="flex flex-col">
