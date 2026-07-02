@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants"; 
 import Hero from "@/components/Hero";
 import Card from "@/components/Card";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: "Maintenance - IW Technologies",
-  description: "Maintenance service.",
+  description: "Maintenance service offered by IW Technologies located in Elgin, IL.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Maintenance - IW Technologies",
+        description: "Maintenance service offered by IW Technologies located in Elgin, IL.",
+        url: `${BASE_URL}/services/maintenance`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Maintenance Services IW Technologies',
+            }
+        ],
+    },
 };
 
 export default function MaintenancePage() {
@@ -102,7 +116,7 @@ export default function MaintenancePage() {
                         </p>
 
                         <div className="w-full flex flex-col items-center mx-auto my-5">
-                                <LinkButton href="/products" label="We Don't Miss SLAs. We Write Them In Ink" subLabel="Talk to a team that shows up." target="_blank" variant="dark" />
+                                <LinkButton href="/get-in-touch" label="We Don't Miss SLAs. We Write Them In Ink" subLabel="Talk to a team that shows up." target="_blank" variant="dark" />
                         </div>
                     </div>
                 </div>

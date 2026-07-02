@@ -4,6 +4,7 @@ export type JobCategory = {
     slug: string;
     description: string;
     categoryImage: string;
+    jobCount: number;
 };
 
 export type Job = {

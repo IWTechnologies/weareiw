@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Hero from "@/components/Hero";
 import Card from "@/components/Card";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: "Deployment - IW Technologies",
-  description: "Deployment service.",
+  description: "Deployment service offered by IW Technologies located in Elgin, IL.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Deployment - IW Technologies",
+        description: "Deployment service offered by IW Technologies located in Elgin, IL.",
+        url: `${BASE_URL}/services/deployment`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Deployment Services IW Technologies',
+            }
+        ],
+    },
 };
 
 export default function DeploymentPage() {
@@ -101,7 +115,7 @@ export default function DeploymentPage() {
                         </p>
 
                         <div className="w-full flex flex-col items-center mx-auto my-5">
-                                <LinkButton href="https://www.weareiw.com/get-in-touch/" label="It's Not Plug-And-Pray. It's Plug-And-Play - At Enterprise" subLabel="Explore how we stage, configure, and deploy to your exact specs." target="_blank" variant="dark" />
+                                <LinkButton href="/get-in-touch" label="It's Not Plug-And-Pray. It's Plug-And-Play - At Enterprise" subLabel="Explore how we stage, configure, and deploy to your exact specs." target="_blank" variant="dark" />
                         </div>
                     </div>
                 </div>

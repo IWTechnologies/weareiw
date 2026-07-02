@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link";
 import { navItems } from "@/data/navItems";
 import MobileNavItem from "./MobileNavItem";
@@ -17,7 +15,6 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
             role="dialog" 
             aria-modal="true" 
             aria-label="mobile navigation"
-            aria-hidden={!open}
             inert={!open ? true : undefined}
         >
             <nav className="flex flex-col">
@@ -27,7 +24,7 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
             </nav>
             <div className="flex justify-center">
                 <Link 
-                href="#"
+                href="/get-in-touch"
                 className="w-[80%] sm:w-fit m-6 px-[1em] py-[.33em] rounded-md text-center
                 transition duration-300 ease-in-out
                 border-3 border-background bg-background text-brand-black

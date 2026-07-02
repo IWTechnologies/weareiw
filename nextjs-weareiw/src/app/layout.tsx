@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { BASE_URL } from "@/sanity/lib/constants";
 import { DM_Sans, Inter, IBM_Plex_Serif } from "next/font/google";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
@@ -23,6 +25,19 @@ const ibmPlexSerif = IBM_Plex_Serif({
 export const metadata: Metadata = {
   title: "IW Technologies - Your Enterprise Solution Partner",
   description: "IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
+  openGraph: {
+      type: "website",
+      siteName: "IW Technologies",
+      title: "IW Technologies - Your Enterprise Solution Partner",
+      description: "IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
+      url: `${BASE_URL}`,
+      images: [
+          {
+              url: `${BASE_URL}/iw-logo-simple.png`,
+              alt: 'IW Technologies',
+          }
+      ],
+  },
 };
 
 export default function RootLayout({
@@ -38,7 +53,7 @@ export default function RootLayout({
         <PromoBar />
         <Header 
           link={{
-            href: "#",
+            href: "/get-in-touch",
             label: "Get In Touch",
             variant: "light",
           }}
@@ -50,12 +65,13 @@ export default function RootLayout({
         </AOS>
         <Footer 
           link={{
-            href: "#",
+            href: "/get-in-touch",
             label: "Get In Touch",
             variant: "dark",
           }}
           />
       </body>
+      <Script src="https://www.google.com/recaptcha/api.js" async defer />
     </html>
   );
 }

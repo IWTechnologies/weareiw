@@ -1,0 +1,54 @@
+import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
+import Link from "next/link";
+
+import { client } from "@/sanity/lib/client";
+import { fetchAllFaqPosts } from "@/sanity/queries/faq";
+import { Faqs } from "@/types/faq";
+
+export const metadata: Metadata = {
+  title: "FAQ - IW Technologies",
+  description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "FAQ - IW Technologies",
+        description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+        url: `${BASE_URL}/faq`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'FAQ IW Technologies',
+            }
+        ],
+    },
+};
+
+
+export default async function FaqPage() {
+    const faqs: Faqs[] = await client.fetch(fetchAllFaqPosts);
+
+    return (
+        <div>
+            <section className="w-full my-16 text-brand-black">
+                <div className="w-[70%] mx-auto flex flex-col gap-10">
+                    <h2 className="">
+                        Frequently Asked Questions
+                    </h2>
+                    <div className="w-full flex flex-col gap-5">
+                        {faqs.map((faq) => (
+                            <Link key={faq._id} href={`/faq/${faq.slug}`}
+                            className="group w-full flex flex-col p-4 items-center gap-2 rounded-3xl bg-white overflow-hidden shadow-md
+                            transition duration-300 focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
+                                <h4 className="p-4 transition duration-300 text-brand-black group-hover:text-brand-aqua">
+                                    {faq.title} →
+                                </h4>
+                                <p className="font-semibold text-brand-navy">{faq.category}</p>
+                            </Link>
+                        ))} 
+                    </div>
+                </div>
+            </section>
+        </div>
+    )
+}

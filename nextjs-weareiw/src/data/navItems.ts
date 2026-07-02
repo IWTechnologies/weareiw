@@ -19,12 +19,12 @@ export const navItems: NavItem[] = [
         submenu: [
             { label: "Partners", href: "/products#partners" },
             { label: "Featured POS Solutions", href: "/products#pos" },
-            { label: "Sell Your POS/IT Assets", href: "/sell-form" },
-            { 
-                label: "Online Finance Tool",
-                href: "https://www.cdf-solutions.com/iwt/finance",
-                isExternal: true,
-            },
+            // { label: "Sell Your POS/IT Assets", href: "/sell-form" },
+            // { 
+            //     label: "Online Finance Tool",
+            //     href: "https://www.cdf-solutions.com/iwt/finance",
+            //     isExternal: true,
+            // },
         ],
     },
     {
@@ -52,6 +52,15 @@ export const navItems: NavItem[] = [
     {
         label: "Resources",
         href: "/resources",
+        submenu: [
+            { label: "Blog", href: "/resources/blog" },
+            { label: "News", href: "/resources/news" },
+            // { label: "Podcast", href: "/resources/podcast" },
+        ],
+    },
+    {
+        label: "FAQ",
+        href: "/faq",
     },
     {
         label: "Shop",

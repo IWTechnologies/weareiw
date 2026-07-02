@@ -9,23 +9,32 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@sanity/image-url": "^1.2.0",
+    "@formspree/react": "^3.0.0",
+    "@sanity/image-url": "^2.1.1",
     "aos": "^2.3.4",
-    "next": "^16.1.6",
-    "next-sanity": "^11.4.2",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "next": "^16.2.9",
+    "next-sanity": "^13.1.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/aos": "^3.0.7",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@eslint/eslintrc": "^3.3.5",
+    "@tailwindcss/postcss": "^4.3.1",
+    "@tailwindcss/typography": "^0.5.20",
+    "@types/aos": "^3.0.8",
+    "@types/node": "^25.9.3",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.5.4",
-    "tailwindcss": "^4",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.9",
+    "tailwindcss": "^4.3.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "flatted": "^3.4.2",
+    "picomatch": "^4.0.4",
+    "form-data": "^4.0.6",
+    "esbuild": "^0.28.1",
+    "vite": "^8.0.16"
   }
 }

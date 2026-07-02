@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BASE_URL } from "@/sanity/lib/constants";
 import Hero from "@/components/Hero";
 import Card from "@/components/Card";
 import LinkButton from "@/components/LinkButton";
@@ -6,6 +7,19 @@ import LinkButton from "@/components/LinkButton";
 export const metadata: Metadata = {
   title: "Procurement - IW Technologies",
   description: "Procurement service.",
+  openGraph: {
+        type: "website",
+        siteName: "IW Technologies",
+        title: "Procurement - IW Technologies",
+        description: "Procurement service offered by IW Technologies located in Elgin, IL.",
+        url: `${BASE_URL}/services/procurement`,
+        images: [
+            {
+                url: `${BASE_URL}/iw-logo-simple.png`,
+                alt: 'Procurement Services IW Technologies',
+            }
+        ],
+    },
 };
 
 export default function ProcurementPage() {
