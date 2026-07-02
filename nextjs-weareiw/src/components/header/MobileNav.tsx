@@ -27,7 +27,7 @@ export default function MobileNav({ open, onClose }: MobileNavProps ) {
             </nav>
             <div className="flex justify-center">
                 <Link 
-                href="#"
+                href="/get-in-touch"
                 className="w-[80%] sm:w-fit m-6 px-[1em] py-[.33em] rounded-md text-center
                 transition duration-300 ease-in-out
                 border-3 border-background bg-background text-brand-black
