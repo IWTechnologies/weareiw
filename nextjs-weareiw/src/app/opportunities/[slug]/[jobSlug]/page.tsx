@@ -108,6 +108,7 @@ export default async function JobDetailPage({ params }: { params: { slug: string
                     <h2 className="w-fit border-b-4 border-brand-aqua">
                         Apply Now
                     </h2>
+                    <p className="text-sm text-white/70">Fields with an <span className="text-red-600">*</span> are required for submitting this form.</p>
                     <JobForm jobTitle={job.jobTitle} jobCategory={job.category} />
                 </div>
             </section>
