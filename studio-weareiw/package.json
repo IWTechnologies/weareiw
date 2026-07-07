@@ -23,11 +23,11 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
-    "@sanity/vision": "^6.3.0",
+    "@sanity/vision": "^6.4.0",
     "@types/react": "^19.2.17",
     "eslint": "^9.39.4",
     "prettier": "^3.9.4",
-    "sanity": "^6.3.0",
+    "sanity": "^6.4.0",
     "typescript": "^6.0.3"
   },
   "prettier": {
