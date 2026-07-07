@@ -83,7 +83,7 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
             </div>
 
             <div className="w-full lg:w-1/2 flex flex-col gap-2">
-                <label htmlFor="coverLetter" className="pl-2">
+                <label htmlFor="coverLetter" className="cover-letter pl-2">
                     Upload Cover Letter:
                     <span className="text-sm"> (optional)</span>
                 </label>

@@ -118,7 +118,7 @@ export default function ContactUs({ buttonColor="bg-white", buttonTextColor="tex
 
         {/* additional info text area */}
         <div className="w-full flex flex-col gap-2">
-            <label htmlFor="message" className="pl-2">Additional info:</label>
+            <label htmlFor="message" className="additional-info pl-2">Additional info:</label>
             <textarea id="message" name="message" 
             className="p-2 rounded-2xl bg-white text-brand-black
             focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">

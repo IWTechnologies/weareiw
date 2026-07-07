@@ -33,6 +33,7 @@ export default async function GetInTouchPage() {
                         <p>
                             Fill out the form below or call (847) 310-4200 to see how we can partner together.
                         </p>
+                        <p className="text-sm text-brand-black/70">Fields with an <span className="text-red-600">*</span> are required for submitting this form.</p>
                     </div>
                     <ContactUs buttonColor="bg-brand-black" buttonTextColor="text-white" buttonTextHover="text-brand-black" buttonBorderColor="border-brand-black" />
                 </div>
