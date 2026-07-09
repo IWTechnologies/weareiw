@@ -49,7 +49,7 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="smooth"
     className={`${dmSans.variable} ${inter.variable} ${ibmPlexSerif.variable}`}>
       <body
-        className="flex flex-col min-h-screen font-body text-base lg:text-lg antialiased">
+        className="flex flex-col min-h-screen min-w-[320px] font-body text-base lg:text-lg antialiased">
         <PromoBar />
         <Header 
           link={{
