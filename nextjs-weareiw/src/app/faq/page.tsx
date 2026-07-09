@@ -43,7 +43,7 @@ export default async function FaqPage() {
                                 <h4 className="p-4 transition duration-300 text-brand-black group-hover:text-brand-aqua">
                                     {faq.title} →
                                 </h4>
-                                <p className="font-semibold text-brand-navy">{faq.category}</p>
+                                <p className="text-center font-semibold text-brand-navy">{faq.category}</p>
                             </Link>
                         ))} 
                     </div>
