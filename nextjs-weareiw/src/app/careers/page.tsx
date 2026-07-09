@@ -45,7 +45,7 @@ export default function CareersPage() {
                     text={
                     <>
                         <h1>Level up your career</h1>
-                        <p>Join our grouwing team of motivated people.</p>
+                        <p>Join our growing team of motivated people.</p>
                         <p>
                             We are an agile group of hard workers who support and respect 
                             each other. We hold ourselves to the highest standard — offering 
