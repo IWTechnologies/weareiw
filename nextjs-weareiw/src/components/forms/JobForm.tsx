@@ -7,20 +7,20 @@ type JobProps = {
 };
 
 export default function JobForm({ jobTitle, jobCategory }: JobProps) {
-  const [state, handleSubmit] = useForm("xnjyjpqw");
+    const [state, handleSubmit] = useForm("xnjyjpqw");
 
-  if (state.succeeded) {
-    return (
-        <div className="w-full flex flex-col p-4 gap-4">
-            <h3>
-                Application Submitted!
-            </h3>
-            <p>
-                Thank you for applying for the {jobTitle} role at IW Technologies.
-            </p>
-        </div>
-    );
-  }
+    if (state.succeeded) {
+        return (
+            <div className="w-full flex flex-col p-4 gap-4">
+                <h3>
+                    Application Submitted!
+                </h3>
+                <p>
+                    Thank you for applying for the {jobTitle} role at IW Technologies.
+                </p>
+            </div>
+        );
+    }
 
   return (
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
@@ -99,9 +99,6 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
             </div>
         </div>
         
-
-        {/* recaptcha v3 */}
-        <div className="g-recaptcha" data-sitekey="6LdH1zwtAAAAAG6oT5FEke8aaYvzxE_JZIUaVdRo"></div>
         {/* submit button */}
         <button type="submit" disabled={state.submitting} 
         className="w-full md:w-[50%] lg:w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 
