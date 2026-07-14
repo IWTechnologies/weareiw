@@ -32,7 +32,7 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                         ${isSelected ? "lg:col-span-2 xl:col-span-3" : "col-span-1"}`}
                     >
                         {/* teamMember parent container */}
-                        <div className={`flex flex-col lg:flex-row bg-brand-black rounded-3xl overflow-hidden`}>
+                        <div className={`h-full flex flex-col lg:flex-row bg-brand-black rounded-3xl overflow-hidden`}>
                             {/* Card */}
                             <div className={`flex flex-col p-4 text-white
                                 ${isSelected ? "lg:w-1/3" : "w-full"}`}>
@@ -46,11 +46,11 @@ export default function TeamGrid({ teamMembers }: gridProps) {
                                         isSelected ? null : member._id
                                     )}
                                 />
-                                <div className="flex flex-col gap-1 p-1 pb-0 sm:p-4">
+                                <div className="flex flex-col gap-1 p-2 pb-0 sm:p-4">
                                     <div className="w-fit font-bold text-sm sm:text-base md:text-lg lg:text-xl border-b-2 border-brand-aqua">
                                         {member.fullName}
                                     </div>
-                                    <p className="truncate" title={member.jobTitle}>
+                                    <p className="" title={member.jobTitle}>
                                         {member.jobTitle}
                                     </p>
                                 </div>
