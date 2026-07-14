@@ -1,5 +1,6 @@
 "use client"
 import { useForm, ValidationError } from "@formspree/react";
+//import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 type ContactProps = {
     buttonColor?: "bg-white" | "bg-brand-black";
@@ -9,7 +10,7 @@ type ContactProps = {
 };
 
 export default function ContactUs({ buttonColor="bg-white", buttonTextColor="text-brand-black", buttonTextHover="text-white", buttonBorderColor="border-white" }: ContactProps) {
-    
+    //const { executeRecaptcha } = useGoogleReCaptcha();
     
     const [state, handleSubmit] = useForm("xgobnjqp");
 
