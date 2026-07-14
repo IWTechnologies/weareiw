@@ -156,7 +156,7 @@ export default function DispositionPage() {
                                             alt="blue and white circle check icon" width={20} height={20}
                                             className="shrink-0" />
                                             <div className="">
-                                                Strick adherence to customer-specific compliance protocols.
+                                                Strict adherence to customer-specific compliance protocols.
                                             </div>
                                         </li>
                                         <li className="flex gap-2">

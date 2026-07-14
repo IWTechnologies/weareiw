@@ -157,7 +157,7 @@ export default function LowVoltagePage() {
                                 All delivered by a partner who understands the stakes and owns the outcome.
                             </p>
                             <div className="w-full flex flex-col items-center mx-auto my-5">
-                                <LinkButton href="/get-in-touch" label="Built For Scale. Wired For It, Too" subLabel="If your cabling can't scale, your tech won't either. Let's Talk" target="_blank" variant="dark" />
+                                <LinkButton href="/get-in-touch" label="Built for Scale. Wired for it too" subLabel="If your cabling can't scale, your tech won't either. Let's Talk" target="_blank" variant="dark" />
                             </div>
                             
                         </div>

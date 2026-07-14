@@ -109,7 +109,7 @@ export default async function ProductsPage() {
                         </h2>
                         <p className="">
                             Whether you're starting from scratch or completing your existing set, IW Technologies 
-                            partners with top manufacturersto provide you with top-quality scanners, printers and 
+                            partners with top manufacturers to provide you with top-quality scanners, printers and 
                             registers tailored to your needs. If you're not finding your POS hardware of choice, 
                             fill out the form below and contact us for a solution!
                         </p>

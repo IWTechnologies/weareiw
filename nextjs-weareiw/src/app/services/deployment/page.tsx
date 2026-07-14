@@ -99,7 +99,7 @@ export default function DeploymentPage() {
                                         Project Management
                                     </h3>
                                     <p>
-                                        Our dedicated PMO overseas scheduuling, resource deployment, risk mitigation, 
+                                        Our dedicated PMO overseas scheduling, resource deployment, risk mitigation, 
                                         and milestone delivery keeping your rollout on track and your internal teams out 
                                         of the weeds. We've successfully completed <span className="font-semibold">1,000+ rapid-scale deployments </span>
                                         in under 8 weeks.
