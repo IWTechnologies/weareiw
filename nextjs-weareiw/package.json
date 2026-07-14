@@ -15,7 +15,8 @@
     "next": "^16.2.10",
     "next-sanity": "^13.1.1",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-google-recaptcha-v3": "^1.11.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",

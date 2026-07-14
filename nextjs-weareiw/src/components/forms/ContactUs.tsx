@@ -1,5 +1,6 @@
 "use client"
 import { useForm, ValidationError } from "@formspree/react";
+//import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 type ContactProps = {
     buttonColor?: "bg-white" | "bg-brand-black";
@@ -9,20 +10,22 @@ type ContactProps = {
 };
 
 export default function ContactUs({ buttonColor="bg-white", buttonTextColor="text-brand-black", buttonTextHover="text-white", buttonBorderColor="border-white" }: ContactProps) {
-  const [state, handleSubmit] = useForm("xgobnjqp");
+    //const { executeRecaptcha } = useGoogleReCaptcha();
+    
+    const [state, handleSubmit] = useForm("xgobnjqp");
 
-  if (state.succeeded) {
-    return (
-        <div className="w-full flex flex-col p-4 gap-4">
-            <h3>
-                Form submitted!
-            </h3>
-            <p>
-                Thank you for reaching out and showing interest, one of our reps will be in touch to help.
-            </p>
-        </div>
-    );
-  }
+    if (state.succeeded) {
+        return (
+            <div className="w-full flex flex-col p-4 gap-4">
+                <h3>
+                    Form submitted!
+                </h3>
+                <p>
+                    Thank you for reaching out and showing interest, one of our reps will be in touch to help.
+                </p>
+            </div>
+        );
+    }
 
   return (
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
@@ -126,8 +129,6 @@ export default function ContactUs({ buttonColor="bg-white", buttonTextColor="tex
             <ValidationError prefix="Message" field="message" errors={state.errors} />
         </div>
 
-        {/* recaptcha v3 */}
-        <div className="g-recaptcha" data-sitekey="6LdHZ0EtAAAAAEtIpPxdh6PuSucbMkarhzpzfDWa"></div>
         {/* submit button */}
         <button type="submit" disabled={state.submitting} 
         className={`w-full md:w-[50%] lg:w-fit h-fit mx-auto mt-4 px-4 py-2 text-center 

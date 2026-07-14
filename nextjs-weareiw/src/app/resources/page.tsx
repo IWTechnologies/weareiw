@@ -36,7 +36,7 @@ export default async function ResourcesPage() {
                     <h1>IW Resource Hub</h1>
                     <p>
                         Catch up on everything POS with IW Technologies.
-                        View the lastest blog posts, news articles, and podcast episodes.
+                        View the lastest blog posts and news articles.
                     </p>
                 </div>
             </section>

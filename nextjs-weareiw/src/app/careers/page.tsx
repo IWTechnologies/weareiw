@@ -45,7 +45,7 @@ export default function CareersPage() {
                     text={
                     <>
                         <h1>Level up your career</h1>
-                        <p>Join our grouwing team of motivated people.</p>
+                        <p>Join our growing team of motivated people.</p>
                         <p>
                             We are an agile group of hard workers who support and respect 
                             each other. We hold ourselves to the highest standard — offering 
@@ -100,7 +100,7 @@ export default function CareersPage() {
                                     always striving to be respectful, fair and inclusive. We 
                                     embrace differences in experience and identity and are commited 
                                     to creating a welcoming workplace, regardless of gender, race, 
-                                    religion, sexual orientation, age or ability.
+                                    religion, sexual orientation, age, or ability.
                                 </p>
                             </>
                             }

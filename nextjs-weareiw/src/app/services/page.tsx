@@ -196,7 +196,7 @@ export default function ServicesPage() {
                                         Sourcing built for speed, savings, and sustainability.
                                     </p>
                                     <p>
-                                        We help enterprises reducs capital costs, reclaim value from legacy hardware, and 
+                                        We help enterprises reduce capital costs, reclaim value from legacy hardware, and 
                                         align purchasing with ESG goals all from our <span className="font-semibold">240,000+ sq ft warehouse</span>, stocked with 
                                         new and certified refurbished assets.
                                     </p>
@@ -265,7 +265,7 @@ export default function ServicesPage() {
                                     <p>
                                         Our network of <span className="font-semibold">1,850+ vetted technicians </span>cover 99% of the U.S. 
                                         resolving over <span className="font-semibold">55,000 on-site service events </span>annually. From 
-                                        same-day repair to part replacement, we meet issues with answers fast..
+                                        same-day repair to part replacement, we meet issues with answers fast.
                                     </p>
                                     <div className="w-full flex items-center gap-2">
                                         <p className="font-semibold">
@@ -673,7 +673,7 @@ export default function ServicesPage() {
                                         className="shrink-0" />
                                         <div className="">
                                             <span className="font-semibold">Extend asset life </span>
-                                            through scalable erpair and part replacement programs.
+                                            through scalable repair and part replacement programs.
                                         </div>
                                     </li>
                                     <li className="flex gap-2">
