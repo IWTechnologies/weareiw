@@ -22,7 +22,7 @@ export default function HomeHero({ link }: HeroProps) {
             sm:w-1/2 mx-auto flex flex-col items-start justify-center
             text-brand-black">
                 <h1 className="pb-5">
-                Your end-to-end point of sale partner
+                Your End-to-End Point of Sale Partner
                 </h1>
                 <h3 className="pb-5">
                     One partner accountable for POS from install to retirement.

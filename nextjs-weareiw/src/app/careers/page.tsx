@@ -100,7 +100,7 @@ export default function CareersPage() {
                                     always striving to be respectful, fair and inclusive. We 
                                     embrace differences in experience and identity and are commited 
                                     to creating a welcoming workplace, regardless of gender, race, 
-                                    religion, sexual orientation, age or ability.
+                                    religion, sexual orientation, age, or ability.
                                 </p>
                             </>
                             }
