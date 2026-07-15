@@ -158,7 +158,7 @@ export default function AboutPage() {
             className="w-[80%] mx-auto mb-15 flex flex-col items-center gap-5">
                 <div className="w-full flex flex-col gap-1 text-brand-black">
                     <h2>
-                    Guided By Our Values
+                    Guided by Our Values
                     </h2>
                     <p>
                     We believe in going above and beyond for our customers, providing them with the 
