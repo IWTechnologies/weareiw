@@ -63,7 +63,7 @@ export default function IndexPage() {
       className="w-full flex flex-col items-center">
         <div className="w-[80%] mx-auto mb-15 text-brand-black text-center">
           <h2>
-            Start with hardware. Or start with services. We’re built to scale with you.
+            Start with Hardware. Or Start with Services. We’re Built to Scale with You.
           </h2>
         </div>
         <div className="w-[80%] mx-auto flex flex-col items-center gap-8
@@ -110,12 +110,12 @@ export default function IndexPage() {
 
       <section className="w-[80%] my-15 mx-auto">
         <div className="flex flex-col items-center">
-          <div className="w-[70%] text-brand-black text-center">
+          <div className="w-[75%] text-brand-black text-center">
             <h2 className="">
-              Built for enterprise environments. Proven at scale.
+              Built for Enterprise Environments. Proven at Scale.
             </h2>
             <h3 className="">
-              Trusted by operators across retail, grocery, QSR, hospitality, convenience, and distribution.
+              Trusted by Operators Across Retail, Grocery, QSR, Hospitality, Convenience, and Distribution.
             </h3>
           </div>
           <div className="w-full lg:w-[80%] my-5 mt-10">
@@ -140,7 +140,7 @@ export default function IndexPage() {
               }}
               text={
                 <>
-                  <h3>Someone has to own POS. We do</h3>
+                  <h3>Someone Has to Own POS. We Do.</h3>
                   <p>POS is critical infrastructure. When it works, operations stay focused and customers keep moving. That reliability depends on clear ownership.</p>
                   <p>From sourcing and deployment to maintenance, refurbishment, and retirement, we take responsibility for POS in the field across its full lifecycle.</p>
                   <p>We believe critical infrastructure calls for long-term thinking, clear accountability, and partners committed to seeing it through.</p>
@@ -162,7 +162,7 @@ export default function IndexPage() {
               }}
               text={
                 <>
-                  <h3>Long-term ownership changes decisions</h3>
+                  <h3>Long-term Ownership Changes Decisions.</h3>
                   <p>
                     When you’re accountable for the full lifecycle, you plan differently. 
                     You deploy differently. You service differently. 
@@ -198,7 +198,7 @@ export default function IndexPage() {
               text={
                 <>
                   <h3>
-                    One partner. Full accountability. <br/> POS managed for the long term.
+                    One Partner. Full Accountability. <br/> POS Managed for the Long-term.
                   </h3>
                   <p>
                     With a massive inventory of IT assets and the most skilled and

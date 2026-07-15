@@ -44,7 +44,7 @@ export default function CareersPage() {
                     imageHeight={457}
                     text={
                     <>
-                        <h1>Level up your career</h1>
+                        <h1>Level Up Your Career</h1>
                         <p>Join our growing team of motivated people.</p>
                         <p>
                             We are an agile group of hard workers who support and respect 
@@ -67,7 +67,7 @@ export default function CareersPage() {
                     <div className="container mx-auto flex justify-center">
                         <div className="w-[90%] flex flex-col gap-2">
                             <h2 className="">
-                                Every aspect of our business thrives because of people.
+                                Every Aspect of Our Business Thrives Because of People.
                             </h2>
                             <p className="">
                                 Our people are our greatest strength. From our leadership to our sales 
@@ -150,7 +150,7 @@ export default function CareersPage() {
             <section className="relative z-20 w-[90%] mx-auto py-14 flex flex-col items-center gap-5">
                 <div className="w-full flex flex-col gap-1 text-brand-black">
                     <h2 className="">
-                        Core values we live by
+                        Core Values We Live by
                     </h2>
                 </div>
                 <div className="w-full grid grid-cols-1 gap-8
@@ -209,8 +209,8 @@ export default function CareersPage() {
             <section className="w-full py-20 bg-brand-black">
                 <div className="w-[90%] mx-auto flex flex-col gap-10">
                         <h2 className="w-[80%] text-white">
-                            The employee perks and benefits at IW Technologies are something 
-                            we can't help but brag about:
+                            The Employee Perks and Benefits at IW Technologies are Something 
+                            We Can't Help but Brag About:
                         </h2>
                         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                             {benefitPerks.map((perks) => (

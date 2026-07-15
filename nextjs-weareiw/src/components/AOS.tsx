@@ -7,7 +7,7 @@ export default function AOS({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         AOSLibrary.init({
             duration: 800,
-            once: false,
+            once: true,
         });
     }, []);
 

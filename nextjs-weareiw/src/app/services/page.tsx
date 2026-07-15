@@ -63,39 +63,45 @@ export default function ServicesPage() {
                         <h1 className="">
                             From POS Provider to End-to-End Partner
                         </h1>
-                        <p className="font-bold">
-                            We didn't pivot into services. Our customers pulled us in.
-                        </p>
-                        <p>
-                            The expansion into services didn't begin in a boardroom. It started in 
-                            the field with recurring questions from longstanding hardware customers:
-                        </p>
+                        <div>
+                            <p className="font-bold">
+                                We didn't pivot into services. Our customers pulled us in.
+                            </p>
+                            <p>
+                                The expansion into services didn't begin in a boardroom. It started in 
+                                the field with recurring questions from longstanding hardware customers:
+                            </p>
+                        </div>
                         <p className="font-bold">
                             "You already sell us the POS equipment. Can you help us install it? 
                             Maintain it? Manage it?"
                         </p>
-                        <p>
-                            What began as a favor turned into a repeat engagement. A handful of 
-                            installations grew into coordinated national rollouts.
-                        </p>
-                        <p>
-                            And in just a few years, that single request matured into a fully scaled 
-                            service division now powering over <span className="font-bold">55,000 on-site service events annually </span>
-                            across North America.
-                        </p>
+                        <div>
+                            <p>
+                                What began as a favor turned into a repeat engagement. A handful of 
+                                installations grew into coordinated national rollouts.
+                            </p>
+                            <p>
+                                And in just a few years, that single request matured into a fully scaled 
+                                service division now powering over <span className="font-bold">55,000 on-site service events annually </span>
+                                across North America.
+                            </p>
+                        </div>
                         <p className="font-bold">
                             Today, IW is more than a provider. We don't just sell hardware. We operationalize it.
                         </p>
-                        <p>
-                            From procurement and deployment to break/fix support, decommissioning, 
-                            <span className="font-bold">a structured low voltage cabling</span>, 
-                            and sustainable recovery, we manage the full technology lifecycle as 
-                            an embedded partner.
-                        </p>
-                        <p>
-                            That includes everything from <span className="font-bold">rough-in and termination </span>
-                            to <span>technology installation </span>whether it's for <span>net-new stores, remodels, or multi-site relocations.</span> 
-                        </p>
+                        <div>
+                            <p>
+                                From procurement and deployment to break/fix support, decommissioning, 
+                                <span className="font-bold">a structured low voltage cabling</span>, 
+                                and sustainable recovery, we manage the full technology lifecycle as 
+                                an embedded partner.
+                            </p>
+                            <p>
+                                That includes everything from <span className="font-bold">rough-in and termination </span>
+                                to <span>technology installation </span>whether it's for <span>net-new stores, remodels, or multi-site relocations.</span> 
+                            </p>
+                        </div>
                         <p className="font-bold">
                             No gaps. No handoffs. Just seamless execution from end to end.
                         </p>
@@ -103,15 +109,6 @@ export default function ServicesPage() {
                     }
                 />
             </section>
-
-            {/* From POS provider */}
-            {/* <section className="w-full flex justify-center bg-brand-black text-brand-black">
-                <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
-                    <div className="w-[80%] mx-auto flex flex-col gap-5">
-                        
-                    </div>
-                </div>
-            </section> */}
 
             {/* Service stats */}
             <section className="w-full flex justify-center mx-auto mb-14 bg-brand-black text-brand-black">
@@ -455,7 +452,7 @@ export default function ServicesPage() {
 
                         <div className="w-full lg:w-[70%] mx-auto my-16 flex flex-col items-center gap-2">
                             <h2 className="w-full">
-                                National Technician Network. Consistency At Scale
+                                National Technician Network. Consistency at Scale
                             </h2>
                             <Image
                             className="h-auto object-contain rounded-3xl" 
@@ -699,35 +696,39 @@ export default function ServicesPage() {
             {/* Ready to talk */}
             <section className="w-full py-14 my-5 bg-brand-black text-white">
                 <div className="w-[80%] mx-auto flex flex-col gap-4">
-                    <h2>Ready To Talk Services?</h2>
+                    <h2>Ready to Talk Services?</h2>
                     <p>
                         Managing a rollout, retiring legacy tech, or overhauling operations? We 
                         bring the structure to make it seamless.
                     </p>
-                    <p>
-                        Our lifecycle service model delivers <span className="font-semibold">up to 40% cost savings </span>
-                        through strategic sourcing, refurbishment, trade-ins, and extended asset life without 
-                        sacrificing performance or reliability.
-                    </p>
-                    <p>
-                        With 50 years of operational excellence, a nationwide service network, and 
-                        deep integration across systems and teams, IW supports enterprise leaders who 
-                        need execution without compromise.
-                    </p>
-                    <p>
-                        We work with <span className="font-semibold">Fortune 500s across retail, grocery, pharmacy, QSR, 
-                        distribution, and convenience </span> delivering outcomes that matter: 
-                        <span className="font-semibold"> Cost-efficiency. Speed. Reliability. Visibility. Sustainability.</span>
-                    </p>
+                    <div>
+                        <p>
+                            Our lifecycle service model delivers <span className="font-semibold">up to 40% cost savings </span>
+                            through strategic sourcing, refurbishment, trade-ins, and extended asset life without 
+                            sacrificing performance or reliability.
+                        </p>
+                        <p>
+                            With 50 years of operational excellence, a nationwide service network, and 
+                            deep integration across systems and teams, IW supports enterprise leaders who 
+                            need execution without compromise.
+                        </p>
+                        <p>
+                            We work with <span className="font-semibold">Fortune 500s across retail, grocery, pharmacy, QSR, 
+                            distribution, and convenience </span> delivering outcomes that matter: 
+                            <span className="font-semibold"> Cost-efficiency. Speed. Reliability. Visibility. Sustainability.</span>
+                        </p>
+                    </div>
                     <h3 className="font-semibold">
-                        Have hardware sitting idle?
+                        Have Hardware Sitting Idle?
                     </h3>
-                    <p>
-                        We'll reclaim, report, and reintergrate it (with full asset visibility).
-                    </p>
-                    <p>
-                        Whether you're scaling, consolidating, or refreshing your tech stack. Let's talk.
-                    </p>
+                    <div>
+                        <p>
+                            We'll reclaim, report, and reintergrate it (with full asset visibility).
+                        </p>
+                        <p>
+                            Whether you're scaling, consolidating, or refreshing your tech stack. Let's talk.
+                        </p>
+                    </div>
                     <LinkButton href="/get-in-touch" label="Let's Skip The RFP Theater" subLabel="Talk to the team that's already built to deliver" target="_blank" variant="light" />
                 </div>
             </section> {/* end of  Ready to talk */}

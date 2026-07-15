@@ -33,7 +33,7 @@ export default async function NewsPage() {
             <section className="w-full my-16 text-brand-black">
                 <div className="w-[70%] mx-auto flex flex-col gap-10">
                     <h2 className="">
-                        Explore the latest news
+                        Explore the Latest News
                     </h2>
                     <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                         {news.map((news) => (

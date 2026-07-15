@@ -44,7 +44,7 @@ export default function ProcurementPage() {
                     <div className="w-[80%] mx-auto flex flex-col gap-10">
                         <div className="w-full flex flex-col gap-2">
                             <h1 className="w-fit border-b-4 border-brand-aqua px-2 pl-0">Procurement</h1>
-                            <p className="">
+                            <p className="font-semibold">
                                 Built for enterprise complexity balancing cost efficiency, supply chain, 
                                 agility, and ESG accountability.
                             </p>
