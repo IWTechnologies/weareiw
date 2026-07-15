@@ -198,7 +198,7 @@ export default function OurStory() {
                                     <div className="growthGrit w-full flex flex-col lg:flex-row gap-10">
                                         <div data-aos="fade-right"
                                         className="title w-full lg:w-1/2 h-fit flex flex-col items-center p-5 lg:mr-[5.5%] 
-                                        rounded-r-full bg-brand-black text-white">
+                                        rounded-r-full bg-brand-black text-white text-center">
                                             <div className="text-5xl">
                                                 <strong>1980s-1990s</strong>
                                             </div>
@@ -422,7 +422,7 @@ export default function OurStory() {
                                     <div className="w-full lg:w-1/2 h-fit flex flex-col items-center lg:mr-[5.5%] gap-10">
                                         <div data-aos="fade-right"
                                         className="title w-full h-fit flex flex-col items-center p-5 
-                                        rounded-r-full bg-brand-black text-white">
+                                        rounded-r-full bg-brand-black text-white text-center">
                                             <div className="text-5xl">
                                                 <strong>2020</strong>
                                             </div>
