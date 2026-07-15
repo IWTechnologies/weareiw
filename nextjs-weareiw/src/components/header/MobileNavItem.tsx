@@ -18,7 +18,10 @@ export default function MobileNavItem({ label, href, submenu, onNavigate }: Mobi
     return (
         <div>
             <div className="flex items-center justify-between px-6 py-2">
-                <Link href={href} onClick={onNavigate} 
+                <Link 
+                href={href}
+                prefetch={false}
+                onClick={onNavigate} 
                 className={`${isActive ? "text-brand-aqua" : "text-white hover:text-brand-aqua"}
                 p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua`}>
                     {label}
@@ -55,7 +58,9 @@ export default function MobileNavItem({ label, href, submenu, onNavigate }: Mobi
                 {submenu!.map((item) => (
                     <li key={item.href}>
                     <Link
-                        href={item.href} onClick={onNavigate}
+                        href={item.href}
+                        prefetch={false} 
+                        onClick={onNavigate}
                         className="w-[99%] block pl-2 py-2 text-white hover:text-brand-aqua
                         focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua"
                     >

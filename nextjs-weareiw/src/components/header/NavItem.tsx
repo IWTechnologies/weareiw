@@ -26,6 +26,7 @@ export default function NavItem({ label, href, isExternal, submenu }: NavItemPro
         >
             <Link
             href={href}
+            prefetch={false}
             target={isExternal ? "_blank" : undefined}
             rel={isExternal ? "noopener noreferrer" : undefined}
             className={`py-5 hover:cursor-pointer 
@@ -41,6 +42,7 @@ export default function NavItem({ label, href, isExternal, submenu }: NavItemPro
                         <li key={item.href} className="py-[0.5em] px-[1em]">
                             <Link
                             href={item.href}
+                            prefetch={false}
                             target={item.isExternal ? "_blank" : undefined}
                             rel={item.isExternal ? "noopener noreferrer" : undefined}
                             className="text-brand-black hover:text-brand-aqua">
