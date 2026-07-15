@@ -141,7 +141,7 @@ export default async function ProductsPage() {
             <section className="w-full py-14 bg-brand-black">
                 <div className="w-[70%] md:w-[50%] flex flex-col mx-auto gap-4 text-white">
                     <h2 className="w-fit border-b-4 border-brand-aqua">
-                        Don't see what you're looking for?
+                        Don't See What You're Looking For?
                     </h2>
                     <p>
                         Our inventory is always changing. If you can't find what you're looking for on our site, 
