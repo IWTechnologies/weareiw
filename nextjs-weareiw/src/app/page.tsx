@@ -82,7 +82,7 @@ export default function IndexPage() {
             }
             link={{
               href: "/products",
-              label: "Explore hardware",
+              label: "Explore Hardware",
               variant: "dark",
             }}
           />
@@ -100,7 +100,7 @@ export default function IndexPage() {
             }
             link={{
               href: "/services",
-              label: "See how we support the lifecycle",
+              label: "See How We Support The Lifecycle",
               variant: "dark",
             }}
           />
