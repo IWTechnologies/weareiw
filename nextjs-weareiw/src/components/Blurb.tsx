@@ -25,6 +25,7 @@ interface BlurbProps {
         href: string;
         label: string;
         variant?: LinkVariant;
+        prefetch?: boolean;
     };
     reverse?: boolean;
     rounded?: boolean;

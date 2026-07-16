@@ -58,6 +58,7 @@ export default function CareersPage() {
                         href: "/opportunities",
                         label: "Explore Opportunities",
                         variant: "light",
+                        prefetch: false
                     }}
                 />
             </section>
@@ -261,6 +262,7 @@ export default function CareersPage() {
                             href: "/opportunities",
                             label: "Explore Opportunities",
                             variant: "dark",
+                            prefetch: false
                         }}
                     />
                 </div>

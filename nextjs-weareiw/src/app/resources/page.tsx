@@ -68,6 +68,7 @@ export default async function ResourcesPage() {
                                         href: `${card.url}`,
                                         label: "Read more",
                                         variant: "dark",
+                                        prefetch: false
                                     }}
                                 />
                             </div>

@@ -12,6 +12,7 @@ type HeroProps = {
             href: string;
             label: string;
             variant?: LinkVariant;
+            prefetch?: boolean;
         };
 };
 
