@@ -103,6 +103,7 @@ export default function IndexPage() {
               href: "/services",
               label: "See How We Support The Lifecycle",
               variant: "dark",
+              prefetch: false
             }}
           />
         </div>
