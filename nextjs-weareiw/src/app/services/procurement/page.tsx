@@ -106,7 +106,7 @@ export default function ProcurementPage() {
                         </div>
 
                         <div className="w-full flex flex-col items-center mx-auto my-5">
-                                <LinkButton href="/products" label="Explore Smarter Sourcing" subLabel="Up to 40% cost savings, zero compromise" target="_blank" variant="dark" />
+                                <LinkButton href="/products" label="Explore Smarter Sourcing" subLabel="Up to 40% cost savings, zero compromise" target="_blank" variant="dark" prefetch={false} />
                         </div>
                     </div>
                 </div>

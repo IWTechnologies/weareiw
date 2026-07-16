@@ -66,8 +66,7 @@ export default function IndexPage() {
             Start with Hardware. Or Start with Services. We’re Built to Scale with You.
           </h2>
         </div>
-        <div className="w-[80%] mx-auto flex flex-col items-center gap-8
-        lg:flex-row lg:justify-center lg:items-stretch">
+        <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card 
             imageSrc="/View-our-products-Moody-blue.png"
             imageAlt="Blue tinted view our products card image"
@@ -83,8 +82,9 @@ export default function IndexPage() {
             }
             link={{
               href: "/products",
-              label: "Explore hardware",
+              label: "Explore Hardware",
               variant: "dark",
+              prefetch: false
             }}
           />
           <Card 
@@ -101,8 +101,9 @@ export default function IndexPage() {
             }
             link={{
               href: "/services",
-              label: "See how we support the lifecycle",
+              label: "See How We Support The Lifecycle",
               variant: "dark",
+              prefetch: false
             }}
           />
         </div>

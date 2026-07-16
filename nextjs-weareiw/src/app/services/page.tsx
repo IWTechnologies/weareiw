@@ -179,6 +179,7 @@ export default function ServicesPage() {
                 <div className="container mx-auto flex justify-center">
                     <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                         <Link href="/services/procurement"
+                        prefetch={false}
                         className="group w-full flex items-stretch
                         border-2 border-transparent rounded-md col-span-2
                         transition delay-150 duration-300 ease-in-out 
@@ -212,6 +213,7 @@ export default function ServicesPage() {
                         </Link>
 
                         <Link href="/services/deployment"
+                        prefetch={false}
                         className="group w-full flex items-stretch
                         border-2 border-transparent rounded-md col-span-2
                         transition delay-150 duration-300 ease-in-out 
@@ -246,6 +248,7 @@ export default function ServicesPage() {
                         </Link>
 
                         <Link href="/services/maintenance"
+                        prefetch={false}
                         className="group w-full flex items-stretch
                         border-2 border-transparent rounded-md col-span-2 lg:col-span-1
                         transition delay-150 duration-300 ease-in-out 
@@ -279,6 +282,7 @@ export default function ServicesPage() {
                         </Link>
 
                         <Link href="/services/low-voltage"
+                        prefetch={false}
                         className="group w-full flex items-stretch
                         border-2 border-transparent rounded-md col-span-2
                         transition delay-150 duration-300 ease-in-out 
@@ -322,6 +326,7 @@ export default function ServicesPage() {
                         </Link>
 
                         <Link href="/services/disposition"
+                        prefetch={false}
                         className="group w-full flex items-stretch
                         border-2 border-transparent rounded-md col-span-2 lg:col-span-1
                         transition delay-150 duration-300 ease-in-out 

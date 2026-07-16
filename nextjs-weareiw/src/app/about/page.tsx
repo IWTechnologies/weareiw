@@ -452,6 +452,7 @@ export default function AboutPage() {
                             href: "/opportunities",
                             label: "Explore Open Roles",
                             variant: "light",
+                            prefetch: false
                         }}
                         rounded
                         textColor="text-white"
