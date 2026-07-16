@@ -12,6 +12,7 @@ type CardProps = {
             href: string;
             label: string;
             variant?: LinkVariant;
+            prefetch?: boolean;
         };
     bgColor?: "bg-white" | "bg-brand-black";
 };

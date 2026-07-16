@@ -84,6 +84,7 @@ export default function IndexPage() {
               href: "/products",
               label: "Explore Hardware",
               variant: "dark",
+              prefetch: false
             }}
           />
           <Card 
