@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PromoBar from "@/components/PromoBar";
 import "./globals.css";
 import AOS from "@/components/AOS";
+import Script from "next/script";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -20,6 +21,8 @@ const ibmPlexSerif = IBM_Plex_Serif({
   variable: "--font-ibm",
   weight: ["400", "500", "600", "700"],
 });
+
+const umamiID = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
 
 export const metadata: Metadata = {
   title: "IW Technologies - Your Enterprise Solution Partner",
@@ -68,6 +71,11 @@ export default function RootLayout({
             label: "Get In Touch",
             variant: "dark",
           }}
+          />
+          <Script
+            src="https://cloud.umami.is/script.js" 
+            data-website-id={umamiID}
+            strategy="afterInteractive" 
           />
       </body>
     </html>
