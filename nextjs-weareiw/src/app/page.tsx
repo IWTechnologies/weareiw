@@ -81,7 +81,7 @@ export default function IndexPage() {
               </>
             }
             link={{
-              href: "/products",
+              href: "/products#pos",
               label: "Explore Hardware",
               variant: "dark",
               prefetch: false
