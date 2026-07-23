@@ -74,7 +74,7 @@ export default function IndexPage() {
             imageHeight={432}
             text={
               <>
-                <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Hardware that fits into a bigger picture</h3>
+                <h3 className="pl-2.5 border-l-4 border-brand-navy text-brand-navy">Hardware that fits into a bigger picture</h3>
                 <p className="font-medium">Hardware decisions shouldn't create downstream problems.</p>
                 <p>We source new and refurbished POS hardware that’s designed to deploy cleanly, 
                 operate reliably, and integrate into a long-term lifecycle.</p>
@@ -94,7 +94,7 @@ export default function IndexPage() {
             imageHeight={375}
             text={
               <>
-                <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Services built for life after install</h3>
+                <h3 className="pl-2.5 border-l-4 border-brand-navy text-brand-navy">Services built for life after install</h3>
                 <p className="font-medium">Installing POS is straightforward. Keeping it running at scale is where complexity shows up.</p>
                 <p>Our services exist to take that weight off your teams whether you need support in one area or end-to-end.</p>
               </>
