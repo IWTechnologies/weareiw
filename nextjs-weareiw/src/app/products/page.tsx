@@ -3,6 +3,7 @@ import { BASE_URL } from "@/sanity/lib/constants";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
+import Hubspot from "@/components/forms/Hubspot";
 import ContactUs from "@/components/forms/ContactUs";
 
 import { client } from "@/sanity/lib/client";
@@ -138,8 +139,8 @@ export default async function ProductsPage() {
                 </div>
             </section>
 
-            <section className="w-full py-14 bg-brand-black">
-                <div className="w-[70%] md:w-[50%] flex flex-col mx-auto gap-4 text-white">
+            <section className="w-full py-14">
+                <div className="w-[70%] md:w-[50%] flex flex-col mx-auto gap-4 text-brand-black">
                     <h2 className="w-fit border-b-4 border-brand-aqua">
                         Don't See What You're Looking For?
                     </h2>
@@ -149,7 +150,8 @@ export default async function ProductsPage() {
                         in the midwest and the most skilled craftsmen on our staff, we can find or make anything 
                         to suit your specific situation.
                     </p>
-                    <ContactUs />
+                    <Hubspot />
+                    {/* <ContactUs /> */}
                 </div>
             </section>
         </div>

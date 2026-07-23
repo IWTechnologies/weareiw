@@ -77,6 +77,10 @@ export default function RootLayout({
             data-website-id={umamiID}
             strategy="afterInteractive" 
           />
+          <Script 
+            src="https://js.hsforms.net/forms/embed/49643826.js" 
+            strategy="afterInteractive" 
+          />
       </body>
     </html>
   );
