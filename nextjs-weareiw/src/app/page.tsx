@@ -110,8 +110,8 @@ export default function IndexPage() {
       </section>
 
       <section className="w-[80%] my-15 mx-auto">
-        <div className="flex flex-col items-center">
-          <div className="w-[75%] text-brand-black text-center">
+        <div className="w-full flex flex-col items-center">
+          <div className="max-w-381 w-[75%] text-brand-black text-center">
             <h2 className="">
               Built for Enterprise Environments. Proven at Scale.
             </h2>
@@ -119,7 +119,7 @@ export default function IndexPage() {
               Trusted by Operators Across Retail, Grocery, QSR, Hospitality, Convenience, and Distribution.
             </h3>
           </div>
-          <div className="w-full lg:w-[80%] my-5 mt-10">
+          <div className="max-w-381 w-full lg:w-[80%] my-5 mt-10">
             <LogoSlider logos={customerLogos} speed={75} />
           </div>
         </div>
@@ -219,8 +219,8 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="w-[80%] my-15 mx-auto">
-        <div className="flex flex-col items-center">
+      <section className="w-full my-15 mx-auto">
+        <div className="max-w-381 w-[80%] mx-auto flex flex-col items-center">
           <div className="text-brand-black text-center">
             <h2>
               Our Partners
