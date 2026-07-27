@@ -56,7 +56,7 @@ export default async function ProductDetailPage({ params }: { params: { slug: st
         <div>
             <section className="w-full py-14 text-brand-black">
                 {/* put the below structure within a flex-col div */}
-                <div className="w-[70%] mx-auto flex flex-col gap-3">
+                <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-3">
                     <div className="w-full flex flex-col gap-10">
                         <a href="/products#pos"
                         className="w-fit h-fit px-4 py-2 text-center 
