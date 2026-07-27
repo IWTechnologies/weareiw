@@ -67,7 +67,7 @@ export default function OurStory() {
 
             <section className="w-full flex justify-center bg-brand-black">
                 <div className="w-full py-28 mt-14 rounded-t-3xl bg-background">
-                    <div className="w-[70%] mx-auto flex flex-col">
+                    <div className="max-w-333.25 w-[70%] mx-auto flex flex-col">
                         <div className="border-b-2 border-brand-black p-2">
                             <h2 data-aos="fade-down"  className="w-full text-brand-black">
                             THE BEGINNING

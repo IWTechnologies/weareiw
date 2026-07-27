@@ -52,7 +52,7 @@ export default async function OurTeamPage() {
             </section>
 
             <section className="w-full py-32 rounded-t-3xl bg-background">
-                <div className="w-[90%] sm:w-[60%] lg:w-[70%] mx-auto flex flex-col gap-5">
+                <div className="max-w-333.25 w-[90%] sm:w-[60%] lg:w-[70%] mx-auto flex flex-col gap-5">
                     <TeamGrid teamMembers={teamMembers} />
                 </div>
             </section>
