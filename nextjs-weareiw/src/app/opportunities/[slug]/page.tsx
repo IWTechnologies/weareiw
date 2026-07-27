@@ -65,7 +65,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
         return (
             <div>
                 <section className="w-full py-16 text-brand-black">
-                    <div className="w-[70%] mx-auto flex flex-col gap-4">
+                    <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-4">
                         <h1 className="w-fit border-b-4 border-brand-aqua pb-4 mb-4">
                             Current {category.title} Opportunities
                         </h1>
@@ -79,7 +79,7 @@ export default async function CategoryPage({ params }: { params: { slug: string 
     return (
         <div>
             <section className="w-full py-16 text-brand-black">
-                <div className="w-[70%] mx-auto flex flex-col gap-4">
+                <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-4">
                     <h1 className="w-fit border-b-4 border-brand-aqua pb-4 mb-4">
                         Current {category.title} Opportunities
                     </h1>

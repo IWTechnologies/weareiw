@@ -58,7 +58,7 @@ export default async function JobDetailPage({ params }: { params: { slug: string
         <div>
             <section className="w-full py-14 text-brand-black">
                 {/* put the below structure within a flex-col div */}
-                <div className="w-[70%] mx-auto flex flex-col gap-3">
+                <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-3">
                     <div className="w-fit flex flex-col gap-5">
                         <a href={`/opportunities/${job.categorySlug}`}
                         className="w-fit h-fit px-4 py-2 text-center 
@@ -104,7 +104,7 @@ export default async function JobDetailPage({ params }: { params: { slug: string
             </section>
 
             <section className="w-full py-14 bg-brand-black">
-                <div className="w-[70%] md:w-[50%] flex flex-col mx-auto gap-4 text-white">
+                <div className="max-w-333.25 w-[70%] md:w-[50%] flex flex-col mx-auto gap-4 text-white">
                     <h2 className="w-fit border-b-4 border-brand-aqua">
                         Apply Now
                     </h2>
