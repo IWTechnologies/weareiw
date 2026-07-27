@@ -68,7 +68,7 @@ export default function IndexPage() {
         </div>
         <div className="max-w-7xl w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card 
-            imageSrc="/View-our-products-Moody-blue.png"
+            imageSrc="/hardware-image.webp"
             imageAlt="Blue tinted view our products card image"
             imageWidth={663}
             imageHeight={432}
@@ -88,7 +88,7 @@ export default function IndexPage() {
             }}
           />
           <Card 
-            imageSrc="/Services-Moody-Blue.png"
+            imageSrc="/services-image.webp"
             imageAlt="Blue tinted Services card image"
             imageWidth={669}
             imageHeight={375}
@@ -191,7 +191,7 @@ export default function IndexPage() {
               <Blurb 
               media={{
                 type: "image",
-                src: "/Team-Moody-Blue-1.webp",
+                src: "/one-partner-full-accountability.webp",
                 alt: "Blue tinted image of IW team in meeting",
                 width: 512,
                 height: 342,
