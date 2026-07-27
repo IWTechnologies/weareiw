@@ -31,7 +31,7 @@ export default async function BlogPage() {
     return (
         <div>
             <section className="w-full my-16 text-brand-black">
-                <div className="w-[70%] mx-auto flex flex-col gap-10">
+                <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-10">
                     <h2 className="">
                         Explore our Blog
                     </h2>

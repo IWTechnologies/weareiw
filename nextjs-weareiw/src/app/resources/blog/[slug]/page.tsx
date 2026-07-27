@@ -119,7 +119,7 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
     return (
         <div>
             <section className="w-full my-16 text-brand-black">
-                <div className="w-[70%] mx-auto flex flex-col gap-10">
+                <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-10">
                     <a href="/resources/blog"
                         className="w-fit h-fit px-4 py-2 text-center 
                         border-3 border-brand-black bg-brand-black text-white rounded-md
