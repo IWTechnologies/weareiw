@@ -31,7 +31,7 @@ export default async function FaqPage() {
     return (
         <div>
             <section className="w-full my-16 text-brand-black">
-                <div className="w-[70%] mx-auto flex flex-col gap-10">
+                <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-10">
                     <h2 className="">
                         Frequently Asked Questions
                     </h2>
