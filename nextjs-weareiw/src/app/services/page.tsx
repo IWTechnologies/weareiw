@@ -365,7 +365,7 @@ export default function ServicesPage() {
 
             {/* How we do it */}
             <section className="w-full py-14 my-5 text-brand-black section-diagonal">
-                <div className="w-[80%] mx-auto flex flex-col gap-2">
+                <div className="max-w-7xl w-[80%] mx-auto flex flex-col gap-2">
                     <h2>How We Do It</h2>
                     <h3>Smart Systems. Scalable Coverage. Transparent Execution.</h3>
                     <p>
@@ -524,7 +524,7 @@ export default function ServicesPage() {
             </section> {/*end of How we do it */}
 
             <section className="w-[90%] lg:w-[80%] flex justify-center mx-auto mb-14 text-brand-black">
-                <div className="w-full sm:w-[80%] flex flex-col items-center gap-4">
+                <div className="max-w-7xl w-full sm:w-[80%] flex flex-col items-center gap-4">
                     <div className="w-full lg:w-[90%] flex">
                         <h2>
                             What's In It For You
@@ -540,7 +540,7 @@ export default function ServicesPage() {
 
             {/* Measurable Outcomes */}
             <section className="w-full py-14 my-5 text-brand-black">
-                <div className="w-[80%] mx-auto flex flex-col gap-2">
+                <div className="max-w-7xl w-[80%] mx-auto flex flex-col gap-2">
                     <h2>Measurable Outcomes. Strategic Advantage</h2>
                     <p>
                         We don't just deliver services. We drive operational, financial, and 
@@ -643,7 +643,7 @@ export default function ServicesPage() {
 
             {/* Sustainability */}
             <section className="w-full py-14 my-5 text-brand-black">
-                <div className="w-[80%] mx-auto flex flex-col gap-2">
+                <div className="max-w-7xl w-[80%] mx-auto flex flex-col gap-2">
                     <h2>Sustainability Isn't Strategy. It's Our Standard</h2>
                     <h3>Circular by Design. Measured by Impact.</h3>
                     <p>
@@ -700,7 +700,7 @@ export default function ServicesPage() {
 
             {/* Ready to talk */}
             <section className="w-full py-14 my-5 bg-brand-black text-white">
-                <div className="w-[80%] mx-auto flex flex-col gap-4">
+                <div className="max-w-7xl w-[80%] mx-auto flex flex-col gap-4">
                     <h2>Ready to Talk Services?</h2>
                     <p>
                         Managing a rollout, retiring legacy tech, or overhauling operations? We 

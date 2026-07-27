@@ -19,17 +19,20 @@ export default function HomeHero({ link }: HeroProps) {
             <div className="absolute inset-0 z-10 bg-linear-to-t from-background to-transparent"></div>
 
             <div className="relative z-20 min-h-dvh w-[80%]
-            sm:w-1/2 mx-auto flex flex-col items-start justify-center
+            sm:w-1/2 md:w-3/4 mx-auto flex flex-col items-center justify-center
             text-brand-black">
-                <h1 className="pb-5">
-                Your End-to-End Point of Sale Partner
-                </h1>
-                <h3 className="pb-5">
-                    One partner accountable for POS from install to retirement.
-                    <br />
-                    No handoffs. Clear ownership.
-                </h3>
-                {link && <LinkButton {...link} />}
+                <div className="text-left">
+                    <h1 className="pb-5">
+                        Your End-to-End Point of Sale Partner
+                    </h1>
+                    <h3 className="pb-5">
+                        One partner accountable for POS from install to retirement.
+                        <br />
+                        No handoffs. Clear ownership.
+                    </h3>
+                    {link && <LinkButton {...link} />}
+                </div>
+                
             </div>
         </div>
     )

@@ -66,7 +66,7 @@ export default function IndexPage() {
             Start with Hardware. Or Start with Services. We’re Built to Scale with You.
           </h2>
         </div>
-        <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="max-w-7xl w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card 
             imageSrc="/View-our-products-Moody-blue.png"
             imageAlt="Blue tinted view our products card image"

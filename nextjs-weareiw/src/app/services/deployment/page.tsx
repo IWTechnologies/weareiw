@@ -41,7 +41,7 @@ export default function DeploymentPage() {
 
             <section className="w-full flex justify-center bg-brand-black text-brand-black">
                 <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
-                    <div className="w-[80%] mx-auto flex flex-col gap-10">
+                    <div className="max-w-381 w-[80%] mx-auto flex flex-col gap-10">
                         <div className="w-full flex flex-col gap-2">
                             <h1 className="w-fit border-b-4 border-brand-aqua px-2 pl-0">Deployment</h1>
                             <p className="font-semibold">
