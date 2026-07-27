@@ -80,7 +80,7 @@ export default function AboutPage() {
 
             <section className="w-full flex justify-center bg-brand-black text-brand-black">
                 <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
-                    <div className="w-[80%] mx-auto flex flex-col gap-5">
+                    <div className="max-w-333.25 w-[80%] mx-auto flex flex-col gap-5">
                         <h2 className="w-fit border-b-4 border-brand-aqua px-2 pl-0">What We Do</h2>
                         <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
                         <p>
@@ -105,12 +105,12 @@ export default function AboutPage() {
 
             <section className="w-[80%] mx-auto mb-14 text-brand-black">
                 <div className="relative w-full h-full flex flex-col items-center gap-4">
-                    <div className="w-full flex">
+                    <div className="max-w-381 w-full flex">
                         <h2>
                             Industries We Serve
                         </h2>
                     </div>
-                    <div className="relative w-full h-96 lg:h-80 
+                    <div className="relative max-w-381 w-full h-96 lg:h-80 
                     grid grid-cols-1 md:grid-cols-2 lg:grid-cols-none lg:flex lg:flex-row rounded-2xl overflow-hidden">
                         {industries.map((industry) => (
                             <div key={industry.label}
@@ -140,7 +140,7 @@ export default function AboutPage() {
             </section>
 
             <section className="w-[90%] lg:w-[80%] flex justify-center mx-auto mb-14 text-brand-black">
-                <div className="w-full sm:w-[80%] flex flex-col items-center gap-4">
+                <div className="max-w-7xl w-full sm:w-[80%] flex flex-col items-center gap-4">
                     <div className="w-full lg:w-[90%] flex">
                         <h2>
                             What's In It For You
@@ -156,7 +156,7 @@ export default function AboutPage() {
 
             <section id="hardware"
             className="w-[80%] mx-auto mb-15 flex flex-col items-center gap-5">
-                <div className="w-full flex flex-col gap-1 text-brand-black">
+                <div className="max-w-381 w-full flex flex-col gap-1 text-brand-black">
                     <h2>
                     Guided by Our Values
                     </h2>
@@ -165,7 +165,7 @@ export default function AboutPage() {
                     most comprehensive enterprise solutions in the industry.
                     </p>
                 </div>
-                <div className="w-full grid grid-cols-1 gap-8
+                <div className="max-w-381 w-full grid grid-cols-1 gap-8
                 lg:grid-cols-2 xl:grid-cols-4 items-stretch">
                     <Card
                     text={

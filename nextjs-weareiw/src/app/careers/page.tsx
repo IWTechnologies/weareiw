@@ -66,7 +66,7 @@ export default function CareersPage() {
             <section className="w-full flex justify-center bg-brand-black text-brand-black">
                 <div className="w-full py-14 mt-4 rounded-t-3xl bg-background">
                     <div className="container mx-auto flex justify-center">
-                        <div className="w-[90%] flex flex-col gap-2">
+                        <div className="max-w-333.25 w-[90%] flex flex-col gap-2">
                             <h2 className="">
                                 Every Aspect of Our Business Thrives Because of People.
                             </h2>
@@ -148,13 +148,13 @@ export default function CareersPage() {
                 
             </section>
 
-            <section className="relative z-20 w-[90%] mx-auto py-14 flex flex-col items-center gap-5">
-                <div className="w-full flex flex-col gap-1 text-brand-black">
+            <section className="relative z-20 w-full mx-auto py-14 flex flex-col items-center gap-5">
+                <div className="max-w-333.25 w-[90%] flex flex-col gap-1 text-brand-black">
                     <h2 className="">
                         Core Values We Live by
                     </h2>
                 </div>
-                <div className="w-full grid grid-cols-1 gap-8
+                <div className="max-w-333.25 w-[90%] grid grid-cols-1 gap-8
                 md:grid-cols-2 items-stretch">
                     <Card
                         text={
@@ -208,7 +208,7 @@ export default function CareersPage() {
             </section>
 
             <section className="w-full py-20 bg-brand-black">
-                <div className="w-[90%] mx-auto flex flex-col gap-10">
+                <div className="max-w-333.25 w-[90%] mx-auto flex flex-col gap-10">
                         <h2 className="w-[80%] text-white">
                             The Employee Perks and Benefits at IW Technologies are Something 
                             We Can't Help but Brag About:
@@ -238,13 +238,13 @@ export default function CareersPage() {
                 <div className="absolute inset-0 z-10 opacity-50">
                     <img src="/IWT_Logomark_Navy.png" alt="White IW logo displayed on section background" />
                 </div>
-                <div className="relative w-[80%] mx-auto z-20">
+                <div className="relative max-w-7xl w-[80%] mx-auto z-20">
                     <PhotoGrid />
                 </div>
             </section>
 
             <section className="w-full py-14">
-                <div className="w-[90%] lg:w-[60%] mx-auto">
+                <div className="max-w-7xl w-[90%] lg:w-[60%] mx-auto">
                     <Card
                         text={
                             <>

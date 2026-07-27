@@ -54,7 +54,7 @@ export default async function OpportunitiesPage() {
 
             <section className="w-full bg-brand-black">
                 <div className="w-full py-16 rounded-t-3xl bg-background">
-                    <div className="w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div className="max-w-333.25 w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {categories.map((category) => (
                             category.jobCount > 0 ? (
                                 <Link key={category._id} 
@@ -99,7 +99,7 @@ export default async function OpportunitiesPage() {
             </section>
 
             <section className="w-full py-16 bg-brand-black">
-                <div className="w-[60%] mx-auto flex flex-col items-center gap-5">
+                <div className="max-w-333.25 w-[60%] mx-auto flex flex-col items-center gap-5">
                     <h2 className="text-white">
                         Not sure where you fit?
                     </h2>

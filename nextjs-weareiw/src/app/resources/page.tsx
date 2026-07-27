@@ -31,7 +31,7 @@ export default async function ResourcesPage() {
     return (
         <div>
             <section className="w-full my-16 text-brand-black">
-                <div className="w-[70%] py-16 mx-auto flex flex-col items-center gap-10
+                <div className="max-w-333.25 w-[70%] py-16 mx-auto flex flex-col items-center gap-10
                 border-b-2 border-brand-black/50">
                     <h1>IW Resource Hub</h1>
                     <p>
@@ -42,7 +42,7 @@ export default async function ResourcesPage() {
             </section>
 
             <section className="w-full my-16 text-brand-black">
-                <div className="w-[70%] mx-auto flex flex-col gap-10">
+                <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-10">
                     <h2 className="">
                         Explore our Resources
                     </h2>

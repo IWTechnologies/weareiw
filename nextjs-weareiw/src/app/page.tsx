@@ -66,35 +66,35 @@ export default function IndexPage() {
             Start with Hardware. Or Start with Services. We’re Built to Scale with You.
           </h2>
         </div>
-        <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="max-w-7xl w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card 
-            imageSrc="/View-our-products-Moody-blue.png"
+            imageSrc="/hardware-image.webp"
             imageAlt="Blue tinted view our products card image"
             imageWidth={663}
             imageHeight={432}
             text={
               <>
-                <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Hardware that fits into a bigger picture</h3>
+                <h3 className="pl-2.5 border-l-4 border-brand-navy text-brand-navy">Hardware that fits into a bigger picture</h3>
                 <p className="font-medium">Hardware decisions shouldn't create downstream problems.</p>
                 <p>We source new and refurbished POS hardware that’s designed to deploy cleanly, 
                 operate reliably, and integrate into a long-term lifecycle.</p>
               </>
             }
             link={{
-              href: "/products",
+              href: "/products#pos",
               label: "Explore Hardware",
               variant: "dark",
               prefetch: false
             }}
           />
           <Card 
-            imageSrc="/Services-Moody-Blue.png"
+            imageSrc="/services-image.webp"
             imageAlt="Blue tinted Services card image"
             imageWidth={669}
             imageHeight={375}
             text={
               <>
-                <h3 className="pl-2.5 border-l-4 border-brand-aqua text-brand-aqua">Services built for life after install</h3>
+                <h3 className="pl-2.5 border-l-4 border-brand-navy text-brand-navy">Services built for life after install</h3>
                 <p className="font-medium">Installing POS is straightforward. Keeping it running at scale is where complexity shows up.</p>
                 <p>Our services exist to take that weight off your teams whether you need support in one area or end-to-end.</p>
               </>
@@ -110,8 +110,8 @@ export default function IndexPage() {
       </section>
 
       <section className="w-[80%] my-15 mx-auto">
-        <div className="flex flex-col items-center">
-          <div className="w-[75%] text-brand-black text-center">
+        <div className="w-full flex flex-col items-center">
+          <div className="max-w-381 w-[75%] text-brand-black text-center">
             <h2 className="">
               Built for Enterprise Environments. Proven at Scale.
             </h2>
@@ -119,7 +119,7 @@ export default function IndexPage() {
               Trusted by Operators Across Retail, Grocery, QSR, Hospitality, Convenience, and Distribution.
             </h3>
           </div>
-          <div className="w-full lg:w-[80%] my-5 mt-10">
+          <div className="max-w-381 w-full lg:w-[80%] my-5 mt-10">
             <LogoSlider logos={customerLogos} speed={75} />
           </div>
         </div>
@@ -191,7 +191,7 @@ export default function IndexPage() {
               <Blurb 
               media={{
                 type: "image",
-                src: "/Team-Moody-Blue-1.webp",
+                src: "/one-partner-full-accountability.webp",
                 alt: "Blue tinted image of IW team in meeting",
                 width: 512,
                 height: 342,
@@ -219,8 +219,8 @@ export default function IndexPage() {
         </div>
       </section>
 
-      <section className="w-[80%] my-15 mx-auto">
-        <div className="flex flex-col items-center">
+      <section className="w-full my-15 mx-auto">
+        <div className="max-w-381 w-[80%] mx-auto flex flex-col items-center">
           <div className="text-brand-black text-center">
             <h2>
               Our Partners

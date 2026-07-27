@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BASE_URL } from "@/sanity/lib/constants";
+import Hubspot from "@/components/forms/Hubspot"; 
 import ContactUs from "@/components/forms/ContactUs";
 
 export const metadata: Metadata = {
@@ -35,7 +36,12 @@ export default async function GetInTouchPage() {
                         </p>
                         <p className="text-sm text-brand-black/70">Fields with an <span className="text-red-600">*</span> are required for submitting this form.</p>
                     </div>
-                    <ContactUs buttonColor="bg-brand-black" buttonTextColor="text-white" buttonTextHover="text-brand-black" buttonBorderColor="border-brand-black" />
+                    <Hubspot />
+                    {/* <ContactUs 
+                    buttonColor="bg-brand-black" 
+                    buttonTextColor="text-white" 
+                    buttonTextHover="text-brand-black" 
+                    buttonBorderColor="border-brand-black" /> */}
                 </div>
             </section>
         </div>
