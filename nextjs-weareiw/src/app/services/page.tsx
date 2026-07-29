@@ -148,23 +148,21 @@ export default function ServicesPage() {
                         text={
                             <>
                             <h3>What We Do</h3>
-                            <h4 className="font-semibold">Comprehensive Services, Built for Complex Environments</h4>
+                            <h4 className="font-semibold">Five services. One team accountable for the whole hardware lifecycle.</h4>
                             <p>
-                                We operate as an extension of your infrastructure and operations team managing every phase 
-                                of the IT asset lifecyle with speed, precision, and accountability.
+                                We run all five stages of your POS and IT hardware lifecycle: procurement, deployment, low-voltage cabling, 
+                                maintenance, and disposition as one team. One group owns the hardware from the day it's sourced to the day 
+                                it's retired, so nothing falls between vendors.
                             </p>
                             <p>
-                                From large-scale rollouts and tech upgrades to site refreshes and full asset recovery, our 
-                                teams deliver with rigor across every stage: sourcing, staging, deploying, servicing, and 
-                                reclaiming technology regardless of industry or footprint.
+                                That covers net-new rollouts, tech refreshes, store remodels, and full asset recovery. We source it, stage it,
+                                 deploy it, service it, and reclaim it in any store format, across any footprint.
                             </p>
                             <p>
-                                This isn't task support. It's full-spectrum service tailored to your operating model, 
-                                integraded into your systems, and executed at scale.
+                                This isn't break/fix by the ticket. We manage the whole lifecycle, wired into your systems and run at the scale of a national fleet.
                             </p>
                             <p>
-                                And if your business runs on technology at the front of house, back of store, or across 
-                                a national footprint we've probably worked in your industry.
+                                And we've spent 50 years in your world: retail, grocery, QSR, hospitality, convenience, and distribution front end to back office.
                             </p>
                             </>
                         }
@@ -192,12 +190,13 @@ export default function ServicesPage() {
                                         Procurement
                                     </h3>
                                     <p className="font-semibold">
-                                        Sourcing built for speed, savings, and sustainability.
+                                        Sourcing built to cut cost, not corners.
                                     </p>
                                     <p>
-                                        We help enterprises reduce capital costs, reclaim value from legacy hardware, and 
-                                        align purchasing with ESG goals all from our <span className="font-semibold">240,000+ sq ft warehouse</span>, stocked with 
-                                        new and certified refurbished assets.
+                                        IW sources POS and IT hardware new and certified refurbished for multi-site retail, 
+                                        grocery, and QSR from a single 240,000 sq ft warehouse. New equipment comes through 
+                                        OEM partnerships; certified refurbished assets run up to 40% below new, cleaned and 
+                                        tested before they ship. Both are stocked in-facility for nationwide fulfillment.
                                     </p>
                                     <div className="w-full flex items-center gap-2">
                                         <p className="font-semibold">
@@ -226,13 +225,13 @@ export default function ServicesPage() {
                                         Deployment
                                     </h3>
                                     <p className="font-semibold">
-                                        Deployment without disruption at enterprise scale.
+                                        Plug-and-play. Not plug-and-pray.
                                     </p>
                                     <p>
-                                        With <span className="font-semibold">1,000+ rapid rollouts under 8 weeks</span>, our teams 
-                                        stage, configure, and install IT assets nationwide. Every deployment 
-                                        is PMO-managed and backed by <span className="font-semibold">40,000 annual shipments </span>
-                                        and <span>9,650+ locations on full lifecycle maintenance (you can à la carte if you prefer)</span>.
+                                        IW deploys POS and IT hardware for multi-site rollouts, refreshes, and remodels 
+                                        1,000+ rapid rollouts completed in under 8 weeks. Every project is PMO-managed 
+                                        and backed by 40,000 annual shipments, so devices arrive serialized, tested, and 
+                                        ready to turn on. Take the full lifecycle, or any stage à la carte.
                                     </p>
                                     <div className="w-full flex items-center gap-2">
                                         <p className="font-semibold">
@@ -264,13 +263,14 @@ export default function ServicesPage() {
                                         Uptime isn't optional. We keep you running.
                                     </p>
                                     <p>
-                                        Our network of <span className="font-semibold">1,850+ vetted technicians </span>cover 99% of the U.S. 
-                                        resolving over <span className="font-semibold">55,000 on-site service events </span>annually. From 
-                                        same-day repair to part replacement, we meet issues with answers fast.
+                                        IW maintains POS and IT hardware in the field on-site repair, replacement parts, 
+                                        and remote troubleshooting for multi-site retail, grocery, and QSR. Our network 
+                                        of 1,850+ vetted technicians reaches 99% of the U.S. within 100 miles and resolves 
+                                        55,000+ on-site service events a year. 90% of requests are handled the same day.
                                     </p>
                                     <div className="w-full flex items-center gap-2">
                                         <p className="font-semibold">
-                                            Discover how we turn SLAs into solved problems.
+                                            See how we fix most issues the same day.
                                         </p>
                                         <img src="/serviceImages/icons/angles-right-solid-full.svg" 
                                         alt="angle icon" height="25" width="25"
@@ -295,22 +295,14 @@ export default function ServicesPage() {
                                         Low Voltage Cabling
                                     </h3>
                                     <p className="font-semibold">
-                                        The infrastructure behind every install designed to scale with your operations.
+                                        The infrastructure behind every install.
                                     </p>
                                     <p>
-                                        From rough-in to termination and final technology integration, IW delivers 
-                                        structured low-voltage cabling that supports everything from net-new stores 
-                                        and remodels to relocations and refreshes.
-                                    </p>
-                                    <p>
-                                        Whether you're opening 5 locations or retrofitting 500, our certified field teams 
-                                        install and validate cabling to power POS, networking, displays, IoT, and more 
-                                        with consistency, compliance, and minimal disruption.
-                                    </p>
-                                    <p>
-                                        With 9,650+ locations running on IW's full lifecycle service and 1,850+ technicians 
-                                        across 384 metro areas, our infrastructure work is precise, scalable, and deployment-ready 
-                                        just like everything we do.
+                                        IW installs and certifies structured low-voltage cabling for retail, grocery, 
+                                        and QSR builds  rough-in to termination to device turn-up. Whether you're opening 
+                                        5 stores or retrofitting 500, our certified field teams wire and validate the cabling 
+                                        that powers POS, networking, displays, and IP cameras, to OSHA and BICSI standards. 
+                                        It runs in lockstep with your deployment schedule, so wiring is never what holds up opening day.
                                     </p>
                                     <div className="w-full flex items-center gap-2">
                                         <p className="font-semibold">
@@ -342,9 +334,10 @@ export default function ServicesPage() {
                                         End-of-life isn't the end of responsibility.
                                     </p>
                                     <p>
-                                        We manage secure deinstallation, recovery, and data destruction across your 
-                                        footprint diverting waste, reclaiming value, and protecting compliance. In 2024 
-                                        alone, we recycled <span className="font-semibold">815 tons of IT equipment</span>.
+                                        We manage secure deinstallation, recovery, and data destruction across your footprint 
+                                        diverting waste, reclaiming value, and protecting compliance. In the past 16 months, 
+                                        IW has kept more than 1.8 million pounds of hardware out of landfills: 1,301,263 lbs 
+                                        in 2025 (650+ tons) and 566,887 lbs (400+ tons) so far in 2026.
                                     </p>
                                     <div className="w-full flex items-center gap-2">
                                         <p className="font-semibold">
@@ -368,13 +361,12 @@ export default function ServicesPage() {
             <section className="w-full py-14 my-5 text-brand-black section-diagonal">
                 <div className="max-w-7xl w-[80%] mx-auto flex flex-col gap-2">
                     <h2>How We Do It</h2>
-                    <h3>Smart Systems. Scalable Coverage. Transparent Execution.</h3>
+                    <h3>One System. Live Status. No Handoffs.</h3>
                     <p>
-                        At IW, service isn't just delivered. It's orchestrated. We've built a 
-                        connected ecosystem of platforms, tools, and people that work in sync 
-                        to deliver precision at scale. Every service event, rollout, and repair 
-                        is powered by Salesforce Field Service Lightning and designed to drive 
-                        visibility, accountability, and results.
+                        IW runs every service event, rollout, and repair on Salesforce Field Service Lightning, 
+                        integrated with our ERP. One system tracks your hardware from procurement through disposition: 
+                        scheduling, dispatch, parts, and reporting in real time. You see the same live status your 
+                        dispatcher does: what's open, what's at risk, what shipped.
                     </p>
                     <div className="w-full md:w-[80%] mx-auto flex flex-col md:flex-row md:justify-center items-end my-5">
                         <Image 
@@ -429,8 +421,8 @@ export default function ServicesPage() {
                                         <div className="flex flex-col">
                                             <span className="font-semibold">ERP Integration</span>
                                             <span>
-                                                Sync service events, inventory status, and reporting in real time 
-                                                reducting manual inputs and increasing operational speed.
+                                                Syncs service events, inventory status, and reporting in real time, 
+                                                reducing manual inputs and speeding up resolution.
                                             </span>
                                         </div>
                                     </li>
@@ -451,8 +443,7 @@ export default function ServicesPage() {
                             </div>
                         </div> {/* end of list */}  
                         <h4 className="font-semibold">
-                            Result: Enterprise-grade coordination without the complexity. Faster 
-                            response times. Fewer surprises. End-to-end accountability.
+                            Result: Enterprise-grade coordination without the complexity. Faster response times. Fewer surprises. End-to-end accountability.
                         </h4>
 
 
