@@ -52,12 +52,12 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
     return (
         <div className="">
-            <section className="h-fit text-white">
+            <section className="h-fit bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/heroImages/servicesHero.png"
-                    imageAlt="Blue tinted Services hero image"
-                    imageWidth={2048}
-                    imageHeight={1357}
+                    imageSrc="/heroImages/servicesHeroNew.webp"
+                    imageAlt="Services hero image"
+                    imageWidth={1900}
+                    imageHeight={1040}
                     text={
                     <>
                         <h1 className="">
@@ -532,7 +532,7 @@ export default function ServicesPage() {
                     </div>
                     <Image
                     className="w-full lg:w-[90%] h-auto object-contain rounded-3xl" 
-                    src="/serviceImages/WhatsInItVer2.webp" alt="What's in it for you image graphic" 
+                    src="/serviceImages/noGapsNoHandoffs.webp" alt="What's in it for you image graphic" 
                     width="1920" height="1080"
                     sizes="(max-width: 1920px) 100vw, 50vw" />
                 </div>
