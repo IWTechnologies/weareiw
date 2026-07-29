@@ -21,14 +21,15 @@ const services = [
 ]
 
 const serviceStats = [
-    { value: 240000, label: "Sq Ft of Warehouse Space", subLabel: "Staging, kitting, fulfillment all under one roof." },
-    { value: 18000, label: "Pallet Positions", subLabel: "Built to support rollouts, returns, and closures." },
+    { value: 240000, label: "Sq Ft of Warehouse Space", subLabel: "Staging, kitting, fulfillment all under one roof.", suffix: "+" },
+    { value: 18000, label: "Pallet Positions", subLabel: "Built to support rollouts, returns, and closures.", suffix: "+" },
     { value: 38500, label: "Checkout Lanes Supported", subLabel: "Install, repair, and tech refreshes.", suffix: "+" },
-    { value: 40000, label: "Annual Shipments", subLabel: "Fast fulfillment of tech, tools, and parts." },
+    { value: 40000, label: "Annual Shipments", subLabel: "Fast fulfillment of tech, tools, and parts.", suffix: "+" },
     { value: 1850, label: "Vetted Technicians", subLabel: "Coverage within 100 miles of 99% of the US.", suffix: "+" },
-    { value: 9650, label: "Locations On Full Lifecycle Maintenance", subLabel: "But every service can stand on its own.", },
+    { value: 9650, label: "Locations On Full Lifecycle Maintenance", subLabel: "But every service can stand on its own.", suffix: "+" },
     { value: 1000, label: "Rapid Rollouts (<8 wks)", subLabel: "Mobilized and scaled. No delays.", suffix: "+" },
-    { value: 12000, label: "Low Voltage Rollouts", subLabel: "Rough-in to turn-up. Wired for new builds, remodels, and relocations.", suffix: "+" }
+    { value: 5000000, label: "of Low Voltage Cabling Installed.", suffix: "+ Ft." },
+    { value: 815, label: "Tons of Hardware Diverted from Landfills Yearly.", suffix: "+" }
 ];
 
 export const metadata: Metadata = {
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
     return (
         <div className="">
-            <section className="h-fit bg-brand-black text-white">
+            <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
                     imageSrc="/heroImages/servicesHeroNew.webp"
                     imageAlt="Services hero image"
@@ -124,7 +125,7 @@ export default function ServicesPage() {
                     <div className="relative z-20">
                         <NumCounter 
                         title="What End-to-End Service Looks Like at Scale" 
-                        subTitle="Every number here backs once promise:" 
+                        subTitle="Every number here backs once promise: we source, deploy, service, and retire your POS across a national footprint. No gap." 
                         stats={serviceStats} 
                         />
                     </div>
