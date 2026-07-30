@@ -69,7 +69,7 @@ function StatItem({ value, label, subLabel, suffix = "" }: Stat) {
 
 export default function StatSection({ title, subTitle, stats }: StatSection) {
     return (
-        <div className="w-[70%] flex flex-col mx-auto py-14 gap-5">
+        <div className="w-[75%] flex flex-col mx-auto py-14 gap-5">
             <div className="w-full mb-4 text-brand-black">
                 <h2>{title}</h2>
                 <div>{subTitle}</div>

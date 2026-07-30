@@ -18,7 +18,7 @@ type HeroProps = {
 
 export default function Hero({ imageSrc, imageAlt, imageWidth, imageHeight, text, link }: HeroProps) {
     return (
-        <div className="relative h-full w-full overflow-hidden bg-brand-blue">
+        <div className="max-w-[1920px] relative h-full w-full overflow-hidden bg-brand-blue">
             <Image 
                 src={imageSrc} alt={imageAlt} priority 
                 width={imageWidth} height={imageHeight} sizes="100vw"
@@ -26,7 +26,7 @@ export default function Hero({ imageSrc, imageAlt, imageWidth, imageHeight, text
              />
             <div className="absolute inset-0 z-10 bg-linear-to-t from-brand-black to-transparent"></div>
 
-            <div className="relative z-20 h-full w-[80%] lg:w-[60%] py-28 mx-auto 
+            <div className="relative z-20 h-full w-[80%] lg:w-[65%] py-28 mx-auto 
             flex flex-col items-start justify-center gap-4">
                 {text}
                 {link && <LinkButton {...link} />}
