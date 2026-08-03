@@ -45,15 +45,14 @@ export default function LowVoltagePage() {
                         <div className="flex flex-col gap-2">
                             <h1 className="w-fit border-b-4 border-brand-aqua px-2 pl-0">Low Voltage Cabling</h1>
                             <p className="font-semibold">
-                                The infrastructure layer that makes everything else work.
+                                The infrastructure behind every install.
                             </p>
                             <p>
-                                From rough-in and termination to final device turn-up, we deliver 
-                                certified, enterprise-grade low voltage infrastructure that powers 
-                                your IT stack without the rewiring headaches. Whether you're 
-                                opening net-new stores, remodeling existing spaces, or relocating 
-                                operations, our technicians ensure your systems are wired for the 
-                                first time.
+                                IW installs and certifies structured low-voltage cabling for multi-site retail, 
+                                grocery, and QSR: rough-in, termination, and device turn-up, to OSHA and BICSI 
+                                standards. Whether you're opening net-new stores, remodeling, or relocating, 
+                                your systems get wired right the first time so cabling is never the thing that 
+                                holds up opening day.
                             </p>
                         </div>
 
@@ -61,8 +60,8 @@ export default function LowVoltagePage() {
                         <div className="flex flex-col gap-2">
                             <h2>What We Do</h2>
                             <p>
-                                Our structured low voltage solutions are designed to support complex, 
-                                multi-site environments with speed, precision, and compliance.
+                                IW wires the systems a store runs on POS and networking, Wi-Fi, cameras, 
+                                and displays across any store format and any footprint.
                             </p>
                         </div>
 
@@ -131,8 +130,7 @@ export default function LowVoltagePage() {
                             
                         </div>
                         <p>
-                            Every project is executed in line with OSHA and BICSI standards, 
-                            ensuring, your infrastructure is clean, labeled, tested, and future-ready.
+                            Every project is executed to OSHA and BICSI standards: clean, labeled, tested, and future-ready.
                         </p>
 
                         <div className="flex flex-col gap-2">
@@ -141,25 +139,67 @@ export default function LowVoltagePage() {
                                 Cabling isn't a line item. It's the foundation.
                             </p>
                             <p>
-                                When infrastructure fails, it's not just downtime. It's disruption, 
-                                cost, and lost trust.
+                                When it fails, it's not just downtime it's a store that can't open, checkout that won't ring, 
+                                and a crew standing around waiting on a vendor.
                             </p>
                             <p>
-                                That's why IW's structured cabling teams work in lockstep with your 
-                                deployment schedules, technology roadmap, and site development plans 
-                                ensuring that what's behind the wall performs as reliably as what's 
-                                plugged into it.
+                                That's why IW's structured cabling teams work in lockstep with your deployment schedules, 
+                                technology roadmap, and site development plans ensuring that what's behind the wall performs 
+                                as reliably as what's plugged into it.
                             </p>
                             <p>
                                 Fewer delays. Less rework. Full operational visibility.
                             </p>
-                            <p>
-                                All delivered by a partner who understands the stakes and owns the outcome.
-                            </p>
-                            <div className="w-full flex flex-col items-center mx-auto my-5">
-                                <LinkButton href="/get-in-touch" label="Built for Scale. Wired for it too" subLabel="If your cabling can't scale, your tech won't either. Let's Talk" target="_blank" variant="dark" />
+                            <div>
+                                <p className="font-semibold">Great tech starts with clean wiring. We make sure of it.</p>
+                                <p>Opening, remodeling, or relocating? Tell us the sites.</p>
                             </div>
                             
+                            <div className="w-full flex flex-col items-center mx-auto my-10">
+                                <LinkButton href="/get-in-touch" label="We'll handle what's behind the wall." target="_blank" variant="dark" />
+                            </div>
+                            
+                            {/* Questions */}
+                            <div className="w-full flex flex-col gap-4">
+                                <h3 className="w-fit border-b-4 border-brand-aqua px-2 pl-0 my-2.5 font-semibold">What Store Ops and IT Teams Ask Us About Cabling</h3>
+
+                                <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
+                                    <h4 className="font-semibold">Do you cable to BICSI and OSHA standards?</h4>
+                                    <p>
+                                        Yes. Every IW project is installed to OSHA and BICSI standards: 
+                                        clean, labeled, tested, and certified, so it passes inspection and 
+                                        stays serviceable years later. <span><a className="underline hover:text-brand-aqua" href="/faq/which-companies-provide-low-voltage-cabling-and-structured-wiring-for-retail-store-pos-environments" target="_blank">Read the full answer</a></span>
+                                    </p>
+                                </div>
+
+                                <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
+                                    <h4 className="font-semibold">What SLAs should I expect from a POS field service provider?</h4>
+                                    <p>
+                                        IW manages SLAs, exception handling, and field readiness from a centralized team, with same-day 
+                                        resolution on the majority of requests. The commitment is written into the agreement not a 
+                                        best-effort promise. <span><a className="underline hover:text-brand-aqua" href="/faq/what-slas-should-i-expect-from-a-pos-field-service-provider" target="_blank">Read the full answer</a></span> 
+                                    </p>
+                                </div>
+
+                                <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
+                                    <h4 className="font-semibold">A terminal dies mid-shift. How fast can you get me a working one?</h4>
+                                    <p>
+                                        Fast enough that the lane isn't down waiting on a repair. For critical hardware, IW ships a replacement 
+                                        the moment a failure is confirmed, before the dead unit comes back  so the store swaps in a working device 
+                                        instead of sitting in a return-and-repair cycle. (This is called advance exchange, and it's built for high-volume 
+                                        floors where a down device means a closed lane.) <span><a className="underline hover:text-brand-aqua" href="/faq/what-is-advance-exchange-for-pos-hardware-and-when-should-retailers-use-it" target="_blank">Read the full answer</a></span> 
+                                    </p>
+                                </div>
+
+                                <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
+                                    <h4 className="font-semibold">Can one team handle repairs across all our locations?</h4>
+                                    <p>
+                                        Yes. IW runs on-site repair through a 1,850+ technician network across retail, grocery, hospitality, QSR, convenience, 
+                                        and distribution; nationwide break/fix, plus depot repair for spares and non-critical gear you'd rather send in than wait on. 
+                                        One team for every site, instead of a different local vendor in every market. <span><a className="underline hover:text-brand-aqua" href="/faq/who-provides-pos-hardware-de-installation-and-itad-services-for-enterprise-retail-chains" target="_blank">Read the full answer</a></span> 
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
