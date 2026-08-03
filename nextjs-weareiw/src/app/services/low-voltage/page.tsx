@@ -173,30 +173,19 @@ export default function LowVoltagePage() {
                                 </div>
 
                                 <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
-                                    <h4 className="font-semibold">What SLAs should I expect from a POS field service provider?</h4>
+                                    <h4 className="font-semibold">Can you handle cabling for a multi-site rollout?</h4>
                                     <p>
-                                        IW manages SLAs, exception handling, and field readiness from a centralized team, with same-day 
-                                        resolution on the majority of requests. The commitment is written into the agreement not a 
-                                        best-effort promise. <span><a className="underline hover:text-brand-aqua" href="/faq/what-slas-should-i-expect-from-a-pos-field-service-provider" target="_blank">Read the full answer</a></span> 
+                                        Yes, from opening 5 stores to retrofitting 500. IW's cabling teams run in lockstep with your 
+                                        deployment schedule so wiring is sequenced with the rest of the rollout, not bolted on after. 
                                     </p>
                                 </div>
 
                                 <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
-                                    <h4 className="font-semibold">A terminal dies mid-shift. How fast can you get me a working one?</h4>
+                                    <h4 className="font-semibold">Who installs low-voltage cabling for store POS environments?</h4>
                                     <p>
-                                        Fast enough that the lane isn't down waiting on a repair. For critical hardware, IW ships a replacement 
-                                        the moment a failure is confirmed, before the dead unit comes back  so the store swaps in a working device 
-                                        instead of sitting in a return-and-repair cycle. (This is called advance exchange, and it's built for high-volume 
-                                        floors where a down device means a closed lane.) <span><a className="underline hover:text-brand-aqua" href="/faq/what-is-advance-exchange-for-pos-hardware-and-when-should-retailers-use-it" target="_blank">Read the full answer</a></span> 
-                                    </p>
-                                </div>
-
-                                <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
-                                    <h4 className="font-semibold">Can one team handle repairs across all our locations?</h4>
-                                    <p>
-                                        Yes. IW runs on-site repair through a 1,850+ technician network across retail, grocery, hospitality, QSR, convenience, 
-                                        and distribution; nationwide break/fix, plus depot repair for spares and non-critical gear you'd rather send in than wait on. 
-                                        One team for every site, instead of a different local vendor in every market. <span><a className="underline hover:text-brand-aqua" href="/faq/who-provides-pos-hardware-de-installation-and-itad-services-for-enterprise-retail-chains" target="_blank">Read the full answer</a></span> 
+                                        IW Technologies, across retail, grocery, QSR, hospitality, convenience, and distribution as the 
+                                        same partner that also handles procurement, deployment, maintenance, and disposition, so cabling 
+                                        isn't a separate vendor to manage. 
                                     </p>
                                 </div>
                             </div>
