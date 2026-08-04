@@ -213,7 +213,7 @@ export default function CareersPage() {
                                     landfills:1,301,263 lbs in 2025 and 566,887 lbs so far in 2026. For the people who do this work, that's not a 
                                     stat on a slide. It's the repair bench, the recovery runs, and the responsible disposition you'd own here every day.
                                 </p>
-                                <p>
+                                <p className="font-semibold">
                                     See the work behind the 1.8 million pounds. We made it for Earth Day. We do it every day.
                                 </p>
                             </>
