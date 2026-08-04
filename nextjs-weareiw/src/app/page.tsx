@@ -134,10 +134,10 @@ export default function IndexPage() {
             <Blurb 
               media={{
                 type: "image",
-                src: "/copylifeCycle.png",
-                alt: "Blue tinted image of IW team in meeting",
-                width: 512,
-                height: 342,
+                src: "/IWLifecycle2026.webp",
+                alt: "IW Lifecycle graphic image",
+                width: 700,
+                height: 500,
               }}
               text={
                 <>
