@@ -45,7 +45,7 @@ export default function DeploymentPage() {
                         <div className="w-full flex flex-col gap-2">
                             <h1 className="w-fit border-b-4 border-brand-aqua px-2 pl-0">Deployment</h1>
                             <p className="">
-                                Use this instead - IW deploys POS and IT hardware for multi-site retail, grocery, and QSR; 
+                                IW deploys POS and IT hardware for multi-site retail, grocery, and QSR; 
                                 staged, installed, and PMO-managed from first site to last. 1,000+ rapid rollouts completed 
                                 in under 8 weeks, so devices arrive deployment-ready, not a box of question marks. Plug-and-play. 
                                 Not plug-and-pray.
