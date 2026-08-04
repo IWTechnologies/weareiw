@@ -27,10 +27,10 @@ export default function LowVoltagePage() {
         <div>
             <section className="h-96 text-white">
                 <Hero 
-                    imageSrc="/serviceImages/lowVoltage.webp"
-                    imageAlt="Blue tinted low voltage hero image"
-                    imageWidth={1871}
-                    imageHeight={1043}
+                    imageSrc="/serviceImages/LowVoltageCablingHero.webp"
+                    imageAlt="IW low voltage page hero image"
+                    imageWidth={1900}
+                    imageHeight={400}
                     text={
                     <>
                         

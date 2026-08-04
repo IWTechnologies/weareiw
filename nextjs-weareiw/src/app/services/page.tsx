@@ -106,10 +106,10 @@ export default function ServicesPage() {
                         <Blurb 
                         media={{
                             type: "image",
-                            src: "/serviceImages/servicesCircle.webp",
-                            alt: "Blue tinted image of IW team in meeting",
-                            width: 1546,
-                            height: 1067,
+                            src: "/IWLifecycle2026.webp",
+                            alt: "IW Lifecycle graphic image",
+                            width: 700,
+                            height: 500,
                         }}
                         text={
                             <>
