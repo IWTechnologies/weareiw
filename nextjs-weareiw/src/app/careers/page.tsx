@@ -38,19 +38,21 @@ export default function CareersPage() {
         <div>
             <section className="h-fit text-white">
                 <Hero 
-                    imageSrc="/heroImages/shutterstock1.jpg"
-                    imageAlt="Blue tinted procurement hero image"
-                    imageWidth={813}
-                    imageHeight={457}
+                    imageSrc="/heroImages/CareersHeroImage.webp"
+                    imageAlt="Careers page hero image"
+                    imageWidth={1900}
+                    imageHeight={400}
                     text={
                     <>
-                        <h1>Level Up Your Career</h1>
-                        <p>Join our growing team of motivated people.</p>
+                        <h1>Come for Two Weeks. Stay for 40 years</h1>
+                        <p>It happens more than you'd think. One in ten of us has been here 10+ years.</p>
                         <p>
-                            We are an agile group of hard workers who support and respect 
-                            each other. We hold ourselves to the highest standard — offering 
-                            top-quality technology, the most skilled technicians and above all, 
-                            dedicated partnership.
+                            A whole week of appreciation with food trucks and games. Halloween parties, Christmas lunches, 
+                            a Santa for every IW kid, pizza on the regular, and hoodies you'll actually wear. None of it hurts.
+                        </p>
+                        <p>
+                            But people really stay because the owners and leadership know your name and come through on what they 
+                            promise. Come find out why nobody leaves.
                         </p>
                     </>
                     }
