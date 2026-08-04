@@ -200,7 +200,7 @@ export default function CareersPage() {
                             <>
                                 <h3>Green Before Green Was Cool</h3>
                                 <p className="">
-                                    IW was recycling hardware before it had a hashtag. Back in late1970s, refurbished POS wasn't even a category. 
+                                    IW was recycling hardware before it had a hashtag. Back in late the 1970s, refurbished POS wasn't even a category. 
                                     If you needed equipment, you bought it new from the manufacturer, full stop. Our founder, Al Moorhouse, 
                                     saw the waste in that and built IW on refurbishing and reselling retail tech when there was no playbook and 
                                     no buzzword for it. 
@@ -210,7 +210,7 @@ export default function CareersPage() {
                                 </p>
                                 <p>
                                     And it's not a rounding error. In the last 16 months, IW kept more than 1.8 million pounds of hardware out of 
-                                    landfills:1,301,263 lbs in 2025 and 566,887 lbs so far in 2026. For the people who do this work, that's not a 
+                                    landfills: 1,301,263 lbs in 2025 and 566,887 lbs so far in 2026. For the people who do this work, that's not a 
                                     stat on a slide. It's the repair bench, the recovery runs, and the responsible disposition you'd own here every day.
                                 </p>
                                 <p className="font-semibold">
