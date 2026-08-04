@@ -6,12 +6,12 @@ import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: "Disposition - IW Technologies",
-  description: "Disposition service offered by IW Technologies located in Elgin, IL.",
+  description: "IW Technologies maintains POS and IT hardware for multi-site retail, grocery, and QSR: on-site repair, replacement parts, and ad-hoc field service. 1,850+ technicians, 90% same-day resolution.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
         title: "Disposition - IW Technologies",
-        description: "Disposition service offered by IW Technologies located in Elgin, IL.",
+        description: "IW Technologies maintains POS and IT hardware for multi-site retail, grocery, and QSR: on-site repair, replacement parts, and ad-hoc field service. 1,850+ technicians, 90% same-day resolution.",
         url: `${BASE_URL}/services/disposition`,
         images: [
             {
@@ -45,12 +45,14 @@ export default function DispositionPage() {
                         <div className="w-full flex flex-col gap-2">
                             <h1 className="w-fit border-b-4 border-brand-aqua px-2 pl-0">Disposition</h1>
                             <p className="font-semibold">
-                                Responsible recovery at scale protecting your data, your brand, and your bottom line.
+                                End-of-life isn't the end of responsibility.
                             </p>
                             <p>
-                                When IT assets reach end-of-life, we ensure they're decommissioned securely, 
-                                sustainably, and with full operational accountability. We manage the physical, 
-                                digital, and logistical risks so your teams don't have to.
+                                IW handles the last stage of the hardware lifecycle for multi-site retail, 
+                                grocery, and QSR: deinstallation, asset reclamation, buyback, and certified 
+                                data destruction, with documented chain of custody the whole way. As one of 
+                                the largest buyers of used retail technology, IW recovers value from gear 
+                                you're retiring instead of writing it off.
                             </p>
                         </div>
 
@@ -66,14 +68,11 @@ export default function DispositionPage() {
                                         Deinstallation
                                     </h3>
                                     <p>
-                                        Seamless site closures or tech refreshes including asset tagging, on-site 
-                                        labor, secure packing, and chain-of-custody transport. 
-                                    </p>
-                                    <p>
-                                        Managed across 
-                                        <span className="font-semibold"> 9,650+ customer locations on full lifecycle maintenance </span>
-                                        and supported by <span className="font-semibold"> 18,000+ pallet positions </span>in our 
-                                        national warehousing network.
+                                        Secure removal for site closures, remodels, and refreshes; asset tagging, 
+                                        on-site labor, secure packing, and chain-of-custody transport. IW pulls 
+                                        the hardware out cleanly, so a closing or remodeling store doesn't turn 
+                                        into a pile of untracked gear. Backed by 18,000 pallet positions in the 
+                                        national warehousing network. 
                                     </p>
                                     </>
                                 }
@@ -87,32 +86,12 @@ export default function DispositionPage() {
                                     <h3 className="font-semibold">
                                         Asset Reclamation
                                     </h3>
-                                    <p className="font-semibold">
-                                        Inventory is an asset. We make sure it acts like one.
-                                    </p>
-                                    <p>
-                                        At IW, asset reclamation isn't an afterthought. It's a core capability. We 
-                                        help enterprise teams regain control of their tech estate, recover hardware 
-                                        from the field, and determine what can be refurbished, redeployed, or 
-                                        responsibly recycled all through a structured, data-driven process.
-                                    </p>
-                                    <p>
-                                        Our team handles everything from field recovery and chain-of-custody 
-                                        logistics to condition grading, reporting, and next-step recommendations 
-                                        so you can reduce replacement costs, cut waste, and unlock hidden value across 
-                                        your footprint.
-                                    </p>
-                                    <p>
-                                        In 2024 alone, IW reclaimed or recycled over 815 tons of technology equipment, 
-                                        helping enterprise partners reduce emissions, recover spend, and eliminate inventory 
-                                        blind spots.
-                                    </p>
-                                    <p>
-                                        It's not just recycling. It's responsible, reportable, operationally integrated recovery.
-                                    </p>
-                                    <p className="font-semibold">
-                                        Unrecovered assets aren't just clutter. They're capital left on the table. Let's 
-                                        reclaim what's yours and put it back into your operating model.
+                                    <p className="">
+                                        Reclaimed hardware is graded, reported, and routed to its best next step: refurbish, 
+                                        redeploy, recycle, or buy back. IW is one of the largest buyers of used retail technology: 
+                                        you get paid for gear you were retiring anyway, and you can apply that value as credit 
+                                        toward your next refresh with an additional 10% on top. Unrecovered assets aren't clutter. 
+                                        They're capital left on the table.
                                     </p>
                                     </>
                                 }
@@ -126,64 +105,15 @@ export default function DispositionPage() {
                                     <h3 className="font-semibold">
                                         Data Destruction
                                     </h3>
-                                    <p className="font-semibold">
-                                        Secure. Documented. Irreversible.
+                                    <p>
+                                        Secure. Documented. Irreversible. Secure. Documented. Irreversible. Every data-bearing device is wiped or degaussed in a secure 
+                                        processing cage, with a serialized Certificate of Destruction for audit and compliance. Meets 
+                                        PCI DSS, HIPAA, and TAA requirements, with ISO- and R2-certified e-cycling for whatever can't be reused.
                                     </p>
                                     <p>
-                                        At the end of every IT asset's life is a critical inflection point: ensuring that 
-                                        sensitive data doesn't live on beyond its intended use. IW's certified data destruction 
-                                        services are designed to eliminate that risk with precision, transparency, and full compliance.
+                                        Decommissioning isn't a one-time project. It's a recurring event. IW makes it a controlled one: 
+                                        value recovered, data destroyed, chain of custody documented, every time.
                                     </p>
-                                    <p>
-                                        Whether you're governed by PCI DSS, HIPAA, TAA, or internal risk policies, we meet or 
-                                        exceed the standard and document every step.
-                                    </p>
-                                    <h4 className="font-semibold">
-                                        What We Deliver:
-                                    </h4>
-                                    <ul className="w-full flex flex-col gap-5">
-                                        <li className="flex gap-2">
-                                            <img src="/aboutImages/icons/circle-check-solid-full.svg"
-                                            alt="blue and white circle check icon" width={20} height={20}
-                                            className="shrink-0" />
-                                            <div className="">
-                                                Certified digital and physical sanitization, including 
-                                                degaussing and secure shredding.
-                                            </div>
-                                        </li>
-                                        <li className="flex gap-2">
-                                            <img src="/aboutImages/icons/circle-check-solid-full.svg"
-                                            alt="blue and white circle check icon" width={20} height={20}
-                                            className="shrink-0" />
-                                            <div className="">
-                                                Strict adherence to customer-specific compliance protocols.
-                                            </div>
-                                        </li>
-                                        <li className="flex gap-2">
-                                            <img src="/aboutImages/icons/circle-check-solid-full.svg"
-                                            alt="blue and white circle check icon" width={20} height={20}
-                                            className="shrink-0" />
-                                            <div className="">
-                                                Audit-ready documentation with full asset-level reporting.
-                                            </div>
-                                        </li>
-                                        <li className="flex gap-2">
-                                            <img src="/aboutImages/icons/circle-check-solid-full.svg"
-                                            alt="blue and white circle check icon" width={20} height={20}
-                                            className="shrink-0" />
-                                            <div className="">
-                                                Routine audits and chain-of-custody tracking.
-                                            </div>
-                                        </li>
-                                        <li className="flex gap-2">
-                                            <img src="/aboutImages/icons/circle-check-solid-full.svg"
-                                            alt="blue and white circle check icon" width={20} height={20}
-                                            className="shrink-0" />
-                                            <div className="">
-                                                Environmentally responsible disposal through ISO and R2-certified e-cycling.
-                                            </div>
-                                        </li>
-                                    </ul>
                                     </>
                                 }
                             />
@@ -191,17 +121,55 @@ export default function DispositionPage() {
                         
                         <div className="flex flex-col gap-2">
                             <p className="font-semibold">
-                                What leaves your business shouldn't take your data with it. Let's erase risk, the 
-                                right way.
+                                Your tech's done working. We're not.
                             </p>
                             <p>
-                                This isn't just data destruction. It's risk mitigation at the infrastructure level 
-                                built into the lifecycle, not bolted on after.
+                                Closing sites, refreshing, or consolidating? Send us the equipment list.
                             </p>
                         </div>
 
                         <div className="w-full flex flex-col items-center mx-auto my-5">
-                                <LinkButton href="/get-in-touch" label="Your Tech's Done Working. We're Not" subLabel="Let's close the loop - securely and sustainably." target="_blank" variant="dark" />
+                                <LinkButton href="/get-in-touch" label="We'll tell you what it's worth." target="_blank" variant="dark" />
+                        </div>
+
+                        {/* Questions */}
+                        <div className="w-full flex flex-col gap-4">
+                            <h3 className="w-fit border-b-4 border-brand-aqua px-2 pl-0 my-2.5 font-semibold">What IT and Finance Teams Ask Us About Retiring Hardware</h3>
+
+                            <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
+                                <h4 className="font-semibold">We're refreshing hundreds of stores. What do we do with the old POS gear?</h4>
+                                <p>
+                                    You don't have to write it off. IW deinstalls it, grades it, and buys back what still has value. You get paid for hardware you were 
+                                    retiring anyway, or apply that value as credit toward the new equipment with an additional 10% on top. Whatever can't be reused is 
+                                    recycled through certified channels. <span><a className="underline hover:text-brand-aqua" href="/faq/how-does-iw-technologies-pos-hardware-buyback-program-work" target="_blank">Read the full answer</a></span>
+                                </p>
+                            </div>
+
+                            <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
+                                <h4 className="font-semibold">How is buyback value determined?</h4>
+                                <p>
+                                    From your equipment list: part numbers, models, and configurations plus practical factors like location, timeline, logistics, 
+                                    and whether cables and power supplies are included. Consolidated returns are simpler to process than individual site shipments. 
+                                    Send the list and IW establishes a value. <span><a className="underline hover:text-brand-aqua" href="/faq/how-does-pos-hardware-buyback-work-and-how-is-value-determined" target="_blank">Read the full answer</a></span> 
+                                </p>
+                            </div>
+
+                            <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
+                                <h4 className="font-semibold">How do we keep customer data secure when retiring hardware across locations?</h4>
+                                <p>
+                                    Every data-bearing device is wiped or degaussed in a secure processing cage, and you get a serialized Certificate of Destruction 
+                                    for each one audit-ready proof for PCI DSS, HIPAA, and TAA. Chain of custody is documented from the moment the device 
+                                    leaves the store. <span><a className="underline hover:text-brand-aqua" href="/faq/how-do-i-ensure-data-security-when-retiring-pos-hardware-across-multiple-locations" target="_blank">Read the full answer</a></span>
+                                </p>
+                            </div>
+
+                            <div className="w-full flex flex-col p-4 gap-1 rounded-3xl bg-white overflow-hidden shadow-md">
+                                <h4 className="font-semibold">What happens to hardware that can't be resold?</h4>
+                                <p>
+                                    It's routed through certified recycling partners aligned to recognized e-waste standards electronics, batteries, and regulated materials 
+                                    separated and processed responsibly, with documentation by project and device category for your sustainability reporting.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
