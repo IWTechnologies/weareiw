@@ -6,12 +6,12 @@ import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
   title: "Maintenance - IW Technologies",
-  description: "Maintenance service offered by IW Technologies located in Elgin, IL.",
+  description: "IW Technologies maintains POS and IT hardware for multi-site retail, grocery, and QSR: on-site repair, replacement parts, and ad-hoc field service. 1,850+ technicians, 90% same-day resolution.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
         title: "Maintenance - IW Technologies",
-        description: "Maintenance service offered by IW Technologies located in Elgin, IL.",
+        description: "IW Technologies maintains POS and IT hardware for multi-site retail, grocery, and QSR: on-site repair, replacement parts, and ad-hoc field service. 1,850+ technicians, 90% same-day resolution.",
         url: `${BASE_URL}/services/maintenance`,
         images: [
             {
