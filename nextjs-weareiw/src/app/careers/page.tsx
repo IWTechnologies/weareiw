@@ -129,7 +129,7 @@ export default function CareersPage() {
                 </div>
             </section>
 
-            <section className="w-full flex justify-center text-brand-black">
+            {/* <section className="w-full flex justify-center text-brand-black">
                 <div className="w-full py-14">
                     <div className="container mx-auto flex justify-center">
                         <div className="max-w-333.25 w-[90%] flex flex-col gap-2">
@@ -156,7 +156,7 @@ export default function CareersPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="w-full py-14">
                 <div className="container mx-auto">
@@ -188,40 +188,42 @@ export default function CareersPage() {
                 </div>
             </section>
 
-            <section className="relative w-full py-14">
-                <div className="absolute inset-0 z-10 opacity-50">
-                    <img src="/IWT_Logomark_White.png" alt="White IW logo displayed on section background" />
-                </div>
-                <div className="relative z-20 container mx-auto">
+            <section className="w-full py-14">
+                <div className="container mx-auto">
                     <div className="w-[90%] mx-auto">
                         <Blurb 
                             media={{
-                            type: "image",
-                            src: "/copylifeCycle.png",
-                            alt: "Blue tinted image of IW team in meeting",
-                            width: 512,
-                            height: 342,
+                            type: "video",
+                            youtubeId: "dK_KRF_z0rk",
                             }}
                             text={
                             <>
-                                <h3>Environmental Conscious Practices</h3>
+                                <h3>Green Before Green Was Cool</h3>
+                                <p className="">
+                                    IW was recycling hardware before it had a hashtag. Back in late1970s, refurbished POS wasn't even a category. 
+                                    If you needed equipment, you bought it new from the manufacturer, full stop. Our founder, Al Moorhouse, 
+                                    saw the waste in that and built IW on refurbishing and reselling retail tech when there was no playbook and 
+                                    no buzzword for it. 
+                                </p>
                                 <p>
-                                    When it comes to the environment, we are leading the way in our 
-                                    industry, preventing improperly discarded electronic equipment from 
-                                    polluting our soil and waterways. At IW Technologies, we practice 
-                                    e-cycling — collecting, distributing, repairing, or reusing used 
-                                    electronic components before responsibly recycling them. This 
-                                    conserves natural resources, cuts down on costs, and saves energy.
+                                    Sustainability wasn't a campaign back then. It was just good business: fix what works, reuse what you can, throw away as little as possible. That's still the job.  
+                                </p>
+                                <p>
+                                    And it's not a rounding error. In the last 16 months, IW kept more than 1.8 million pounds of hardware out of 
+                                    landfills:1,301,263 lbs in 2025 and 566,887 lbs so far in 2026. For the people who do this work, that's not a 
+                                    stat on a slide. It's the repair bench, the recovery runs, and the responsible disposition you'd own here every day.
+                                </p>
+                                <p>
+                                    See the work behind the 1.8 million pounds. We made it for Earth Day. We do it every day.
                                 </p>
                             </>
                             }
-                            reverse
                             rounded
+                            reverse
                             textColor="text-brand-black"
                         />
                     </div>
                 </div>
-                
             </section>
 
             <section className="relative z-20 w-full mx-auto py-14 flex flex-col items-center gap-5">
