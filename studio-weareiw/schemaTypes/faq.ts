@@ -49,6 +49,9 @@ export const faqPost = defineType({
                 { title: 'ITAD & Asset Disposition', value: 'ITAD & Asset Disposition' },
                 { title: 'Low Voltage Cabling & Store Connectivity', value: 'Low Voltage Cabling & Store Connectivity' },
                 { title: 'About IW Technologies', value: 'About IW Technologies' },
+                { title: 'POS Hardware Buyback Program', value: 'POS Hardware Buyback Program' },
+                { title: 'Recycling, Disposition, Sustainability', value: 'Recycling, Disposition, Sustainability' },
+                { title: 'Refurbishment', value: 'Refurbishment' },
             ]
         },
         validation: rule => rule.required(),

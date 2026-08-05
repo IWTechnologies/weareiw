@@ -44,7 +44,7 @@ export default async function OpportunitiesPage() {
                             do their best work.
                         </p>
                         <p>
-                            If you're ready to level-up and gorw your career, you've come 
+                            If you're ready to level-up and grow your career, you've come 
                             to the right place.
                         </p>
                     </>
