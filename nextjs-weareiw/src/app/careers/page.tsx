@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import Card from "@/components/Card";
 import PhotoGrid from "@/components/PhotoGrid";
+import YoutubeFacade from "@/components/YoutubeFacade";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
@@ -321,7 +322,7 @@ export default function CareersPage() {
             <section className="w-full flex justify-center bg-brand-black text-white">
                 <div className="w-full py-14">
                     <div className="container mx-auto flex justify-center">
-                        <div className="max-w-333.25 w-[90%] flex flex-col gap-8">
+                        <div className="max-w-384 w-[90%] flex flex-col gap-8">
                             <h2 className="">
                                 Now the Part We'll Actually Brag About.
                             </h2>
@@ -381,20 +382,39 @@ export default function CareersPage() {
                                     </div>
                                 </li>
                             </ul>
-
-                            <div className="flex flex-col gap-2">
-                                <h3>Don't Take Our Word for It. We're Biased.</h3>
-                                <p className="">
-                                    We've spent this whole page bragging. But it’s fair enough because it's our careers page.  
-                                </p>
-                                <p>
-                                    However, the people who'd actually know are the ones who show up every day and could've left at any point. They didn't. Here's why, in their words.
-                                </p>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="w-full py-14 bg-brand-black">
+                <div className="container mx-auto flex flex-col justify-center gap-8 text-white">
+                    <div className="max-w-384 w-[90%] mx-auto flex flex-col gap-2">
+                        <h3>Don't Take Our Word for It. We're Biased.</h3>
+                        <p className="">
+                            We've spent this whole page bragging. But it’s fair enough because it's our careers page.  
+                        </p>
+                        <p>
+                            However, the people who'd actually know are the ones who show up every day and could've left at any point. They didn't. Here's why, in their words.
+                        </p>
+                    </div>
+
+                    <div className="max-w-384 w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div className="overflow-hidden rounded-2xl">
+                            <YoutubeFacade youtubeId={"fo9EqMihuDs"} />
+                        </div>
+                        <div className="overflow-hidden rounded-2xl">
+                            <YoutubeFacade youtubeId={"_sivEXcZSZ4"} />
+                        </div>
+                        <div className="overflow-hidden rounded-2xl">
+                            <YoutubeFacade youtubeId={"r_FEllhGedE"} />
+                        </div>
+                        <div className="overflow-hidden rounded-2xl">
+                            <YoutubeFacade youtubeId={"mn7Ghs5_MLM"} />
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section className="relative w-full py-20 bg-brand-black">
