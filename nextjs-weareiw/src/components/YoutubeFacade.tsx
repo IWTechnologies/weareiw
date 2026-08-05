@@ -25,7 +25,7 @@ export default function YoutubeFacade({ youtubeId }: YoutubeProps) {
                     aria-label="Play video"
                 >
                     <img
-                        src={`https://i.ytimg.com/vi/${youtubeId}/mqdefault.jpg`}
+                        src={`https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`}
                         alt="video thumbnail"
                         className="w-full h-full object-cover"
                     />
