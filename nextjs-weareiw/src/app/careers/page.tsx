@@ -164,10 +164,10 @@ export default function CareersPage() {
                         <Blurb 
                             media={{
                             type: "image",
-                            src: "/copylifeCycle.png",
-                            alt: "Blue tinted image of IW team in meeting",
-                            width: 512,
-                            height: 342,
+                            src: "/careerImages/WorkEnvironment.webp",
+                            alt: "Image of IW team celebrating our 50th year.",
+                            width: 700,
+                            height: 400,
                             }}
                             text={
                             <>
