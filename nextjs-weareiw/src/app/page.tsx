@@ -61,12 +61,12 @@ export default function IndexPage() {
       
       <section id="hardware"
       className="w-full flex flex-col items-center">
-        <div className="w-[80%] mx-auto mb-15 text-brand-black text-center">
+        <div className="w-[85%] mx-auto mb-15 text-brand-black text-center">
           <h2>
             Start with Hardware. Or Start with Services. We’re Built to Scale with You.
           </h2>
         </div>
-        <div className="max-w-7xl w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="max-w-7xl w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card 
             imageSrc="/hardware-image.webp"
             imageAlt="Blue tinted view our products card image"
