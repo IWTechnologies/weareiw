@@ -130,35 +130,6 @@ export default function CareersPage() {
                 </div>
             </section>
 
-            {/* <section className="w-full flex justify-center text-brand-black">
-                <div className="w-full py-14">
-                    <div className="container mx-auto flex justify-center">
-                        <div className="max-w-333.25 w-[90%] flex flex-col gap-2">
-                            <h2 className="">
-                                Green Before Green Was Cool
-                            </h2>
-                            <p className="">
-                                IW was recycling hardware before it had a hashtag. Back in late1970s, refurbished POS wasn't even a category. 
-                                If you needed equipment, you bought it new from the manufacturer, full stop. Our founder, Al Moorhouse, 
-                                saw the waste in that and built IW on refurbishing and reselling retail tech when there was no playbook and 
-                                no buzzword for it. 
-                            </p>
-                            <p>
-                                Sustainability wasn't a campaign back then. It was just good business: fix what works, reuse what you can, throw away as little as possible. That's still the job.  
-                            </p>
-                            <p>
-                                And it's not a rounding error. In the last 16 months, IW kept more than 1.8 million pounds of hardware out of 
-                                landfills:1,301,263 lbs in 2025 and 566,887 lbs so far in 2026. For the people who do this work, that's not a 
-                                stat on a slide. It's the repair bench, the recovery runs, and the responsible disposition you'd own here every day.
-                            </p>
-                            <p className="font-semibold">
-                                <a href="https://www.youtube.com/watch?v=dK_KRF_z0rk" className="underline hover:text-brand-aqua">See the work behind the 1.8 million pounds. We made it for Earth Day. We do it every day.</a> 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
             <section className="w-full py-14">
                 <div className="container mx-auto">
                     <div className="w-[90%] mx-auto">
