@@ -31,24 +31,37 @@ export default async function BlogPage() {
     return (
         <div>
             <section className="w-full my-16 text-brand-black">
-                <div className="max-w-333.25 w-[70%] mx-auto flex flex-col gap-10">
+                <div className="max-w-333.25 w-[80%] mx-auto flex flex-col gap-10">
                     <h2 className="">
                         Explore our Blog
                     </h2>
-                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {blogs.map((blog) => (
                             <Link key={blog._id} href={`/resources/blog/${blog.slug}`}
-                            className="group w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden
+                            className="group w-full flex flex-col rounded-3xl overflow-hidden
                             transition duration-300 focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
                                 {/* display blog image, if not blog image. use fallback image */}
-                                <div className="w-full h-48 rounded-3xl overflow-hidden">
+                                <div className="w-full h-96 rounded-3xl overflow-hidden">
                                     <img src={blog.image || "/IWT_Logomark_White.png"} alt={blog.altText}
-                                    className="w-full h-full object-cover" />
+                                    className="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
                                 </div>
-                                <h4 className="w-full py-4 text-center transition duration-300 text-white group-hover:text-brand-aqua">
+                                <h4 className="w-full p-4 text-start transition-transform duration-300 ease-in-out font-semibold text-brand-black group-hover:text-brand-aqua">
                                     {blog.title}
                                 </h4>
                             </Link>
+
+                            // <Link key={blog._id} href={`/resources/blog/${blog.slug}`}
+                            // className="group relative w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden
+                            // transition duration-300 focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
+                            //     {/* display blog image, if not blog image. use fallback image */}
+                            //     <div className="w-full h-48 rounded-3xl overflow-hidden">
+                            //         <img src={blog.image || "/IWT_Logomark_White.png"} alt={blog.altText}
+                            //         className="w-full h-full object-cover" />
+                            //     </div>
+                            //     <h4 className="w-full py-4 text-center transition duration-300 text-white group-hover:text-brand-aqua">
+                            //         {blog.title}
+                            //     </h4>
+                            // </Link>
                         ))} 
                     </div>
                 </div>
