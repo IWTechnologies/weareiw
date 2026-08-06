@@ -93,39 +93,53 @@ export default function CareersPage() {
                 </div>
             </section>
 
-            <section className="w-full flex justify-center text-brand-black">
-                <div className="w-full py-14">
-                    <div className="container mx-auto flex justify-center">
-                        <div className="max-w-333.25 w-[90%] flex flex-col gap-2">
-                            <h2 className="">
+            <section className="w-full py-14">
+                <div className="container mx-auto">
+                    <div className="w-[90%] mx-auto">
+                        <Blurb 
+                            media={{
+                            type: "image",
+                            src: "/careerImages/GPTWLogoBlurb.png",
+                            alt: "May 2026 to May 2027 IW Technologies Great Place to Work Certified image.",
+                            width: 700,
+                            height: 500,
+                            }}
+                            text={
+                            <>
+                                <h3 className="">
                                 Great Place to Work® (Officially)
-                            </h2>
-                            <p className="">
-                                We didn't give ourselves that title. Our own people did, anonymously, in the year we turned 50. 
-                                IW earned Great Place To Work® Certification in 2026, scored entirely on what employees said when 
-                                leadership wasn't in the room. "They treat you like family" hits different when it's the confidential 
-                                survey saying it.
-                            </p>
-                            <p>
-                                So what earns that rating? Culture we actually pay for and put on the calendar.  
-                            </p>
-                            <p>
-                                Employee Appreciation Week that blocks off real time to celebrate our people. 
-                                The IW Reboot, a 90-day wellness program that treats your health like core infrastructure, 
-                                not a poster in the break room. 
-                            </p>
-                            <p>
-                                A holiday party that packs in nearly 200 of us. And the Santa event, where every kid in the IW family 
-                                goes home with a gift from the "IW reindeers." Fifty years in, that's still protected time, not an afterthought.
-                            </p>
-                            <p>
-                                Great Place To Work put it best: earning this takes "consistent and intentional dedication to the overall 
-                                employee experience." Translation - you can't fake this one.
-                            </p>
-                            <p className="font-accent italic">
-                                We're an equal opportunity employer. We hire, promote, and support our people on the work  never on gender, race, religion, sexual orientation, age, or ability.
-                            </p>
-                        </div>
+                                </h3>
+                                <p className="">
+                                    We didn't give ourselves that title. Our own people did, anonymously, in the year we turned 50. 
+                                    IW earned Great Place To Work® Certification in 2026, scored entirely on what employees said when 
+                                    leadership wasn't in the room. "They treat you like family" hits different when it's the confidential 
+                                    survey saying it.
+                                </p>
+                                <p>
+                                    So what earns that rating? Culture we actually pay for and put on the calendar.  
+                                </p>
+                                <p>
+                                    Employee Appreciation Week that blocks off real time to celebrate our people. 
+                                    The IW Reboot, a 90-day wellness program that treats your health like core infrastructure, 
+                                    not a poster in the break room. 
+                                </p>
+                                <p>
+                                    A holiday party that packs in nearly 200 of us. And the Santa event, where every kid in the IW family 
+                                    goes home with a gift from the "IW reindeers." Fifty years in, that's still protected time, not an afterthought.
+                                </p>
+                                <p>
+                                    Great Place To Work put it best: earning this takes "consistent and intentional dedication to the overall 
+                                    employee experience." Translation - you can't fake this one.
+                                </p>
+                                <p className="font-accent italic">
+                                    We're an equal opportunity employer. We hire, promote, and support our people on the work  never on gender, race, religion, sexual orientation, age, or ability.
+                                </p>
+                            </>
+                            }
+                            rounded
+                            reverse
+                            textColor="text-brand-black"
+                        />
                     </div>
                 </div>
             </section>
@@ -139,7 +153,7 @@ export default function CareersPage() {
                             src: "/careerImages/WorkEnvironment.webp",
                             alt: "Image of IW team celebrating our 50th year.",
                             width: 700,
-                            height: 400,
+                            height: 500,
                             }}
                             text={
                             <>
