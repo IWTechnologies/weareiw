@@ -28,7 +28,7 @@ export default function DispositionPage() {
             <section className="h-96 text-white">
                 <Hero 
                     imageSrc="/heroImages/shutterstock1.jpg"
-                    imageAlt="Blue tinted procurement hero image"
+                    imageAlt="placeholder hero image"
                     imageWidth={813}
                     imageHeight={457}
                     text={

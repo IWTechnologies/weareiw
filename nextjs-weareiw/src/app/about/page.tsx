@@ -51,7 +51,7 @@ export default function AboutPage() {
             <section className="h-fit flex flex-col items-center text-white">
                 <Hero 
                     imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted Services card image"
+                    imageAlt="Blue tinted IW company image"
                     imageWidth={1920}
                     imageHeight={1080}
                     text={
@@ -288,7 +288,7 @@ export default function AboutPage() {
                         media={{
                             type: "image",
                             src: "/aboutImages/flatNewPartners.webp",
-                            alt: "Blue tinted image of IW team in meeting",
+                            alt: "Graphic image showcasing IW partners",
                             width: 512,
                             height: 342,
                         }}
@@ -340,7 +340,7 @@ export default function AboutPage() {
                             media={{
                                 type: "image",
                                 src: "/aboutImages/Careers-at-IW.webp",
-                                alt: "Blue tinted image of IW team in meeting",
+                                alt: "Blue tinted image of IW sales team with CEO",
                                 width: 512,
                                 height: 342,
                             }}

@@ -45,7 +45,7 @@ export default async function ProductsPage() {
             <section className="h-fit flex flex-col items-center text-white">
                 <Hero 
                     imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted Services card image"
+                    imageAlt="Blue tinted IW company image"
                     imageWidth={1920}
                     imageHeight={1080}
                     text={

@@ -33,7 +33,7 @@ export default async function OpportunitiesPage() {
             <section className="h-fit text-white">
                 <Hero 
                     imageSrc="/heroImages/shutterstock1.jpg"
-                    imageAlt="Blue tinted procurement hero image"
+                    imageAlt="Image of tech workbench lined with POS"
                     imageWidth={813}
                     imageHeight={457}
                     text={

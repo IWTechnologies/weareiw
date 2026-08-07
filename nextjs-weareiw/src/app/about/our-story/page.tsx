@@ -28,7 +28,7 @@ export default function OurStory() {
             <section className="h-fit flex flex-col items-center text-white">
                 <Hero 
                     imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted Services card image"
+                    imageAlt="Blue tinted image of IW team"
                     imageWidth={1920}
                     imageHeight={1080}
                     text={

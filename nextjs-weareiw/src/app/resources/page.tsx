@@ -51,7 +51,7 @@ export default async function ResourcesPage() {
                             <div key={card.title} className="">
                                 <Card 
                                     imageSrc="/View-our-products-Moody-blue.png"
-                                    imageAlt="Blue tinted view our products card image"
+                                    imageAlt="Blue tinted card image"
                                     imageWidth={663}
                                     imageHeight={432}
                                     text={
