@@ -93,71 +93,56 @@ export default function CareersPage() {
                 </div>
             </section>
 
-            <section className="w-full flex justify-center text-brand-black">
-                <div className="w-full py-14">
-                    <div className="container mx-auto flex justify-center">
-                        <div className="max-w-333.25 w-[90%] flex flex-col gap-2">
-                            <h2 className="">
+            <section className="w-full py-14">
+                <div className="container mx-auto">
+                    <div className="w-[90%] mx-auto">
+                        <Blurb 
+                            media={{
+                            type: "image",
+                            src: "/careerImages/GPTWLogoBlurb.png",
+                            alt: "May 2026 to May 2027 IW Technologies Great Place to Work Certified image.",
+                            width: 700,
+                            height: 500,
+                            }}
+                            text={
+                            <>
+                                <h3 className="">
                                 Great Place to Work® (Officially)
-                            </h2>
-                            <p className="">
-                                We didn't give ourselves that title. Our own people did, anonymously, in the year we turned 50. 
-                                IW earned Great Place To Work® Certification in 2026, scored entirely on what employees said when 
-                                leadership wasn't in the room. "They treat you like family" hits different when it's the confidential 
-                                survey saying it.
-                            </p>
-                            <p>
-                                So what earns that rating? Culture we actually pay for and put on the calendar.  
-                            </p>
-                            <p>
-                                Employee Appreciation Week that blocks off real time to celebrate our people. 
-                                The IW Reboot, a 90-day wellness program that treats your health like core infrastructure, 
-                                not a poster in the break room. 
-                            </p>
-                            <p>
-                                A holiday party that packs in nearly 200 of us. And the Santa event, where every kid in the IW family 
-                                goes home with a gift from the "IW reindeers." Fifty years in, that's still protected time, not an afterthought.
-                            </p>
-                            <p>
-                                Great Place To Work put it best: earning this takes "consistent and intentional dedication to the overall 
-                                employee experience." Translation - you can't fake this one.
-                            </p>
-                            <p className="font-accent italic">
-                                We're an equal opportunity employer. We hire, promote, and support our people on the work  never on gender, race, religion, sexual orientation, age, or ability.
-                            </p>
-                        </div>
+                                </h3>
+                                <p className="">
+                                    We didn't give ourselves that title. Our own people did, anonymously, in the year we turned 50. 
+                                    IW earned Great Place To Work® Certification in 2026, scored entirely on what employees said when 
+                                    leadership wasn't in the room. "They treat you like family" hits different when it's the confidential 
+                                    survey saying it.
+                                </p>
+                                <p>
+                                    So what earns that rating? Culture we actually pay for and put on the calendar.  
+                                </p>
+                                <p>
+                                    Employee Appreciation Week that blocks off real time to celebrate our people. 
+                                    The IW Reboot, a 90-day wellness program that treats your health like core infrastructure, 
+                                    not a poster in the break room. 
+                                </p>
+                                <p>
+                                    A holiday party that packs in nearly 200 of us. And the Santa event, where every kid in the IW family 
+                                    goes home with a gift from the "IW reindeers." Fifty years in, that's still protected time, not an afterthought.
+                                </p>
+                                <p>
+                                    Great Place To Work put it best: earning this takes "consistent and intentional dedication to the overall 
+                                    employee experience." Translation - you can't fake this one.
+                                </p>
+                                <p className="font-accent italic">
+                                    We're an equal opportunity employer. We hire, promote, and support our people on the work  never on gender, race, religion, sexual orientation, age, or ability.
+                                </p>
+                            </>
+                            }
+                            rounded
+                            reverse
+                            textColor="text-brand-black"
+                        />
                     </div>
                 </div>
             </section>
-
-            {/* <section className="w-full flex justify-center text-brand-black">
-                <div className="w-full py-14">
-                    <div className="container mx-auto flex justify-center">
-                        <div className="max-w-333.25 w-[90%] flex flex-col gap-2">
-                            <h2 className="">
-                                Green Before Green Was Cool
-                            </h2>
-                            <p className="">
-                                IW was recycling hardware before it had a hashtag. Back in late1970s, refurbished POS wasn't even a category. 
-                                If you needed equipment, you bought it new from the manufacturer, full stop. Our founder, Al Moorhouse, 
-                                saw the waste in that and built IW on refurbishing and reselling retail tech when there was no playbook and 
-                                no buzzword for it. 
-                            </p>
-                            <p>
-                                Sustainability wasn't a campaign back then. It was just good business: fix what works, reuse what you can, throw away as little as possible. That's still the job.  
-                            </p>
-                            <p>
-                                And it's not a rounding error. In the last 16 months, IW kept more than 1.8 million pounds of hardware out of 
-                                landfills:1,301,263 lbs in 2025 and 566,887 lbs so far in 2026. For the people who do this work, that's not a 
-                                stat on a slide. It's the repair bench, the recovery runs, and the responsible disposition you'd own here every day.
-                            </p>
-                            <p className="font-semibold">
-                                <a href="https://www.youtube.com/watch?v=dK_KRF_z0rk" className="underline hover:text-brand-aqua">See the work behind the 1.8 million pounds. We made it for Earth Day. We do it every day.</a> 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
 
             <section className="w-full py-14">
                 <div className="container mx-auto">
@@ -168,7 +153,7 @@ export default function CareersPage() {
                             src: "/careerImages/WorkEnvironment.webp",
                             alt: "Image of IW team celebrating our 50th year.",
                             width: 700,
-                            height: 400,
+                            height: 500,
                             }}
                             text={
                             <>
@@ -289,33 +274,33 @@ export default function CareersPage() {
 
             <section className="w-full py-20 bg-brand-black">
                 <div className="max-w-333.25 w-[90%] mx-auto flex flex-col gap-10">
-                        <div className="w-[80%] flex flex-col text-white">
-                            <h2>
-                                The Basics? Covered.
-                            </h2>
-                            <p>
-                                The stuff you'd check for on any offer letter.
-                            </p>
-                        </div>
-                        
-                        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                            {benefitPerks.map((perks) => (
-                                <div key={perks.label} className="relative rounded-2xl overflow-hidden">
-                                    <div className="absolute inset-0 z-10 bg-radial-[at_5%_10%] from-brand-navy/20 to-transparent" />
-                                    <Card
-                                        text={
-                                            <>
-                                                <div className="z-20 flex flex-col items-center">
-                                                    <img src={perks.src} alt={perks.alt} height={100} width={100} />
-                                                    <h3 className="text-white">{perks.label}</h3>
-                                                </div>
-                                            </>
-                                        }
-                                        bgColor="bg-brand-black"
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                    <div className="w-[80%] flex flex-col text-white">
+                        <h2>
+                            The Basics? Covered.
+                        </h2>
+                        <p>
+                            The stuff you'd check for on any offer letter.
+                        </p>
+                    </div>
+                    
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        {benefitPerks.map((perks) => (
+                            <div key={perks.label} className="relative rounded-2xl overflow-hidden">
+                                <div className="absolute inset-0 z-10 bg-radial-[at_5%_10%] from-brand-navy/20 to-transparent" />
+                                <Card
+                                    text={
+                                        <>
+                                            <div className="z-20 flex flex-col items-center">
+                                                <img src={perks.src} alt={perks.alt} height={100} width={100} />
+                                                <h3 className="text-white">{perks.label}</h3>
+                                            </div>
+                                        </>
+                                    }
+                                    bgColor="bg-brand-black"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -387,6 +372,7 @@ export default function CareersPage() {
                 </div>
             </section>
 
+            {/* Empoloyee testimonials section*/}
             <section className="w-full py-14 bg-brand-black">
                 <div className="container mx-auto flex flex-col justify-center gap-8 text-white">
                     <div className="max-w-384 w-[90%] mx-auto flex flex-col gap-2">
