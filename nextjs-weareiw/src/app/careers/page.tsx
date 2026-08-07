@@ -274,33 +274,33 @@ export default function CareersPage() {
 
             <section className="w-full py-20 bg-brand-black">
                 <div className="max-w-333.25 w-[90%] mx-auto flex flex-col gap-10">
-                        <div className="w-[80%] flex flex-col text-white">
-                            <h2>
-                                The Basics? Covered.
-                            </h2>
-                            <p>
-                                The stuff you'd check for on any offer letter.
-                            </p>
-                        </div>
-                        
-                        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                            {benefitPerks.map((perks) => (
-                                <div key={perks.label} className="relative rounded-2xl overflow-hidden">
-                                    <div className="absolute inset-0 z-10 bg-radial-[at_5%_10%] from-brand-navy/20 to-transparent" />
-                                    <Card
-                                        text={
-                                            <>
-                                                <div className="z-20 flex flex-col items-center">
-                                                    <img src={perks.src} alt={perks.alt} height={100} width={100} />
-                                                    <h3 className="text-white">{perks.label}</h3>
-                                                </div>
-                                            </>
-                                        }
-                                        bgColor="bg-brand-black"
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                    <div className="w-[80%] flex flex-col text-white">
+                        <h2>
+                            The Basics? Covered.
+                        </h2>
+                        <p>
+                            The stuff you'd check for on any offer letter.
+                        </p>
+                    </div>
+                    
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        {benefitPerks.map((perks) => (
+                            <div key={perks.label} className="relative rounded-2xl overflow-hidden">
+                                <div className="absolute inset-0 z-10 bg-radial-[at_5%_10%] from-brand-navy/20 to-transparent" />
+                                <Card
+                                    text={
+                                        <>
+                                            <div className="z-20 flex flex-col items-center">
+                                                <img src={perks.src} alt={perks.alt} height={100} width={100} />
+                                                <h3 className="text-white">{perks.label}</h3>
+                                            </div>
+                                        </>
+                                    }
+                                    bgColor="bg-brand-black"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -372,6 +372,7 @@ export default function CareersPage() {
                 </div>
             </section>
 
+            {/* Empoloyee testimonials section*/}
             <section className="w-full py-14 bg-brand-black">
                 <div className="container mx-auto flex flex-col justify-center gap-8 text-white">
                     <div className="max-w-384 w-[90%] mx-auto flex flex-col gap-2">
