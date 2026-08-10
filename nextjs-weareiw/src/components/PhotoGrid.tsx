@@ -1,13 +1,13 @@
 const careerPhotos = [
-    { id: 1, src: "/careerImages/EmployeeAppreciationWeek2024.webp", alt: "test" },
-    { id: 2, src: "/careerImages/life-at-iwt-07.jpg", alt: "test" },
-    { id: 3, src: "/careerImages/ConventionBooth.webp", alt: "test" },
-    { id: 4, src: "/careerImages/life-at-iwt-09.jpg", alt: "test" },
-    { id: 5, src: "/careerImages/life-at-iwt-01.jpg", alt: "test" },
-    { id: 6, src: "/careerImages/Mike-and-Chester-Cat.png", alt: "test" },
-    { id: 7, src: "/careerImages/santa-2024.webp", alt: "test" },
-    { id: 8, src: "/careerImages/Balta-Retirement-01.webp", alt: "test" },
-    { id: 9, src: "/careerImages/life-at-iwt-02.jpg", alt: "test" },
+    { id: 1, src: "/careerImages/rectangle1.webp", alt: "IW customer service team" },
+    { id: 2, src: "/careerImages/square1.webp", alt: "IW celebrating at annual employee appreciation week, playing in bags tournament" },
+    { id: 3, src: "/careerImages/square2.webp", alt: "IW team celebrating Easter with the easter bunny" },
+    { id: 4, src: "/careerImages/square3.webp", alt: "IW employees celebrating Cinco de Mayo" },
+    { id: 5, src: "/careerImages/rectangle4.webp", alt: "IW employees conversing at front desk" },
+    { id: 6, src: "/careerImages/Mike-and-Chester-Cat.png", alt: "Mike Thornton with Chester Cheetah" },
+    { id: 7, src: "/careerImages/rectangle3.webp", alt: "IW employees working in the warehouse" },
+    { id: 8, src: "/careerImages/Balta-Retirement-01.webp", alt: "IW celebrating Balta's retirement" },
+    { id: 9, src: "/careerImages/square4.webp", alt: "IW team recruiting at the Elgin Community College job fair" },
 ]
 
 export default function PhotoGrid() {

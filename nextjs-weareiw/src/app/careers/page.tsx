@@ -327,7 +327,7 @@ export default function CareersPage() {
                                     className="shrink-0" />
                                     <div className="">
                                         <span className="font-semibold">The Santa event: </span>
-                                        very kid in the IW family goes home with a real gift from the "IW reindeers."
+                                        every kid in the IW family goes home with a real gift from the "IW reindeers."
                                     </div>
                                 </li>
                                 <li className="flex gap-2">
@@ -336,7 +336,7 @@ export default function CareersPage() {
                                     className="shrink-0" />
                                     <div className="">
                                         <span className="font-semibold">IW Reboot: </span>
-                                        every kid in the IW family goes home with a real gift from the "IW reindeers."
+                                        a 90-day wellness program that tracks real health markers and pays out real prizes. Your health, treated like infrastructure.
                                     </div>
                                 </li>
                                 <li className="flex gap-2">
