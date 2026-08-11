@@ -48,7 +48,7 @@ const aboutStats = [
 export default function AboutPage() {
     return (
         <div className="">
-            <section className="h-fit flex flex-col items-center text-white">
+            <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
                     imageSrc="/aboutImages/TeamPhotoWebsiteUTO.webp"
                     imageAlt="IW technologies company photo"

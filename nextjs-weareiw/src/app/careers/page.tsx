@@ -37,7 +37,7 @@ const benefitPerks = [
 export default function CareersPage() {
     return (
         <div>
-            <section className="h-fit text-white">
+            <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
                     imageSrc="/heroImages/CareersHeroImage.webp"
                     imageAlt="Careers page hero image"
