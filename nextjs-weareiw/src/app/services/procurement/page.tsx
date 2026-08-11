@@ -27,8 +27,8 @@ export default function ProcurementPage() {
         <div>
             <section className="h-96 text-white">
                 <Hero 
-                    imageSrc="/serviceImages/ProcurementHero.webp"
-                    imageAlt="IW procurement page hero image"
+                    imageSrc="/serviceImages/ProcurementNew.webp"
+                    imageAlt="Procurement service hero image"
                     imageWidth={1900}
                     imageHeight={400}
                     text={

@@ -27,10 +27,10 @@ export default function DispositionPage() {
         <div>
             <section className="h-96 text-white">
                 <Hero 
-                    imageSrc="/heroImages/shutterstock1.jpg"
-                    imageAlt="placeholder hero image"
-                    imageWidth={813}
-                    imageHeight={457}
+                    imageSrc="/serviceImages/DispositionNew.webp"
+                    imageAlt="Disposition service hero image"
+                    imageWidth={1900}
+                    imageHeight={400}
                     text={
                     <>
                         
