@@ -50,10 +50,10 @@ export default function AboutPage() {
         <div className="">
             <section className="h-fit flex flex-col items-center text-white">
                 <Hero 
-                    imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted IW company image"
-                    imageWidth={1920}
-                    imageHeight={1080}
+                    imageSrc="/aboutImages/TeamPhotoWebsiteUTO.webp"
+                    imageAlt="IW technologies company photo"
+                    imageWidth={1900}
+                    imageHeight={535}
                     text={
                     <>
                       <h1>Powering the Tech Ecosystems Behind the World's Top Brands</h1>

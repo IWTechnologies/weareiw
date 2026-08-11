@@ -68,10 +68,10 @@ export default async function ProductsPage() {
                             <Blurb 
                             media={{
                                 type: "image",
-                                src: "/aboutImages/flatNewPartners.webp",
-                                alt: "Blue tinted image of IW team in meeting",
-                                width: 512,
-                                height: 342,
+                                src: "/aboutImages/PartnersCollageNew.webp",
+                                alt: "Image displaying all IW Technologies Partners",
+                                width: 700,
+                                height: 500,
                             }}
                             text={
                                 <>
