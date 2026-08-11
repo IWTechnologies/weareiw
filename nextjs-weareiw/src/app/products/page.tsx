@@ -42,10 +42,10 @@ export default async function ProductsPage() {
 
     return (
         <div>
-            <section className="h-fit flex flex-col items-center text-white">
+            <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
                     imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted Services card image"
+                    imageAlt="Blue tinted IW company image"
                     imageWidth={1920}
                     imageHeight={1080}
                     text={
@@ -68,10 +68,10 @@ export default async function ProductsPage() {
                             <Blurb 
                             media={{
                                 type: "image",
-                                src: "/aboutImages/flatNewPartners.webp",
-                                alt: "Blue tinted image of IW team in meeting",
-                                width: 512,
-                                height: 342,
+                                src: "/aboutImages/PartnersCollageNew.webp",
+                                alt: "Image displaying all IW Technologies Partners",
+                                width: 700,
+                                height: 500,
                             }}
                             text={
                                 <>

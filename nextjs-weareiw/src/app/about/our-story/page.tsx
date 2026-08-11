@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 export default function OurStory() {
     return (
         <div>
-            <section className="h-fit flex flex-col items-center text-white">
+            <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
                     imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted Services card image"
+                    imageAlt="Blue tinted image of IW team"
                     imageWidth={1920}
                     imageHeight={1080}
                     text={

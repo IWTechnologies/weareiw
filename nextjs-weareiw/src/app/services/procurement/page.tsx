@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 export default function ProcurementPage() {
     return (
         <div>
-            <section className="h-96 text-white">
+            <section className="h-96 w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/serviceImages/ProcurementHero.webp"
-                    imageAlt="IW procurement page hero image"
+                    imageSrc="/serviceImages/ProcurementNew.webp"
+                    imageAlt="Procurement service hero image"
                     imageWidth={1900}
                     imageHeight={400}
                     text={

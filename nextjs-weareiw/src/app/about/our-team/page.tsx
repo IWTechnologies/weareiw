@@ -28,8 +28,8 @@ export default async function OurTeamPage() {
     const teamMembers: TeamMember[] = await client.fetch(fetchTeamMembers);
 
     return (
-        <div className="bg-brand-black">
-            <section className="h-50 text-white">
+        <div className="">
+            <section className="h-50 w-full flex justify-center bg-brand-black text-white">
                 <Hero 
                     imageSrc="/heroImages/aboutUsHero.png"
                     imageAlt="Blue tinted Services card image"

@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 export default function LowVoltagePage() {
     return (
         <div>
-            <section className="h-96 text-white">
+            <section className="h-96 w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/serviceImages/LowVoltageCablingHero.webp"
-                    imageAlt="IW low voltage page hero image"
+                    imageSrc="/serviceImages/LowVoltageCablingNew.webp"
+                    imageAlt="Low voltage service hero image"
                     imageWidth={1900}
                     imageHeight={400}
                     text={

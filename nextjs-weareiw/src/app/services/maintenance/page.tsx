@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 export default function MaintenancePage() {
     return (
         <div>
-            <section className="h-96 text-white">
+            <section className="h-96 w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/serviceImages/MaintenanceHero.webp"
-                    imageAlt="IW maintenance page hero image"
+                    imageSrc="/serviceImages/MaintenanceNew.webp"
+                    imageAlt="Maintenance service hero image"
                     imageWidth={1900}
                     imageHeight={400}
                     text={

@@ -69,7 +69,7 @@ export default function IndexPage() {
         <div className="max-w-7xl w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card 
             imageSrc="/hardware-image.webp"
-            imageAlt="Blue tinted view our products card image"
+            imageAlt="View our products card image"
             imageWidth={663}
             imageHeight={432}
             text={
@@ -89,7 +89,7 @@ export default function IndexPage() {
           />
           <Card 
             imageSrc="/services-image.webp"
-            imageAlt="Blue tinted Services card image"
+            imageAlt="Services card image"
             imageWidth={669}
             imageHeight={375}
             text={

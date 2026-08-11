@@ -48,12 +48,12 @@ const aboutStats = [
 export default function AboutPage() {
     return (
         <div className="">
-            <section className="h-fit flex flex-col items-center text-white">
+            <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted Services card image"
-                    imageWidth={1920}
-                    imageHeight={1080}
+                    imageSrc="/aboutImages/TeamPhotoWebsiteUTO.webp"
+                    imageAlt="IW technologies company photo"
+                    imageWidth={1900}
+                    imageHeight={535}
                     text={
                     <>
                       <h1>Powering the Tech Ecosystems Behind the World's Top Brands</h1>
@@ -288,7 +288,7 @@ export default function AboutPage() {
                         media={{
                             type: "image",
                             src: "/aboutImages/flatNewPartners.webp",
-                            alt: "Blue tinted image of IW team in meeting",
+                            alt: "Graphic image showcasing IW partners",
                             width: 512,
                             height: 342,
                         }}
@@ -340,7 +340,7 @@ export default function AboutPage() {
                             media={{
                                 type: "image",
                                 src: "/aboutImages/Careers-at-IW.webp",
-                                alt: "Blue tinted image of IW team in meeting",
+                                alt: "Blue tinted image of IW sales team with CEO",
                                 width: 512,
                                 height: 342,
                             }}
