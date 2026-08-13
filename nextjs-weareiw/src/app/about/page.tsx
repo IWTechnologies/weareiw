@@ -148,7 +148,7 @@ export default function AboutPage() {
                     </div>
                     <Image
                     className="w-full lg:w-[90%] h-auto object-contain rounded-3xl" 
-                    src="/aboutImages/Whats-In-It-For-You.webp" alt="What's in it for you image graphic" 
+                    src="/serviceImages/noGapsNoHandoffs.webp" alt="What's in it for you image graphic" 
                     width="1920" height="1080"
                     sizes="(max-width: 1920px) 100vw, 50vw" />
                 </div>
@@ -220,17 +220,17 @@ export default function AboutPage() {
                         <Blurb 
                         media={{
                             type: "image",
-                            src: "/aboutImages/People-at-IW.webp",
-                            alt: "Blue tinted image of IW team in front of building",
-                            width: 512,
-                            height: 342,
+                            src: "/aboutImages/People-at-IW-700x500.webp",
+                            alt: "IW team photo for 50th year in business.",
+                            width: 700,
+                            height: 500,
                         }}
                         text={
                             <>
                             <div className="w-full flex items-center">
-                                <img src="/aboutImages/icons/person-burst-solid-full.svg" 
+                                {/* <img src="/aboutImages/icons/person-burst-solid-full.svg" 
                                 alt="people icon" height="50" width="50"
-                                className="mr-2" />
+                                className="mr-2" /> */}
                                 <h3>People at IW</h3>
                             </div>
                             <p className="font-medium">Experts Who Know Your Frontlines</p>
@@ -287,17 +287,17 @@ export default function AboutPage() {
                         <Blurb 
                         media={{
                             type: "image",
-                            src: "/aboutImages/flatNewPartners.webp",
+                            src: "/aboutImages/PartnersCollageNew.webp",
                             alt: "Graphic image showcasing IW partners",
-                            width: 512,
-                            height: 342,
+                            width: 700,
+                            height: 500,
                         }}
                         text={
                             <>
                             <div className="w-full flex items-center">
-                                <img src="/aboutImages/icons/handshake-solid-full.svg" 
+                                {/* <img src="/aboutImages/icons/handshake-solid-full.svg" 
                                 alt="handshake icon" height="50" width="50"
-                                className="mr-2" />  
+                                className="mr-2" />   */}
                                 <h3>Our Partners</h3>
                             </div>
                             
@@ -334,22 +334,19 @@ export default function AboutPage() {
                         </div>
                         
                     </div>
-                    <div className="container mx-auto rounded-2xl overflow-hidden">
-                        <div className="flex justify-center">
+                    <div className="container mx-auto">
+                        <div className="">
                             <Blurb 
                             media={{
-                                type: "image",
-                                src: "/aboutImages/Careers-at-IW.webp",
-                                alt: "Blue tinted image of IW sales team with CEO",
-                                width: 512,
-                                height: 342,
+                                type: "video",
+                                youtubeId: "u3jbnI_cUzI",
                             }}
                             text={
                                 <>
-                                <div className="w-full flex items-center lg:mt-8">
-                                    <img src="/aboutImages/icons/person-running-solid-full.svg" 
+                                <div className="w-full flex items-center">
+                                    {/* <img src="/aboutImages/icons/person-running-solid-full.svg" 
                                     alt="running person icon" height="50" width="50"
-                                    className="mr-2" />  
+                                    className="mr-2" /> */}
                                     <h3>IW Runs on Our People</h3>
                                 </div>
                                 <p className="font-medium">
@@ -372,41 +369,6 @@ export default function AboutPage() {
                             textColor="text-brand-black"
                             />
                         </div>
-                        <div className="flex justify-center">
-                            <Blurb 
-                            media={{
-                                type: "video",
-                                youtubeId: "rdhYth983zg",
-                            }}
-                            text={
-                                <>
-                                <div className="w-full flex items-center lg:mt-8">
-                                    <img src="/aboutImages/icons/recycle-solid-full.svg" 
-                                    alt="recycle icon" height="50" width="50"
-                                    className="mr-2" />  
-                                    <h3>Sustainability is the Standard</h3>
-                                </div>
-                                <p>
-                                    At IW, sustainability isn't a strategy, it's our operating model.
-                                </p>
-                                <p>
-                                    <span className="font-medium">In 2024 alone, we recycled 815 tons of technology equipment</span>
-                                    , driving down e-waste, emissions, and energy consumption across the IT supply chain.
-                                </p>
-                                <p>
-                                    We lead with action in the circular economy, offering enterprise partners a path 
-                                    to greener tech lifecycles through refurbishment, recovery, and responsible disposition.
-                                </p>
-                                <p>
-                                    This isn't seasonal ESG messaging. It's year-round, measurable impact.
-                                </p>
-                                <p>And we show up with proof year after year.</p>
-                                </>
-                            }
-                            reverse
-                            textColor="text-brand-black"
-                            />
-                        </div>
                     </div>
                     
                 </div>
@@ -418,10 +380,10 @@ export default function AboutPage() {
                         <Blurb 
                         media={{
                             type: "image",
-                            src: "/aboutImages/Careers-at-IW.webp",
-                            alt: "Blue tinted image of IW team in meeting",
-                            width: 512,
-                            height: 342,
+                            src: "/aboutImages/Careers-at-IW-700x500.webp",
+                            alt: "IW team photo sitting by main entrance displays",
+                            width: 700,
+                            height: 500,
                         }}
                         text={
                             <>
