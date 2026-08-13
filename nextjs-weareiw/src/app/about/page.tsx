@@ -335,7 +335,7 @@ export default function AboutPage() {
                         
                     </div>
                     <div className="container mx-auto">
-                        <div className="flex justify-center">
+                        <div className="">
                             <Blurb 
                             media={{
                                 type: "video",
