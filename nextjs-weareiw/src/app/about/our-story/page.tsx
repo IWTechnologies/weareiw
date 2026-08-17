@@ -480,7 +480,7 @@ export default function OurStory() {
                             </div> {/* end of timeline container */}
                         </div> {/* end of relative container */}
 
-                        <div className="my-16">
+                        <div className="flex flex-col my-16 border-b-2 border-brand-black">
                             <div className="border-b-2 border-brand-black p-2">
                                 <h2 data-aos="fade-down" className="w-full text-brand-black">
                                     THE PRESENT
@@ -539,6 +539,42 @@ export default function OurStory() {
                                     </div>
                                 </div>
                             </div> {/* end of twentySix container */}
+
+                            <div className="flex flex-col my-16 gap-10">
+                                <div className="imagesRow w-full flex flex-col items-center lg:flex-row gap-10">
+                                    <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
+                                        <Image
+                                        className="w-full h-auto object-contain rounded-3xl" 
+                                        src="/storyImages/IW20261.webp" alt="IW field technician photo 1" 
+                                        width="1448" height="1086"
+                                        sizes="(max-width: 1024px) 100vw, 50vw" />
+                                    </div>
+                                    <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
+                                        <Image
+                                        className="w-full h-auto object-contain rounded-3xl" 
+                                        src="/storyImages/IW20262.webp" alt="IW field technician photo 2" 
+                                        width="1448" height="1086"
+                                        sizes="(max-width: 1024px) 100vw, 50vw" />
+                                    </div>
+                                </div> {/* end of imagesRow container */}
+                                <div className="imagesRow w-full flex flex-col items-center lg:flex-row gap-10">
+                                    <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
+                                        <Image
+                                        className="w-full h-auto object-contain rounded-3xl" 
+                                        src="/storyImages/IW20263.webp" alt="IW field technician photo 3" 
+                                        width="1448" height="1086"
+                                        sizes="(max-width: 1024px) 100vw, 50vw" />
+                                    </div>
+                                    <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
+                                        <Image
+                                        className="w-full h-auto object-contain rounded-3xl" 
+                                        src="/storyImages/IW20264.webp" alt="IW field technician photo 4" 
+                                        width="1448" height="1086"
+                                        sizes="(max-width: 1024px) 100vw, 50vw" />
+                                    </div>
+                                </div> {/* end of imagesRow container */}
+                            </div>
+                            
                         </div>
                         
 
