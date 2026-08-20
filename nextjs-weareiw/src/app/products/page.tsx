@@ -4,7 +4,7 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import Hubspot from "@/components/forms/Hubspot";
-import ContactUs from "@/components/forms/ContactUs";
+import { Suspense } from "react";
 
 import { client } from "@/sanity/lib/client";
 import { fetchAllProducts, fetchAllProductCategories } from "@/sanity/queries/product";
@@ -115,8 +115,9 @@ export default async function ProductsPage() {
                             fill out the form below and contact us for a solution!
                         </p>
                     </div>
-
-                    <ProductGrid products={products} categories={categories} />
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <ProductGrid products={products} categories={categories} />
+                    </Suspense>
                 </div>
             </section>
 

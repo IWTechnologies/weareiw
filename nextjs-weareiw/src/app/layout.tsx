@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PromoBar from "@/components/PromoBar";
 import "./globals.css";
 import AOS from "@/components/AOS";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import Script from "next/script";
 
 const dmSans = DM_Sans({
@@ -62,7 +63,9 @@ export default function RootLayout({
         />
         <AOS>
           <main className="grow">
-            {children}
+            <NuqsAdapter>
+              {children}
+            </NuqsAdapter>
           </main>
         </AOS>
         <Footer 
