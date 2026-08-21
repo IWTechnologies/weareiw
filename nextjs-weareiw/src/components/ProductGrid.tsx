@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import { useQueryState } from "nuqs";
 import Link from "next/link";
 import { Product, ProductCategory } from "@/types/product";
 
@@ -9,39 +10,46 @@ type GridProps = {
 };
 
 export default function ProductGrid({ products, categories }: GridProps) {
-    const [activeTab, setActiveTab] = useState("all");
+    // const [activeTab, setActiveTab] = useState("all");
+    const [category, setCategory ] = useQueryState("category", {
+        defaultValue: "all",
+        clearOnDefault: true,
+        history: "replace",
+        scroll: false,
+    });
 
-    const filtered = activeTab === "all" ? products : products.filter((p) => p.categorySlug === activeTab);
+    const filtered = category === "all" ? products : products.filter((p) => p.categorySlug === category);
+    // const filtered = activeTab === "all" ? products : products.filter((p) => p.categorySlug === activeTab);
 
     return (
         <div className="w-full flex flex-col gap-4">
             {/* category tabs */}
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
                 <button
-                    onClick={() => setActiveTab("all")}
+                    onClick={() => setCategory("all")}
                     className={`w-full flex justify-center items-center wrap-anywhere 
                     px-4 py-2 rounded-2xl border-3 transition duration-300
                     focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
-                    ${activeTab === "all"
+                    ${category === "all"
                         ? "bg-brand-black text-white border-brand-black"
                         : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
                     }`}
                 >
                     All
                 </button>
-                {categories.map((category) => (
+                {categories.map((cat) => (
                     <button
-                        key={category._id}
-                        onClick={() => setActiveTab(category.slug)}
+                        key={cat._id}
+                        onClick={() => setCategory(cat.slug)}
                         className={`w-full flex justify-center items-center wrap-anywhere 
                         px-4 py-2 rounded-2xl border-3 transition duration-300
                         focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
-                        ${activeTab === category.slug
+                        ${category === cat.slug
                             ? "bg-brand-black text-white border-brand-black"
                             : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
                         }`}
                     >
-                        {category.title}
+                        {cat.title}
                     </button>
                 ))}
             </div>
@@ -49,7 +57,7 @@ export default function ProductGrid({ products, categories }: GridProps) {
             {/* product grid */}
             <div className="w-full my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {filtered.map((product) => (
-                    <Link key={product._id} href={`/products/${product.slug}`}
+                    <Link key={product._id} href={`/products/${product.slug}${category !== "all" ? `?category=${category}` : ""}`}
                     className="group w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden transition duration-300
                     focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
                         <div className="w-full h-48 py-2.5 rounded-3xl overflow-hidden bg-white">

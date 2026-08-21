@@ -4,7 +4,7 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import Blurb from "@/components/Blurb";
 import Hubspot from "@/components/forms/Hubspot";
-import ContactUs from "@/components/forms/ContactUs";
+import { Suspense } from "react";
 
 import { client } from "@/sanity/lib/client";
 import { fetchAllProducts, fetchAllProductCategories } from "@/sanity/queries/product";
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
 const storeLogos = [
     { src:"/storeImages/amazon-logo.png", alt: "IW Technologies Amazon store link", url: "https://www.amazon.com/stores/page/C6685172-E36F-4BAB-B6D6-E63769A1429E?language=en_US&ref_=pe_24209330_600747923" },
     { src:"/storeImages/ebay-logo.png", alt: "IW Technologies Ebay store link", url: "https://www.ebay.com/str/illinoiswholesale" },
+    { src:"/storeImages/shopify-logo.png", alt: "IW Technologies Shopify store link", url: "https://shop.weareiw.com/" },
 ];
 
 export default async function ProductsPage() {
@@ -115,8 +116,9 @@ export default async function ProductsPage() {
                             fill out the form below and contact us for a solution!
                         </p>
                     </div>
-
-                    <ProductGrid products={products} categories={categories} />
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <ProductGrid products={products} categories={categories} />
+                    </Suspense>
                 </div>
             </section>
 
@@ -125,9 +127,9 @@ export default async function ProductsPage() {
                     <h2 className="">
                         Visit Our Online Stores
                     </h2>
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-5">
                         {storeLogos.map((store) => (
-                            <Link key={store.src} href={store.url}
+                            <Link key={store.src} href={store.url} target="_blank"
                             className="w-full flex flex-col p-8 rounded-3xl bg-white
                             border-3 border-white shadow-lg transition duration-300
                             hover:border-brand-aqua">

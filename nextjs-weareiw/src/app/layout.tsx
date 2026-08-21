@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PromoBar from "@/components/PromoBar";
 import "./globals.css";
 import AOS from "@/components/AOS";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import Script from "next/script";
 
 const dmSans = DM_Sans({
@@ -26,12 +27,12 @@ const umamiID = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
 
 export const metadata: Metadata = {
   title: "IW Technologies - Your Enterprise Solution Partner",
-  description: "IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
+  description: "IW Technologies is your partner in driving your business forward. For more than 45 years, we have provided cutting-edge, new and refurbished POS technology and expert services to customers around the world. From installation to reclamation, we offer customizable, end-to-end technology solutions.",
   openGraph: {
       type: "website",
       siteName: "IW Technologies",
       title: "IW Technologies - Your Enterprise Solution Partner",
-      description: "IW Technologies powers tech ecosystems for top brands in Retail, QSR, Grocery, Hospitality, Convenience, Distribution.",
+      description: "IW Technologies is your partner in driving your business forward. For more than 45 years, we have provided cutting-edge, new and refurbished POS technology and expert services to customers around the world. From installation to reclamation, we offer customizable, end-to-end technology solutions.",
       url: `${BASE_URL}`,
       images: [
           {
@@ -62,7 +63,9 @@ export default function RootLayout({
         />
         <AOS>
           <main className="grow">
-            {children}
+            <NuqsAdapter>
+              {children}
+            </NuqsAdapter>
           </main>
         </AOS>
         <Footer 
