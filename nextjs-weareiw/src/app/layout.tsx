@@ -84,6 +84,10 @@ export default function RootLayout({
             src="https://js.hsforms.net/forms/embed/49643826.js" 
             strategy="afterInteractive" 
           />
+          <Script
+            src="/zoominfo.js"
+            strategy="afterInteractive"
+          />
       </body>
     </html>
   );
