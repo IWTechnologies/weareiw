@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       url: `${BASE_URL}`,
       images: [
           {
-              url: `${BASE_URL}/iw-logo-simple.png`,
+              url: `${BASE_URL}/fiftyYear/iw-50-favicon.png`,
               alt: 'IW Technologies',
           }
       ],
