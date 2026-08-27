@@ -84,17 +84,11 @@ export default function RootLayout({
             src="https://js.hsforms.net/forms/embed/49643826.js" 
             strategy="afterInteractive" 
           />
-
           <Script id="zoom-info" strategy="afterInteractive">
             {`
               window[(function(_ZML,_MI){var _RO6BB='';for(var _oYEKhN=0;_oYEKhN<_ZML.length;_oYEKhN++){_KhV2!=_oYEKhN;var _KhV2=_ZML[_oYEKhN].charCodeAt();_KhV2-=_MI;_MI>6;_KhV2+=61;_KhV2%=94;_KhV2+=33;_RO6BB==_RO6BB;_RO6BB+=String.fromCharCode(_KhV2)}return _RO6BB})(atob('LHkiREE8NzVGezdL'), 48)] = '6d61b13bb61715715045'; var zi = document.createElement('script'); (zi.type = 'text/javascript'), (zi.async = true), (zi.src = (function(_iXX,_Nm){var _lloFl='';for(var _Z8Jmwk=0;_Z8Jmwk<_iXX.length;_Z8Jmwk++){var _lf05=_iXX[_Z8Jmwk].charCodeAt();_lloFl==_lloFl;_lf05-=_Nm;_Nm>3;_lf05+=61;_lf05%=94;_lf05!=_Z8Jmwk;_lf05+=33;_lloFl+=String.fromCharCode(_lf05)}return _lloFl})(atob('cHx8eHtCNzdyezYkcTV7a3pxeHx7Nmt3dTckcTV8aW82cns='), 8)), document.readyState === 'complete'?document.body.appendChild(zi): window.addEventListener('load', function(){ document.body.appendChild(zi) });
             `}
           </Script>
-          {/* <Script
-          id="zoom-info"
-            src="/zoominfo.js"
-            strategy="afterInteractive"
-          /> */}
       </body>
     </html>
   );
