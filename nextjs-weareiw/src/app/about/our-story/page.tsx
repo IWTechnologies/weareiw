@@ -449,7 +449,7 @@ export default function OurStory() {
                                             </p>
                                             <p>
                                                 Darin's journey with IW didn't start with a title. It started early, 
-                                                at age 121, learning the business from the ground up as the company 
+                                                at age 12, learning the business from the ground up as the company 
                                                 was finding its footing and accelerating its growth. Through his 
                                                 teenage years and beyond, he worked across the organization, gaining 
                                                 firsthand experience in operations, customer relationships, and the 

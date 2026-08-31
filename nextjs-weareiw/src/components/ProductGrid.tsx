@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useQueryState } from "nuqs";
 import Link from "next/link";
 import { Product, ProductCategory } from "@/types/product";
@@ -10,7 +10,7 @@ type GridProps = {
 };
 
 export default function ProductGrid({ products, categories }: GridProps) {
-    // const [activeTab, setActiveTab] = useState("all");
+    
     const [category, setCategory ] = useQueryState("category", {
         defaultValue: "all",
         clearOnDefault: true,
@@ -19,7 +19,6 @@ export default function ProductGrid({ products, categories }: GridProps) {
     });
 
     const filtered = category === "all" ? products : products.filter((p) => p.categorySlug === category);
-    // const filtered = activeTab === "all" ? products : products.filter((p) => p.categorySlug === activeTab);
 
     return (
         <div className="w-full flex flex-col gap-4">
