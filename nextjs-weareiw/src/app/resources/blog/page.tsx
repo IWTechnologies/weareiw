@@ -49,19 +49,6 @@ export default async function BlogPage() {
                                     {blog.title}
                                 </h4>
                             </Link>
-
-                            // <Link key={blog._id} href={`/resources/blog/${blog.slug}`}
-                            // className="group relative w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden
-                            // transition duration-300 focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
-                            //     {/* display blog image, if not blog image. use fallback image */}
-                            //     <div className="w-full h-48 rounded-3xl overflow-hidden">
-                            //         <img src={blog.image || "/IWT_Logomark_White.png"} alt={blog.altText}
-                            //         className="w-full h-full object-cover" />
-                            //     </div>
-                            //     <h4 className="w-full py-4 text-center transition duration-300 text-white group-hover:text-brand-aqua">
-                            //         {blog.title}
-                            //     </h4>
-                            // </Link>
                         ))} 
                     </div>
                 </div>

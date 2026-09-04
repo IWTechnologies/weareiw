@@ -35,17 +35,17 @@ export default async function NewsPage() {
                     <h2 className="">
                         Explore the Latest News
                     </h2>
-                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {news.map((news) => (
                             <Link key={news._id} href={`/resources/news/${news.slug}`}
-                            className="group w-full flex flex-col p-4 rounded-3xl bg-brand-black overflow-hidden
+                            className="group w-full flex flex-col rounded-3xl overflow-hidden
                             transition duration-300 focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
                                 {/* display blog image, if not blog image. use fallback image */}
-                                <div className="w-full h-48 rounded-3xl overflow-hidden">
+                                <div className="w-full h-96 rounded-3xl overflow-hidden">
                                     <img src={news.image || "/IWT_Logomark_White.png"} alt={news.altText}
-                                    className="w-full h-full object-cover" />
+                                    className="w-full h-full object-cover transition duration-300 group-hover:scale-110" />
                                 </div>
-                                <h4 className="w-full py-4 text-center transition duration-300 text-white group-hover:text-brand-aqua">
+                                <h4 className="w-full p-4 text-start transition-transform duration-300 ease-in-out font-semibold text-brand-black group-hover:text-brand-aqua">
                                     {news.title}
                                 </h4>
                             </Link>
