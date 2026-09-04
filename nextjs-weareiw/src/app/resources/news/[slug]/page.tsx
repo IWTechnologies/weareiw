@@ -132,7 +132,7 @@ export default async function NewsDetailPage({ params }: { params: { slug: strin
                     <div className="w-full flex flex-col gap-8">
                         {/* only render if blog image exists for blog */}
                         {news.image && (
-                            <div className="w-full lg:w-[70%] mx-auto">
+                            <div className="w-full max-w-108.75 mx-auto">
                                 <img
                                     src={news.image}
                                     alt={news.altText}
