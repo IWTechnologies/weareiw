@@ -1,5 +1,5 @@
 "use client"
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { useQueryState } from "nuqs";
 import Link from "next/link";
 import { Product, ProductCategory } from "@/types/product";
@@ -18,10 +18,39 @@ export default function ProductGrid({ products, categories }: GridProps) {
         scroll: false,
     });
 
-    const filtered = category === "all" ? products : products.filter((p) => p.categorySlug === category);
+    const [search, setSearch] = useState("");
+
+    const filtered = products.filter((p) => {
+        const matchesCategory = category === "all" || p.categorySlug === category;
+        const matchesSearch = search === "" ||
+            p.name.toLowerCase().includes(search.toLowerCase());
+        return matchesCategory && matchesSearch;
+    });
+
+    //const filtered = category === "all" ? products : products.filter((p) => p.categorySlug === category);
 
     return (
         <div className="w-full flex flex-col gap-4">
+            <div className="w-full flex justify-center">
+                <div className="relative w-full flex items-center">
+                    <img src="/icons/magnifying-glass-solid-full.svg" 
+                    alt="search icon" height="30" width="30"
+                    className="absolute left-0 m-2.5" />
+                    <input
+                        type="search"
+                        name="search"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        placeholder="Search for a product..."
+                        className="w-full md:w-1/2 p-3 pl-10 rounded-lg border-2 border-background
+                        text-brand-black bg-white
+                        focus:outline-none focus:border-brand-aqua transition duration-300"
+                    />
+                </div>
+                
+            </div>
+            
+
             {/* category tabs */}
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
                 <button
