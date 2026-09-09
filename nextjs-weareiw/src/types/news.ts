@@ -10,4 +10,6 @@ export type NewsDetail = News & {
     body: any[];
     metaDescription: string;
     seoTitle: string;
+    imageTitle: string;
+    imageDescription: string;
 };
