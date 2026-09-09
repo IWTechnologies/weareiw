@@ -39,6 +39,7 @@ export default function ProductGrid({ products, categories }: GridProps) {
     return (
         <div className="w-full flex flex-col gap-4">
             <div className="w-full flex flex-col gap-10">
+                {/* search input */}
                 <div className="relative w-full max-w-lg mx-auto flex items-center">
                     <img src="/icons/magnifying-glass-solid-full.svg" 
                     alt="search icon" height="25" width="25"
@@ -86,38 +87,6 @@ export default function ProductGrid({ products, categories }: GridProps) {
                     ))}
                 </div>
             </div>
-            
-
-            {/* category tabs
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
-                <button
-                    onClick={() => setCategory("all")}
-                    className={`w-full flex justify-center items-center wrap-anywhere 
-                    px-4 py-2 rounded-2xl border-3 transition duration-300
-                    focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
-                    ${category === "all"
-                        ? "bg-brand-black text-white border-brand-black"
-                        : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
-                    }`}
-                >
-                    All
-                </button>
-                {categories.map((cat) => (
-                    <button
-                        key={cat._id}
-                        onClick={() => setCategory(cat.slug)}
-                        className={`w-full flex justify-center items-center wrap-anywhere 
-                        px-4 py-2 rounded-2xl border-3 transition duration-300
-                        focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
-                        ${category === cat.slug
-                            ? "bg-brand-black text-white border-brand-black"
-                            : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
-                        }`}
-                    >
-                        {cat.title}
-                    </button>
-                ))}
-            </div> */}
 
             {/* product grid */}
             <div className="w-full my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
