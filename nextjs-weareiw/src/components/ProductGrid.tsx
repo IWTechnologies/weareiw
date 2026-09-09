@@ -18,7 +18,14 @@ export default function ProductGrid({ products, categories }: GridProps) {
         scroll: false,
     });
 
-    const [search, setSearch] = useState("");
+    const [search, setSearch] = useQueryState("q", {
+        defaultValue: "",
+        clearOnDefault: true,
+        history: "replace",
+        scroll: false,
+        throttleMs: 300,
+    });
+    // const [search, setSearch] = useState("");
 
     const filtered = products.filter((p) => {
         const matchesCategory = category === "all" || p.categorySlug === category;
