@@ -1,5 +1,5 @@
 "use client"
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { useQueryState } from "nuqs";
 import Link from "next/link";
 import { Product, ProductCategory } from "@/types/product";
@@ -18,39 +18,74 @@ export default function ProductGrid({ products, categories }: GridProps) {
         scroll: false,
     });
 
-    const filtered = category === "all" ? products : products.filter((p) => p.categorySlug === category);
+    const [search, setSearch] = useQueryState("q", {
+        defaultValue: "",
+        clearOnDefault: true,
+        history: "replace",
+        scroll: false,
+        throttleMs: 300,
+    });
+    // const [search, setSearch] = useState("");
+
+    const filtered = products.filter((p) => {
+        const matchesCategory = category === "all" || p.categorySlug === category;
+        const matchesSearch = search === "" ||
+            p.name.toLowerCase().includes(search.toLowerCase());
+        return matchesCategory && matchesSearch;
+    });
+
+    //const filtered = category === "all" ? products : products.filter((p) => p.categorySlug === category);
 
     return (
         <div className="w-full flex flex-col gap-4">
-            {/* category tabs */}
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
-                <button
-                    onClick={() => setCategory("all")}
-                    className={`w-full flex justify-center items-center wrap-anywhere 
-                    px-4 py-2 rounded-2xl border-3 transition duration-300
-                    focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
-                    ${category === "all"
-                        ? "bg-brand-black text-white border-brand-black"
-                        : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
-                    }`}
-                >
-                    All
-                </button>
-                {categories.map((cat) => (
+            <div className="w-full flex flex-col gap-10">
+                {/* search input */}
+                <div className="relative w-full max-w-lg mx-auto flex items-center">
+                    <img src="/icons/magnifying-glass-solid-full.svg" 
+                    alt="search icon" height="25" width="25"
+                    className="absolute left-3 top-1/2 -translate-y-1/2" />
+                    <input
+                        type="search"
+                        name="search"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        placeholder="Search for a product..."
+                        className="w-full p-3 pl-14 rounded-lg border-2 border-background
+                        text-brand-black bg-white
+                        focus:outline-none focus:border-brand-aqua transition duration-300"
+                    />
+                </div>
+
+                {/* category tabs */}
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
                     <button
-                        key={cat._id}
-                        onClick={() => setCategory(cat.slug)}
+                        onClick={() => setCategory("all")}
                         className={`w-full flex justify-center items-center wrap-anywhere 
                         px-4 py-2 rounded-2xl border-3 transition duration-300
                         focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
-                        ${category === cat.slug
+                        ${category === "all"
                             ? "bg-brand-black text-white border-brand-black"
                             : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
                         }`}
                     >
-                        {cat.title}
+                        All
                     </button>
-                ))}
+                    {categories.map((cat) => (
+                        <button
+                            key={cat._id}
+                            onClick={() => setCategory(cat.slug)}
+                            className={`w-full flex justify-center items-center wrap-anywhere 
+                            px-4 py-2 rounded-2xl border-3 transition duration-300
+                            focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua
+                            ${category === cat.slug
+                                ? "bg-brand-black text-white border-brand-black"
+                                : "bg-transparent text-brand-black border-brand-black hover:border-brand-black hover:cursor-pointer"
+                            }`}
+                        >
+                            {cat.title}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             {/* product grid */}
