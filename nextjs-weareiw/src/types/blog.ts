@@ -10,4 +10,6 @@ export type BlogDetail = Blog & {
     body: any[];
     metaDescription: string;
     seoTitle: string;
+    imageTitle: string;
+    imageDescription: string;
 };

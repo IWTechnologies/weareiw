@@ -20,6 +20,8 @@ export const fetchAllBlogsBySlug = groq`
         "slug": slug.current,
         "image": image.asset->url,
         "altText": image.asset->altText,
+        "imageTitle": image.asset->title,
+        "imageDescription": image.asset->description,
         publishedAt,
         metaDescription,
         seoTitle,

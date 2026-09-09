@@ -135,7 +135,8 @@ export default async function BlogDetailPage({ params }: { params: { slug: strin
                             <div className="w-full max-w-108.75 mx-auto">
                                 <img
                                     src={blog.image}
-                                    alt={blog.altText}
+                                    alt={blog.altText || blog.imageDescription || ""}
+                                    title={blog.imageTitle || ""}
                                     className="w-full h-auto rounded-2xl object-contain"
                                 />
                             </div>
