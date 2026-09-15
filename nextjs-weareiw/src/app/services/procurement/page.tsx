@@ -5,12 +5,12 @@ import Card from "@/components/Card";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
-  title: "Procurement - IW Technologies",
+  title: "POS Hardware Procurement & Sourcing | IW Technologies",
   description: "IW Technologies handles POS hardware procurement for multi-site retail, grocery, and QSR new and certified refurbished equipment, trade-in programs, and nationwide fulfillment from a 240,000 sq ft warehouse.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Procurement - IW Technologies",
+        title: "POS Hardware Procurement & Sourcing | IW Technologies",
         description: "IW Technologies handles POS hardware procurement for multi-site retail, grocery, and QSR new and certified refurbished equipment, trade-in programs, and nationwide fulfillment from a 240,000 sq ft warehouse.",
         url: `${BASE_URL}/services/procurement`,
         images: [

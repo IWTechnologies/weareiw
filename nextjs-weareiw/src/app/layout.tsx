@@ -26,13 +26,13 @@ const ibmPlexSerif = IBM_Plex_Serif({
 const umamiID = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
 
 export const metadata: Metadata = {
-  title: "IW Technologies - Your Enterprise Solution Partner",
-  description: "IW Technologies is your partner in driving your business forward. For more than 45 years, we have provided cutting-edge, new and refurbished POS technology and expert services to customers around the world. From installation to reclamation, we offer customizable, end-to-end technology solutions.",
+  title: "IW Technologies | End-to-End POS Hardware Lifecycle Partner",
+  description: "IW Technologies manages the full POS hardware lifecycle for multi-site retail, grocery, and QSR: procurement, deployment, low-voltage cabling, maintenance, and disposition.",
   openGraph: {
       type: "website",
       siteName: "IW Technologies",
-      title: "IW Technologies - Your Enterprise Solution Partner",
-      description: "IW Technologies is your partner in driving your business forward. For more than 45 years, we have provided cutting-edge, new and refurbished POS technology and expert services to customers around the world. From installation to reclamation, we offer customizable, end-to-end technology solutions.",
+      title: "IW Technologies | End-to-End POS Hardware Lifecycle Partner",
+      description: "IW Technologies manages the full POS hardware lifecycle for multi-site retail, grocery, and QSR: procurement, deployment, low-voltage cabling, maintenance, and disposition.",
       url: `${BASE_URL}`,
       images: [
           {

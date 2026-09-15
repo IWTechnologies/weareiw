@@ -33,13 +33,13 @@ const serviceStats = [
 ];
 
 export const metadata: Metadata = {
-  title: "Services - IW Technologies",
-  description: "From installation to on-site repair to e-cycling, our offerings can cover the full lifecycle of your technology or be chosen a la carte.",
+  title: "POS Hardware Lifecycle Services | IW Technologies",
+  description: "IW Technologies runs all five stages of the POS hardware lifecycle for multi-site retail, grocery, and QSR: procurement, deployment, low-voltage cabling, maintenance, and disposition.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Services - IW Technologies",
-        description: "From installation to on-site repair to e-cycling, our offerings can cover the full lifecycle of your technology or be chosen a la carte.",
+        title: "POS Hardware Lifecycle Services | IW Technologies",
+        description: "IW Technologies runs all five stages of the POS hardware lifecycle for multi-site retail, grocery, and QSR: procurement, deployment, low-voltage cabling, maintenance, and disposition.",
         url: `${BASE_URL}/services`,
         images: [
             {

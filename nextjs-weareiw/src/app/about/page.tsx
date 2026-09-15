@@ -29,7 +29,7 @@ const industries = [
     { label: "Retail", src: "/heroImages/shutterstock2.jpg", alt: "Retail image with title" },
     { label: "Hospitality", src: "/heroImages/shutterstock3.jpg", alt: "Hospitality image with title" },
     { label: "QSR", src: "/heroImages/shutterstock4.jpg", alt: "QSR image with title" },
-    { label: "Convenience and Pretroleum", src: "/heroImages/shutterstock5.jpg", alt: "Convenience and Pretroleum image with title" },
+    { label: "Convenience and Petroleum", src: "/heroImages/shutterstock5.jpg", alt: "Convenience and Pretroleum image with title" },
     { label: "Distribution", src: "/heroImages/shutterstock6.jpg", alt: "Distribution image with title" },
 ]
 
@@ -84,7 +84,7 @@ export default function AboutPage() {
                         <h2 className="w-fit border-b-4 border-brand-aqua px-2 pl-0">What We Do</h2>
                         <h3>IW Technologies - Your Enterprise Solutions Partner</h3>
                         <p>
-                            We intergrate cutting-edge hardware, agile deployment, and white-glove
+                            We integrate cutting-edge hardware, agile deployment, and white-glove
                             support to deliver end-to-end IT lifecycle solutions. Whether it's
                             nationwide rollouts, on-site break/fix, or secure tech disposition,
                             IW scales to meet the demands of modern enterprise.
@@ -236,7 +236,7 @@ export default function AboutPage() {
                             <p className="font-medium">Experts Who Know Your Frontlines</p>
                             <p>At IW Technologies, people are our platform.</p>
                             <p>
-                                Our teams aren't just tech-savvy. They're industry verterans who've worked
+                                Our teams aren't just tech-savvy. They're industry veterans who've worked
                                 in retail stores, distribution centers, hospitality operations, and field
                                 service environments.
                             </p>
@@ -360,7 +360,7 @@ export default function AboutPage() {
                                     Food trucks roll in, ice cream flows, gifts appear, and smiles stick around.
                                 </p>
                                 <p>
-                                    Step into our office and you'll feel it. A culture built on grattitude, pride,
+                                    Step into our office and you'll feel it. A culture built on gratitude, pride,
                                     and real human energy. Because when you take care of your people, they take care of 
                                     everything else.
                                 </p>
