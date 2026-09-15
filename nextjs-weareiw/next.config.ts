@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blog/iw-technologies-announces-reseller-agreement-with-solum",
+        destination: "/resources/news",
+        permanent: true,
+      },
+      {
         source: "/blogs",
         destination: "/resources/blog",
         permanent: true,
