@@ -12,13 +12,13 @@ import { Product, ProductCategory } from "@/types/product";
 import ProductGrid from "@/components/ProductGrid";
 
 export const metadata: Metadata = {
-  title: "Products - IW Technologies",
-  description: "IW Technologies provides cutting-edge, new and refurbished POS technology and equipment. From printers to scanners and everything in between, our expansive inventory of point-of-sale solutions can meet your needs.",
+  title: "POS Hardware - New & Certified Refurbished | IW Technologies",
+  description: "New and certified refurbished POS hardware: terminals, scanners, printers, and payment devices from HP, Zebra, Datalogic, Elo, and Dell, stocked and shipped nationwide by IW Technologies.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Products - IW Technologies",
-        description: "IW Technologies is your partner in driving your business forward. Let's get in touch!",
+        title: "POS Hardware - New & Certified Refurbished | IW Technologies",
+        description: "New and certified refurbished POS hardware: terminals, scanners, printers, and payment devices from HP, Zebra, Datalogic, Elo, and Dell, stocked and shipped nationwide by IW Technologies.",
         url: `${BASE_URL}/products`,
         images: [
             {
