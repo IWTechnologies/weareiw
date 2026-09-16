@@ -39,8 +39,8 @@ export default function CareersPage() {
         <div>
             <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/heroImages/CareersHeroImage.webp"
-                    imageAlt="Careers page hero image"
+                    imageSrc="/heroImages/iw-technologies-careers-team.webp"
+                    imageAlt="IW Technologies team members celebrate company events in a three-photo banner."
                     imageWidth={1900}
                     imageHeight={400}
                     text={
