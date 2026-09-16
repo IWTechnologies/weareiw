@@ -7,13 +7,13 @@ import Card from "@/components/Card";
 import NumCounter from "@/components/NumCounter";
 
 export const metadata: Metadata = {
-  title: "About - IW Technologies",
-  description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions.",
+  title: "About IW Technologies | 50 years in POS Hardware & Services",
+  description: "IW Technologies has run POS and IT hardware for 50 years  family-owned, operator-run, serving multi-site retail, grocery, QSR, hospitality, convenience, and distribution from a 240,000 sq ft facility in Elgin, IL.",
   openGraph: {
       type: "website",
       siteName: "IW Technologies",
-      title: "About - IW Technologies",
-      description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions.",
+      title: "About IW Technologies | 50 years in POS Hardware & Services",
+      description: "IW Technologies has run POS and IT hardware for 50 years  family-owned, operator-run, serving multi-site retail, grocery, QSR, hospitality, convenience, and distribution from a 240,000 sq ft facility in Elgin, IL.",
       url: `${BASE_URL}/about`,
       images: [
           {
