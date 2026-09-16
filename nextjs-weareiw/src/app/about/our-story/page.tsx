@@ -27,10 +27,10 @@ export default function OurStory() {
         <div>
             <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted image of IW team"
-                    imageWidth={1920}
-                    imageHeight={1080}
+                    imageSrc="/heroImages/iwGroupPhotoHero.webp"
+                    imageAlt="2026 IW Employee Appreciation Week company photo"
+                    imageWidth={1910}
+                    imageHeight={500}
                     text={
                     <>
                         <h1>IW Celebrates 50 Years</h1>
