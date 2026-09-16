@@ -1,13 +1,13 @@
 const careerPhotos = [
-    { id: 1, src: "/careerImages/rectangle1.webp", alt: "IW customer service team" },
+    { id: 1, src: "/careerImages/BagsChamps2026.webp", alt: "IW employee appreciation week Bags Champs 2026" },
     { id: 2, src: "/careerImages/square1.webp", alt: "IW celebrating at annual employee appreciation week, playing in bags tournament" },
     { id: 3, src: "/careerImages/square2.webp", alt: "IW team celebrating Easter with the easter bunny" },
-    { id: 4, src: "/careerImages/square3.webp", alt: "IW employees celebrating Cinco de Mayo" },
-    { id: 5, src: "/careerImages/rectangle4.webp", alt: "IW employees conversing at front desk" },
+    { id: 4, src: "/careerImages/PeopleWaving.webp", alt: "IW employees group photo during employee appreciation week 2026" },
+    { id: 5, src: "/careerImages/GuyHoldingBag.webp", alt: "IW employee posing with goodie bag during employee appreciation week 2026" },
     { id: 6, src: "/careerImages/Mike-and-Chester-Cat.png", alt: "Mike Thornton with Chester Cheetah" },
-    { id: 7, src: "/careerImages/rectangle3.webp", alt: "IW employees working in the warehouse" },
+    { id: 7, src: "/careerImages/PeopleWatching.webp", alt: "IW employees listening to speech given by founder Al Moorhouse" },
     { id: 8, src: "/careerImages/Balta-Retirement-01.webp", alt: "IW celebrating Balta's retirement" },
-    { id: 9, src: "/careerImages/square4.webp", alt: "IW team recruiting at the Elgin Community College job fair" },
+    { id: 9, src: "/careerImages/RedCarpet.webp", alt: "IW employees posing for the red carpet during employee appreciation week 2026" },
 ]
 
 export default function PhotoGrid() {
