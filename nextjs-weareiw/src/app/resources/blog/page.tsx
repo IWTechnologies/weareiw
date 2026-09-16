@@ -7,13 +7,13 @@ import { fetchAllBlogPosts } from "@/sanity/queries/blog";
 import { Blog } from "@/types/blog";
 
 export const metadata: Metadata = {
-  title: "Blog - IW Technologies",
-  description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+  title: "POS Hardware Insights & Guides | IW Technologies",
+  description: "Practical guidance on POS hardware for multi-site operators from IW Technologies: troubleshooting, refurbishment, lifecycle, and buying decisions for retail, grocery, and QSR.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Blog - IW Technologies",
-        description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+        title: "POS Hardware Insights & Guides | IW Technologies",
+        description: "Practical guidance on POS hardware for multi-site operators from IW Technologies: troubleshooting, refurbishment, lifecycle, and buying decisions for retail, grocery, and QSR.",
         url: `${BASE_URL}/resources/blog`,
         images: [
             {

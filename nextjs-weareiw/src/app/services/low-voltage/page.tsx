@@ -5,12 +5,12 @@ import Card from "@/components/Card";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
-  title: "Low Voltage Cabling - IW Technologies",
+  title: "Low Voltage Cabling & Structured Wiring | IW Technologies",
   description: "IW Technologies installs and certifies structured low-voltage cabling for multi-site retail, grocery, and QSR rough-in to device turn-up, to OSHA and BICSI standards. Wi-Fi, fiber, IP camera, and paging systems.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Low Voltage Cabling - IW Technologies",
+        title: "Low Voltage Cabling & Structured Wiring | IW Technologies",
         description: "IW Technologies installs and certifies structured low-voltage cabling for multi-site retail, grocery, and QSR rough-in to device turn-up, to OSHA and BICSI standards. Wi-Fi, fiber, IP camera, and paging systems.",
         url: `${BASE_URL}/services/low-voltage`,
         images: [

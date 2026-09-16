@@ -7,13 +7,13 @@ import { fetchAllFaqPosts } from "@/sanity/queries/faq";
 import { Faqs } from "@/types/faq";
 
 export const metadata: Metadata = {
-  title: "FAQ - IW Technologies",
-  description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+  title: "POS Hardware & Lifecycle Services FAQ | IW Technologies",
+  description: "Answers about POS hardware procurement, deployment, cabling, maintenance, and disposition for multi-site operators from IW Technologies, POS lifecycle partner since 1976.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "FAQ - IW Technologies",
-        description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+        title: "POS Hardware & Lifecycle Services FAQ | IW Technologies",
+        description: "Answers about POS hardware procurement, deployment, cabling, maintenance, and disposition for multi-site operators from IW Technologies, POS lifecycle partner since 1976.",
         url: `${BASE_URL}/faq`,
         images: [
             {

@@ -5,12 +5,12 @@ import Card from "@/components/Card";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
-  title: "Deployment - IW Technologies",
+  title: "POS Deployment, Staging & Installation | IW Technologies",
   description: "IW Technologies deploys POS and IT hardware for multi-site retail, grocery, and QSR: staging, installation, and PMO-managed rollouts. 1,000+ rapid rollouts completed in under 8 weeks.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Deployment - IW Technologies",
+        title: "POS Deployment, Staging & Installation | IW Technologies",
         description: "IW Technologies deploys POS and IT hardware for multi-site retail, grocery, and QSR: staging, installation, and PMO-managed rollouts. 1,000+ rapid rollouts completed in under 8 weeks.",
         url: `${BASE_URL}/services/deployment`,
         images: [

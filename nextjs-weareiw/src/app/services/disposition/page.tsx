@@ -5,13 +5,13 @@ import Card from "@/components/Card";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
-  title: "Disposition - IW Technologies",
-  description: "IW Technologies maintains POS and IT hardware for multi-site retail, grocery, and QSR: on-site repair, replacement parts, and ad-hoc field service. 1,850+ technicians, 90% same-day resolution.",
+  title: "POS Disposition, Buyback & Data Destruction | IW Technologies",
+  description: "IW Technologies handles secure end-of-life for POS hardware: deinstallation, asset reclamation, buyback, and certified data destruction (PCI DSS, HIPAA, TAA) with documented chain of custody.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Disposition - IW Technologies",
-        description: "IW Technologies maintains POS and IT hardware for multi-site retail, grocery, and QSR: on-site repair, replacement parts, and ad-hoc field service. 1,850+ technicians, 90% same-day resolution.",
+        title: "POS Disposition, Buyback & Data Destruction | IW Technologies",
+        description: "IW Technologies handles secure end-of-life for POS hardware: deinstallation, asset reclamation, buyback, and certified data destruction (PCI DSS, HIPAA, TAA) with documented chain of custody.",
         url: `${BASE_URL}/services/disposition`,
         images: [
             {

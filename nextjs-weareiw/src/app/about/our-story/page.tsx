@@ -5,13 +5,13 @@ import Hero from "@/components/Hero";
 import YoutubeFacade from "@/components/YoutubeFacade";
 
 export const metadata: Metadata = {
-  title: "Our Story - IW Technologies",
-  description: "View the story of IW Technologies, from the very beginning to us celebrating 50 years.",
+  title: "Our Story — 50 Years of IW Technologies (Since 1976)",
+  description: "Founded in 1976, IW Technologies refurbished retail hardware before it was a category. Macy's was our first customer and still is 50 years of POS hardware and lifecycle services.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Our Story - IW Technologies",
-        description: "View the story of IW Technologies, from the very beginning to us celebrating 50 years.",
+        title: "Our Story — 50 Years of IW Technologies (Since 1976)",
+        description: "Founded in 1976, IW Technologies refurbished retail hardware before it was a category. Macy's was our first customer and still is 50 years of POS hardware and lifecycle services.",
         url: `${BASE_URL}/about/our-story`,
         images: [
             {
