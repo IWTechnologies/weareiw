@@ -4,12 +4,12 @@ import Hubspot from "@/components/forms/Hubspot";
 import ContactUs from "@/components/forms/ContactUs";
 
 export const metadata: Metadata = {
-  title: "Contact Us - IW Technologies",
+  title: "Contact IW Technologies | POS Hardware & Services",
   description: "IW Technologies is your partner in driving your business forward. Let's get in touch!",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Contact Us - IW Technologies",
+        title: "Contact IW Technologies | POS Hardware & Services",
         description: "IW Technologies is your partner in driving your business forward. Let's get in touch!",
         url: `${BASE_URL}/get-in-touch`,
         images: [

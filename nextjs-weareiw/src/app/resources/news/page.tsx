@@ -7,13 +7,13 @@ import { fetchAllNewsPosts } from "@/sanity/queries/news";
 import { News } from "@/types/news";
 
 export const metadata: Metadata = {
-  title: "News - IW Technologies",
-  description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+  title: "News & Announcements | IW Technologies",
+  description: "Company news, partnerships, and announcements from IW Technologies; POS hardware and lifecycle services for multi-site retail, grocery, and QSR.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "News - IW Technologies",
-        description: "From installation to ITAD, new to refurbished POS hardware, IW Technologies offers end-to-end technology solutions..",
+        title: "News & Announcements | IW Technologies",
+        description: "Company news, partnerships, and announcements from IW Technologies; POS hardware and lifecycle services for multi-site retail, grocery, and QSR.",
         url: `${BASE_URL}/resources/news`,
         images: [
             {

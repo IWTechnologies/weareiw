@@ -8,13 +8,13 @@ import YoutubeFacade from "@/components/YoutubeFacade";
 import LinkButton from "@/components/LinkButton";
 
 export const metadata: Metadata = {
-  title: "Careers - IW Technologies",
-  description: "Join our growing team of people and build your career at IW Technologies with the skills that you want to master.",
+  title: "Careers at IW Technologies | POS & Field Service Jobs",
+  description: "Careers at IW Technologies, Elgin IL field service technicians, deployment coordinators, low-voltage installers, warehouse, PMO, and account roles. Family-owned, Great Place To Work Certified.",
   openGraph: {
         type: "website",
         siteName: "IW Technologies",
-        title: "Careers - IW Technologies",
-        description: "Join our growing team of people and build your career at IW Technologies with the skills that you want to master.",
+        title: "Careers at IW Technologies | POS & Field Service Jobs",
+        description: "Careers at IW Technologies, Elgin IL field service technicians, deployment coordinators, low-voltage installers, warehouse, PMO, and account roles. Family-owned, Great Place To Work Certified.",
         url: `${BASE_URL}/careers`,
         images: [
             {
