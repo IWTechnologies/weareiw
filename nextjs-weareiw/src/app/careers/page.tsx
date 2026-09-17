@@ -41,6 +41,7 @@ export default function CareersPage() {
                 <Hero 
                     imageSrc="/heroImages/iw-technologies-careers-team.webp"
                     imageAlt="IW Technologies team members celebrate company events in a three-photo banner."
+                    imageTitle="The People Behind Fifty Years of IW Technologies"
                     imageWidth={1900}
                     imageHeight={400}
                     text={
