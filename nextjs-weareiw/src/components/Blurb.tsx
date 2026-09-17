@@ -7,6 +7,7 @@ type ImageMedia = {
     type: "image";
     src: string;
     alt: string;
+    title?: string;
     width: number;
     height: number;
 }
@@ -44,7 +45,7 @@ export default function Blurb({ media, text, link, reverse=false, rounded=false,
                 <Image
                 className={`w-full lg:w-1/2 h-auto lg:h-full object-contain lg:object-cover
                 ${rounded ? "rounded-2xl" : ""}`} 
-                src={media.src} alt={media.alt} width={media.width} height={media.height}
+                src={media.src} alt={media.alt} title={media.title} width={media.width} height={media.height}
                 sizes="(max-width: 1024px) 100vw, 50vw" />
             )}
             {media.type === "video" && (
