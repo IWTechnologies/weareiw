@@ -39,8 +39,9 @@ export default function CareersPage() {
         <div>
             <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/heroImages/CareersHeroImage.webp"
-                    imageAlt="Careers page hero image"
+                    imageSrc="/heroImages/iw-technologies-careers-team.webp"
+                    imageAlt="IW Technologies team members celebrate company events in a three-photo banner."
+                    imageTitle="The People Behind Fifty Years of IW Technologies"
                     imageWidth={1900}
                     imageHeight={400}
                     text={
@@ -100,7 +101,8 @@ export default function CareersPage() {
                             media={{
                             type: "image",
                             src: "/careerImages/GPTWLogoBlurb.png",
-                            alt: "May 2026 to May 2027 IW Technologies Great Place to Work Certified image.",
+                            alt: "Greate Place To Work Cerftified badge for IW Technologies, valid May 2026 to May 2027, USA.",
+                            title: "Great Place To Work Certification Badge",
                             width: 700,
                             height: 500,
                             }}
@@ -151,7 +153,8 @@ export default function CareersPage() {
                             media={{
                             type: "image",
                             src: "/careerImages/WorkEnvironment.webp",
-                            alt: "Image of IW team celebrating our 50th year.",
+                            alt: "IW Technologies team members celebrate in front of a lit 50 display during the 50th anniversary.",
+                            title: "Fifty Years, and Still Having Fun at IW Technologies",
                             width: 700,
                             height: 500,
                             }}

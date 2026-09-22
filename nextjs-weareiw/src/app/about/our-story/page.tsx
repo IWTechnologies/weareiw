@@ -27,10 +27,10 @@ export default function OurStory() {
         <div>
             <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted image of IW team"
-                    imageWidth={1920}
-                    imageHeight={1080}
+                    imageSrc="/heroImages/iwGroupPhotoHero.webp"
+                    imageAlt="2026 IW Employee Appreciation Week company photo"
+                    imageWidth={1910}
+                    imageHeight={500}
                     text={
                     <>
                         <h1>IW Celebrates 50 Years</h1>
@@ -125,8 +125,8 @@ export default function OurStory() {
                                     <div data-aos="fade-up" className="w-full z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/storyImages/Al-Moorhouse.webp" alt="Al Moorhouse photo with signature" 
-                                        width="1920" height="1080"
+                                        src="/storyImages/iw-technologies-founder-al-moorhouse.webp" alt="Black and white portrait of IW Technologies founder Al Moorhouse seated at a desk with his signature." 
+                                        title="IW Technologies Founder Al Moorhouse" width="1920" height="1080"
                                         sizes="(max-width: 1024px) 100vw, 50vw" />
                                     </div>
                                 </div> {/* end of al image container */}
@@ -180,8 +180,8 @@ export default function OurStory() {
                                     <div data-aos="fade-up" className="w-full z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/storyImages/Cash-Registers.webp" alt="What's in it for you image graphic" 
-                                        width="1147" height="642"
+                                        src="/storyImages/Cash-Registers.webp" alt="A row of antique brass cash registers on display at the front entrance of the IW Technologies office." 
+                                        title="The Cash Register Roots of IW Technologies" width="1147" height="642"
                                         sizes="100vw" />
                                     </div>
                                 </div> {/* end of registers image container */}
@@ -238,15 +238,15 @@ export default function OurStory() {
                                         <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/storyImages/IW-newspaper.webp" alt="photo of IW Technologies newspaper CIP feature" 
-                                            width="891" height="517"
+                                            src="/storyImages/iw-technologies-community-improvement-award-news.webp" alt="A period newspaper clipping about IW Technologies expanding its Elgin facility and earning a community improvement award." 
+                                            title="IW Technologies in the Local Chicagoland Press" width="891" height="517"
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                         <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/storyImages/groupPhoto.webp" alt="group photo of past IW team" 
-                                            width="905" height="520"
+                                            src="/storyImages/iw-technologies-leadership-team-1990s.webp" alt="The IW Technologies leadership team gathered around a boardroom table in the 1990s." 
+                                            title="The IW Technologies Team in the 1990s" width="905" height="520"
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                     </div> {/* end of imagesRow container */}
@@ -254,15 +254,15 @@ export default function OurStory() {
                                         <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/storyImages/IL-Wholesale.webp" alt="photo of past IW technologies front desk reception" 
-                                            width="764" height="431"
+                                            src="/storyImages/iw-technologies-early-office-reception.webp" alt="An IW Technologies employee at the front desk of the company’s early office." 
+                                            title="The Early Days at IW Technologies" width="764" height="431"
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                         <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/storyImages/IW-Meeting.webp" alt="photo of past IW team meeting in conference room" 
-                                            width="766" height="428"
+                                            src="/storyImages/iw-technologies-leadership-meeting-1990s.webp" alt="IW Technologies leaders in a boardroom meeting in the 1990s, with founder Al Moorhouse standing." 
+                                            title="Building IW Technologies in the 1990s" width="766" height="428"
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                     </div> {/* end of imagesRow container */}
@@ -319,8 +319,8 @@ export default function OurStory() {
                                     <div data-aos="fade-up" className="w-full z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/storyImages/IW-Technologies-assembly.webp" alt="placeholder" 
-                                        width="1080" height="380"
+                                        src="/storyImages/iw-technologies-pos-refurbishment-early-years.webp" alt="IW Technologies staff refurbishing point-of-sale equipment on tables in the company’s early years." 
+                                        title="Refurbishing POS Hardware at IW Technologies" width="1080" height="380"
                                         sizes="100vw" />
                                     </div>
                                 </div> {/* end of assembly image container */}
@@ -332,16 +332,16 @@ export default function OurStory() {
                                         className="relative z-10 w-full lg:w-1/2 h-64 lg:h-80">
                                             <Image
                                             className="object-cover rounded-3xl" 
-                                            src="/storyImages/IW-Technologies-warehouse-aisle.webp" alt="placeholder" 
-                                            fill
+                                            src="/storyImages/iw-technologies-warehouse-operations-early-years.webp" alt="An IW Technologies worker moving a loaded pallet down a warehouse aisle stocked with retail hardware." 
+                                            title="Warehouse Operations at the old IW Technologies" fill
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                         <div data-aos="fade-left" 
                                         className="relative z-10 w-full lg:w-1/2 h-64 lg:h-80">
                                             <Image
                                             className="object-cover rounded-3xl" 
-                                            src="/storyImages/IW-Technologies-warehouse-techs.webp" alt="placeholder" 
-                                            fill
+                                            src="/storyImages/IW-Technologies-warehouse-techs.webp" alt="The IW Technologies refurbishment floor with staff servicing rows of point-of-sale registers." 
+                                            title="The Refurbishment Floor at the old IW Technologies" fill
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                     </div> {/* end of imagesRow container */}
@@ -433,8 +433,8 @@ export default function OurStory() {
                                         <div data-aos="fade-right" className="w-full z-10">
                                             <Image
                                             className="w-full h-auto object-contain rounded-3xl" 
-                                            src="/storyImages/DarinPortrait.webp" alt="What's in it for you image graphic" 
-                                            width="1920" height="1080"
+                                            src="/storyImages/iw-technologies-president-darin-moorhous.webp" alt="Black and white portrait of current IW Technologies president Darin Moorhouse seated, with his signature." 
+                                            title="IW Technologies President and CEO Darin Moorhouse" width="1920" height="1080"
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
                                     </div>
@@ -545,15 +545,15 @@ export default function OurStory() {
                                     <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/storyImages/IW20261.webp" alt="IW field technician photo 1" 
-                                        width="1448" height="1086"
+                                        src="/storyImages/iw-technologies-technician-grocery-self-checkout.webp" alt="An IW Technologies field technician servicing an open self-checkout unit in a grocery store." 
+                                        title="IW Technologies Field Service in Grocery" width="1448" height="1086"
                                         sizes="(max-width: 1024px) 100vw, 50vw" />
                                     </div>
                                     <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/storyImages/IW20262.webp" alt="IW field technician photo 2" 
-                                        width="1448" height="1086"
+                                        src="/storyImages/iw-technologies-technician-entertainment-venue.webp" alt="An IW Technologies field technician servicing a payment terminal at an entertainment or restaurant venue with sports screens and arcade games." 
+                                        title="IW Technologies Field Service in Hospitality and QSR" width="1448" height="1086"
                                         sizes="(max-width: 1024px) 100vw, 50vw" />
                                     </div>
                                 </div> {/* end of imagesRow container */}
@@ -561,15 +561,15 @@ export default function OurStory() {
                                     <div data-aos="fade-right" className="w-full lg:w-1/2 z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/storyImages/IW20263.webp" alt="IW field technician photo 3" 
-                                        width="1448" height="1086"
+                                        src="/storyImages/iw-technologies-technician-retail-store.webp" alt="An IW Technologies field technician servicing a POS terminal and pinpad in a retail apparel store." 
+                                        title="IW Technologies Field Service in Retail" width="1448" height="1086"
                                         sizes="(max-width: 1024px) 100vw, 50vw" />
                                     </div>
                                     <div data-aos="fade-left" className="w-full lg:w-1/2 z-10">
                                         <Image
                                         className="w-full h-auto object-contain rounded-3xl" 
-                                        src="/storyImages/IW20264.webp" alt="IW field technician photo 4" 
-                                        width="1448" height="1086"
+                                        src="/storyImages/iw-technologies-technician-restaurant-bar.webp" alt="An IW Technologies field technician servicing a POS terminal at a restaurant bar with sports on screen and entertainment." 
+                                        title="IW Technologies Field Service in Restaurants and Hospitality" width="1448" height="1086"
                                         sizes="(max-width: 1024px) 100vw, 50vw" />
                                     </div>
                                 </div> {/* end of imagesRow container */}
@@ -583,8 +583,8 @@ export default function OurStory() {
                                 <div data-aos="fade-right" className="w-full z-10">
                                     <Image
                                     className="w-full h-auto object-contain rounded-3xl" 
-                                    src="/storyImages/Al-MoorhouseCrop.webp" alt="What's in it for you image graphic" 
-                                    width="1920" height="1080"
+                                    src="/storyImages/Al-MoorhouseCrop.webp" alt="Black and white portrait of IW Technologies founder Al Moorhouse seated at a desk with his signature." 
+                                    title="IW Technologies Founder Al Moorhouse" width="1920" height="1080"
                                     sizes="(max-width: 1024px) 100vw, 50vw" />
                                 </div>
                             </div>

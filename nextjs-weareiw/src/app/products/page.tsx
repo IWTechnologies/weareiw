@@ -45,10 +45,10 @@ export default async function ProductsPage() {
         <div>
             <section className="h-fit w-full flex justify-center bg-brand-black text-white">
                 <Hero 
-                    imageSrc="/heroImages/aboutUsHero.png"
-                    imageAlt="Blue tinted IW company image"
-                    imageWidth={1920}
-                    imageHeight={1080}
+                    imageSrc="/heroImages/iwGroupPhotoHero.webp"
+                    imageAlt="2026 IW Employee Appreciation Week company photo"
+                    imageWidth={1910}
+                    imageHeight={500}
                     text={
                     <>
                         <h1>Your Enterprise Solution Partner</h1>

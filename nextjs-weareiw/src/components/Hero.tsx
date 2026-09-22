@@ -5,6 +5,7 @@ import LinkButton, { LinkVariant } from "./LinkButton";
 type HeroProps = {
     imageSrc: string;
     imageAlt: string;
+    imageTitle?: string;
     imageWidth: number;
     imageHeight: number;
     text: ReactNode;
@@ -16,11 +17,11 @@ type HeroProps = {
         };
 };
 
-export default function Hero({ imageSrc, imageAlt, imageWidth, imageHeight, text, link }: HeroProps) {
+export default function Hero({ imageSrc, imageAlt, imageTitle, imageWidth, imageHeight, text, link }: HeroProps) {
     return (
         <div className="max-w-[1920px] relative h-full w-full overflow-hidden bg-brand-blue">
             <Image 
-                src={imageSrc} alt={imageAlt} priority 
+                src={imageSrc} alt={imageAlt} title={imageTitle} priority 
                 width={imageWidth} height={imageHeight} sizes="100vw"
                 className="absolute inset-0 h-full w-full object-cover"
              />

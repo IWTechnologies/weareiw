@@ -84,7 +84,7 @@ export async function generateMetadata(
     }
 
     return {
-        title: `${blog.seoTitle} - IW Technologies`,
+        title: `${blog.seoTitle} | IW Technologies`,
         description: `${blog.metaDescription}`,
         openGraph: {
             type: "article",

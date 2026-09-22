@@ -106,8 +106,9 @@ export default function ServicesPage() {
                         <Blurb 
                         media={{
                             type: "image",
-                            src: "/IWLifecycle2026.webp",
-                            alt: "IW Lifecycle graphic image",
+                            src: "/iw-technologies-pos-hardware-lifecycle-services.webp",
+                            alt: "IW Technologies five service lines on a timeline: procurement, deployment, low voltage cabling, maintenance, disposition.",
+                            title: "The Full POS Hardware Lifecycle at IW Technologies",
                             width: 700,
                             height: 500,
                         }}
@@ -336,13 +337,13 @@ export default function ServicesPage() {
                     </p>
                     <div className="w-full md:w-[80%] mx-auto flex flex-col md:flex-row md:justify-center items-end my-5">
                         <Image 
-                        src="/serviceImages/portal1.png" alt="portal snapshot on laptop"
-                        width={892} height={727} sizes="100vw"
+                        src="/serviceImages/iw-technologies-customer-portal-dashboard1.png" alt="The IW Technologies customer dashboard showing open and closed POS service cases across a retail fleet."
+                        title="The IW Technologies Customer Dashboard" width={892} height={727} sizes="100vw"
                         className="w-full lg:w-1/3 h-auto lg:h-full object-contain lg:object-cover"
                         />
                         <Image 
-                        src="/serviceImages/portal2.webp" alt="portal dashboard"
-                        width={892} height={727} sizes="100vw"
+                        src="/serviceImages/iw-technologies-customer-portal-dashboard2.webp" alt="The IW Technologies customer dashboard showing open and closed POS service cases across a retail fleet."
+                        title="The IW Technologies Customer Dashboard" width={892} height={727} sizes="100vw"
                         className="w-full lg:w-2/3 h-auto lg:h-full object-contain lg:object-cover"
                         />
                     </div>
@@ -419,8 +420,8 @@ export default function ServicesPage() {
                             </h2>
                             <Image
                             className="h-auto object-contain rounded-3xl" 
-                            src="/serviceImages/Coast2Coast.webp" alt="Coast to Coast coverage image graphic" 
-                            width="797" height="372"
+                            src="/serviceImages/iw-technologies-national-technician-network-coverage.webp" alt="Two US maps showing IW Technologies technician coverage against population density, coast to coast." 
+                            title="The IW Technologies National Technician Network" width="797" height="372"
                             sizes="(max-width: 1920px) 100vw, 50vw" />
                         </div>
                         <h3>
@@ -490,8 +491,8 @@ export default function ServicesPage() {
                     </div>
                     <Image
                     className="w-full lg:w-[90%] h-auto object-contain rounded-3xl" 
-                    src="/serviceImages/noGapsNoHandoffs.webp" alt="What's in it for you image graphic" 
-                    width="1920" height="1080"
+                    src="/serviceImages/iw-technologies-five-services-one-team-accountable.webp" alt="IW Technologies infographic: five POS services under one team, from procurement to disposition, no gaps or handoffs." 
+                    title="Five Services, One Team Accountable at IW Technologies" width="1920" height="1080"
                     sizes="(max-width: 1920px) 100vw, 50vw" />
                 </div>
             </section>

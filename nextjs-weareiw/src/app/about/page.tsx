@@ -148,8 +148,8 @@ export default function AboutPage() {
                     </div>
                     <Image
                     className="w-full lg:w-[90%] h-auto object-contain rounded-3xl" 
-                    src="/serviceImages/noGapsNoHandoffs.webp" alt="What's in it for you image graphic" 
-                    width="1920" height="1080"
+                    src="/serviceImages/iw-technologies-five-services-one-team-accountable.webp" alt="IW Technologies infographic: five POS services under one team, from procurement to disposition, no gaps or handoffs." 
+                    title="Five Services, One Team Accountable at IW Technologies" width="1920" height="1080"
                     sizes="(max-width: 1920px) 100vw, 50vw" />
                 </div>
             </section>

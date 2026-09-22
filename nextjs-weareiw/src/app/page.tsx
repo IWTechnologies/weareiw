@@ -134,8 +134,9 @@ export default function IndexPage() {
             <Blurb 
               media={{
                 type: "image",
-                src: "/IWLifecycle2026.webp",
-                alt: "IW Lifecycle graphic image",
+                src: "/iw-technologies-pos-hardware-lifecycle-services.webp",
+                alt: "IW Technologies five service lines on a timeline: procurement, deployment, low voltage cabling, maintenance, disposition.",
+                title: "The Full POS Hardware Lifecycle at IW Technologies",
                 width: 700,
                 height: 500,
               }}
