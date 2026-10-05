@@ -132,14 +132,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
     ];
 
-    const blogPages: MetadataRoute.Sitemap = data.posts.map((post: any) => ({
+    const blogPages: MetadataRoute.Sitemap = data.blogPost.map((post: any) => ({
         url: `${BASE_URL}/resources/blog/${post.slug}`,
         lastModified: new Date(post._updatedAt),
         changeFrequency: "monthly",
         priority: 0.6,
     }));
 
-    const newsPages: MetadataRoute.Sitemap = data.news.map((item: any) => ({
+    const newsPages: MetadataRoute.Sitemap = data.newsArticle.map((item: any) => ({
         url: `${BASE_URL}/resources/news/${item.slug}`,
         lastModified: new Date(item._updatedAt),
         changeFrequency: "monthly",
@@ -153,7 +153,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.6,
     }));
 
-    const jobCategoryPages: MetadataRoute.Sitemap = data.jobCategories.map((cat: any) => ({
+    const jobCategoryPages: MetadataRoute.Sitemap = data.jobCategory.map((cat: any) => ({
         url: `${BASE_URL}/opportunities/${cat.slug}`,
         lastModified: new Date(cat._updatedAt),
         changeFrequency: "weekly",
@@ -167,7 +167,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.5,
     }));
 
-    const faqPages: MetadataRoute.Sitemap = data.faqItems.map((item: any) => ({
+    const faqPages: MetadataRoute.Sitemap = data.faqPosts.map((item: any) => ({
         url: `${BASE_URL}/faq/${item.slug}`,
         lastModified: new Date(item._updatedAt),
         changeFrequency: "monthly",
