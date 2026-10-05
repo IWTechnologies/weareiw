@@ -84,6 +84,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/catalog/:path*",
+        destination: "https://shop.weareiw.com/",
+        permanent: true,
+      },
+      {
         source: "/catalog",
         destination: "https://shop.weareiw.com/",
         permanent: true,
