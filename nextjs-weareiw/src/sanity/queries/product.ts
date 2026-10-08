@@ -30,6 +30,9 @@ export const fetchAllProductsBySlug = groq`
         "image": image.asset->url,
         "category": category->title,
         "categorySlug": category->slug.current,
+        "altText": image.asset->altText,
+        "imageTitle": image.asset->title,
+        "imageDescription": image.asset->description,
         description,
         specs,
     }

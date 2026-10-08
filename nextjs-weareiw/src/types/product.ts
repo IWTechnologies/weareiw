@@ -16,4 +16,7 @@ export type Product = {
 export type ProductDetail = Product & {
     description: any[];
     specs: string;
+    altText: string;
+    imageTitle: string;
+    imageDescription: string;
 };

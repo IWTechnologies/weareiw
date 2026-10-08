@@ -15,18 +15,18 @@ export async function generateMetadata(
 
     if (!product) {
         return {
-            title: "Product Not Found - IW Technologies",
+            title: "Product Not Found | IW Technologies",
         };
     }
 
     return {
-        title: `${product.name} - IW Technologies`,
+        title: `${product.name} | New & Refurbished | IW Technologies`,
         description: `Learn more about ${product.name} from IW Technologies.`,
         openGraph: {
             type: "website",
             siteName: "IW Technologies",
-            title: `${product.name} - IW Technologies`,
-            description: `Learn more about ${product.name} from IW Technologies.`,
+            title: `${product.imageTitle} | New & Refurbished | IW Technologies`,
+            description: `${product.imageDescription}`,
             url: `${BASE_URL}/products/${slug}`,
             images: [
                 {
@@ -71,7 +71,8 @@ export default async function ProductDetailPage({ params }: { params: { slug: st
                             <div className="w-full lg:w-1/2 xl:w-1/3">
                                 <img
                                     src={product.image}
-                                    alt={product.name}
+                                    alt={product.altText}
+                                    title={product.imageTitle}
                                     className="w-full h-auto rounded-2xl object-cover"
                                 />
                             </div>
