@@ -20,7 +20,7 @@ export async function generateMetadata(
     }
 
     return {
-        title: `${product.name} | New & Refurbished | IW Technologies`,
+        title: `${product.imageTitle} | New & Refurbished | IW Technologies`,
         description: `Learn more about ${product.name} from IW Technologies.`,
         openGraph: {
             type: "website",
