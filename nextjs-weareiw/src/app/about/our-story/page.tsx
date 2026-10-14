@@ -49,7 +49,7 @@ export default function OurStory() {
                             when it matters most.
                         </div>
                         <div>
-                            Because real partnership isnt't built in the boardroom. It's built one register, one store, 
+                            Because real partnership isn't built in the boardroom. It's built one register, one store, 
                             one relationship at a time.
                         </div>
                     </>
