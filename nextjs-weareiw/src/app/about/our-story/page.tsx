@@ -35,7 +35,7 @@ export default function OurStory() {
                     <>
                         <h1>IW Celebrates 50 Years</h1>
                         <div className="font-bold text-2xl">
-                            Our 50 year Journey Is A Shared One... With Customers, Partners, And Our People
+                            Our 50 year journey is a shared one... with customers, partners, and our people
                         </div>
                         <div className="font-bold">
                             Connecting People, Responsible Tech & Possibility with Trust 
@@ -49,7 +49,7 @@ export default function OurStory() {
                             when it matters most.
                         </div>
                         <div>
-                            Because real partnership isnt't built in the boardroom. It's built one register, one store, 
+                            Because real partnership isn't built in the boardroom. It's built one register, one store, 
                             one relationship at a time.
                         </div>
                     </>
@@ -95,12 +95,12 @@ export default function OurStory() {
                                     className="text-block relative w-full lg:w-1/2 text-brand-black">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
-                                                Our Founder, Al Moorhouse, wasn't trying to start a 
+                                                Our founder, Al Moorhouse, wasn't trying to start a 
                                                 business. He just saw something others didn't.
                                             </p>
                                             <p>
                                                 While working at a leading cash register company, he 
-                                                watched the industry shift from mechinical machines 
+                                                watched the industry shift from mechanical machines 
                                                 to electronic registers. A tech revolution was underway.
                                             </p>
                                             <p>
@@ -210,7 +210,7 @@ export default function OurStory() {
                                         className="text-block relative w-full lg:w-1/2 text-brand-black">
                                             <div data-aos="fade-left" className="flex flex-col gap-4">
                                                 <p>
-                                                    The company grew oragnically — not through flashy 
+                                                    The company grew organically — not through flashy 
                                                     pitches, but <strong>by answering the phone when others
                                                     didn't.</strong>
                                                 </p>
@@ -218,9 +218,6 @@ export default function OurStory() {
                                                     Al's philosphy was simple:<br />
                                                     <strong>"Don't just answer when a customer's placing 
                                                     an order. Answer when they need help."</strong>
-                                                </p>
-                                                <p>
-                                                    "I've got cash registers. Buy from me." he'd say.
                                                 </p>
                                                 <p>
                                                     IW became the go-to name in refurbished POS by selling, 
@@ -291,16 +288,16 @@ export default function OurStory() {
                                     className="text-block relative w-full lg:w-1/2 text-brand-black">
                                         <div data-aos="fade-left" className="flex flex-col gap-4">
                                             <p>
-                                                With a formal name <strong>Illinois Wholesale Cash Register Corporation </strong>, 
+                                                With a formal name <strong>Illinois Wholesale Cash Register Corporation</strong>, 
                                                 IW built deeper partnerships and a more robust supply chain.
                                             </p>
                                             <p>
-                                                The office grew to 240,000+ sq ft, with 2 office buildings.<br/>
+                                                The office grew to 240,000+ sq ft, with two office buildings.<br/>
                                                 The model?<br/>
-                                                <strong>Start small. Prove yourself. Grow together.</strong>.
+                                                <strong>Start small. Prove yourself. Grow together.</strong>
                                             </p>
                                             <p>
-                                                Maybe just a scanner. Then a register. Then a full rollout<br/>
+                                                Maybe just a scanner. Then a register. Then a full rollout.<br/>
                                                 The result?<br/>
                                                 <strong>Customers who've stayed for 30+ years</strong>.
                                             </p>
@@ -340,7 +337,7 @@ export default function OurStory() {
                                         className="relative z-10 w-full lg:w-1/2 h-64 lg:h-80">
                                             <Image
                                             className="object-cover rounded-3xl" 
-                                            src="/storyImages/IW-Technologies-warehouse-techs.webp" alt="The IW Technologies refurbishment floor with staff servicing rows of point-of-sale registers." 
+                                            src="/storyImages/iw-technologies-refurbishment-floor-early-year.webp" alt="The IW Technologies refurbishment floor with staff servicing rows of point-of-sale registers." 
                                             title="The Refurbishment Floor at the old IW Technologies" fill
                                             sizes="(max-width: 1024px) 100vw, 50vw" />
                                         </div>
@@ -377,7 +374,7 @@ export default function OurStory() {
                                                 Can you help us install it? Maintain it? Manage it?
                                             </p>
                                             <p>
-                                                Our request became a repeat service. Countless requests 
+                                                One request became a repeat service. Countless requests 
                                                 evolved into repeated services.<br/>
                                                 A few installs turned into full-scale national rollouts and long term 
                                                 maintenance opportunities.<br/>
@@ -395,7 +392,7 @@ export default function OurStory() {
                                                 <li><strong>Audio, Telephony & Loss Prevention</strong></li>
                                                 <li><strong>Ad Hoc Installation, Moves, Adds & Changes (IMAC Services)</strong></li>
                                                 <li><strong>Physical Asset Reclamation and Disposition Services</strong></li>
-                                                <li><strong>Recycling, E-Waster, Logistics, and Warehousing</strong></li>
+                                                <li><strong>Recycling, E-Waste, Logistics, and Warehousing</strong></li>
                                             </ul>
                                             <p>
                                                 We didn't chase new business. We built on pent up demand and trust 
