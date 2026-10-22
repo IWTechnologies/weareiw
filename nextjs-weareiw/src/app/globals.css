@@ -80,25 +80,6 @@ form label:not(
 }
 
 
-/* not being used but keep just in case 
-background shapes for sections */
-.section-diagonal {
-  --skew-angle: -5deg;
-  --skew-color: white;
-
-  position: relative
-}
-
-.section-diagonal::after {
-  content: "";
-  position: absolute;
-  z-index: -2;
-  inset: 0;
-  background: var(--skew-color);
-  transform: skewY(var(--skew-angle));
-}
-
-
 
 /* section scroll margin */
 #partners,
