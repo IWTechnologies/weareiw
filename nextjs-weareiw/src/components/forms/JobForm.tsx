@@ -98,6 +98,27 @@ export default function JobForm({ jobTitle, jobCategory }: JobProps) {
                 <ValidationError prefix="Cover Letter" field="coverLetter" errors={state.errors} />
             </div>
         </div>
+
+        <div className="w-full flex flex-col lg:flex-row justify-center gap-4">
+            {/* how did you hear about this position */}
+            <div className="w-full lg:w-1/2 flex flex-col gap-2">
+                <label htmlFor="referralSource" className="pl-2">How did you hear about this job?</label>
+                <select name="referralSource" id="referralSource" required className="w-full p-2 rounded-xl bg-white text-brand-black 
+                focus:bg-background focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-brand-aqua">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Facebook/Instagram">Facebook or Instagram</option>
+                    <option value="Google Search">Google search</option>
+                    <option value="Employee Referral">IW employee referral</option>
+                    <option value="Linkedin">Linkedin</option>
+                    <option value="Glassdoor">Glassdoor</option>
+                    <option value="Job fair/School">Job fair or School</option>
+                    <option value="Sign/Flyer">Hiring Sign or Flyer</option>
+                    <option value="AI Search">AI search such as ChatGPT or Claude</option>
+                    <option value="Other">Other</option>
+                </select>
+                <ValidationError prefix="Referral Source" field="referralSource" errors={state.errors} />
+            </div>
+        </div>
         
         {/* submit button */}
         <button type="submit" disabled={state.submitting} 
